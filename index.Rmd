@@ -21,9 +21,8 @@ Also, I am committed to helping other women get into the data science field, so 
 <BR>
 <BR>
 
-I code in R, SQL, and Python, using RStudio and Spyder as my preferred IDEs, 
-or Jupyter notebooks for some Python projects. I also 
-actually enjoy writing LaTeX with Sweave and R, to make snazzy print reports.
+I code in R, SQL, and Python, using RStudio and SublimeText as my preferred IDE/code editors, 
+or Jupyter notebooks for some Python projects. I also enjoy writing LaTeX with Sweave and R, to make snazzy print reports.
 
 To see more about what kinds of data science skills I have, check out my projects on this page,
 or [my Github profile](http://github.com/skirmer).
@@ -174,9 +173,15 @@ s.kirmer@gmail.com  |  [kaggle.com/skirmer](http://www.kaggle.com/skirmer)
 
 See what I'm reading on Pocket: http://getpocket.com/@data_stephanie   
 
+***
+
+### Events and Fun Stuff 
+
+[Applications are now open for a great one day workshop I am co-organizing with Angela Li!](http://forwards.github.io/edu/chicago/) This will be the very first USA-based [R Forwards](https://twitter.com/R_Forwards) women's #rstats package workshop, and it's going to be awesome. Don't miss it!
+
 <BR>
 
-See me speak - I'll be presenting at **Domino Data Science Pop-Up** in Chicago on December 6! This talk will be about integrating Elasticsearch storage with R or Python analytics workflows. [Register here!](https://www.eventbrite.com/e/domino-data-science-pop-up-in-chicago-tickets-46631051731)
+Unfortunately the **Domino Data Science Pop-Up** in Chicago on December 6 was canceled, but I hope to be presenting this material in the spring at another conference - watch this space! This talk will be about integrating Elasticsearch storage with R or Python analytics workflows. 
 
 <BR>
 
