@@ -1,5 +1,5 @@
 ---
-title: "Stephanie Kirmer"
+title: ""
 output: 
   html_document:
     includes:
@@ -12,6 +12,8 @@ output:
 <div class = "row">
 <div class = "col-md-8">
 
+<BR>
+<BR>
 <BR>
 
 Hi! I'm a data scientist in industry, by way of education research. I am deeply interested in sociology, the data science industry (and making it better), R programming, and education. If you're in need of a speaker on one of these topics, let me know! 
@@ -168,12 +170,21 @@ In this project, I used a provided dataset of facebook posts from a community gr
 
 <font size = 2>
 
+<BR>
+<BR>
+<BR>
 s.kirmer@gmail.com  |  [kaggle.com/skirmer](http://www.kaggle.com/skirmer)
 
 
 See what I'm reading on Pocket: http://getpocket.com/@data_stephanie   
+<BR>
+<BR>
 
 ***
+
+<BR>
+<BR>
+
 
 ### Events and Fun Stuff 
 
