@@ -17,11 +17,10 @@ library(reshape)
 
 knitr::opts_chunk$set(echo = TRUE)
 
-pretest <- read.csv("R Forwards Package Workshop Learning Pre-Survey.csv")
-posttest <- read.csv("R Forwards Package Workshop Learning Post-Survey.csv")
+pretest <- read.csv("../../workshops/R Forwards Package Workshop Learning Pre-Survey.csv")
+posttest <- read.csv("../../workshops/R Forwards Package Workshop Learning Post-Survey.csv")
 
-pretest$Which.of.the.following.things.describes.you. <- ifelse(pretest$Which.of.the.following.things.describes.you.
-                                                               %in% c("Intermediate ", "Student;Young Professional","Young Professional;5 years experience", "Young Professional;Experienced Professional"), "Other", as.character(pretest$Which.of.the.following.things.describes.you.))
+pretest$Which.of.the.following.things.describes.you. <- ifelse(pretest$Which.of.the.following.things.describes.you. %in% c("Intermediate ", "Student;Young Professional","Young Professional;5 years experience", "Young Professional;Experienced Professional"), "Other", as.character(pretest$Which.of.the.following.things.describes.you.))
 
 pretest$Which.of.the.following.things.describes.you. = factor(pretest$Which.of.the.following.things.describes.you.
                             ,levels= c("Student"
@@ -70,6 +69,8 @@ held in [Chicago on February 23, 2019](https://forwards.github.io/edu/chicago/).
 About 30 women attended the workshop, and we have survey responses from 28 for the pre-survey 
 and 29 for the post-survey.
 
+***
+
 ## The Questions
 
 We purposely designed this survey to have only questions that might be relevant
@@ -77,6 +78,8 @@ to improving the teaching of workshops like this in the future, and avoided aski
  for too much personal information about students.
  Because all responses on each survey are anonymous, we cannot connect the responses in
  the two surveys directly.
+
+***
 
 ### Pre-test Items 
 ```{r, echo=FALSE}
@@ -89,11 +92,14 @@ colnames(posttest)
 ```
 
 
-
+***
 
 ## Pre-test Descriptive Statistics {.tabset}
 
-### Starting Characteristics
+### Initial Skills
+
+What have our students done previously in their R analyses? What is new to them?
+
 ```{r, fig.width=8, fig.height=5, echo=FALSE}
 p_tomelt <- pretest[, c(1:6)]
 pretest_long <- melt(p_tomelt, id.vars = "Timestamp")
@@ -105,6 +111,11 @@ ggplot(pretest_long,aes(x=variable, fill=value))+
 
 ```
 
+***
+
+### Comfort with Topic Areas
+
+Which of the general topics we plan to cover are they already comfortable doing?
 ```{r, fig.width=8, fig.height=5, echo=FALSE}
 p_tomelt <- pretest[, c(1, 7:11)]
 pretest_long <- melt(p_tomelt, id.vars = "Timestamp")
@@ -119,11 +130,15 @@ ggplot(pretest_long,aes(x=variable, fill=value))+
   theme_bw()+ 
   theme(legend.position="bottom")+guides(fill=guide_legend(nrow=2,byrow=TRUE))+
   geom_bar()+
-  labs(title = "Comfort with Activities", x="Activity")
+  labs(title = "Comfort with Topic Areas", x="Activity")
 
 ```
 
-### Student Backgrounds
+***
+
+### Professional Experience Levels
+We intentionally solicited students from a variety of backgrounds and skill levels - how did we do? Is our class a diverse group experientially?
+
 ```{r, fig.width=8, fig.height=5, echo=FALSE}
 
 p_tomelt <- pretest[, c(1, 12:14)]
@@ -144,9 +159,10 @@ tf <- ggplot(pretest_long[pretest_long$variable %in% c("Open Source Experience",
 plevel + tf
 ```
 
+***
 
-### By Professional Level
-Are there differences in these starting skills based on the individual's level of professional experience?
+### Skills by Professional Level
+Are there differences in starting skills based on the individual's level of professional experience?
 
 ```{r, fig.width=10, fig.height=8, echo=FALSE}
 p_tomelt <- pretest[, c(1, 12, 2:6)]
@@ -161,7 +177,12 @@ ggplot(pretest_long,aes(x=variable, fill=value))+
 
 ```
 
+
+***
+
 ## Post-test Comparison {.tabset}
+
+After the workshop, how did people's feelings about their confidence change?
 
 ```{r, echo=FALSE}
 pretest$testname <- "pre"
@@ -171,8 +192,9 @@ fullsample <- merge(pretest, posttest, by.x=colnames(pretest), by.y=colnames(pre
 
 ```
 
+***
 
-### Activities
+### Comfort with Topic Areas
 
 ```{r, echo=FALSE}
 
@@ -197,7 +219,7 @@ ggplot(fullsample_labs,aes(x=variable, fill=value))+
   theme_bw()+ 
   theme(legend.position="bottom")+guides(fill=guide_legend(nrow=2,byrow=TRUE))+
   geom_bar(stat = 'count', position = 'stack') +
-  labs(title = "Comfort with Activities: {closest_state}", x="Activity")+
+  labs(title = "Comfort with Topic Areas: {closest_state}", x="Activity")+
   transition_states(
     testname,
     transition_length = 2,
@@ -216,13 +238,15 @@ ggplot(fullsample_labs,aes(x=variable, fill=value))+
   theme_bw()+ 
   theme(legend.position="bottom")+guides(fill=guide_legend(nrow=2,byrow=TRUE))+
   geom_bar(stat = 'count', position = 'stack') +
-  labs(title = "Comfort with Activities", x="Activity")
+  labs(title = "Comfort with Topic Areas - Static Chart", x="Activity")
 
 ```
 
+***
 
-### Activities by Professional Level
+### Comfort with Topic Areas by Professional Level
 
+Were we equally effective at helping people of all levels? We want to ensure that our teaching meets all students where they are.
 
 ```{r, echo=FALSE}
 p_tomelt <- fullsample[, c(1,15,12, 7:11)]
@@ -249,7 +273,7 @@ ggplot(fullsample_labs,aes(x=variable, fill=value))+
   theme_bw()+ 
   theme(legend.position="bottom")+guides(fill=guide_legend(nrow=2,byrow=TRUE))+
   geom_bar(stat = 'count', position = 'stack') +
-  labs(title = "Comfort with Activities: {closest_state}", x="Activity")+
+  labs(title = "Comfort with Topic Areas: {closest_state}", x="Activity")+
   transition_states(
     testname,
     transition_length = 2,
@@ -268,11 +292,15 @@ ggplot(fullsample_labs,aes(x=variable, fill=value))+
   theme_bw()+ 
   theme(legend.position="bottom")+guides(fill=guide_legend(nrow=2,byrow=TRUE))+
   geom_bar(stat = 'count', position = 'stack') +
-  labs(title = "Comfort with Activities", x="Activity")
+  labs(title = "Comfort with Topic Areas - Static Chart", x="Activity")
 
 ```
 
+***
+
 ## Satisfaction with Program
+
+Finally, how did students feel about the surroundings, instruction, and logistics? This is important to create a good learning environment.
 
 ```{r, fig.width=9, fig.height=7, echo=FALSE}
 
@@ -298,6 +326,14 @@ ggplot(fullsample_labs[fullsample_labs$testname == "post",],aes(x=variable, fill
   labs(title = "Satisfaction", x="Item")
 
 ```
+
+### Free Text Responses
+
+```{r, echo=FALSE}
+fullsample$`Free Text Feedback` <- as.character(fullsample$`Free Text Feedback`)
+fullsample[!is.na(fullsample$`Free Text Feedback`) & fullsample$`Free Text Feedback` != "", "Free Text Feedback"]
+```
+
 
 ## Conclusions
 

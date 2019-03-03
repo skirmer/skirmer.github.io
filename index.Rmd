@@ -188,11 +188,11 @@ See what I'm reading on Pocket: http://getpocket.com/@data_stephanie
 
 ### Events and Fun Stuff 
 
-[Applications are now open for a great one day workshop I am co-organizing with Angela Li!](http://forwards.github.io/edu/chicago/) This will be the very first USA-based [R Forwards](https://twitter.com/R_Forwards) women's #rstats package workshop, and it's going to be awesome. Don't miss it!
+I'll be presenting at [Metis Chicago on Tuesday, March 5](https://www.meetup.com/Metis-Chicago-Data-Science/events/259174082/). Come listen to me discuss the work we do at Uptake and how we are innovating data science!
 
 <BR>
 
-Unfortunately the **Domino Data Science Pop-Up** in Chicago on December 6 was canceled, but I hope to be presenting this material in the spring at another conference - watch this space! This talk will be about integrating Elasticsearch storage with R or Python analytics workflows. 
+You can see my talk about integrating Elasticsearch storage with R or Python analytics workflows on [May 24 in NYC at Rev](https://rev.dominodatalab.com/agenda/integrating-elasticsearch-into-analytics-workflows/)!
 
 <BR>
 
