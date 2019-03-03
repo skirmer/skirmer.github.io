@@ -1,0 +1,313 @@
+---
+title: "R Forwards Chicago 2019 Package Workshop Evaluations"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+
+library(ggplot2)
+library(patchwork)
+library(gganimate)
+library(dplyr)
+library(reshape)
+
+knitr::opts_chunk$set(echo = TRUE)
+
+pretest <- read.csv("R Forwards Package Workshop Learning Pre-Survey.csv")
+posttest <- read.csv("R Forwards Package Workshop Learning Post-Survey.csv")
+
+pretest$Which.of.the.following.things.describes.you. <- ifelse(pretest$Which.of.the.following.things.describes.you.
+                                                               %in% c("Intermediate ", "Student;Young Professional","Young Professional;5 years experience", "Young Professional;Experienced Professional"), "Other", as.character(pretest$Which.of.the.following.things.describes.you.))
+
+pretest$Which.of.the.following.things.describes.you. = factor(pretest$Which.of.the.following.things.describes.you.
+                            ,levels= c("Student"
+                                      , "Young Professional"
+                                      , "Experienced Professional"
+                                      , "Other"))
+
+
+posttest$Which.of.the.following.things.describes.you. <- ifelse(posttest$Which.of.the.following.things.describes.you.
+                                                               %in% c("Still intermediate", "Student;Young Professional","Young Professional;5 years experience", "Young Professional;Experienced Professional"), "Other", as.character(posttest$Which.of.the.following.things.describes.you.))
+
+posttest$Which.of.the.following.things.describes.you. = factor(posttest$Which.of.the.following.things.describes.you.
+                            ,levels= c("Student"
+                                      , "Young Professional"
+                                      , "Experienced Professional"
+                                      , "Other"))
+```
+
+```{r, echo=FALSE}
+# Rename columns
+pretest_labs <- c("Timestamp","Can Find \n R Packages", "Can Use \n R Projects", "Has Github Acct"
+                  , "Wrote \n Unit Test", "Regularly \n Work in R","Building \n R Functions"
+                  , "Constructing \n R Packages"
+                  , "Creating \n Unit Tests", "Using Git/Github", "Using R \n Projects"
+                  , "Professional Level", "No Open \n Source Experience", "Chicago Local")
+
+colnames(pretest) <- pretest_labs
+
+```
+
+```{r, echo=FALSE}
+# Rename columns
+posttest_labs <- c(pretest_labs, "Location \n Convenience", "Facilities", "Food"
+                   , "Morning \n Teaching Skill", "Morning Content \n Expertise"
+                   , "Afternoon \n Teaching Skill", "Afternoon Content \n Expertise"
+                   , "Time for \n Practice", "Application \n Process", "Free Text Feedback")
+
+colnames(posttest) <- posttest_labs
+
+```
+
+# Overview
+This analysis represents the responses provided by attendees at the R Forwards Package Workshop
+held in [Chicago on February 23, 2019](https://forwards.github.io/edu/chicago/).
+
+About 30 women attended the workshop, and we have survey responses from 28 for the pre-survey 
+and 29 for the post-survey.
+
+## The Questions
+
+We purposely designed this survey to have only questions that might be relevant
+to improving the teaching of workshops like this in the future, and avoided asking
+ for too much personal information about students.
+ Because all responses on each survey are anonymous, we cannot connect the responses in
+ the two surveys directly.
+
+### Pre-test Items 
+```{r, echo=FALSE}
+colnames(pretest)
+```
+
+### Post-test Items
+```{r, echo=FALSE}
+colnames(posttest)
+```
+
+
+
+
+## Pre-test Descriptive Statistics {.tabset}
+
+### Starting Characteristics
+```{r, fig.width=8, fig.height=5, echo=FALSE}
+p_tomelt <- pretest[, c(1:6)]
+pretest_long <- melt(p_tomelt, id.vars = "Timestamp")
+
+ggplot(pretest_long,aes(x=variable, fill=value))+
+  theme_bw()+
+  geom_bar()+
+  labs(title = "Initial Skills Assessment", x="Skill")
+
+```
+
+```{r, fig.width=8, fig.height=5, echo=FALSE}
+p_tomelt <- pretest[, c(1, 7:11)]
+pretest_long <- melt(p_tomelt, id.vars = "Timestamp")
+pretest_long$value = factor(pretest_long$value
+                            ,levels= c("Very comfortable"
+                                      , "Somewhat comfortable"
+                                      , "Not very comfortable"
+                                      , "Totally uncomfortable"
+                                      , "I don't even know what that is"))
+
+ggplot(pretest_long,aes(x=variable, fill=value))+
+  theme_bw()+ 
+  theme(legend.position="bottom")+guides(fill=guide_legend(nrow=2,byrow=TRUE))+
+  geom_bar()+
+  labs(title = "Comfort with Activities", x="Activity")
+
+```
+
+### Student Backgrounds
+```{r, fig.width=8, fig.height=5, echo=FALSE}
+
+p_tomelt <- pretest[, c(1, 12:14)]
+pretest_long <- melt(p_tomelt, id.vars = "Timestamp")
+
+plevel <- ggplot(pretest_long[pretest_long$variable == "Professional Level", ],aes(x=variable, fill=value))+
+  theme_bw()+ 
+  theme(legend.position="bottom")+guides(fill=guide_legend(nrow=2,byrow=TRUE))+
+  geom_bar()+
+  labs(title = "Background", x="Question")
+
+tf <- ggplot(pretest_long[pretest_long$variable %in% c("Open Source Experience", "Chicago Local"), ],aes(x=variable, fill=value))+
+  theme_bw()+ 
+  theme(legend.position="bottom")+guides(fill=guide_legend(nrow=1,byrow=TRUE))+
+  geom_bar()+
+  labs(title = "Background", x="Question")
+
+plevel + tf
+```
+
+
+### By Professional Level
+Are there differences in these starting skills based on the individual's level of professional experience?
+
+```{r, fig.width=10, fig.height=8, echo=FALSE}
+p_tomelt <- pretest[, c(1, 12, 2:6)]
+pretest_long <- melt(p_tomelt, id.vars = c("Timestamp","Professional Level"))
+
+ggplot(pretest_long,aes(x=variable, fill=value))+
+  facet_wrap(`Professional Level`~.)+
+  theme_bw()+
+  theme(legend.position="bottom")+
+  geom_bar()+
+  labs(title = "Initial Skills Assessment", x="Skill")
+
+```
+
+## Post-test Comparison {.tabset}
+
+```{r, echo=FALSE}
+pretest$testname <- "pre"
+posttest$testname <- "post"
+
+fullsample <- merge(pretest, posttest, by.x=colnames(pretest), by.y=colnames(pretest), all=T)
+
+```
+
+
+### Activities
+
+```{r, echo=FALSE}
+
+p_tomelt <- fullsample[, c(1,15, 7:11)]
+
+fullsample_labs <- melt(p_tomelt, id.vars = c("Timestamp", "testname"))
+fullsample_labs$value = factor(fullsample_labs$value
+                            ,levels= c("Very comfortable"
+                                      , "Somewhat comfortable"
+                                      , "Not very comfortable"
+                                      , "Totally uncomfortable"
+                                      , "I don't even know what that is"))
+
+fullsample_labs$testname = factor(fullsample_labs$testname
+                            ,levels= c("pre"
+                                      , "post"))
+
+```
+
+```{r, fig.width=10, fig.height=8, echo=FALSE}
+ggplot(fullsample_labs,aes(x=variable, fill=value))+
+  theme_bw()+ 
+  theme(legend.position="bottom")+guides(fill=guide_legend(nrow=2,byrow=TRUE))+
+  geom_bar(stat = 'count', position = 'stack') +
+  labs(title = "Comfort with Activities: {closest_state}", x="Activity")+
+  transition_states(
+    testname,
+    transition_length = 2,
+    state_length = 1
+  ) +
+  enter_fade() + 
+  exit_shrink() +
+  ease_aes('sine-in-out')
+
+```
+
+```{r, fig.width=10, fig.height=5, echo=FALSE}
+
+ggplot(fullsample_labs,aes(x=variable, fill=value))+
+  facet_grid(.~testname)+
+  theme_bw()+ 
+  theme(legend.position="bottom")+guides(fill=guide_legend(nrow=2,byrow=TRUE))+
+  geom_bar(stat = 'count', position = 'stack') +
+  labs(title = "Comfort with Activities", x="Activity")
+
+```
+
+
+### Activities by Professional Level
+
+
+```{r, echo=FALSE}
+p_tomelt <- fullsample[, c(1,15,12, 7:11)]
+
+fullsample_labs <- melt(p_tomelt, id.vars = c("Timestamp", "testname", "Professional Level"))
+fullsample_labs$value = factor(fullsample_labs$value
+                            ,levels= c("Very comfortable"
+                                      , "Somewhat comfortable"
+                                      , "Not very comfortable"
+                                      , "Totally uncomfortable"
+                                      , "I don't even know what that is"))
+
+fullsample_labs$testname = factor(fullsample_labs$testname
+                            ,levels= c("pre"
+                                      , "post"))
+
+
+```
+
+```{r, fig.width=10, fig.height=8, echo=FALSE}
+
+ggplot(fullsample_labs,aes(x=variable, fill=value))+
+  facet_wrap(`Professional Level`~.)+
+  theme_bw()+ 
+  theme(legend.position="bottom")+guides(fill=guide_legend(nrow=2,byrow=TRUE))+
+  geom_bar(stat = 'count', position = 'stack') +
+  labs(title = "Comfort with Activities: {closest_state}", x="Activity")+
+  transition_states(
+    testname,
+    transition_length = 2,
+    state_length = 1
+  ) +
+  enter_fade() + 
+  exit_shrink() +
+  ease_aes('sine-in-out')
+```
+
+
+```{r, fig.width=10, fig.height=10, echo=FALSE}
+
+ggplot(fullsample_labs,aes(x=variable, fill=value))+
+  facet_wrap(`Professional Level`+testname~., ncol = 2)+
+  theme_bw()+ 
+  theme(legend.position="bottom")+guides(fill=guide_legend(nrow=2,byrow=TRUE))+
+  geom_bar(stat = 'count', position = 'stack') +
+  labs(title = "Comfort with Activities", x="Activity")
+
+```
+
+## Satisfaction with Program
+
+```{r, fig.width=9, fig.height=7, echo=FALSE}
+
+p_tomelt <- fullsample[, c(1, 15:24)]
+
+fullsample_labs <- melt(p_tomelt, id.vars = c("Timestamp", "testname"))
+fullsample_labs$value = factor(fullsample_labs$value
+                            ,levels= c("Extremely Satisfied"
+                                      , "Mostly Satisfied"
+                                      , "It was just Ok"
+                                      , "Mostly Unsatisfied"
+                                      ))
+
+fullsample_labs$testname = factor(fullsample_labs$testname
+                            ,levels= c("pre"
+                                      , "post"))
+
+
+ggplot(fullsample_labs[fullsample_labs$testname == "post",],aes(x=variable, fill=value))+
+  theme_bw()+ 
+  theme(legend.position="bottom")+guides(fill=guide_legend(nrow=2,byrow=TRUE))+
+  geom_bar(stat = 'count', position = 'stack') +
+  labs(title = "Satisfaction", x="Item")
+
+```
+
+## Conclusions
+
+Based on the responses shown, participants in the workshop clearly gained confidence 
+in their abilities to work with R Packages and Unit Tests, among other things. 
+
+We do know, from this data, that people would like more hands-on practice in the 
+workshop, and there's some level of dissatisfaction with the convenience of our location 
+- we were on the UChicago campus which is quite far from the city center. These are
+lessons we will take and apply to future efforts.
+
+Generally, this looks like a successful workshop and we are very happy with how 
+everything went!
