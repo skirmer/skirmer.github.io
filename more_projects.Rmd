@@ -1,0 +1,75 @@
+---
+title: ""
+output: 
+  html_document:
+    includes:
+        in_header: analytics.html
+        before_body: _navbar.html
+    theme: yeti
+
+---
+
+<div class = "row">
+<div class = "col-md-8">
+
+<BR>
+<BR>
+<BR>
+
+#### [Interruptions at the First Presidential Debate](https://www.kaggle.com/skirmer/d/mrisdal/2016-us-presidential-debates/interruptions-at-the-first-presidential-debate)
+
+My first natural language processing/text mining! This was a lot of fun, because I watched the debate and then was able to examine how well my actual perceptions matched what the data told me.
+
+*Key Skills: NLP, data cleaning*
+
+<BR>
+
+***
+
+<BR>
+
+#### [Manufacturers and the Drugs They Make](https://skirmer.shinyapps.io/firstapp/)
+
+This project is part of my work for Data for Democracy, a great loose association of data scientists working on projects for public benefit in their free time. This was my first Shiny app, and it's always getting a few tweaks and improvements when I have time.
+
+*Key Skills: web coding, data visualization, Shiny*
+
+<BR>
+
+***
+
+<BR>
+
+#### [Medical No-Shows in a Brazilian Hospital](https://www.kaggle.com/skirmer/d/joniarroba/noshowappointments/wip-exploring-data-cleaning-in-medical-no-shows)
+
+What features of patients help providers predict who is at risk of not showing up to appointments? This one provides insights that could be used by the actual hospital that is the source of the data that can be used to improve their patient care.
+
+*Key Skills: data cleaning, modeling, data visualization, machine learning*
+
+<BR>
+
+***
+
+<BR>
+
+#### [Dental Care in the ACA Marketplace](https://www.kaggle.com/skirmer/d/hhs/health-insurance-marketplace/dental-care-in-the-aca-marketplace)
+
+I think this is a good kernel, but it never got traction because the data was not glamorous and the results were not very cheerful. In short, the dental coverage from the ACA is seriously inadequate for population needs, unfortunately.
+
+*Key Skills: data cleaning, GIS*
+
+<BR>
+
+***
+
+<BR>
+
+#### [Tidy Text Mining in Facebook Posts](https://www.kaggle.com/skirmer/d/mchirico/cheltenham-s-facebook-group/tidy-text-mining-in-facebook-posts)
+
+In this project, I used a provided dataset of facebook posts from a community group and analyzed a few details about the content- specifically, how sentiment and gender related to "likes" on the posts.
+
+*Key Skills: NLP, data cleaning, data visualization*
+
+<BR>
+
+</div>

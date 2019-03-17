@@ -16,15 +16,15 @@ output:
 <BR>
 <BR>
 
-Hi! I'm a data scientist in industry, by way of education research. I am deeply interested in sociology, the data science industry (and making it better), R programming, and education. If you're in need of a speaker on one of these topics, let me know! 
+Hi! I'm a data scientist in industry, with a background in social science research. I am deeply interested in programming, sociology, the data science industry (and making it better), and education. If you're in need of a speaker on one of these topics, let me know! 
 
 Also, I am committed to helping other women get into the data science field, so if you need advice or support, contact me!
 
 <BR>
 <BR>
 
-I code in R, SQL, and Python, using RStudio and SublimeText as my preferred IDE/code editors, 
-or Jupyter notebooks for some Python projects. I also enjoy writing LaTeX with Sweave and R, to make snazzy print reports.
+I code in R, SQL, and Python, using RStudio and SublimeText/Atom as my preferred IDE/code editors, 
+or Jupyter Labs for some Python projects. 
 
 To see more about what kinds of data science skills I have, check out my projects on this page,
 or [my Github profile](http://github.com/skirmer).
@@ -39,23 +39,31 @@ This site is built in RMarkdown and a bit of Javascript.
 ***
 <BR>
 
+
 ## Projects
 
 I enjoy doing data projects in my spare time, and while you can find most of them on kaggle or github, here are direct links to some of my favorites.
 
 <BR>
 
+#### [Evaluation of R Forwards Package Workshop](https://skirmer.github.io/ChiEval)  
+I recently co-taught a daylong course for a group of 30 women/gender nonbinary students about how to write R packages- we had a really good time! I analyzed our pre- and post- surveys in a notebook, to check how effective the day was for students.
+
+
+<BR>
+
+***
+
+<BR>
+
 #### [Kiva Loan Data Analysis](https://skirmer.shinyapps.io/Kiva_Loans/)  
 
-This is a work in progress, but I'm planning to complete several components:   
-
-* GIS analysis of loans by country with attention to economic conditions in countries (done) 
+* GIS analysis of loans by country with attention to economic conditions in countries 
 * Drilldown on some of the thematic areas of the loans ([See Agriculture](https://github.com/skirmer/kaggle_kiva/blob/master/ag_drilldown.Rmd))
 * Data munging of the regional data provided 
 * Exploring modeling potential- if repayment time can be predicted, or 
 anomaly detection if labeling outcomes is not possible  
 
-Come back to check out the latest as I continue working!
 
 <BR>
 
@@ -103,63 +111,7 @@ Among the public datasets available on Kaggle is this one, describing the crimes
 
 ***
 
-<BR>
-
-#### [Interruptions at the First Presidential Debate](https://www.kaggle.com/skirmer/d/mrisdal/2016-us-presidential-debates/interruptions-at-the-first-presidential-debate)
-
-My first natural language processing/text mining! This was a lot of fun, because I watched the debate and then was able to examine how well my actual perceptions matched what the data told me.
-
-*Key Skills: NLP, data cleaning*
-
-<BR>
-
-***
-
-<BR>
-
-#### [Manufacturers and the Drugs They Make](https://skirmer.shinyapps.io/firstapp/)
-
-This project is part of my work for Data for Democracy, a great loose association of data scientists working on projects for public benefit in their free time. This was my first Shiny app, and it's always getting a few tweaks and improvements when I have time.
-
-*Key Skills: web coding, data visualization, Shiny*
-
-<BR>
-
-***
-
-<BR>
-
-#### [Medical No-Shows in a Brazilian Hospital](https://www.kaggle.com/skirmer/d/joniarroba/noshowappointments/wip-exploring-data-cleaning-in-medical-no-shows)
-
-What features of patients help providers predict who is at risk of not showing up to appointments? This one provides insights that could be used by the actual hospital that is the source of the data that can be used to improve their patient care.
-
-*Key Skills: data cleaning, modeling, data visualization, machine learning*
-
-<BR>
-
-***
-
-<BR>
-
-#### [Dental Care in the ACA Marketplace](https://www.kaggle.com/skirmer/d/hhs/health-insurance-marketplace/dental-care-in-the-aca-marketplace)
-
-I think this is a good kernel, but it never got traction because the data was not glamorous and the results were not very cheerful. In short, the dental coverage from the ACA is seriously inadequate for population needs, unfortunately.
-
-*Key Skills: data cleaning, GIS*
-
-<BR>
-
-***
-
-<BR>
-
-#### [Tidy Text Mining in Facebook Posts](https://www.kaggle.com/skirmer/d/mchirico/cheltenham-s-facebook-group/tidy-text-mining-in-facebook-posts)
-
-In this project, I used a provided dataset of facebook posts from a community group and analyzed a few details about the content- specifically, how sentiment and gender related to "likes" on the posts.
-
-*Key Skills: NLP, data cleaning, data visualization*
-
-<BR>
+###[See more projects](https://skirmer.github.io/more_projects)
 
 </div>
 
@@ -183,14 +135,10 @@ See what I'm reading on Pocket: http://getpocket.com/@data_stephanie
 ***
 
 <BR>
-<BR>
 
 
 ### Events and Fun Stuff 
 
-I'll be presenting at [Metis Chicago on Tuesday, March 5](https://www.meetup.com/Metis-Chicago-Data-Science/events/259174082/). Come listen to me discuss the work we do at Uptake and how we are innovating data science!
-
-<BR>
 
 You can see my talk about integrating Elasticsearch storage with R or Python analytics workflows on [May 24 in NYC at Rev](https://rev.dominodatalab.com/agenda/integrating-elasticsearch-into-analytics-workflows/)!
 
