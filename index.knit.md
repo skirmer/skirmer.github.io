@@ -150,16 +150,11 @@ If you came to see me speak about **R packages for team collaboration**, you can
 </font>
 <BR>
 
-```{r echo=FALSE, fig.height=15}
-#library(shiny)
-
-knitr::asis_output(htmltools::htmlPreserve('
+<!--html_preserve-->
 
 <a class="twitter-timeline" href="https://twitter.com/data_stephanie?ref_src=twsrc%5Etfw" data-height=1200 data-chrome="nofooter">Tweets by data_stephanie</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-'))
-
-```
+<!--/html_preserve-->
 
 
 </div></div>
