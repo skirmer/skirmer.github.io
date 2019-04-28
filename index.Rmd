@@ -136,11 +136,11 @@ See what I'm reading on Pocket: http://getpocket.com/@data_stephanie
 
 ### Events and Fun Stuff 
 
-I am excited to be giving the keynote at the very first [SatRdays Chicago event on April 27](https://chicago2019.satrdays.org/)! You can register and find out more at the link.
-
-<BR> 
-
 You can see my talk about integrating Elasticsearch storage with R or Python analytics workflows on [May 24 in NYC at Rev](https://rev.dominodatalab.com/agenda/integrating-elasticsearch-into-analytics-workflows/)!
+
+<BR>
+
+If you missed my keynote at the very first annual SatRdays Chicago Event on April 27, [you can watch the whole talk here](https://www.youtube.com/watch?v=quFhQvizBE8&feature=youtu.be&t=1095), alongside all the other excellent talks! 
 
 <BR>
 
