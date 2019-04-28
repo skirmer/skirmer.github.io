@@ -140,7 +140,7 @@ You can see my talk about integrating Elasticsearch storage with R or Python ana
 
 <BR>
 
-If you missed my keynote at the very first annual SatRdays Chicago Event on April 27, [you can watch the whole talk here](https://www.youtube.com/watch?v=quFhQvizBE8&feature=youtu.be&t=1095), alongside all the other excellent talks! 
+If you missed my keynote at the very first annual SatRdays Chicago Event on April 27, [you can watch the whole talk here](https://www.youtube.com/watch?v=quFhQvizBE8&feature=youtu.be&t=1095), alongside all the other excellent talks! To see my slides close up, [head over to my github](https://github.com/skirmer/satRdays_chicago_2019). 
 
 <BR>
 
