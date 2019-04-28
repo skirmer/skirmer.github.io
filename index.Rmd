@@ -25,6 +25,31 @@ body {
   padding-left: 50px;
 }
 
+.navbar-brand {
+    padding: 0 !important;
+}
+.navbar-brand img {
+    border-right: 2px solid white;
+    height:51px;
+}
+.navbar-text {
+    color: white !important;
+    font-weight: bold !important;
+    margin-left:15px;
+}
+
+.navbar-toggle{
+  padding-top:27px;
+}
+
+.nav, .navbar-nav, .navbar-right{
+  padding-top:8px;
+  padding-bottom:8px;
+}
+
+li {
+   margin-bottom:20px; 
+}
 ```
 
 
