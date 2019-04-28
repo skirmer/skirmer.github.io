@@ -5,15 +5,55 @@ output:
     includes:
         in_header: analytics.html
         before_body: _navbar.html
-    theme: yeti
-
+    theme: flatly
 ---
 
-<div class = "row">
-<div class = "col-md-8">
 
-<BR>
-<BR>
+```{css, echo=FALSE}
+body {
+  color: black;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.col-md-5{
+  padding-right: 50px;
+}
+
+.col-md-7{
+  padding-left: 50px;
+}
+
+.navbar-brand {
+    padding: 0 !important;
+}
+.navbar-brand img {
+    border-right: 2px solid white;
+    height:51px;
+}
+.navbar-text {
+    color: white !important;
+    font-weight: bold !important;
+    margin-left:15px;
+}
+
+.navbar-toggle{
+  padding-top:27px;
+}
+
+.nav, .navbar-nav, .navbar-right{
+  padding-top:8px;
+  padding-bottom:8px;
+}
+
+li {
+   margin-bottom:20px; 
+}
+```
+
+<BR><BR><BR><BR>
+
+## More Project Examples
 <BR>
 
 #### [Interruptions at the First Presidential Debate](https://www.kaggle.com/skirmer/d/mrisdal/2016-us-presidential-debates/interruptions-at-the-first-presidential-debate)
@@ -71,5 +111,3 @@ In this project, I used a provided dataset of facebook posts from a community gr
 *Key Skills: NLP, data cleaning, data visualization*
 
 <BR>
-
-</div>
