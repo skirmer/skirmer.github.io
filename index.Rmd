@@ -5,45 +5,106 @@ output:
     includes:
         in_header: analytics.html
         before_body: _navbar.html
-    theme: yeti
+    theme: flatly
 
 ---
 
-<div class = "row">
-<div class = "col-md-8">
+
+```{css, echo=FALSE}
+body {
+  color: black;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.col-md-5{
+  padding-right: 50px;
+}
+
+.col-md-7{
+  padding-left: 50px;
+}
+
+```
+
 
 <BR>
 <BR>
 <BR>
 
-Hi! I'm a data scientist in industry, with a background in social science research. I am deeply interested in programming, sociology, the data science industry (and making it better), and education. If you're in need of a speaker on one of these topics, let me know! 
+# Hi! 
 
-Also, I am committed to helping other women get into the data science field, so if you need advice or support, contact me!
+<font size = 4>
+
+I'm a data scientist in industry, with a background in social science research. I am deeply interested in programming, sociology, the data science industry (and making it better), and education.  
+
+</font>
 
 <BR>
-<BR>
 
-I code in R, SQL, and Python, using RStudio and SublimeText/Atom as my preferred IDE/code editors, 
-or Jupyter Labs for some Python projects. (I'm also learning Scala!)
+<font size = 3>
+
+Contact me on twitter if you...
+
+ * need advice about getting into data science, especially if you are a woman  
+ * need a speaker to come talk at your conference about something I know  
+ * just want to talk about cool data stuff!
 
 To see more about what kinds of data science I do, check out my projects on this page,
 or [my Github profile](http://github.com/skirmer).
 
-To manage code and tasks, I use Git and Airflow. I also have experience with 
-Elasticsearch databases and R and Python package development.
-
-This site is built in RMarkdown and a bit of Javascript.
+</font>
 
 <BR>
 
 ***
+
 <BR>
+
+<!-- this is where the column layout begins -->
+<div class = "row">
+
+
+<div class = "col-md-5">
+
+## Events and Fun Stuff 
+
+<BR>
+
+You can see my talk about integrating Elasticsearch storage with R or Python analytics workflows on [May 24 in NYC at Rev](https://rev.dominodatalab.com/agenda/integrating-elasticsearch-into-analytics-workflows/)!
+
+<BR>
+
+If you missed my keynote at the very first annual SatRdays Chicago Event on April 27, [you can watch the whole talk here](https://www.youtube.com/watch?v=quFhQvizBE8&feature=youtu.be&t=1095), alongside all the other excellent talks! To see my slides close up, [head over to my github](https://github.com/skirmer/satRdays_chicago_2019). 
+
+<BR>
+
+If you came to see me speak about **R packages for team collaboration**, you can [get the slides and supporting materials on Github.](https://github.com/skirmer/odsc2018) If you have questions or need help producing your own packages, hit me up on twitter.
+
+
+</font>
+<BR>
+
+***
+
+<BR>
+```{r echo=FALSE, fig.height=15}
+
+knitr::asis_output(htmltools::htmlPreserve('
+
+<a class="twitter-timeline" href="https://twitter.com/data_stephanie?ref_src=twsrc%5Etfw" data-height=1200 data-chrome="nofooter">Tweets by data_stephanie</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+'))
+
+```
+
+
+</div>
+
+<div class = "col-md-7">
 
 
 ## Projects
-
-I enjoy doing data projects in my spare time, and while you can find most of them on kaggle or github, here are direct links to some of my favorites.
-
 <BR>
 
 #### [Evaluation of R Forwards Package Workshop](https://skirmer.github.io/ChiEval)  
@@ -113,12 +174,11 @@ Among the public datasets available on Kaggle is this one, describing the crimes
 
 ###[See more projects](https://skirmer.github.io/more_projects)
 
+</div> 
+
+
+<!-- this is where the column layout concludes -->
 </div>
-
-<div class = "col-md-4">
-
-
-<BR>
 
 <font size = 2>
 
@@ -130,36 +190,4 @@ stephanie@stephaniekirmer.com
 
 See what I'm reading on Pocket: http://getpocket.com/@data_stephanie   
 <BR>
-
-*** 
-<BR>     
-
-### Events and Fun Stuff 
-
-You can see my talk about integrating Elasticsearch storage with R or Python analytics workflows on [May 24 in NYC at Rev](https://rev.dominodatalab.com/agenda/integrating-elasticsearch-into-analytics-workflows/)!
-
-<BR>
-
-If you missed my keynote at the very first annual SatRdays Chicago Event on April 27, [you can watch the whole talk here](https://www.youtube.com/watch?v=quFhQvizBE8&feature=youtu.be&t=1095), alongside all the other excellent talks! To see my slides close up, [head over to my github](https://github.com/skirmer/satRdays_chicago_2019). 
-
-<BR>
-
-If you came to see me speak about **R packages for team collaboration**, you can [get the slides and supporting materials on Github.](https://github.com/skirmer/odsc2018) If you have questions or need help producing your own packages, hit me up on twitter.
-
-
-</font>
-<BR>
-
-```{r echo=FALSE, fig.height=15}
-#library(shiny)
-
-knitr::asis_output(htmltools::htmlPreserve('
-
-<a class="twitter-timeline" href="https://twitter.com/data_stephanie?ref_src=twsrc%5Etfw" data-height=1200 data-chrome="nofooter">Tweets by data_stephanie</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-'))
-
-```
-
-
-</div></div>
+This site is built in RMarkdown and a bit of Javascript.
