@@ -71,7 +71,7 @@ I'm a data scientist in industry, with a background in social science research. 
 
 Contact me on twitter if you...
 
- * need advice about getting into data science, especially if you are a woman  
+ * need advice about getting into data science, especially if you identify as a woman or gender nonbinary  
  * need a speaker to come talk at your conference about something I know  
  * just want to talk about cool data stuff!
 
