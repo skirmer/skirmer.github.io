@@ -18,11 +18,15 @@ body {
 }
 
 .col-md-5{
-  padding-right: 50px;
+  padding-right: 90px;
+}
+
+.header{
+
 }
 
 .col-md-7{
-  padding-left: 50px;
+  padding-left: 10px;
 }
 
 .navbar-brand {
@@ -56,7 +60,7 @@ li {
 <BR>
 <BR>
 <BR>
-
+<div class = "header">
 # Hi! 
 
 <font size = 4>
@@ -79,7 +83,7 @@ To see more about what kinds of data science I do, check out my projects on this
 or [my Github profile](http://github.com/skirmer).
 
 </font>
-
+</div>
 <BR>
 
 ***
@@ -117,7 +121,7 @@ If you came to see me speak about **R packages for team collaboration**, you can
 
 knitr::asis_output(htmltools::htmlPreserve('
 
-<a class="twitter-timeline" href="https://twitter.com/data_stephanie?ref_src=twsrc%5Etfw" data-height=1200 data-chrome="nofooter">Tweets by data_stephanie</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="twitter-timeline" href="https://twitter.com/data_stephanie?ref_src=twsrc%5Etfw" data-height=1300 data-chrome="nofooter">Tweets by data_stephanie</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 '))
 
@@ -130,6 +134,15 @@ knitr::asis_output(htmltools::htmlPreserve('
 
 
 ## Projects
+<BR>
+
+#### [Radlibs! in R](https://github.com/skirmer/radlibs) or [in Python](https://github.com/skirmer/radlibs-py)
+I wrote a silly R package called radlibs that allows you to make your own madlibs. Then I wrote a version in Python. Then I added them to CRAN and pypi. Data science doesn't always have to be serious. Use `install.packages("radlibs")` or `pip install radlibs` to get these packages. Issues and feedback welcome!
+
+<BR>
+
+***
+
 <BR>
 
 #### [Evaluation of R Forwards Package Workshop](https://skirmer.github.io/ChiEval)  
@@ -197,7 +210,7 @@ Among the public datasets available on Kaggle is this one, describing the crimes
 
 ***
 
-###[See more projects](https://skirmer.github.io/more_projects)
+### [See more projects](https://skirmer.github.io/more_projects)
 
 </div> 
 
