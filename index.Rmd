@@ -1,5 +1,5 @@
 ---
-title: ""
+pagetitle: "Stephanie Kirmer"
 output: 
   html_document:
     includes:
