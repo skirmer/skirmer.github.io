@@ -6,7 +6,6 @@ output:
         in_header: analytics.html
         before_body: _navbar.html
     theme: flatly
-
 ---
 
 
@@ -100,11 +99,11 @@ or [my Github profile](http://github.com/skirmer).
 
 <BR>
 
-You can see my talk about integrating Elasticsearch storage with R or Python analytics workflows on [May 24 in NYC at Rev](https://rev.dominodatalab.com/agenda/integrating-elasticsearch-into-analytics-workflows/)!
+You can see my talk about integrating Elasticsearch storage with R or Python analytics workflows on [May 23 in NYC at Rev](https://rev.dominodatalab.com/agenda/integrating-elasticsearch-into-analytics-workflows/)! 
 
 <BR>
 
-If you missed my keynote at the very first annual SatRdays Chicago Event on April 27, [you can watch the whole talk here](https://www.youtube.com/watch?v=quFhQvizBE8&feature=youtu.be&t=1095), alongside all the other excellent talks! To see my slides close up, [head over to my github](https://github.com/skirmer/satRdays_chicago_2019). 
+If you missed my keynote at the very first annual SatRdays Chicago event on April 27, [you can watch the whole talk here](https://www.youtube.com/watch?v=quFhQvizBE8&feature=youtu.be&t=1095), alongside all the other excellent talks! To see my slides close up, [head over to my github](https://github.com/skirmer/satRdays_chicago_2019). 
 
 <BR>
 
