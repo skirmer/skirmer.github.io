@@ -99,15 +99,26 @@ or [my Github profile](http://github.com/skirmer).
 
 <BR>
 
-You can see my talk about integrating Elasticsearch storage with R or Python analytics workflows on [May 23 in NYC at Rev](https://rev.dominodatalab.com/agenda/integrating-elasticsearch-into-analytics-workflows/)! 
+I'll be speaking about when to try using animation in your data viz, and how to do it, in July at R-Ladies/Data Viz Society- check back soon for more details!
 
 <BR>
 
-If you missed my keynote at the very first annual SatRdays Chicago event on April 27, [you can watch the whole talk here](https://www.youtube.com/watch?v=quFhQvizBE8&feature=youtu.be&t=1095), alongside all the other excellent talks! To see my slides close up, [head over to my github](https://github.com/skirmer/satRdays_chicago_2019). 
+**Past Appearances:**
 
-<BR>
+[Listen to my conversation with Eric Kavanagh on Inside Analytics](https://insideanalysis.com/insights-from-domino-data-labs-2019-rev2-conference/)  
 
-If you came to see me speak about **R packages for team collaboration**, you can [get the slides and supporting materials on Github.](https://github.com/skirmer/odsc2018) If you have questions or need help producing your own packages, hit me up on twitter.
+[See my slides from REV 2, 5/23/19](https://github.com/skirmer/elastic_analytics) Video coming soon!  
+
+[See my keynote from satRdays Chicago, 4/27/19](https://www.youtube.com/watch?v=quFhQvizBE8&feature=youtu.be&t=1095)  
+
+[To see my satRday slides close up, head over to my github](https://github.com/skirmer/satRdays_chicago_2019)  
+
+**R packages for team collaboration**: from ODSC East 2018, EARL Roadshow Seattle 2018, and Metis Speaker Series
+[Get the slides and supporting materials on Github](https://github.com/skirmer/odsc2018) 
+
+[R package construction](https://github.com/skirmer/r_packages) from the Women's Package Workshop in February 2019
+
+If you have questions or need help producing your own packages or completing any of my tutorials, hit me up on twitter!
 
 
 </font>
