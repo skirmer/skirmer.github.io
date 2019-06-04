@@ -99,24 +99,30 @@ or [my Github profile](http://github.com/skirmer).
 
 <BR>
 
-I'll be speaking about when to try using animation in your data viz, and how to do it, in July at R-Ladies/Data Viz Society- check back soon for more details!
-
+I'll be speaking about when to try using animation in your data viz, and how to do it, in July at R-Ladies/Data Viz Society- check back soon for more details!  
 <BR>
+
+*** 
 
 **Past Appearances:**
 
 [Listen to my conversation with Eric Kavanagh on Inside Analytics](https://insideanalysis.com/insights-from-domino-data-labs-2019-rev2-conference/)  
+<BR>
 
-[See my slides from REV 2, 5/23/19](https://github.com/skirmer/elastic_analytics) Video coming soon!  
+**Elasticsearch End User Workflows in R and Python** (5/23/19): [See my slides from REV 2](https://github.com/skirmer/elastic_analytics) Video coming soon!  
+<BR>
 
-[See my keynote from satRdays Chicago, 4/27/19](https://www.youtube.com/watch?v=quFhQvizBE8&feature=youtu.be&t=1095)  
+**satRday Chicago Keynote** (4/27/19):
+[See my keynote](https://www.youtube.com/watch?v=quFhQvizBE8&feature=youtu.be&t=1095)  
 
 [To see my satRday slides close up, head over to my github](https://github.com/skirmer/satRdays_chicago_2019)  
+<BR>
 
 **R packages for team collaboration**: from ODSC East 2018, EARL Roadshow Seattle 2018, and Metis Speaker Series
-[Get the slides and supporting materials on Github](https://github.com/skirmer/odsc2018) 
-
-[R package construction](https://github.com/skirmer/r_packages) from the Women's Package Workshop in February 2019
+[Get the slides and supporting materials on Github](https://github.com/skirmer/odsc2018)  
+<BR>
+  
+**R Package Building Workshop** (Feb 2019): [slides on github](https://github.com/skirmer/r_packages) 
 
 If you have questions or need help producing your own packages or completing any of my tutorials, hit me up on twitter!
 
@@ -127,11 +133,11 @@ If you have questions or need help producing your own packages or completing any
 ***
 
 <BR>
-```{r echo=FALSE, fig.height=15}
+```{r echo=FALSE, fig.height=13}
 
 knitr::asis_output(htmltools::htmlPreserve('
 
-<a class="twitter-timeline" href="https://twitter.com/data_stephanie?ref_src=twsrc%5Etfw" data-height=1300 data-chrome="nofooter">Tweets by data_stephanie</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="twitter-timeline" href="https://twitter.com/data_stephanie?ref_src=twsrc%5Etfw" data-height=1100 data-chrome="nofooter">Tweets by data_stephanie</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 '))
 
@@ -238,4 +244,4 @@ stephanie@stephaniekirmer.com
 
 See what I'm reading on Pocket: http://getpocket.com/@data_stephanie   
 <BR>
-This site is built in RMarkdown and a bit of Javascript.
+This site is built by me, in RMarkdown and a bit of Javascript.
