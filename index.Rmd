@@ -99,7 +99,8 @@ or [my Github profile](http://github.com/skirmer).
 
 <BR>
 
-I'll be speaking about when to try using animation in your data viz, and how to do it, in July at R-Ladies/Data Viz Society- check back soon for more details!  
+Come see me present about animating data visualizations using ggplot and gganimate on July 24 at the R Ladies Chicago x Data Viz Community meetup! [Register here](https://www.meetup.com/Chicago-Data-Viz-Community/events/262328174/) and [see my materials ahead of time here](https://github.com/skirmer/animating_dataviz).
+
 <BR>
 
 *** 
@@ -109,11 +110,11 @@ I'll be speaking about when to try using animation in your data viz, and how to 
 [Listen to my conversation with Eric Kavanagh on Inside Analytics](https://insideanalysis.com/insights-from-domino-data-labs-2019-rev2-conference/)  
 <BR>
 
-**Elasticsearch End User Workflows in R and Python** (5/23/19): [See my slides from REV 2](https://github.com/skirmer/elastic_analytics) Video coming soon!  
-<BR>
+**Elasticsearch End User Workflows in R and Python** (5/23/19): [See the video of my talk at REV2](https://dominodatalab.wistia.com/medias/i0f5by0f4q) or [see my slides](https://github.com/skirmer/elastic_analytics) 
+<BR><BR>
 
 **satRday Chicago Keynote** (4/27/19):
-[See my keynote](https://www.youtube.com/watch?v=quFhQvizBE8&feature=youtu.be&t=1095)  
+[See video ofg w my keynote](https://www.youtube.com/watch?v=quFhQvizBE8&feature=youtu.be&t=1095)  
 
 [To see my satRday slides close up, head over to my github](https://github.com/skirmer/satRdays_chicago_2019)  
 <BR>
