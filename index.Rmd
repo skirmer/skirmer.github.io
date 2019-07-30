@@ -107,7 +107,7 @@ I will be appearing at the Washington DC R Conference in November - check back s
 
 **Past Appearances:**
 
-**Animation for Effective Data Visualization with R**: (7/24/19) for R-Ladies Chicago and Chicago Data Visualization Community
+**Animation for Effective Data Visualization with R**: (7/24/19) for R-Ladies Chicago and Chicago Data Visualization Community   
 [Get the slides and supporting materials on Github](https://github.com/skirmer/animating_dataviz)  
 <BR>
 
@@ -118,12 +118,12 @@ I will be appearing at the Washington DC R Conference in November - check back s
 <BR><BR>
 
 **satRday Chicago Keynote** (4/27/19):
-[See video ofg w my keynote](https://www.youtube.com/watch?v=quFhQvizBE8&feature=youtu.be&t=1095)  
-
+[See video of my keynote](https://www.youtube.com/watch?v=quFhQvizBE8&feature=youtu.be&t=1095)  
+  
 [To see my satRday slides close up, head over to my github](https://github.com/skirmer/satRdays_chicago_2019)  
 <BR>
 
-**R packages for team collaboration**: from ODSC East 2018, EARL Roadshow Seattle 2018, and Metis Speaker Series
+**R packages for team collaboration**: from ODSC East 2018, EARL Roadshow Seattle 2018, and Metis Speaker Series  
 [Get the slides and supporting materials on Github](https://github.com/skirmer/odsc2018)  
 <BR>
   
