@@ -163,6 +163,10 @@ I appeared in a video series for Uptake about how modeling industrial failures w
 
 <BR>
 
+***
+
+<BR>
+
 #### [Radlibs! in R](https://github.com/skirmer/radlibs) or [in Python](https://github.com/skirmer/radlibs-py)
 I wrote a silly R package called radlibs that allows you to make your own madlibs. Then I wrote a version in Python. Then I added them to CRAN and pypi. Data science doesn't always have to be serious. Use `install.packages("radlibs")` or `pip install radlibs` to get these packages. Issues and feedback welcome!
 
