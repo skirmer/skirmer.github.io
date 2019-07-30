@@ -99,13 +99,17 @@ or [my Github profile](http://github.com/skirmer).
 
 <BR>
 
-Come see me present about animating data visualizations using ggplot and gganimate on July 24 at the R Ladies Chicago x Data Viz Community meetup! [Register here](https://www.meetup.com/Chicago-Data-Viz-Community/events/262328174/) and [see my materials ahead of time here](https://github.com/skirmer/animating_dataviz).
+I will be appearing at the Washington DC R Conference in November - check back soon for more details!
 
 <BR>
 
 *** 
 
 **Past Appearances:**
+
+**Animation for Effective Data Visualization with R**: (7/24/19) for R-Ladies Chicago and Chicago Data Visualization Community
+[Get the slides and supporting materials on Github](https://github.com/skirmer/animating_dataviz)  
+<BR>
 
 [Listen to my conversation with Eric Kavanagh on Inside Analytics](https://insideanalysis.com/insights-from-domino-data-labs-2019-rev2-conference/)  
 <BR>
@@ -150,7 +154,13 @@ knitr::asis_output(htmltools::htmlPreserve('
 <div class = "col-md-7">
 
 
-## Projects
+## Projects and Content
+
+<BR>
+
+#### [Model Behavior Video](https://www.youtube.com/watch?v=avRLRc4wI3Q)
+I appeared in a video series for Uptake about how modeling industrial failures work - this was really fun, and I hope people will give it a look! I talk about a specific failure of diesel locomotive hardware, and how I solved it while I was working at Uptake. 
+
 <BR>
 
 #### [Radlibs! in R](https://github.com/skirmer/radlibs) or [in Python](https://github.com/skirmer/radlibs-py)
