@@ -17,7 +17,7 @@ body {
 }
 
 .col-md-5{
-  padding-right: 90px;
+  padding-right: 50px;
 }
 
 .header{
@@ -78,67 +78,17 @@ Contact me on twitter if you...
  * need a speaker to come talk at your conference about something I know  
  * just want to talk about cool data stuff!
 
-To see more about what kinds of data science I do, check out my projects on this page,
+To see more about what kinds of data science I do, check out [my projects](projects.html), my [public speeches](events.html),
 or [my Github profile](http://github.com/skirmer).
 
 </font>
 </div>
 <BR>
 
-***
+
 
 <BR>
-
-<!-- this is where the column layout begins -->
-<div class = "row">
-
-
-<div class = "col-md-5">
-
-## Events and Fun Stuff 
-
-<BR>
-
-I will be appearing at the Washington DC R Conference in November - check back soon for more details!
-
-<BR>
-
-*** 
-
-**Past Appearances:**
-
-**Animation for Effective Data Visualization with R**: (7/24/19) for R-Ladies Chicago and Chicago Data Visualization Community   
-[Get the slides and supporting materials on Github](https://github.com/skirmer/animating_dataviz)  
-<BR>
-
-[Listen to my conversation with Eric Kavanagh on Inside Analytics](https://insideanalysis.com/insights-from-domino-data-labs-2019-rev2-conference/)  
-<BR>
-
-**Elasticsearch End User Workflows in R and Python** (5/23/19): [See the video of my talk at REV2](https://dominodatalab.wistia.com/medias/i0f5by0f4q) or [see my slides](https://github.com/skirmer/elastic_analytics) 
-<BR><BR>
-
-**satRday Chicago Keynote** (4/27/19):
-[See video of my keynote](https://www.youtube.com/watch?v=quFhQvizBE8&feature=youtu.be&t=1095)  
-  
-[To see my satRday slides close up, head over to my github](https://github.com/skirmer/satRdays_chicago_2019)  
-<BR>
-
-**R packages for team collaboration**: from ODSC East 2018, EARL Roadshow Seattle 2018, and Metis Speaker Series  
-[Get the slides and supporting materials on Github](https://github.com/skirmer/odsc2018)  
-<BR>
-  
-**R Package Building Workshop** (Feb 2019): [slides on github](https://github.com/skirmer/r_packages) 
-
-If you have questions or need help producing your own packages or completing any of my tutorials, hit me up on twitter!
-
-
-</font>
-<BR>
-
-***
-
-<BR>
-```{r echo=FALSE, fig.height=13}
+```{r eval = FALSE,echo=FALSE, fig.height=13, fig.width=5}
 
 knitr::asis_output(htmltools::htmlPreserve('
 
@@ -147,107 +97,6 @@ knitr::asis_output(htmltools::htmlPreserve('
 '))
 
 ```
-
-
-</div>
-
-<div class = "col-md-7">
-
-
-## Projects and Content
-
-<BR>
-
-#### [Model Behavior Video](https://www.youtube.com/watch?v=avRLRc4wI3Q)
-I appeared in a video series for Uptake about how modeling industrial failures work - this was really fun, and I hope people will give it a look! I talk about a specific failure of diesel locomotive hardware, and how I solved it while I was working at Uptake. 
-
-<BR>
-
-***
-
-<BR>
-
-#### [Radlibs! in R](https://github.com/skirmer/radlibs) or [in Python](https://github.com/skirmer/radlibs-py)
-I wrote a silly R package called radlibs that allows you to make your own madlibs. Then I wrote a version in Python. Then I added them to CRAN and pypi. Data science doesn't always have to be serious. Use `install.packages("radlibs")` or `pip install radlibs` to get these packages. Issues and feedback welcome!
-
-<BR>
-
-***
-
-<BR>
-
-#### [Evaluation of R Forwards Package Workshop](https://skirmer.github.io/ChiEval)  
-I recently co-taught a daylong course for a group of 30 women/gender nonbinary students about how to write R packages- we had a really good time! I analyzed our pre- and post- surveys in a notebook, to check how effective the day was for students.
-
-
-<BR>
-
-***
-
-<BR>
-
-#### [Kiva Loan Data Analysis](https://skirmer.shinyapps.io/Kiva_Loans/)  
-
-* GIS analysis of loans by country with attention to economic conditions in countries 
-* Drilldown on some of the thematic areas of the loans
-* Data munging of the regional data provided 
-* Exploring modeling potential- if repayment time can be predicted, or 
-anomaly detection if labeling outcomes is not possible  
-
-
-<BR>
-
-***
-
-<BR>
-
-#### [Fun with Real Estate Data](https://www.kaggle.com/skirmer/house-prices-advanced-regression-techniques/fun-with-real-estate-data)
-
-This project is a kaggle kernel, in which I walked the reader through the process of cleaning and modeling the data from a real estate prices dataset, using linear modeling, random forests, and gradient boosting (xgboost). My most popular kernel to date! This one also produced respectable competition results, and was chosen for special recognition by the Kaggle admins. (I won a mug!)
-
-Update: Read the interview I did regarding this project (and the other fabulous winners)! 
-http://blog.kaggle.com/2017/03/29/predicting-house-prices-playground-competition-winning-kernels
-
-*Key Skills: machine learning, data cleaning*  
-
-<BR>
-
-***
-
-
-
-<BR>
-
-#### [Data for Democracy 2017 Hackathon](https://skirmer.shinyapps.io/chilobby/)
-
-I led a team working on the Chicago Lobbying project, which produced some great output, including this visualization of lobbying and aldermen in Chicago. The project is continuing and building out new functionality. I personally cleaned some of the data underlying, but my biggest contribution was organizing, planning, and leadership. Additional results:
-https://data.world/lilianhj/chicago-lobbyists
-
-Update: Check out a case study by the fine folks at data.world discussing the work that went in to this project: https://medium.com/@sharonbrener/dbf30aeee70b
-
-<BR>
-
-***
-
-<BR>
-
-#### [Exploring Austin, Texas Crime](https://www.kaggle.com/skirmer/exploratory-analysis-of-austin-crime-with-maps)
-
-Among the public datasets available on Kaggle is this one, describing the crimes that have occurred in Austin, TX over a couple of years. This project cleans the data, does some exploratory analysis, and maps various kinds of crime by district
-
-*Key Skills: data cleaning, GIS*
-
-<BR>
-
-***
-
-### [See more projects](https://skirmer.github.io/more_projects)
-
-</div> 
-
-
-<!-- this is where the column layout concludes -->
-</div>
 
 <font size = 2>
 
