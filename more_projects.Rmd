@@ -12,33 +12,25 @@ output:
 ```{css, echo=FALSE}
 body {
   color: black;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
-.col-md-5{
-  padding-right: 50px;
-}
+.header{
 
-.col-md-7{
-  padding-left: 50px;
 }
 
 .navbar-brand {
     padding: 0 !important;
 }
-.navbar-brand img {
-    border-right: 2px solid white;
-    height:51px;
-}
+# .navbar-brand img {
+#     border-right: 2px solid white;
+#     height:51px;
+# }
 .navbar-text {
     color: white !important;
     font-weight: bold !important;
     margin-left:15px;
-}
-
-.navbar-toggle{
-  padding-top:27px;
 }
 
 .nav, .navbar-nav, .navbar-right{
@@ -46,10 +38,8 @@ body {
   padding-bottom:8px;
 }
 
-li {
-   margin-bottom:20px; 
-}
 ```
+
 
 <BR><BR><BR><BR>
 
