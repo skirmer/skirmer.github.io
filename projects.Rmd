@@ -12,8 +12,8 @@ output:
 ```{css, echo=FALSE}
 body {
   color: black;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .header{
@@ -23,18 +23,14 @@ body {
 .navbar-brand {
     padding: 0 !important;
 }
-.navbar-brand img {
-    border-right: 2px solid white;
-    height:51px;
-}
+# .navbar-brand img {
+#     border-right: 2px solid white;
+#     height:51px;
+# }
 .navbar-text {
     color: white !important;
     font-weight: bold !important;
     margin-left:15px;
-}
-
-.navbar-toggle{
-  padding-top:27px;
 }
 
 .nav, .navbar-nav, .navbar-right{
@@ -42,9 +38,6 @@ body {
   padding-bottom:8px;
 }
 
-li {
-   margin-bottom:20px; 
-}
 ```
 
 
@@ -142,4 +135,9 @@ Among the public datasets available on Kaggle is this one, describing the crimes
 
 ### [See more projects](https://skirmer.github.io/more_projects)
 
+<font size = 2>
+stephanie@stephaniekirmer.com 
+<BR> [Kaggle](http://www.kaggle.com/skirmer) | [Twitter](https://twitter.com/data_stephanie) | [Github](http://github.com/skirmer) | [Linkedin](http://linkedin.com/in/skirmer)
+
+</font>
 

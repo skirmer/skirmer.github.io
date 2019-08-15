@@ -7,40 +7,30 @@ output:
         before_body: _navbar.html
     theme: flatly
 ---
+
+
 ```{css, echo=FALSE}
 body {
   color: black;
-  margin-left: 40px;
-  margin-right: 40px;
-}
-
-.col-md-5{
-  padding-right: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .header{
 
 }
 
-.col-md-7{
-  padding-left: 10px;
-}
-
 .navbar-brand {
     padding: 0 !important;
 }
-.navbar-brand img {
-    border-right: 2px solid white;
-    height:51px;
-}
+# .navbar-brand img {
+#     border-right: 2px solid white;
+#     height:51px;
+# }
 .navbar-text {
     color: white !important;
     font-weight: bold !important;
     margin-left:15px;
-}
-
-.navbar-toggle{
-  padding-top:27px;
 }
 
 .nav, .navbar-nav, .navbar-right{
@@ -48,9 +38,6 @@ body {
   padding-bottom:8px;
 }
 
-li {
-   margin-bottom:20px; 
-}
 ```
 
 
@@ -62,44 +49,42 @@ li {
 ## Events and Fun Stuff 
 
 <BR>
+<font size = 4>
 
 <B>Up next:</b> see me speaking at <a href="https://odsc.com/california/">ODSC West</a> in October, and at the <a href="https://dc.rstats.ai/">Washington DC R Conference</a> in November!
 
 <BR>
-
-*** 
-
-## Past Appearances
-
 <BR>
 
-### Animation for Effective Data Visualization with R   
+</font>
+
+#### Animation for Effective Data Visualization with R   
 (7/24/19)   
 R-Ladies Chicago and Chicago Data Visualization Community    
 [Get the slides and supporting materials on Github](https://github.com/skirmer/animating_dataviz)  
 <BR>
 
-### Inside Analytics   
+#### Inside Analytics   
 [Listen to my conversation with Eric Kavanagh on Inside Analytics](https://insideanalysis.com/insights-from-domino-data-labs-2019-rev2-conference/)  
 <BR>
 
-### Elasticsearch End User Workflows in R and Python  
+#### Elasticsearch End User Workflows in R and Python  
 (5/23/19)  
 [See the video of my talk at REV2](https://dominodatalab.wistia.com/medias/i0f5by0f4q) or [see my slides](https://github.com/skirmer/elastic_analytics) 
 <BR><BR>
 
-### satRday Chicago Keynote  
+#### satRday Chicago Keynote  
 (4/27/19)  
 [See video of my keynote](https://www.youtube.com/watch?v=quFhQvizBE8&feature=youtu.be&t=1095)  
 [To see my satRday slides close up, head over to my github](https://github.com/skirmer/satRdays_chicago_2019)  
 <BR>
 
-### R packages for team collaboration   
+#### R packages for team collaboration   
 ODSC East 2018, EARL Roadshow Seattle 2018, and Metis Speaker Series  
 [Get the slides and supporting materials on Github](https://github.com/skirmer/odsc2018)  
 <BR>
   
-### R Package Building Workshop   
+#### R Package Building Workshop   
 (Feb 2019)   
 [slides on github](https://github.com/skirmer/r_packages) 
 
@@ -107,5 +92,12 @@ ODSC East 2018, EARL Roadshow Seattle 2018, and Metis Speaker Series
 
 If you have questions or need help producing your own packages or completing any of my tutorials, hit me up on twitter!
 
+
+</font>
+<br><BR>
+<font size = 2> Looking for a speaker? Contact me at stephanie@stephaniekirmer.com. 
+
+
+<BR> [Kaggle](http://www.kaggle.com/skirmer) | [Twitter](https://twitter.com/data_stephanie) | [Github](http://github.com/skirmer) | [Linkedin](http://linkedin.com/in/skirmer)
 
 </font>
