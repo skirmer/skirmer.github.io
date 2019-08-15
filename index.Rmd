@@ -73,11 +73,11 @@ or [my Github profile](http://github.com/skirmer).
 
 
 <BR>
-```{r eval = FALSE,echo=FALSE, fig.height=13, fig.width=5}
+```{r eval = TRUE,echo=FALSE, fig.height=13, fig.width=5}
 
 knitr::asis_output(htmltools::htmlPreserve('
 
-<a class="twitter-timeline" href="https://twitter.com/data_stephanie?ref_src=twsrc%5Etfw" data-height=1100 data-chrome="nofooter">Tweets by data_stephanie</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="twitter-timeline" href="https://twitter.com/data_stephanie?ref_src=twsrc%5Etfw" data-height=1100 data-width=400  data-chrome="nofooter">Tweets by data_stephanie</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 '))
 
