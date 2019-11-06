@@ -51,12 +51,18 @@ body {
 <BR>
 <font size = 4>
 
-<B>Up next:</b> see me speaking at <a href="https://odsc.com/california/">ODSC West</a> in October, and at the <a href="https://dc.rstats.ai/">Washington DC R Conference</a> in November!
+<B>Up next:</b> see me speaking at the <a href="https://dc.rstats.ai/">Washington DC R Conference</a> in November! Coming in March 2020 I will also be a speaker at Women in Data Science Chicago.
 
 <BR>
 <BR>
 
 </font>
+
+#### Elasticsearch End User Workflows in R and Python - Interactive Workshop at <a href="https://odsc.com/california/">ODSC West</a> 
+(11/1/19)  
+Video coming soon - [see my slides and scripts for following along](https://github.com/skirmer/elastic_analytics).
+<BR><BR>
+
 
 #### Animation for Effective Data Visualization with R   
 (7/24/19)   

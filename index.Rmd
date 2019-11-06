@@ -63,7 +63,7 @@ Contact me on twitter if you...
  * need a speaker to come talk at your conference about something I know  
  * just want to talk about cool data stuff!
 
-To see more about what kinds of data science I do, check out [my projects](projects.html), my [public speeches](events.html),
+To see more about what kinds of data science I do, check out my [public speeches](events.html), [my projects](projects.html), 
 or [my Github profile](http://github.com/skirmer).
 
 </font>
