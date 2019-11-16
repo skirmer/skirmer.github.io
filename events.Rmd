@@ -51,7 +51,7 @@ body {
 <BR>
 <font size = 4>
 
-<B>Up next:</b> see me speaking at the <a href="https://dc.rstats.ai/">Washington DC R Conference</a> in November! Coming in March 2020 I will also be a speaker at Women in Data Science Chicago.
+<B>Up next:</b>  Coming in March 2020 I will be a speaker at Women in Data Science Chicago.
 
 <BR>
 <BR>
@@ -66,7 +66,10 @@ Video coming soon - [see my slides and scripts for following along](https://gith
 
 #### Animation for Effective Data Visualization with R   
 (7/24/19)   
-R-Ladies Chicago and Chicago Data Visualization Community    
+R-Ladies Chicago and Chicago Data Visualization Community
+
+(11/8/2019)   
+DC R Conference   
 [Get the slides and supporting materials on Github](https://github.com/skirmer/animating_dataviz)  
 <BR>
 
