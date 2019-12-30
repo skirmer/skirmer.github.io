@@ -44,62 +44,130 @@ body {
 <BR>
 <BR>
 <BR>
+</font>
+<br>
+<font size = 3> 
+
+I love public speaking, and would be glad to join you at your event. 
+
+If you're looking for a speaker, contact me at stephanie@stephaniekirmer.com or visit [my SpeakerHub profile](https://speakerhub.com/speaker/stephanie-kirmer).
 
 
-## Events and Fun Stuff 
+I'm available to speak on the following topics:  
 
-<BR>
-<font size = 4>
+* Machine learning production workflows using AWS Redshift and Airflow  
+* Sociological insights on data science, machine learning, and/or AI  
+* Data visualization with R (including animation, network graphs, and maps/GIS)  
+* Data storage in AWS Redshift   
+* Data storage in Elasticsearch    
+* Using Elasticsearch for analytics end users  
+* R package development  
+* Collaboration across teams with R or Python libraries  
 
-<B>Up next:</b>  Coming in March 2020 I will be a speaker at Women in Data Science Chicago.
+Or other topics - please contact me if something adjacent would fit your audience! 
 
 <BR>
 <BR>
 
 </font>
 
-#### Elasticsearch End User Workflows in R and Python - Interactive Workshop at <a href="https://odsc.com/california/">ODSC West</a> 
-(11/1/19)  
-Video coming soon - [see my slides and scripts for following along](https://github.com/skirmer/elastic_analytics).
-<BR><BR>
+## Upcoming Appearances 
 
+<BR>
+<font size = 4>
 
-#### Animation for Effective Data Visualization with R   
-(7/24/19)   
-R-Ladies Chicago and Chicago Data Visualization Community
+<B>Up next:</b>  Coming in March 2020 I will be a speaker at Women in Data Science Chicago.
 
-(11/8/2019)   
-DC R Conference   
-[Get the slides and supporting materials on Github](https://github.com/skirmer/animating_dataviz)  
+</font>
+<BR>
 <BR>
 
-#### Inside Analytics   
-[Listen to my conversation with Eric Kavanagh on Inside Analytics](https://insideanalysis.com/insights-from-domino-data-labs-2019-rev2-conference/)  
+### Past Appearances 
+
+If you have any questions about any of the talks below, contact me on twitter! 
+
+#### Event: DC R Conference  
+Topic: Animation for Effective Data Visualization with R    
+Location: Washington, DC    
+Date: November 8, 2019  
+[Video](https://youtu.be/tfpa_QYHebQ)   
+Links: https://github.com/skirmer/animating_dataviz  
+https://dc.rstats.ai/2019/dcr/  
+
 <BR>
 
-#### Elasticsearch End User Workflows in R and Python  
-(5/23/19)  
-[See the video of my talk at REV2](https://dominodatalab.wistia.com/medias/i0f5by0f4q) or [see my slides](https://github.com/skirmer/elastic_analytics) 
-<BR><BR>
+#### Event: <a href="https://odsc.com/california/">ODSC West</a>  
+Topic: Elasticsearch End User Workflows in R and Python - Interactive Workshop   
+Location: San Francisco, CA  
+Date: November 1, 2019   
+Video: Coming Soon  
+Links: https://github.com/skirmer/elastic_analytics  
 
-#### satRday Chicago Keynote  
-(4/27/19)  
-[See video of my keynote](https://www.youtube.com/watch?v=quFhQvizBE8&feature=youtu.be&t=1095)  
-[To see my satRday slides close up, head over to my github](https://github.com/skirmer/satRdays_chicago_2019)  
 <BR>
 
-#### R packages for team collaboration   
-ODSC East 2018, EARL Roadshow Seattle 2018, and Metis Speaker Series  
-[Get the slides and supporting materials on Github](https://github.com/skirmer/odsc2018)  
+#### Event: R-Ladies Chicago and Chicago Data Visualization Community Joint Meetup  
+Topic: Animation for Effective Data Visualization with R   
+Location: Chicago, IL  
+Date: July 24, 2019  
+[Video](https://youtu.be/KWECmB0LUqU)    
+Links: https://github.com/skirmer/animating_dataviz    
+
 <BR>
-  
-#### R Package Building Workshop   
-(Feb 2019)   
-[slides on github](https://github.com/skirmer/r_packages) 
 
+#### Event: REV 2  
+Topic: Elasticsearch End User Workflows in R and Python   
+Location: New York, NY  
+Date: May 23, 2019  
+[Video](https://dominodatalab.wistia.com/medias/i0f5by0f4q)  
+Links: https://github.com/skirmer/elastic_analytics    
+[Listen to my conversation with Eric Kavanagh on Inside Analytics podcast](https://insideanalysis.com/insights-from-domino-data-labs-2019-rev2-conference/)  
 
+<BR>
 
-If you have questions or need help producing your own packages or completing any of my tutorials, hit me up on twitter!
+#### Event: satRday Chicago  
+Topic: Keynote: What Data Science Can Learn From Sociology  
+Location: Chicago, IL  
+Date: April 27, 2019   
+[Video](https://www.youtube.com/watch?v=quFhQvizBE8&feature=youtu.be&t=1095)    
+Links: https://github.com/skirmer/satRdays_chicago_2019  
+
+<BR>
+
+#### Event: R Package Building Workshop  
+Topic: 1 day seminar for women and nonbinary folks  
+Location: Chicago, IL  
+Date: February 23, 2019  
+Links: https://github.com/skirmer/r_packages  
+
+<BR>
+
+#### Event: EARL Roadshow Seattle 2018  
+Topic: R Packages for Team Collaboration  
+Location: Seattle, WA  
+Date: November 7, 2018    
+Links: https://github.com/skirmer/odsc2018  
+
+<BR>
+
+#### Event: ODSC East 2018  
+Topic: R Packages for Team Collaboration  
+Location: Boston, MA  
+Date: May 3, 2018    
+Links: https://github.com/skirmer/odsc2018  
+
+<BR>
+
+#### Event: Metis Speaker Series  
+Topic: R Packages for Team Collaboration  
+Location: Chicago, IL  
+Date: April 2018    
+Links: https://github.com/skirmer/odsc2018  
+
+<BR>
+
+#### Partially Derivative Podcast   
+May 9, 2017   
+http://partiallyderivative.com/podcast/2017/05/09/data-science-near-you  
 
 
 </font>
