@@ -76,7 +76,13 @@ Or other topics - please contact me if something adjacent would fit your audienc
 <BR>
 <font size = 4>
 
-<B>Up next:</b>  Coming in March 2020 I will be a speaker at Women in Data Science Chicago.
+<B>Up next:</b>  
+
+<ul>
+<li>March 6, 2020 I will be a speaker at [Women in Data Science Chicago](https://widschicago.org/).</li>
+<li>May 20-22, 2020 I will be speaking at [RE*WORK's Applied AI Summit in Austin, TX](https://www.re-work.co/events/applied-ai-summit-texas-2020) </li>
+</ul>
+
 
 </font>
 <BR>
@@ -145,7 +151,7 @@ Links: https://github.com/skirmer/r_packages
 Topic: R Packages for Team Collaboration  
 Location: Seattle, WA  
 Date: November 7, 2018    
-Links: https://github.com/skirmer/odsc2018  
+Links: https://github.com/skirmer/team_collab 
 
 <BR>
 
@@ -153,7 +159,7 @@ Links: https://github.com/skirmer/odsc2018
 Topic: R Packages for Team Collaboration  
 Location: Boston, MA  
 Date: May 3, 2018    
-Links: https://github.com/skirmer/odsc2018  
+Links: https://github.com/skirmer/team_collab  
 
 <BR>
 
@@ -161,7 +167,7 @@ Links: https://github.com/skirmer/odsc2018
 Topic: R Packages for Team Collaboration  
 Location: Chicago, IL  
 Date: April 2018    
-Links: https://github.com/skirmer/odsc2018  
+Links: https://github.com/skirmer/team_collab  
 
 <BR>
 
