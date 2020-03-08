@@ -56,6 +56,7 @@ If you're looking for a speaker, contact me at stephanie@stephaniekirmer.com or 
 I'm available to speak on the following topics:  
 
 * Machine learning production workflows using AWS Redshift and Airflow  
+* Applications of machine learning in hospitality industry or IIOT   
 * Sociological insights on data science, machine learning, and/or AI  
 * Data visualization with R (including animation, network graphs, and maps/GIS)  
 * Data storage in AWS Redshift   
@@ -79,7 +80,6 @@ Or other topics - please contact me if something adjacent would fit your audienc
 <B>Up next:</b>  
 
 <ul>
-<li>March 6, 2020 I will be a speaker at [Women in Data Science Chicago](https://widschicago.org/).</li>
 <li>May 20-22, 2020 I will be speaking at [RE*WORK's Applied AI Summit in Austin, TX](https://www.re-work.co/events/applied-ai-summit-texas-2020) </li>
 </ul>
 
@@ -91,6 +91,16 @@ Or other topics - please contact me if something adjacent would fit your audienc
 ### Past Appearances 
 
 If you have any questions about any of the talks below, contact me on twitter! 
+
+#### Event: Women in Data Science Chicago 2020  
+Topic: Better Data Science Team Collaboration with R    
+Location: Chicago, IL   
+Date: March 6, 2020    
+Links: https://github.com/skirmer/team_collab 
+https://widschicago.org/  
+
+<BR>
+
 
 #### Event: DC R Conference  
 Topic: Animation for Effective Data Visualization with R    
