@@ -79,8 +79,12 @@ Or other topics - please contact me if something adjacent would fit your audienc
 
 <B>Up next:</b>  
 
+
+**Attention friends: My upcoming talk has been postponed until later in autumn- I will see you all then, after public health circumstances improve.**
+
+
 <ul>
-<li>May 20-22, 2020 I will be speaking at [RE*WORK's Applied AI Summit in Austin, TX](https://www.re-work.co/events/applied-ai-summit-texas-2020) </li>
+<li><del>May 20-22, 2020 I will be speaking at [RE*WORK's Applied AI Summit in Austin, TX](https://www.re-work.co/events/applied-ai-summit-texas-2020) </del> </li>
 </ul>
 
 
