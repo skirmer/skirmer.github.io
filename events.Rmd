@@ -78,12 +78,8 @@ Or other topics - please contact me if something adjacent would fit your audienc
 <font size = 4>
 
 <B>Up next:</b>  
-
-
-<ul>
-<li>May 21, 2020 I will be speaking at [RE*WORK's Virtual Applied AI Summit](https://www.re-work.co/events/applied-ai-virtual-summit), previously scheduled to be in Austin, TX </li>
-</ul>
-
+I'm available! I have several proposals under consideration by conferences, and will update this page when scheduled.
+I know many conferences are canceled due to public health conditions, but I am happy to speak via video call to groups, classes, or conferences. 
 
 </font>
 <BR>
@@ -92,6 +88,17 @@ Or other topics - please contact me if something adjacent would fit your audienc
 ### Past Appearances 
 
 If you have any questions about any of the talks below, contact me on twitter! 
+
+<BR>
+
+#### Event: RE*WORK's Virtual Applied AI Summit - Spring 2020   
+
+Topic: Moderator, Panel: Strategies for Effectively Building, Deploying, and Monitoring AI    
+Location: Virtual/London, UK   
+Date: May 21, 2020    
+Links: https://www.re-work.co/events/applied-ai-virtual-summit   
+
+<BR>
 
 #### Event: Women in Data Science Chicago 2020  
 Topic: Better Data Science Team Collaboration with R    
