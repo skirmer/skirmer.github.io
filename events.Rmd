@@ -76,12 +76,17 @@ Or other topics - please contact me if something adjacent would fit your audienc
 
 <BR>
 <font size = 4>
-
-<B>Up next:</b>  
-I'm available! I have several proposals under consideration by conferences, and will update this page when scheduled.
-I know many conferences are canceled due to public health conditions, but I am happy to speak via video call to groups, classes, or conferences. 
-
 </font>
+<B>Up next:</b>  
+
+#### Event: ODSC Europe Virtual Conference 2020   
+
+Topic: Making Happy Modelers: Build and Maintain Your Data Warehouse with AWS Redshift and Airflow    
+Location: Virtual  
+Date: September 17-19, 2020    
+Links: https://odsc.com/speakers/making-happy-modelers-build-and-maintain-your-data-warehouse-with-aws-redshift-and-airflow/
+
+
 <BR>
 <BR>
 
