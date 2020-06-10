@@ -50,7 +50,14 @@ body {
 
 I love public speaking, and would be glad to join you at your event. 
 
-If you're looking for a speaker, contact me at stephanie@stephaniekirmer.com or visit [my SpeakerHub profile](https://speakerhub.com/speaker/stephanie-kirmer).
+<div style="border: .5px solid lightgrey; padding: 20px; margin-top:20px; margin-bottom:20px">
+I believe that our personal values should be reflected in our work, so I don't participate in events where I am the only woman, events with one or fewer people of color on the speaking schedule, or events organized by groups that don't explicitly support equal opportunity and require respectful conduct from attendees. 
+
+There is an abundance of extremely talented women, people of color, and LGBT+ people in the data science industry, and if you are struggling to find them for your event or job opening, please let me know and I may be able to help connect you.
+
+</div>
+
+That said, if you're looking for a speaker, contact me at stephanie@stephaniekirmer.com or visit [my SpeakerHub profile](https://speakerhub.com/speaker/stephanie-kirmer).
 
 
 I'm available to speak on the following topics:  

@@ -50,8 +50,15 @@ body {
 <font size = 4>
 
 I'm a data scientist in industry, with a background in social science research. I am deeply interested in programming, sociology, the data science industry (and making it better), and education.  
-
 </font>
+
+<div style="border: .5px solid lightgrey; padding: 20px; margin-top:20px; margin-bottom:20px">
+I believe that our personal values should be reflected in our work, so I don't participate in events where I am the only woman, events with one or fewer people of color on the speaking schedule, or events organized by groups that don't explicitly support equal opportunity and require respectful conduct from attendees. I also expect an explicit commitment to diversity and inclusion from companies where I work or consider working. 
+
+There is an abundance of extremely talented women, people of color, and LGBT+ people in the data science industry, and if you are struggling to find them for your event or job opening, please let me know and I may be able to help connect you.
+</div>
+
+
 
 <BR>
 
