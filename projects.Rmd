@@ -50,6 +50,15 @@ body {
 
 <BR>
 
+#### [Article: Make Your Data Move: Using Schedulers with Data Storage to Generate Business Value](https://opendatascience.com/make-your-data-move-using-schedulers-with-data-storage-to-generate-business-value/)
+In concert with my presentation at ODSC Europe 2020 I wrote a blog post to discuss why and how you might use scheduled jobs to make your data infrastructure work better for modeling and machine learning. 
+
+<BR>
+
+***
+
+<BR>
+
 #### [Model Behavior Video](https://www.youtube.com/watch?v=avRLRc4wI3Q)
 I appeared in a video series for Uptake about how modeling industrial failures work - this was really fun, and I hope people will give it a look! I talk about a specific failure of diesel locomotive hardware, and how I solved it while I was working at Uptake. 
 
