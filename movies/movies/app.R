@@ -13,14 +13,16 @@ library(dplyr)
 library(DT)
 
 source("fns.R")
-basic_data = read.csv("./responses/data.csv", stringsAsFactors = F)
 fields <- c("name", "title", "newtitle", "date")
+starting_data = loadData()
+history <- read.csv("history.csv")
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
     theme = shinytheme('lumen'),
     # Application title
-    titlePanel("/home/common Data Science Movie Series"),
+    titlePanel("/home/common Data Science Movie Series"), br(),
+               "August 1, 2020",
     
     sidebarLayout(
         sidebarPanel(
@@ -31,10 +33,14 @@ ui <- fluidPage(
             textInput("newtitle", "Title", ""),
             actionButton("submit", "Submit")
         ),
+
         mainPanel(
-            dataTableOutput("responses")
-        ))
-)
+          tabsetPanel(
+              tabPanel("Current vote totals", dataTableOutput("responses")), 
+              tabPanel("Our watch history", dataTableOutput("history"))
+            )
+        )
+))
 
 server <- function(input, output) {
 
@@ -50,13 +56,16 @@ server <- function(input, output) {
     observeEvent(input$submit, {
         saveData(formData())
     })
+
+    output$history <- DT::renderDataTable({history})
     
     # Show the previous responses
     # (update with current response when Submit is clicked)
     output$responses <- DT::renderDataTable({
         input$submit
         loadData()
-    })   
+    })
+    
 }
 
 # Run the application 
