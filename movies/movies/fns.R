@@ -1,5 +1,5 @@
 
-loadData <- function() {
+loadData <- function(votes=TRUE) {
   # Read all the files into a list
   files <- list.files('responses', full.names = TRUE)
   df = list()
@@ -10,10 +10,21 @@ loadData <- function() {
   data <- data.table::rbindlist(df) %>%
     as.data.frame()
   
-  data %>%
-    unique() %>%
-    group_by("Movie" = title) %>%
-    summarize(Votes = n())
+  if(votes){
+    data %>%
+      select(c("name", "title", "date")) %>%
+      unique() %>%
+      filter(title != "") %>%
+      group_by("Movie" = title) %>%
+      summarize(Votes = n())
+  } else {
+    data %>%
+      select(c("name", "newtitle", "date")) %>%
+      unique() %>%
+      filter(newtitle != "") %>%
+      group_by("Suggestion" = newtitle) %>%
+      summarize(`Times Suggested` = n())
+  }
 }
 
 saveData <- function(new_responses) {

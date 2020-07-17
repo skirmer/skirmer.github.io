@@ -1,2 +1,15 @@
-"name","title","newtitle", "date"
-"person","Knives Out","Terminator", "2020-01-01"
+"name","title","newtitle", "date", "notes", "service"
+"chris","Knives Out"," ", "2020-01-01",,
+"dzugan","Knives Out"," ", "2020-01-01",,
+"brad","Knives Out"," ", "2020-01-01",,
+"kyle","Knives Out"," ", "2020-01-01",,
+"albert","Knives Out"," ", "2020-01-01",,
+"ross","Knives Out"," ", "2020-01-01",,
+"stephanie","Terminator"," ", "2020-01-01",,
+"lambo","Terminator"," ", "2020-01-01",,
+"jayqi","Terminator"," ", "2020-01-01",,
+"sami","Terminator"," ", "2020-01-01",,
+"brad","Terminator"," ", "2020-01-01",,
+"dzugan","Clue"," ", "2020-01-01",,
+"albert","Clue"," ", "2020-01-01",,
+"ross","Clue"," ", "2020-01-01",,
