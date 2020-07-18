@@ -1,12 +1,13 @@
 
 loadData <- function(votes=TRUE) {
-  # Read all the files into a list
+  scp_download(ssh_sesh, "~/responses", to = "../")
+  
   files <- list.files('responses', full.names = TRUE)
   df = list()
   for(i in 1:length(files)){
     df[[i]] = read.csv(files[[i]], stringsAsFactors = F)
   }
-  # Concatenate all data together into one data.frame
+  #Concatenate all data together into one data.frame
   data <- data.table::rbindlist(df) %>%
     as.data.frame()
   
@@ -29,10 +30,13 @@ loadData <- function(votes=TRUE) {
 
 saveData <- function(new_responses) {
   if (exists("new_responses")) {
+
     responses = as.data.frame(new_responses)
     # Create a unique file name
     fileName <- paste0(paste(as.integer(Sys.time()), digest::digest(data, algo = "md5"), sep = "_"), ".csv")
     # Write the file to the local system
     write.csv(x = responses, file = file.path("responses", fileName), row.names = FALSE)
+    scp_upload(ssh_sesh,'./responses', to = "~/")
+    
   }
 }

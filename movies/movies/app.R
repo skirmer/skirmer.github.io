@@ -1,11 +1,3 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
 
 library(shiny)
 library(shinythemes)
@@ -16,6 +8,13 @@ source("fns.R")
 fields <- c("name", "title", "newtitle", "date")
 starting_data = loadData()
 history <- read.csv("history.csv")
+colnames(history) <- c("Movie", "Date Watched")
+
+dw <- config::get("conn")
+
+ssh_sesh <- ssh::ssh_connect(host = paste0(dw$login,'@192.168.130.8'),
+                             passwd=dw$pwd)
+
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
@@ -29,11 +28,11 @@ ui <- fluidPage(
             h4("Vote for the movie you think we should watch next!"),
             textInput("name", "Your Name", ""),
             selectInput("title", "The Movie", c("", "Terminator", "Knives Out", "Clue", "Black Mirror")),
+            h4("Submit your ideas for another movie not listed."),
+            textInput("newtitle", "Title", ""),
             selectInput("service", "Streaming service where it is", c("", "Netflix", "Amazon Prime", "Hulu", "Other")),
             textInput("notes", "Notes if we need them to find the movie", ""),
-            h5("Optional: Submit your ideas for another movie not listed."),
-            textInput("newtitle", "Title", ""),
-            actionButton("submit", "Submit")
+            actionButton("submit", "Submit Responses")
         ),
 
         mainPanel(
@@ -41,7 +40,8 @@ ui <- fluidPage(
               tabPanel("Current vote totals", dataTableOutput("responses")), 
               tabPanel("Our watch history", dataTableOutput("history")), 
               tabPanel("New suggestions received", dataTableOutput("new_ideas"))
-            )
+            ),
+          img(src='popcorn.gif', align = "center"),
         )
 ))
 
