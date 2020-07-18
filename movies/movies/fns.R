@@ -1,5 +1,5 @@
 
-loadData <- function(votes=TRUE) {
+loadData <- function(votes=TRUE, ssh_sesh) {
   scp_download(ssh_sesh, "~/responses", to = "../")
   
   files <- list.files('responses', full.names = TRUE)
@@ -28,7 +28,7 @@ loadData <- function(votes=TRUE) {
   }
 }
 
-saveData <- function(new_responses) {
+saveData <- function(new_responses, ssh_sesh) {
   if (exists("new_responses")) {
 
     responses = as.data.frame(new_responses)

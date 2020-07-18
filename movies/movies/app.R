@@ -3,17 +3,18 @@ library(shiny)
 library(shinythemes)
 library(dplyr)
 library(DT)
+library(ssh)
+library(RCurl)
+
+dw <- config::get("conn")
+ssh_sesh <- ssh::ssh_connect(host = paste0(dw$login,'@192.168.130.8'),
+                             passwd=dw$pwd)
 
 source("fns.R")
 fields <- c("name", "title", "newtitle", "date")
-starting_data = loadData()
+starting_data = loadData(ssh_sesh=ssh_sesh)
 history <- read.csv("history.csv")
 colnames(history) <- c("Movie", "Date Watched")
-
-dw <- config::get("conn")
-
-ssh_sesh <- ssh::ssh_connect(host = paste0(dw$login,'@192.168.130.8'),
-                             passwd=dw$pwd)
 
 
 # Define UI for application that draws a histogram
@@ -59,7 +60,7 @@ server <- function(input, output) {
     
     # When the Submit button is clicked, save the form data
     observeEvent(input$submit, {
-        saveData(formData())
+        saveData(formData(), ssh_sesh=ssh_sesh)
     })
 
     output$history <- DT::renderDataTable({
@@ -72,14 +73,14 @@ server <- function(input, output) {
     output$responses <- DT::renderDataTable({
         input$submit
       datatable(
-        loadData()
+        loadData(ssh_sesh=ssh_sesh)
         , rownames=FALSE)
     })
     
     output$new_ideas <- DT::renderDataTable({
       input$submit
       datatable(
-        loadData(votes = FALSE)
+        loadData(ssh_sesh=ssh_sesh, votes = FALSE)
         , rownames=FALSE)
     })
     
