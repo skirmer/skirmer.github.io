@@ -15,6 +15,7 @@ fields <- c("name", "title", "newtitle", "date")
 starting_data = loadData(ssh_sesh=ssh_sesh)
 history <- read.csv("history.csv")
 colnames(history) <- c("Movie", "Date Watched")
+movielist <- c("Terminator", "Clueless", "Escape from New York", "Clue", "Black Mirror", "The Social Network")
 
 ui <- fluidPage(
     theme = shinytheme('lumen'),
@@ -23,11 +24,15 @@ ui <- fluidPage(
     h3("Next Movie: October 10, 2020: Clue"),
     h4("Check #movie-night to vote for the next round."),
     
+
     sidebarLayout(
         sidebarPanel(
-            h4("Vote for the movie you think we should watch next!"),
+            h4("Select the movies you think we should watch next, in order of your preferences."),
             textInput("name", "Your Name", ""),
-            selectInput("title", "The Movie", c("", "Terminator", "Clueless", "Escape from New York", "Clue", "Black Mirror", "The Social Network")),
+            uiOutput("rank1"), 
+            uiOutput("rank2"),
+            uiOutput("rank3"),
+            uiOutput("rank4"),
             h4("Submit your ideas for another movie not listed."),
             textInput("newtitle", "Title", ""),
             selectInput("service", "Streaming service where it is", c("", "Netflix", "Amazon Prime", "Hulu", "Other")),
@@ -47,43 +52,77 @@ ui <- fluidPage(
         )
 ))
 
-server <- function(input, output) {
+server <- function(input, output, session) {
 
     # Whenever a field is filled, aggregate all form data
     formData <- reactive({ 
         data.frame("name"=as.character(input$name), 
-                   "title"=as.character(input$title), 
+                   "rank1"=as.character(input$rank1),
+                   "rank2"=as.character(input$rank2),
+                   "rank3"=as.character(input$rank3),
+                   "rank4"=as.character(input$rank4), 
                    "newtitle" = as.character(input$newtitle),
                    "date"=as.character(Sys.Date()), 
                    "notes" = as.character(input$notes), 
                    "service" = as.character(input$service))
         })
+
+    ## Sorting out the ranked choices
+    output$rank1 <- renderUI({
+      selectizeInput('rank1', 'First choice', choices = c("select" = "", movielist))
+    })
+    
+    output$rank2 <- renderUI({
+      choice_var2 <- reactive({
+        movielist[movielist != input$rank1]
+      })
+
+      selectizeInput('rank2', 'Second choice', choices = c("select" = "", choice_var2()))
+    })
+    
+    output$rank3 <- renderUI({
+      choice_var3 <- reactive({
+        m1 <- movielist[movielist != input$rank1]
+        m1[m1 != input$rank2]
+      })
+      
+      selectizeInput('rank3', 'Third choice', choices = c("select" = "", choice_var3()))
+    })
+    
+    
+    output$rank4 <- renderUI({
+      choice_var4 <- reactive({
+        m1 <- movielist[movielist != input$rank1]
+        m2 <- m1[m1 != input$rank2]
+        m2[m2 != input$rank3]
+      })
+      
+      selectizeInput('rank4', 'Fourth choice', choices = c("select" = "", choice_var4()))
+    })
+    
+    output$history <- DT::renderDataTable({
+      datatable(history, rownames=FALSE)})
+    
+    output$testtable <- renderText(testFilepath(ssh_sesh=ssh_sesh))
     
     # When the Submit button is clicked, save the form data
     observeEvent(input$submit, {
-        saveData(formData(), ssh_sesh=ssh_sesh)
+      saveData(formData(), ssh_sesh=ssh_sesh)
     })
-
-    output$history <- DT::renderDataTable({
-      datatable(
-        history
-        , rownames=FALSE)})
-    
-    output$testtable <- renderText(testFilepath(ssh_sesh=ssh_sesh))
     
     # Show the previous responses
     # (update with current response when Submit is clicked)
     output$responses <- DT::renderDataTable({
         input$submit
       datatable(
-        loadData(ssh_sesh=ssh_sesh)
+        calcRankOrder(ssh_sesh=ssh_sesh)
         , rownames=FALSE)
     })
     
     output$new_ideas <- DT::renderDataTable({
       input$submit
       datatable(
-        loadData(ssh_sesh=ssh_sesh, votes = FALSE)
+        calcRankOrder(ssh_sesh=ssh_sesh, votes = FALSE)
         , rownames=FALSE)
     })
     

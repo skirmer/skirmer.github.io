@@ -18,7 +18,7 @@ testFilepath <- function(ssh_sesh){
 loadData <- function(votes=TRUE, ssh_sesh) {
   
   scp_download(ssh_sesh, remote_responsepath, to = local_savepath)
-  
+
   files <- list.files(local_responsepath, pattern="*.csv", full.names = TRUE, recursive = TRUE)
   
   df = list()
@@ -31,10 +31,10 @@ loadData <- function(votes=TRUE, ssh_sesh) {
   
   if(votes){
     tform <- data %>%
-      select(c("name", "title", "date")) %>%
+      select(c("name", "rank1", "rank2", "rank3", "rank4", "date")) %>%
       unique() %>%
-      filter(title != "") %>%
-      group_by("Movie" = title) %>%
+      filter(rank1 != "") %>%
+      group_by("Movie" = rank1) %>%
       summarize(Votes = n())
 
   } else {
@@ -72,7 +72,7 @@ saveData <- function(new_responses, ssh_sesh) {
 
 pullResponses <- function(ssh_sesh){
   scp_download(ssh_sesh, remote_responsepath, to = local_savepath)
-  
+
   files <- list.files(local_responsepath, pattern="*.csv", full.names = TRUE, recursive = TRUE)
   
   df = list()
