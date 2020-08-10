@@ -18,7 +18,7 @@ ssh_exec_wait(ssh_sesh, command = "cd responses && ls", std_out = stdout(),
               std_err = stderr())
 
 
-ssh_exec_wait(ssh_sesh, command = "cd responses && rm 1596133575_7d7ecf2b3d79591965010013a37ac841.csv", std_out = stdout(),
+ssh_exec_wait(ssh_sesh, command = "cd responses && rm stem.csv", std_out = stdout(),
               std_err = stderr())
 
 ssh_exec_wait(ssh_sesh, command = "cd responses && mkdir sept12 && ls", std_out = stdout(),
@@ -31,6 +31,6 @@ ssh_exec_wait(ssh_sesh, command = "cd responses && mv aug1 ../", std_out = stdou
               std_err = stderr())
 
 scp_upload(ssh_sesh, c("./responses"), to = "responses/")
-scp_download(ssh_sesh, "~/responses", to = "./")
+scp_download(ssh_sesh, "~/responses", to = "./responses")
 ssh_exec_wait(ssh_sesh, command = "rm -Rf responses")
 ssh_disconnect(ssh_sesh)

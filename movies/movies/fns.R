@@ -27,10 +27,10 @@ loadData <- function(votes=TRUE, ssh_sesh) {
   
   if(votes){
     tform <- data %>%
-      select(c("name", "title", "date", "service")) %>%
+      select(c("name", "title", "date")) %>%
       unique() %>%
       filter(title != "") %>%
-      group_by("Movie" = title, "Service" = service) %>%
+      group_by("Movie" = title) %>%
       summarize(Votes = n())
 
   } else {
@@ -77,14 +77,4 @@ pullResponses <- function(ssh_sesh){
   }
   
   return(df)
-}
-
-calcPlainVotes <- function(ssh_sesh){
-  df = pullResponses(ssh_sesh = ssh_sesh)
-  
-}
-
-calcRankOrder <- function(df){
-  df = pullResponses(ssh_sesh = ssh_sesh)
-  
 }
