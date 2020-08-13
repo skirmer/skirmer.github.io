@@ -12,7 +12,7 @@ ssh_sesh <- ssh::ssh_connect(host = paste0(dw$login,'@dukkhalatte.ddns.net:49500
 
 source("fns.R")
 fields <- c("name", "title", "newtitle", "date")
-starting_data = loadData(ssh_sesh=ssh_sesh)
+starting_data = calcRankOrder(ssh_sesh=ssh_sesh)
 history <- read.csv("history.csv")
 colnames(history) <- c("Movie", "Date Watched")
 movielist <- c("Terminator", "Clueless", "Escape from New York", "Clue", "Black Mirror", "The Social Network")
@@ -42,7 +42,12 @@ ui <- fluidPage(
 
         mainPanel(
           tabsetPanel(
-              tabPanel("Current vote totals", dataTableOutput("responses")), 
+              tabPanel("Current vote totals", textOutput("responses"),
+                       textOutput("rounds_run"), 
+                       dataTableOutput("r1"),  
+                       dataTableOutput("r2"),  
+                       dataTableOutput("r3"),  
+                       dataTableOutput("r4")), 
               tabPanel("Our watch history", dataTableOutput("history")), 
               tabPanel("New suggestions received", dataTableOutput("new_ideas"))
               #tabPanel("testing",textOutput("testtable"))
@@ -112,11 +117,45 @@ server <- function(input, output, session) {
     
     # Show the previous responses
     # (update with current response when Submit is clicked)
-    output$responses <- DT::renderDataTable({
-        input$submit
+    output$r1 <- DT::renderDataTable({
+      input$submit
       datatable(
-        calcRankOrder(ssh_sesh=ssh_sesh)
+        calcRankOrder(ssh_sesh=ssh_sesh)[[3]]
         , rownames=FALSE)
+    })
+    
+    output$r2 <- DT::renderDataTable({
+      input$submit
+      datatable(
+        calcRankOrder(ssh_sesh=ssh_sesh)[[4]]
+        , rownames=FALSE)
+    })
+    
+    output$r3 <- DT::renderDataTable({
+      input$submit
+      datatable(
+        calcRankOrder(ssh_sesh=ssh_sesh)[[5]]
+        , rownames=FALSE)
+    })
+    
+    
+    output$r4 <- DT::renderDataTable({
+      input$submit
+      datatable(
+        calcRankOrder(ssh_sesh=ssh_sesh)[[6]]
+        , rownames=FALSE)
+    })
+    
+    output$responses <- renderText({
+        input$submit
+      paste("Winning movie currently:",
+        calcRankOrder(ssh_sesh=ssh_sesh)[[1]])
+    })
+    
+    output$rounds_run <- renderText({
+      input$submit
+      paste("Rounds run before result:", 
+        calcRankOrder(ssh_sesh=ssh_sesh)[[2]])
     })
     
     output$new_ideas <- DT::renderDataTable({

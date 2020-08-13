@@ -74,7 +74,7 @@ pullResponses <- function(ssh_sesh){
   scp_download(ssh_sesh, remote_responsepath, to = local_savepath)
 
   files <- list.files(local_responsepath, pattern="*.csv", full.names = TRUE, recursive = TRUE)
-  
+
   df = list()
   for(i in 1:length(files)){
     df[[i]] = read.csv(files[[i]], stringsAsFactors = F)
@@ -82,3 +82,5 @@ pullResponses <- function(ssh_sesh){
   
   return(df)
 }
+
+
