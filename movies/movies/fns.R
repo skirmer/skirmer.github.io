@@ -14,7 +14,6 @@ testFilepath <- function(ssh_sesh){
   return(paste(c(list1,list2), sep=" - ", collapse=" - "))
 }
 
-
 loadData <- function(votes=TRUE, ssh_sesh) {
   
   scp_download(ssh_sesh, remote_responsepath, to = local_savepath)
@@ -70,6 +69,7 @@ saveData <- function(new_responses, ssh_sesh) {
   return(TRUE)
 }
 
+
 pullResponses <- function(ssh_sesh){
   scp_download(ssh_sesh, remote_responsepath, to = local_savepath)
 
@@ -84,3 +84,14 @@ pullResponses <- function(ssh_sesh){
 }
 
 
+add_suggestion <- function(ssh_sesh){
+  data = get_original_data(ssh_sesh = ssh_sesh)
+  tform <- data %>%
+    select(c("name", "newtitle", "date", "service")) %>%
+    unique() %>%
+    filter(newtitle != "") %>%
+    group_by("Suggestion" = newtitle, "Service" = service) %>%
+    summarize(`Times Suggested` = n())
+  
+  return(tform)
+}

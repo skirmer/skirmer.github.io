@@ -11,8 +11,8 @@ ssh_sesh <- ssh::ssh_connect(host = paste0(dw$login,'@dukkhalatte.ddns.net:49500
                              passwd=dw$pwd)
 
 source("fns.R")
+source("movie_select_class.R")
 fields <- c("name", "title", "newtitle", "date")
-starting_data = calcRankOrder(ssh_sesh=ssh_sesh)
 history <- read.csv("history.csv")
 colnames(history) <- c("Movie", "Date Watched")
 movielist <- c("Terminator", "Clueless", "Escape from New York", "Clue", "Black Mirror", "The Social Network")
@@ -42,12 +42,8 @@ ui <- fluidPage(
 
         mainPanel(
           tabsetPanel(
-              tabPanel("Current vote totals", textOutput("responses"),
-                       textOutput("rounds_run"), 
-                       dataTableOutput("r1"),  
-                       dataTableOutput("r2"),  
-                       dataTableOutput("r3"),  
-                       dataTableOutput("r4")), 
+              tabPanel("Current vote totals", htmlOutput("text")),
+              tabPanel("Detailed Round Results", htmlOutput("text2")),
               tabPanel("Our watch history", dataTableOutput("history")), 
               tabPanel("New suggestions received", dataTableOutput("new_ideas"))
               #tabPanel("testing",textOutput("testtable"))
@@ -117,51 +113,37 @@ server <- function(input, output, session) {
     
     # Show the previous responses
     # (update with current response when Submit is clicked)
-    output$r1 <- DT::renderDataTable({
+    
+    output$text <- renderUI({
       input$submit
-      datatable(
-        calcRankOrder(ssh_sesh=ssh_sesh)[[3]]
-        , rownames=FALSE)
+      mv = MovieSelection$new(ssh_session = ssh_sesh)
+      str1 <- paste(mv$get_results(ssh_session = ssh_sesh)$Round1)
+      str2 <- paste(mv$get_results(ssh_session = ssh_sesh)$Round2)
+      str3 <- paste(mv$get_results(ssh_session = ssh_sesh)$Round3)
+      str4 <- paste(mv$get_results(ssh_session = ssh_sesh)$Round4)
+      str5 <- paste(mv$get_results(ssh_session = ssh_sesh)$Tiebreak)
+      
+      HTML(paste(str1, str2, str3, str4, str5, sep = '<br/>'))
+      
     })
     
-    output$r2 <- DT::renderDataTable({
+    output$text2 <- renderUI({
       input$submit
-      datatable(
-        calcRankOrder(ssh_sesh=ssh_sesh)[[4]]
-        , rownames=FALSE)
-    })
-    
-    output$r3 <- DT::renderDataTable({
-      input$submit
-      datatable(
-        calcRankOrder(ssh_sesh=ssh_sesh)[[5]]
-        , rownames=FALSE)
-    })
-    
-    
-    output$r4 <- DT::renderDataTable({
-      input$submit
-      datatable(
-        calcRankOrder(ssh_sesh=ssh_sesh)[[6]]
-        , rownames=FALSE)
-    })
-    
-    output$responses <- renderText({
-        input$submit
-      paste("Winning movie currently:",
-        calcRankOrder(ssh_sesh=ssh_sesh)[[1]])
-    })
-    
-    output$rounds_run <- renderText({
-      input$submit
-      paste("Rounds run before result:", 
-        calcRankOrder(ssh_sesh=ssh_sesh)[[2]])
+      mv = MovieSelection$new(ssh_session = ssh_sesh)
+      str1 <- paste(mv$get_detailed_results(ssh_session = ssh_sesh)$Round1)
+      str2 <- paste(mv$get_detailed_results(ssh_session = ssh_sesh)$Round2)
+      str3 <- paste(mv$get_detailed_results(ssh_session = ssh_sesh)$Round3)
+      str4 <- paste(mv$get_detailed_results(ssh_session = ssh_sesh)$Round4)
+      str5 <- paste(mv$get_detailed_results(ssh_session = ssh_sesh)$Tiebreak)
+      
+      HTML(paste(str1, str2, str3, str4, str5, sep = '<br/>'))
+      
     })
     
     output$new_ideas <- DT::renderDataTable({
       input$submit
       datatable(
-        calcRankOrder(ssh_sesh=ssh_sesh, votes = FALSE)
+        add_suggestion(ssh_sesh=ssh_sesh)
         , rownames=FALSE)
     })
     
