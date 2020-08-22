@@ -11,7 +11,10 @@ ssh_sesh <- ssh::ssh_connect(host = paste0(dw$login,'@192.168.130.8'),
 ssh_exec_wait(ssh_sesh, command = "ls", std_out = stdout(),
               std_err = stderr())
 
-ssh_exec_wait(ssh_sesh, command = "mkdir responses", std_out = stdout(),
+ssh_exec_wait(ssh_sesh, command = "mkdir rankorder", std_out = stdout(),
+              std_err = stderr())
+
+ssh_exec_wait(ssh_sesh, command = "cd rankorder && cd responses && ls", std_out = stdout(),
               std_err = stderr())
 
 ssh_exec_wait(ssh_sesh, command = "cd responses && ls", std_out = stdout(),
@@ -20,13 +23,16 @@ ssh_exec_wait(ssh_sesh, command = "cd responses && ls", std_out = stdout(),
 ssh_exec_wait(ssh_sesh, command = "cd responses && rm -r responses", std_out = stdout(),
               std_err = stderr())
 
-ssh_exec_wait(ssh_sesh, command = "cd responses && rm 1598132948_7d7ecf2b3d79591965010013a37ac841.csv", std_out = stdout(),
+ssh_exec_wait(ssh_sesh, command = "cd responses && rm 1598127222_7d7ecf2b3d79591965010013a37ac841.csv", std_out = stdout(),
               std_err = stderr())
 
-ssh_exec_wait(ssh_sesh, command = "cd responses && rm 1597078180_f7a52580049a3e9f3e8a1539a713ad00.csv", std_out = stdout(),
+ssh_exec_wait(ssh_sesh, command = "cd responses && rm 1598124821_7d7ecf2b3d79591965010013a37ac841.csv", std_out = stdout(),
               std_err = stderr())
 
 ssh_exec_wait(ssh_sesh, command = "cd responses && rm -r responses", std_out = stdout(),
+              std_err = stderr())
+
+ssh_exec_wait(ssh_sesh, command = "rm -r rankorder", std_out = stdout(),
               std_err = stderr())
 
 ssh_exec_wait(ssh_sesh, command = "cd responses && mkdir sept12 && ls", std_out = stdout(),

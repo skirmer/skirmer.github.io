@@ -1,10 +1,12 @@
 
 library(shiny)
 library(shinythemes)
+library(tidyverse)
 library(dplyr)
 library(DT)
 library(ssh)
 library(RCurl)
+library(knitr)
 
 dw <- config::get("conn")
 ssh_sesh <- ssh::ssh_connect(host = paste0(dw$login,'@dukkhalatte.ddns.net:49500'),
@@ -12,6 +14,7 @@ ssh_sesh <- ssh::ssh_connect(host = paste0(dw$login,'@dukkhalatte.ddns.net:49500
 
 source("fns.R")
 source("movie_select_class.R")
+
 fields <- c("name", "title", "newtitle", "date")
 history <- read.csv("history.csv")
 colnames(history) <- c("Movie", "Date Watched")
@@ -29,10 +32,10 @@ ui <- fluidPage(
         sidebarPanel(
             h4("Select the movies you think we should watch next, in order of your preferences."),
             textInput("name", "Your Name", ""),
-            uiOutput("rank1"), 
-            uiOutput("rank2"),
-            uiOutput("rank3"),
-            uiOutput("rank4"),
+            uiOutput("rank1_select"), 
+            uiOutput("rank2_select"),
+            uiOutput("rank3_select"),
+            uiOutput("rank4_select"),
             h4("Submit your ideas for another movie not listed."),
             textInput("newtitle", "Title", ""),
             selectInput("service", "Streaming service where it is", c("", "Netflix", "Amazon Prime", "Hulu", "Other")),
@@ -69,36 +72,60 @@ server <- function(input, output, session) {
         })
 
     ## Sorting out the ranked choices
-    output$rank1 <- renderUI({
-      selectizeInput('rank1', 'First choice', choices = c("select" = "", movielist))
+    output$rank1_select <- renderUI({
+      selectizeInput(inputId = 'rank1',
+                     label = 'First choice',
+                     choices = c("select" = "", movielist))
     })
     
-    output$rank2 <- renderUI({
+    output$rank1_report <- renderText({
+      paste(input$rank1)
+    })
+    
+    output$rank2_select <- renderUI({
+      m1 = input$rank1
+      
       choice_var2 <- reactive({
-        movielist[movielist != input$rank1]
+        m2 = movielist[movielist != m1]
+        return(m2)
       })
-
-      selectizeInput('rank2', 'Second choice', choices = c("select" = "", choice_var2()))
+        
+      selectizeInput(inputId = 'rank2', 
+                     label = 'Second choice', 
+                     choices = c("select" = "", choice_var2()))
     })
     
-    output$rank3 <- renderUI({
+    output$rank3_select <- renderUI({
+      m1 = input$rank1
+      m2 = input$rank2
+      
       choice_var3 <- reactive({
-        m1 <- movielist[movielist != input$rank1]
-        m1[m1 != input$rank2]
+        m3 <- movielist[movielist != m1]
+        m3 <- m3[m3 != m2]
+        return(m3)
       })
       
-      selectizeInput('rank3', 'Third choice', choices = c("select" = "", choice_var3()))
+      selectizeInput(inputId = 'rank3', 
+                     label = 'Third choice', 
+                     choices = c("select" = "", choice_var3()))
     })
     
     
-    output$rank4 <- renderUI({
+    output$rank4_select <- renderUI({
+      m1 = input$rank1
+      m2 = input$rank2
+      m3 = input$rank3
+      
       choice_var4 <- reactive({
-        m1 <- movielist[movielist != input$rank1]
-        m2 <- m1[m1 != input$rank2]
-        m2[m2 != input$rank3]
+        m4 <- movielist[movielist != m1]
+        m4 <- m4[m4 != m2]
+        m4 <- m4[m4 != m3]
+        return(m4)
       })
       
-      selectizeInput('rank4', 'Fourth choice', choices = c("select" = "", choice_var4()))
+      selectizeInput(inputId = 'rank4', 
+                     label = 'Fourth choice', 
+                     choices = c("select" = "", choice_var4()))
     })
     
     output$history <- DT::renderDataTable({
@@ -116,27 +143,41 @@ server <- function(input, output, session) {
     
     output$text <- renderUI({
       input$submit
-      mv = MovieSelection$new(ssh_session = ssh_sesh)
+      mv = MovieSelection$new(ssh_session = ssh_sesh, path = response_filepath)
+      
+      str0 <- paste(mv$get_results(ssh_session = ssh_sesh)$headcount)
       str1 <- paste(mv$get_results(ssh_session = ssh_sesh)$Round1)
       str2 <- paste(mv$get_results(ssh_session = ssh_sesh)$Round2)
       str3 <- paste(mv$get_results(ssh_session = ssh_sesh)$Round3)
       str4 <- paste(mv$get_results(ssh_session = ssh_sesh)$Round4)
       str5 <- paste(mv$get_results(ssh_session = ssh_sesh)$Tiebreak)
       
-      HTML(paste(str1, str2, str3, str4, str5, sep = '<br/>'))
+      HTML(paste(str0, str1, str2, str3, str4, str5, sep = '<br/>'))
       
     })
     
     output$text2 <- renderUI({
       input$submit
-      mv = MovieSelection$new(ssh_session = ssh_sesh)
-      str1 <- paste(mv$get_detailed_results(ssh_session = ssh_sesh)$Round1)
-      str2 <- paste(mv$get_detailed_results(ssh_session = ssh_sesh)$Round2)
-      str3 <- paste(mv$get_detailed_results(ssh_session = ssh_sesh)$Round3)
-      str4 <- paste(mv$get_detailed_results(ssh_session = ssh_sesh)$Round4)
+      mv = MovieSelection$new(ssh_session = ssh_sesh, path = response_filepath)
+      base = kable(mv$get_detailed_results(ssh_session = ssh_sesh)$baseline, "html")
+      str1 <- kable(mv$get_detailed_results(ssh_session = ssh_sesh)$Round1, "html")
+      str1b <- mv$get_detailed_results(ssh_session = ssh_sesh)$Round1_lose$Movie
+      str2 <- kable(mv$get_detailed_results(ssh_session = ssh_sesh)$Round2, "html")
+      str2b <- mv$get_detailed_results(ssh_session = ssh_sesh)$Round2_lose$Movie
+      str3 <- kable(mv$get_detailed_results(ssh_session = ssh_sesh)$Round3, "html")
+      str3b <- mv$get_detailed_results(ssh_session = ssh_sesh)$Round3_lose$Movie
+      str4 <- kable(mv$get_detailed_results(ssh_session = ssh_sesh)$Round4, "html")
       str5 <- paste(mv$get_detailed_results(ssh_session = ssh_sesh)$Tiebreak)
       
-      HTML(paste(str1, str2, str3, str4, str5, sep = '<br/>'))
+      HTML(paste("Baseline", base,
+                 paste("Dropped in R1:", str1b), 
+                 "Round 1", str1,
+                 paste("Dropped in R2:", str2b),
+                 "Round 2", str2,
+                 paste("Dropped in R3:", str3b),
+                 "Round 3", str3,
+                 "Round 4", str4, 
+                 "Final Outcome", str5, sep = '<br/>'))
       
     })
     

@@ -19,7 +19,7 @@ loadData <- function(votes=TRUE, ssh_sesh) {
   scp_download(ssh_sesh, remote_responsepath, to = local_savepath)
 
   files <- list.files(local_responsepath, pattern="*.csv", full.names = TRUE, recursive = TRUE)
-  
+
   df = list()
   for(i in 1:length(files)){
     df[[i]] = read.csv(files[[i]], stringsAsFactors = F)
@@ -50,10 +50,6 @@ loadData <- function(votes=TRUE, ssh_sesh) {
 }
 
 saveData <- function(new_responses, ssh_sesh) {
-  # dw <- config::get("conn")
-  # ssh_sesh <- ssh::ssh_connect(host = paste0(dw$login,'@dukkhalatte.ddns.net:49500'),
-  #                              passwd=dw$pwd)
-  
   if (exists("new_responses")) {
 
     responses = as.data.frame(new_responses)
@@ -62,19 +58,18 @@ saveData <- function(new_responses, ssh_sesh) {
     # Write the file to the local system
     write.csv(x = responses, file = file.path(local_responsepath, fileName), row.names = FALSE)
     scp_upload(ssh_sesh,local_responsepath, to = remote_responsepath)
-    
+ 
   }
   #ssh_disconnect(ssh_sesh)
 
   return(TRUE)
 }
 
-
 pullResponses <- function(ssh_sesh){
   scp_download(ssh_sesh, remote_responsepath, to = local_savepath)
 
   files <- list.files(local_responsepath, pattern="*.csv", full.names = TRUE, recursive = TRUE)
-
+  
   df = list()
   for(i in 1:length(files)){
     df[[i]] = read.csv(files[[i]], stringsAsFactors = F)
@@ -83,9 +78,9 @@ pullResponses <- function(ssh_sesh){
   return(df)
 }
 
-
 add_suggestion <- function(ssh_sesh){
   data = get_original_data(ssh_sesh = ssh_sesh)
+  
   tform <- data %>%
     select(c("name", "newtitle", "date", "service")) %>%
     unique() %>%

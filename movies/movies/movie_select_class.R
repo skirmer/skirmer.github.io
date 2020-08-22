@@ -1,68 +1,131 @@
 library(R6)
+library(gt)
+library(dplyr)
 
 MovieSelection <- R6Class("MovieSelection",
                   public = list(
                     ssh_session = NULL,
                     df = NULL,
-                    initialize = function(ssh_session) {
+                    path = NULL,
+                    initialize = function(ssh_session, path) {
+                      self$path = path
+                      self$ssh_session = ssh_session
                       
                     },
                     get_results = function(ssh_session){
                       
                       self$df = self$pullResponses(self$ssh_session, 
-                                              path = "../../movies/movies/rankchoice/responses/")#path='./responses')
+                                              path = self$path)
                       
                       first_round_outcome = self$calculate_firstround(ssh_session)
                       message1 = (paste("Round 1:", first_round_outcome$result))
                       
-                      second_round_outcome = self$calculate_secondround(ssh_session, first_round_outcome)
-                      message2 = (paste("Round 2:", second_round_outcome$result))
+                      headcount = paste("Total Ballots Cast:", first_round_outcome$denominator)
+                      immediate_winner = first_round_outcome$immediate_winner
                       
-                      third_round_outcome = self$calculate_thirdround(ssh_session, first_round_outcome, second_round_outcome)
-                      message3 = (paste("Round 3:", third_round_outcome$result))
+                      if(nrow(immediate_winner) == 0){
+                        second_round_outcome = self$calculate_secondround(ssh_session, first_round_outcome)
+                        immediate_winner = second_round_outcome$outright_winner
+                        message2 = (paste("Round 2:", second_round_outcome$result))
+                      } else {
+                        message2 = "Round 2 not required."
+                      }
+                    
+                      if(nrow(immediate_winner) == 0){
+                        third_round_outcome = self$calculate_thirdround(ssh_session, first_round_outcome, second_round_outcome)
+                        immediate_winner = third_round_outcome$outright_winner
+                        message3 = (paste("Round 3:", third_round_outcome$result))
+                      } else {
+                        message3 = "Round 3 not required."
+                      }
                       
-                      final_outcome = self$calculate_fourthround(ssh_session, first_round_outcome, second_round_outcome, third_round_outcome)
-                      message4 = (paste("Round 4:", final_outcome$result))
+                      if(nrow(immediate_winner) == 0){
+                        final_outcome = self$calculate_fourthround(ssh_session, first_round_outcome, second_round_outcome, third_round_outcome)
+                        immediate_winner = final_outcome$result
+                        message4 = (paste("Round 4:", final_outcome$result))
+                      } else {
+                        message4 = "Round 4 not required."
+                      }
                       
-                      message5 = (self$tie_break_finale(ssh_session, final_outcome))
-                      
-                      return(list("Round1" = message1, 
+                      if(immediate_winner == "No outright winner - tie break required."){
+                        message5 = (self$tie_break_finale(ssh_session, final_outcome))
+                        immediate_winner = final_outcome$outright_winner
+                      } else {
+                        message5 = "Tiebreak not required."
+                      }
+                      return(list("headcount" = headcount,
+                                  "Round1" = message1, 
                                   "Round2" = message2, 
                                   "Round3" = message3, 
                                   "Round4" = message4, 
                                   "Tiebreak" = message5))
                       
                     },
+                    
                     get_detailed_results = function(ssh_session){
                       
                       self$df = self$pullResponses(self$ssh_session, 
-                                                   path = "../../movies/movies/rankchoice/responses/")#path='./responses')
+                                                   path = self$response_filepath)
                       
                       first_round_outcome = self$calculate_firstround(ssh_session)
+                      headcount = paste("Total Ballots Cast:", first_round_outcome$denominator)
                       message1 = first_round_outcome$first_round_remaining_votes
+                      r1_losers = first_round_outcome$first_round_loser
+                      immediate_winner = first_round_outcome$immediate_winner
                       
-                      second_round_outcome = self$calculate_secondround(ssh_session, first_round_outcome)
-                      message2 = second_round_outcome$second_round_remaining_votes
                       
-                      third_round_outcome = self$calculate_thirdround(ssh_session, first_round_outcome, second_round_outcome)
-                      message3 = third_round_outcome$third_round_remaining_votes
+                      if(nrow(immediate_winner) == 0){
+                        second_round_outcome = self$calculate_secondround(ssh_session, first_round_outcome)
+                        immediate_winner = second_round_outcome$outright_winner
+                        message2 = second_round_outcome$second_round_remaining_votes
+                        r2_losers = second_round_outcome$second_round_loser
+                        
+                      } else {
+                        message2 = "Round 2 not required."
+                        r2_losers = ""
+                      }
                       
-                      final_outcome = self$calculate_fourthround(ssh_session, first_round_outcome, second_round_outcome, third_round_outcome)
-                      message4 = final_outcome$candidates
+                      if(nrow(immediate_winner) == 0){
+                        third_round_outcome = self$calculate_thirdround(ssh_session, first_round_outcome, second_round_outcome)
+                        immediate_winner = third_round_outcome$outright_winner
+                        message3 = third_round_outcome$third_round_remaining_votes
+                        r3_losers = third_round_outcome$third_round_loser
+                        
+                      } else {
+                        message3 = "Round 3 not required."
+                        r3_losers = ""
+                      }
                       
-                      message5 = (self$tie_break_finale(ssh_session, final_outcome))
+                      if(nrow(immediate_winner) == 0){
+                        final_outcome = self$calculate_fourthround(ssh_session, first_round_outcome, second_round_outcome, third_round_outcome)
+                        immediate_winner = final_outcome$result
+                        message4 = final_outcome$candidates
+                      } else {
+                        message4 = "Round 4 not required."
+                      }
                       
-                      return(list("Round1" = message1, 
+                      if(immediate_winner == "No outright winner - tie break required."){
+                        message5 = (self$tie_break_finale(ssh_session, final_outcome))
+                        immediate_winner = final_outcome$outright_winner
+                      } else {
+                        message5 = "Tiebreak not required."
+                      }
+                      return(list("headcount" = headcount,
+                                  "baseline" = first_round_outcome$raw_start,
+                                  "Round1" = message1, 
+                                  "Round1_lose" = r1_losers,
                                   "Round2" = message2, 
+                                  "Round2_lose" = r2_losers,
                                   "Round3" = message3, 
+                                  "Round3_lose" = r3_losers,
                                   "Round4" = message4, 
                                   "Tiebreak" = message5))
                       
                     },
-                    pullResponses = function(ssh_session=NA, path){
+                    pullResponses = function(ssh_session, path){
                       #scp_download(ssh_session, ".", to = "./responses")
                       
-                      files <- list.files(path, pattern="*.csv", full.names = TRUE, recursive = FALSE)
+                      files <- list.files(self$path, pattern="*.csv", full.names = TRUE, recursive = FALSE)
                       
                       df = list()
                       for(i in 1:length(files)){
@@ -90,7 +153,7 @@ MovieSelection <- R6Class("MovieSelection",
                         summarize(Votes = n(), .groups = "drop")
                       
                       total_firsts <- sum(vround$Votes)
-                      immediate_win <- vround[vround$Votes >= ceiling(total_firsts/2), "Movie"]
+                      immediate_win <- vround[vround$Votes >= floor(total_firsts/2), "Movie"]
                       return(list("denominator" = total_firsts, 
                                   "outright_winner" = immediate_win, 
                                   "vote_tally" = vround))
@@ -103,7 +166,7 @@ MovieSelection <- R6Class("MovieSelection",
                         group_by("Movie" = !!col) %>%
                         summarize(Votes = n(), .groups = "drop") 
                       
-                      immediate_win <- vround[vround$Votes >= ceiling(total_firsts/2), "Movie"]
+                      immediate_win <- vround[vround$Votes >= floor(total_firsts/2), "Movie"]
                       return(list("outright_winner" = immediate_win, 
                                   "vote_tally" = vround))
                     },
@@ -115,6 +178,7 @@ MovieSelection <- R6Class("MovieSelection",
                       
                       if(nrow(tabbed_firstround$outright_winner) > 0){
                         result = tabbed_firstround$outright_winner
+                        first_loser <- ""
                       } else {
                         result = "No outright winner: must continue to next round."
                         first_loser <- first_round[first_round$Votes == min(first_round$Votes), "Movie"]
@@ -123,7 +187,8 @@ MovieSelection <- R6Class("MovieSelection",
                           result = "Complete first round tie, need more votes to get a result."
                         }
                       }
-                      return(list("result" = result,
+                      return(list("raw_start" = tabbed_firstround$vote_tally,
+                                  "result" = result,
                                   "first_round_loser" = first_loser,
                                   "first_round_remaining_votes" = first_round, 
                                   "denominator" = tabbed_firstround$denominator, 
@@ -149,12 +214,12 @@ MovieSelection <- R6Class("MovieSelection",
                       } else if(nrow(winner) == 1){
                         result = winner
                       } else {
-                        result = "No outright winner"
+                        result = "No outright winner: must continue to next round."
                         second_loser <- second_round[second_round$Votes == min(second_round$Votes), "Movie"]
                         final <- filter(second_round, !(Movie %in% second_loser$Movie))
                         if(nrow(final) == 0){
                           final <- second_round
-                          result = c(paste("Tie:", paste(final$Movie, sep = " and ", collapse = " and ")))
+                          result = c(paste("Tie:", paste(final$Movie, sep = " and ", collapse = " and "),"- must continue to next round."))
                         } 
                       }
                       return(list("result" = result,
@@ -188,7 +253,7 @@ MovieSelection <- R6Class("MovieSelection",
                         final <- filter(third_round, !(Movie %in% third_loser$Movie))
                         if(nrow(final) == 0){
                           final <- third_round
-                          result = c(paste("Tie:", paste(final$Movie, sep = " and ", collapse = " and ")))                        }
+                          result = c(paste("Tie:", paste(final$Movie, sep = " and ", collapse = " and "),"- must continue to next round."))                        }
                       }
                       return(list("result" = result,
                                   "outright_winner" = tabbed_thirdround$outright_winner,
@@ -219,7 +284,7 @@ MovieSelection <- R6Class("MovieSelection",
                         result = second_round_outcome$outright_winner
                       } else if(nrow(third_round_outcome$outright_winner)  > 0){
                         result = third_round_outcome$outright_winner
-                      } else if(nrow(winner) == 1){
+                      } else if(nrow(winner) >= 1){
                         result = winner
                       } else {
                         result = "No outright winner - tie break required."
@@ -240,9 +305,12 @@ MovieSelection <- R6Class("MovieSelection",
                           group_by("Movie" = value) %>%
                           summarize(Votes = n(), .groups = "drop")
                         
-                        last_loser <- vround[vround$Votes == min(vround$Votes), "Movie"]
-                        tiebreak_round <- filter(vround, !(Movie %in% last_loser$Movie))
-                        return(paste("Tie Break Winner:", tiebreak_round$Movie))
+                        tiebreak_round <- vround[vround$Votes == max(vround$Votes), "Movie"]
+                        if(nrow(tiebreak_round) == 1){
+                          return(paste("Tie Break Winner:", tiebreak_round$Movie))
+                        } else if (nrow(tiebreak_round) > 1){
+                          return(paste("Unbreakable tie:", paste(vround$Movie, sep = " and ", collapse = " and ")))
+                        }
                       }
                     }
                   )
