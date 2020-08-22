@@ -17,8 +17,10 @@ ssh_exec_wait(ssh_sesh, command = "ls", std_out = stdout(),
 ssh_exec_wait(ssh_sesh, command = "cd responses && ls", std_out = stdout(),
               std_err = stderr())
 
+ssh_exec_wait(ssh_sesh, command = "cd responses && rm -r responses", std_out = stdout(),
+              std_err = stderr())
 
-ssh_exec_wait(ssh_sesh, command = "cd responses && rm stem.csv", std_out = stdout(),
+ssh_exec_wait(ssh_sesh, command = "cd responses && rm 1598132948_7d7ecf2b3d79591965010013a37ac841.csv", std_out = stdout(),
               std_err = stderr())
 
 ssh_exec_wait(ssh_sesh, command = "cd responses && mkdir sept12 && ls", std_out = stdout(),
