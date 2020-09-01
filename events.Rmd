@@ -95,6 +95,18 @@ Links: https://odsc.com/speakers/making-happy-modelers-build-and-maintain-your-d
 
 
 <BR>
+
+
+#### Event: ChiPy Data SIG October 2020   
+
+Topic: Branching Out into Isolation Forests: Tree Based Anomaly Detection    
+Location: Virtual  
+Date: October 21, 2020  
+Links: https://www.chipy.org/    
+https://www.meetup.com/_ChiPy_/events/272525624/   
+There will be a free livestream on YouTube, so please join!
+
+<BR>
 <BR>
 
 ### Past Appearances 
