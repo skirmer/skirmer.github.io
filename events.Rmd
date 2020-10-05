@@ -86,16 +86,6 @@ Or other topics - please contact me if something adjacent would fit your audienc
 </font>
 <B>Up next:</b>  
 
-#### Event: ODSC Europe Virtual Conference 2020   
-
-Topic: Making Happy Modelers: Build and Maintain Your Data Warehouse with AWS Redshift and Airflow    
-Location: Virtual  
-Date: September 17-19, 2020    
-Links: https://odsc.com/speakers/making-happy-modelers-build-and-maintain-your-data-warehouse-with-aws-redshift-and-airflow/
-
-
-<BR>
-
 
 #### Event: ChiPy Data SIG October 2020   
 
@@ -112,6 +102,16 @@ There will be a free livestream on YouTube, so please join!
 ### Past Appearances 
 
 If you have any questions about any of the talks below, contact me on twitter! 
+
+<BR>
+
+#### Event: ODSC Europe Virtual Conference 2020   
+
+Topic: Making Happy Modelers: Build and Maintain Your Data Warehouse with AWS Redshift and Airflow    
+Location: Virtual  
+Date: September 17-19, 2020    
+Links: https://odsc.com/speakers/making-happy-modelers-build-and-maintain-your-data-warehouse-with-aws-redshift-and-airflow/
+
 
 <BR>
 
