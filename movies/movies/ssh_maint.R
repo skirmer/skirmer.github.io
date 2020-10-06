@@ -11,16 +11,23 @@ ssh_sesh <- ssh::ssh_connect(host = paste0(dw$login,'@192.168.130.8'),
 ssh_exec_wait(ssh_sesh, command = "ls", std_out = stdout(),
               std_err = stderr())
 
-ssh_exec_wait(ssh_sesh, command = "mkdir rankorder", std_out = stdout(),
+#ssh_exec_wait(ssh_sesh, command = "mkdir rankorder", std_out = stdout(),
+             # std_err = stderr())
+
+
+ssh_exec_wait(ssh_sesh, command = "cd rankorder && ls", std_out = stdout(),
               std_err = stderr())
 
 ssh_exec_wait(ssh_sesh, command = "cd rankorder && cd responses && ls", std_out = stdout(),
               std_err = stderr())
 
+ssh_exec_wait(ssh_sesh, command = "cd rankorder && cd responses && rm -r responses", std_out = stdout(),
+              std_err = stderr())
+
 ssh_exec_wait(ssh_sesh, command = "cd responses && ls", std_out = stdout(),
               std_err = stderr())
 
-ssh_exec_wait(ssh_sesh, command = "cd responses && rm -r responses", std_out = stdout(),
+ssh_exec_wait(ssh_sesh, command = "cd rankorder && rm -r responses", std_out = stdout(),
               std_err = stderr())
 
 ssh_exec_wait(ssh_sesh, command = "cd responses && rm 1598127222_7d7ecf2b3d79591965010013a37ac841.csv", std_out = stdout(),
@@ -45,8 +52,10 @@ ssh_exec_wait(ssh_sesh, command = "cd responses && mv aug1 ../", std_out = stdou
               std_err = stderr())
 
 
-scp_upload(ssh_sesh, c("./movies/responses"), to = "responses/")
+scp_upload(ssh_sesh, c("rankorder/responses/summarized_results_9_7.csv"), to = "rankorder/responses/")
 scp_download(ssh_sesh, "~/responses", to = "./")
+
+ssh_exec_wait(ssh_sesh, command = "rm rankorder/responses/Copy*.csv")
 
 ssh_exec_wait(ssh_sesh, command = "rm -Rf responses")
 ssh_disconnect(ssh_sesh)

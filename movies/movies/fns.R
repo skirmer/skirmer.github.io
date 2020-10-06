@@ -1,9 +1,24 @@
 
 library(ssh)
 
-local_responsepath = 'responses'
-local_savepath = '.'
-remote_responsepath = '.'
+local_responsepath = './rankorder/responses/'
+#local_savepath = '.'
+local_savepath = './rankorder/'#responses/'
+remote_responsepath = './rankorder/'
+
+pullResponses = function(ssh_session, path=local_responsepath){
+  scp_download(ssh_session, remote_responsepath, to = local_savepath)
+  
+  files <- list.files(path, pattern="*.csv", full.names = TRUE, recursive = FALSE)
+  
+  df = list()
+  for(i in 1:length(files)){
+    df[[i]] = read.csv(files[[i]], stringsAsFactors = F)
+  }
+  
+  return(df)
+}
+
 
 testFilepath <- function(ssh_sesh){
   list1 <- capture.output(scp_download(ssh_sesh, ".", to = ".", verbose = TRUE))
@@ -65,21 +80,23 @@ saveData <- function(new_responses, ssh_sesh) {
   return(TRUE)
 }
 
-pullResponses <- function(ssh_sesh){
-  scp_download(ssh_sesh, remote_responsepath, to = local_savepath)
-
-  files <- list.files(local_responsepath, pattern="*.csv", full.names = TRUE, recursive = TRUE)
-  
-  df = list()
-  for(i in 1:length(files)){
-    df[[i]] = read.csv(files[[i]], stringsAsFactors = F)
-  }
-  
-  return(df)
-}
+# pullResponses <- function(ssh_sesh){
+#   scp_download(ssh_sesh, remote_responsepath, to = local_savepath)
+# 
+#   files <- list.files(local_responsepath, pattern="*.csv", full.names = TRUE, recursive = TRUE)
+#   
+#   df = list()
+#   for(i in 1:length(files)){
+#     df[[i]] = read.csv(files[[i]], stringsAsFactors = F)
+#   }
+#   
+#   return(df)
+# }
 
 add_suggestion <- function(ssh_sesh){
-  data = get_original_data(ssh_sesh = ssh_sesh)
+  df = pullResponses(ssh_sesh)
+  data <- data.table::rbindlist(df) %>%
+    as.data.frame()
   
   tform <- data %>%
     select(c("name", "newtitle", "date", "service")) %>%
