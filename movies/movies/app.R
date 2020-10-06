@@ -20,7 +20,7 @@ ui <- fluidPage(
     theme = shinytheme('lumen'),
     # Application title
     titlePanel("/home/common Data Science Movie Series"),
-    h3("Next Movie: Sept 12, 2020: Scott Pilgrim vs the World"),
+    h3("Next Movie: October 10, 2020: Clue"),
     h4("Check #movie-night to vote for the next round."),
     
     sidebarLayout(
