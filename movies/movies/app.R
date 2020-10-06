@@ -19,6 +19,7 @@ fields <- c("name", "title", "newtitle", "date")
 history <- read.csv("history.csv")
 colnames(history) <- c("Movie", "Date Watched")
 movielist <- c("Terminator", "Clueless", "Escape from New York", "Clue", "Black Mirror", "The Social Network")
+df = pullResponses(ssh_sesh)
 
 ui <- fluidPage(
     theme = shinytheme('lumen'),
@@ -143,14 +144,14 @@ server <- function(input, output, session) {
     
     output$text <- renderUI({
       input$submit
-      mv = MovieSelection$new(ssh_session = ssh_sesh, path = response_filepath)
+      mv = MovieSelection$new(ssh_session = ssh_sesh, path = local_responsepath, df=df)
       
-      str0 <- paste(mv$get_results(ssh_session = ssh_sesh)$headcount)
-      str1 <- paste(mv$get_results(ssh_session = ssh_sesh)$Round1)
-      str2 <- paste(mv$get_results(ssh_session = ssh_sesh)$Round2)
-      str3 <- paste(mv$get_results(ssh_session = ssh_sesh)$Round3)
-      str4 <- paste(mv$get_results(ssh_session = ssh_sesh)$Round4)
-      str5 <- paste(mv$get_results(ssh_session = ssh_sesh)$Tiebreak)
+      str0 <- paste(mv$get_results()$headcount)
+      str1 <- paste(mv$get_results()$Round1)
+      str2 <- paste(mv$get_results()$Round2)
+      str3 <- paste(mv$get_results()$Round3)
+      str4 <- paste(mv$get_results()$Round4)
+      str5 <- paste(mv$get_results()$Tiebreak)
       
       HTML(paste(str0, str1, str2, str3, str4, str5, sep = '<br/>'))
       
@@ -158,26 +159,30 @@ server <- function(input, output, session) {
     
     output$text2 <- renderUI({
       input$submit
-      mv = MovieSelection$new(ssh_session = ssh_sesh, path = response_filepath)
-      base = kable(mv$get_detailed_results(ssh_session = ssh_sesh)$baseline, "html")
-      str1 <- kable(mv$get_detailed_results(ssh_session = ssh_sesh)$Round1, "html")
-      str1b <- mv$get_detailed_results(ssh_session = ssh_sesh)$Round1_lose$Movie
-      str2 <- kable(mv$get_detailed_results(ssh_session = ssh_sesh)$Round2, "html")
-      str2b <- mv$get_detailed_results(ssh_session = ssh_sesh)$Round2_lose$Movie
-      str3 <- kable(mv$get_detailed_results(ssh_session = ssh_sesh)$Round3, "html")
-      str3b <- mv$get_detailed_results(ssh_session = ssh_sesh)$Round3_lose$Movie
-      str4 <- kable(mv$get_detailed_results(ssh_session = ssh_sesh)$Round4, "html")
-      str5 <- paste(mv$get_detailed_results(ssh_session = ssh_sesh)$Tiebreak)
+      mv = MovieSelection$new(ssh_session = ssh_sesh, path = local_responsepath, df=df)
+      str1 <- kable(mv$get_detailed_results()$Round1, "html")
+      str1b <- paste(mv$get_detailed_results()$Round1_lose, sep = " and ", collapse = " and ")
+      str2 <- kable(mv$get_detailed_results()$Round2, "html")
+      str2b <- paste(mv$get_detailed_results()$Round2_lose, sep = " and ", collapse = " and ")
+      str3 <- kable(mv$get_detailed_results()$Round3, "html")
+      str3b <- paste(mv$get_detailed_results()$Round3_lose, sep = " and ", collapse = " and ")
+      str4 <- kable(mv$get_detailed_results()$Round4, "html")
+      str5 <- paste(mv$get_detailed_results()$Tiebreak)
       
-      HTML(paste("Baseline", base,
-                 paste("Dropped in R1:", str1b), 
-                 "Round 1", str1,
+      HTML(paste("<h2>Tutorial</h2>",
+                "Each round, the least popular movie is dropped. 
+                The following round, the ballots whose votes were dropped will contribute their next-highest choice." ,
+                "To win outright, a movie must accumulate 50% + 1 of the vote. 
+                 In Round 4, if no other movie has previously won, the majority will win.",
+                "If there is an equal tie in Round 4, the entire pool of votes for the two tied is the tie-breaker.",
+                "<h2>Round 1</h2>", str1,
+                 paste("Dropped in R1:", str1b),
+                 "<h2>Round 2</h2>", str2,
                  paste("Dropped in R2:", str2b),
-                 "Round 2", str2,
+                 "<h2>Round 3</h2>", str3,
                  paste("Dropped in R3:", str3b),
-                 "Round 3", str3,
-                 "Round 4", str4, 
-                 "Final Outcome", str5, sep = '<br/>'))
+                 "<h2>Round 4</h2>", str4, 
+                 "<h2>Tie Breaker</h2>", str5, sep = '<br/>'))
       
     })
     
