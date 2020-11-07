@@ -61,19 +61,39 @@ That said, if you're looking for a speaker, contact me at stephanie@stephaniekir
 
 
 I'm available to speak on the following topics:  
+<font size = 2>
 
-* Machine learning production workflows using AWS Redshift and Airflow  
-* Applications of machine learning in hospitality industry or IIOT   
+* Machine Learning with Parallelization/Cluster Computing
+  * Applications of GPU clusters for deep learning
+  * Using Dask to parallelize machine learning
+  
+* Pipelining and Job Scheduling for Machine Learning
+  * Machine learning production workflows using AWS Redshift and Airflow  
+  
+* Data Warehousing/Storage
+  * Redshift
+  * PostgreSQL
+  * Elasticsearch
+  
+* Industry Specific Machine Learning
+  * IIOT
+  * Hospitality/Travel
+  * Education
+  
+* Data Visualization
+  * R: ggplot, shiny, plotly, gganimate
+  * Python: plotnine, bokeh, plotly
+  * GIS or Network Graphs
+  
+* Developing and Distributing Packages/Libraries
+  * R
+  * Python
+  * Collaboration across teams with R or Python libraries  
+  
 * Sociological insights on data science, machine learning, and/or AI  
-* Data visualization with R (including animation, network graphs, and maps/GIS)  
-* Data storage in AWS Redshift   
-* Data storage in Elasticsearch    
-* Using Elasticsearch for analytics end users  
-* R package development  
-* Collaboration across teams with R or Python libraries  
 
 Or other topics - please contact me if something adjacent would fit your audience! 
-
+</font>
 <BR>
 <BR>
 
@@ -87,21 +107,31 @@ Or other topics - please contact me if something adjacent would fit your audienc
 <B>Up next:</b>  
 
 
-#### Event: ChiPy Data SIG October 2020   
+#### Event: R Ladies Dallas, December 2020   
 
 Topic: Branching Out into Isolation Forests: Tree Based Anomaly Detection    
 Location: Virtual  
-Date: October 21, 2020  
-Links: https://www.chipy.org/    
-https://www.meetup.com/_ChiPy_/events/272525624/   
-There will be a free livestream on YouTube, so please join!
-
+Date: December 7, 2020  
+Links: https://www.meetup.com/rladies-dallas/events/274004809/
 <BR>
 <BR>
 
 ### Past Appearances 
 
 If you have any questions about any of the talks below, contact me on twitter! 
+
+<BR>
+
+#### Event: ChiPy Data SIG October 2020   
+
+Topic: Branching Out into Isolation Forests: Tree Based Anomaly Detection    
+Location: Virtual  
+Date: October 21, 2020  
+[Video](https://youtu.be/hDK8lTeKR9Y?t=3847)  
+Links: https://www.chipy.org/    
+https://www.meetup.com/_ChiPy_/events/272525624/   
+
+
 
 <BR>
 
