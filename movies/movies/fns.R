@@ -1,10 +1,10 @@
 
 library(ssh)
 
-local_responsepath = './rankorder/responses/'
+local_responsepath = './responses/'
 #local_savepath = '.'
-local_savepath = './rankorder/'#responses/'
-remote_responsepath = './rankorder/'
+local_savepath = './'#rankorder/'
+remote_responsepath = './responses/'
 
 pullResponses = function(ssh_session, path=local_responsepath){
   scp_download(ssh_session, remote_responsepath, to = local_savepath)

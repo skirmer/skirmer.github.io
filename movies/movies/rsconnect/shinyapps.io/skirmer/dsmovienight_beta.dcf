@@ -1,0 +1,13 @@
+name: dsmovienight_beta
+title: dsmovienight_beta
+username:
+account: skirmer
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2696678
+bundleId: 3776162
+url: https://skirmer.shinyapps.io/dsmovienight_beta/
+when: 1603496041.40079
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: ssh_maint.R|.cache/motd.legal-displayed|old_responses|rankorder-old

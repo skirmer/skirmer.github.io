@@ -1,0 +1,13 @@
+name: dsmovienight
+title: dsmovienight
+username:
+account: skirmer
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2584768
+bundleId: 3776172
+url: https://skirmer.shinyapps.io/dsmovienight/
+when: 1603496404.83123
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: ssh_maint.R|.cache/motd.legal-displayed|old_responses|rankorder-old

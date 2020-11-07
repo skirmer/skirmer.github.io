@@ -18,15 +18,15 @@ source("movie_select_class.R")
 fields <- c("name", "title", "newtitle", "date")
 history <- read.csv("history.csv")
 colnames(history) <- c("Movie", "Date Watched")
-movielist <- c("Terminator", "Clueless", "Escape from New York", "Clue", "Black Mirror", "The Social Network")
+movielist <- c("Terminator", "Clueless", "Escape from New York", "Candyman", "Close Encounters of the Third Kind", "Kontroll","Margin Call", "My Cousin Vinny", "War Games", "Pineapple Express", "Black Mirror", "The Social Network")
 df = pullResponses(ssh_sesh)
 
 ui <- fluidPage(
     theme = shinytheme('lumen'),
     # Application title
     titlePanel("/home/common Data Science Movie Series"),
-    h3("Next Movie: October 10, 2020: Clue"),
-    h4("Check #movie-night to vote for the next round."),
+    h3("Next Movie: November 7, 2020"),
+    h4("Check #movie-night to get more info."),
     
 
     sidebarLayout(
@@ -167,7 +167,8 @@ server <- function(input, output, session) {
       str3 <- kable(mv$get_detailed_results()$Round3, "html")
       str3b <- paste(mv$get_detailed_results()$Round3_lose, sep = " and ", collapse = " and ")
       str4 <- kable(mv$get_detailed_results()$Round4, "html")
-      str5 <- paste(mv$get_detailed_results()$Tiebreak)
+      str4b <- paste(mv$get_detailed_results()$Round4_lose, sep = " and ", collapse = " and ")
+      str5 <- kable(mv$get_detailed_results()$Tiebreak, "html")
       
       HTML(paste("<h2>Tutorial</h2>",
                 "Each round, the least popular movie is dropped. 
@@ -182,6 +183,7 @@ server <- function(input, output, session) {
                  "<h2>Round 3</h2>", str3,
                  paste("Dropped in R3:", str3b),
                  "<h2>Round 4</h2>", str4, 
+                 paste("Dropped in R4:", str4b),
                  "<h2>Tie Breaker</h2>", str5, sep = '<br/>'))
       
     })
