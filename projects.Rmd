@@ -50,8 +50,22 @@ body {
 
 <BR>
 
+#### [Tutorial: Computer Vision at Scale with Dask and PyTorch](https://towardsdatascience.com/computer-vision-at-scale-with-dask-and-pytorch-a18e17fc5bad)
+I use the Stanford Dogs dataset to demonstrate accelerating an image classification problem with GPU Clusters. If you have been thinking about GPUs but don't know where to start, or what they might be good for, I recommend this as a place to start!
+
+*Keywords: machine learning, python, deep learning*  
+
+
+<BR>
+
+***
+
+<BR>
+
 #### [Article: Make Your Data Move: Using Schedulers with Data Storage to Generate Business Value](https://opendatascience.com/make-your-data-move-using-schedulers-with-data-storage-to-generate-business-value/)
 In concert with my presentation at ODSC Europe 2020 I wrote a blog post to discuss why and how you might use scheduled jobs to make your data infrastructure work better for modeling and machine learning. 
+
+*Keywords: job scheduling, airflow, data warehousing*  
 
 <BR>
 
@@ -71,6 +85,9 @@ I appeared in a video series for Uptake about how modeling industrial failures w
 #### [Radlibs! in R](https://github.com/skirmer/radlibs) or [in Python](https://github.com/skirmer/radlibs-py)
 I wrote a silly R package called radlibs that allows you to make your own madlibs. Then I wrote a version in Python. Then I added them to CRAN and pypi. Data science doesn't always have to be serious. Use `install.packages("radlibs")` or `pip install radlibs` to get these packages. Issues and feedback welcome!
 
+*Keywords: python, r, packages*  
+
+
 <BR>
 
 ***
@@ -80,6 +97,7 @@ I wrote a silly R package called radlibs that allows you to make your own madlib
 #### [Evaluation of R Forwards Package Workshop](https://skirmer.github.io/ChiEval)  
 I recently co-taught a daylong course for a group of 30 women/gender nonbinary students about how to write R packages- we had a really good time! I analyzed our pre- and post- surveys in a notebook, to check how effective the day was for students.
 
+*Keywords: r, data visualization*  
 
 <BR>
 
@@ -95,6 +113,8 @@ I recently co-taught a daylong course for a group of 30 women/gender nonbinary s
 * Exploring modeling potential- if repayment time can be predicted, or 
 anomaly detection if labeling outcomes is not possible  
 
+*Keywords: r, data visualization*  
+
 
 <BR>
 
@@ -109,38 +129,12 @@ This project is a kaggle kernel, in which I walked the reader through the proces
 Update: Read the interview I did regarding this project (and the other fabulous winners)! 
 http://blog.kaggle.com/2017/03/29/predicting-house-prices-playground-competition-winning-kernels
 
-*Key Skills: machine learning, data cleaning*  
+*Keywords: machine learning, data cleaning*  
 
 <BR>
 
 ***
 
-
-
-<BR>
-
-#### [Data for Democracy 2017 Hackathon](https://skirmer.shinyapps.io/chilobby/)
-
-I led a team working on the Chicago Lobbying project, which produced some great output, including this visualization of lobbying and aldermen in Chicago. The project is continuing and building out new functionality. I personally cleaned some of the data underlying, but my biggest contribution was organizing, planning, and leadership. Additional results:
-https://data.world/lilianhj/chicago-lobbyists
-
-Update: Check out a case study by the fine folks at data.world discussing the work that went in to this project: https://medium.com/@sharonbrener/dbf30aeee70b
-
-<BR>
-
-***
-
-<BR>
-
-#### [Exploring Austin, Texas Crime](https://www.kaggle.com/skirmer/exploratory-analysis-of-austin-crime-with-maps)
-
-Among the public datasets available on Kaggle is this one, describing the crimes that have occurred in Austin, TX over a couple of years. This project cleans the data, does some exploratory analysis, and maps various kinds of crime by district
-
-*Key Skills: data cleaning, GIS*
-
-<BR>
-
-***
 
 ### [See more projects](https://skirmer.github.io/more_projects)
 

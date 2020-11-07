@@ -46,6 +46,34 @@ body {
 ## More Project Examples
 <BR>
 
+
+
+
+<BR>
+
+#### [Data for Democracy 2017 Hackathon](https://skirmer.shinyapps.io/chilobby/)
+
+I led a team working on the Chicago Lobbying project, which produced some great output, including this visualization of lobbying and aldermen in Chicago. The project is continuing and building out new functionality. I personally cleaned some of the data underlying, but my biggest contribution was organizing, planning, and leadership. Additional results:
+https://data.world/lilianhj/chicago-lobbyists
+
+Update: Check out a case study by the fine folks at data.world discussing the work that went in to this project: https://medium.com/@sharonbrener/dbf30aeee70b
+
+<BR>
+
+***
+
+<BR>
+
+#### [Exploring Austin, Texas Crime](https://www.kaggle.com/skirmer/exploratory-analysis-of-austin-crime-with-maps)
+
+Among the public datasets available on Kaggle is this one, describing the crimes that have occurred in Austin, TX over a couple of years. This project cleans the data, does some exploratory analysis, and maps various kinds of crime by district
+
+*Key Skills: data cleaning, GIS*
+
+<BR>
+
+***
+
 #### [Interruptions at the First Presidential Debate](https://www.kaggle.com/skirmer/d/mrisdal/2016-us-presidential-debates/interruptions-at-the-first-presidential-debate)
 
 My first natural language processing/text mining! This was a lot of fun, because I watched the debate and then was able to examine how well my actual perceptions matched what the data told me.
