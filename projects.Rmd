@@ -55,55 +55,43 @@ I use the Stanford Dogs dataset to demonstrate accelerating an image classificat
 
 *Keywords: machine learning, python, deep learning*  
 
-
-<BR>
-
 ***
 
-<BR>
+
+#### [Article: 3 Ways to Schedule and Execute Python Jobs](https://www.saturncloud.io/s/job-scheduling-with-python/)
+Job scheduling is what takes academic machine learning to production level for real business or project value. I went through three tools (cron, Airflow, and Prefect) in this article and discussed the pros and cons to each. Depending on your task and circumstances, any one of these tools might be what you need.
+
+*Keywords: python, job scheduling, airflow*  
+
+
+***
 
 #### [Article: Make Your Data Move: Using Schedulers with Data Storage to Generate Business Value](https://opendatascience.com/make-your-data-move-using-schedulers-with-data-storage-to-generate-business-value/)
 In concert with my presentation at ODSC Europe 2020 I wrote a blog post to discuss why and how you might use scheduled jobs to make your data infrastructure work better for modeling and machine learning. 
 
 *Keywords: job scheduling, airflow, data warehousing*  
 
-<BR>
 
 ***
-
-<BR>
 
 #### [Model Behavior Video](https://www.youtube.com/watch?v=avRLRc4wI3Q)
 I appeared in a video series for Uptake about how modeling industrial failures work - this was really fun, and I hope people will give it a look! I talk about a specific failure of diesel locomotive hardware, and how I solved it while I was working at Uptake. 
 
-<BR>
-
 ***
-
-<BR>
 
 #### [Radlibs! in R](https://github.com/skirmer/radlibs) or [in Python](https://github.com/skirmer/radlibs-py)
 I wrote a silly R package called radlibs that allows you to make your own madlibs. Then I wrote a version in Python. Then I added them to CRAN and pypi. Data science doesn't always have to be serious. Use `install.packages("radlibs")` or `pip install radlibs` to get these packages. Issues and feedback welcome!
 
 *Keywords: python, r, packages*  
 
-
-<BR>
-
 ***
-
-<BR>
 
 #### [Evaluation of R Forwards Package Workshop](https://skirmer.github.io/ChiEval)  
 I recently co-taught a daylong course for a group of 30 women/gender nonbinary students about how to write R packages- we had a really good time! I analyzed our pre- and post- surveys in a notebook, to check how effective the day was for students.
 
 *Keywords: r, data visualization*  
 
-<BR>
-
 ***
-
-<BR>
 
 #### [Kiva Loan Data Analysis](https://skirmer.shinyapps.io/Kiva_Loans/)  
 
@@ -115,14 +103,10 @@ anomaly detection if labeling outcomes is not possible
 
 *Keywords: r, data visualization*  
 
-
-<BR>
-
 ***
 
-<BR>
 
-#### [Fun with Real Estate Data](https://www.kaggle.com/skirmer/house-prices-advanced-regression-techniques/fun-with-real-estate-data)
+#### [Tutorial: Fun with Real Estate Data](https://www.kaggle.com/skirmer/house-prices-advanced-regression-techniques/fun-with-real-estate-data)
 
 This project is a kaggle kernel, in which I walked the reader through the process of cleaning and modeling the data from a real estate prices dataset, using linear modeling, random forests, and gradient boosting (xgboost). My most popular kernel to date! This one also produced respectable competition results, and was chosen for special recognition by the Kaggle admins. (I won a mug!)
 
@@ -131,14 +115,15 @@ http://blog.kaggle.com/2017/03/29/predicting-house-prices-playground-competition
 
 *Keywords: machine learning, data cleaning*  
 
-<BR>
 
 ***
 
-
-### [See more projects](https://skirmer.github.io/more_projects)
-
 <font size = 2>
+
+[See more projects](https://skirmer.github.io/more_projects)
+
+***
+
 stephanie@stephaniekirmer.com 
 <BR> [Kaggle](http://www.kaggle.com/skirmer) | [Twitter](https://twitter.com/data_stephanie) | [Github](http://github.com/skirmer) | [Linkedin](http://linkedin.com/in/skirmer)
 
