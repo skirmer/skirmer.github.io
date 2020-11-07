@@ -48,56 +48,7 @@ body {
 <br>
 <font size = 3> 
 
-I love public speaking, and would be glad to join you at your event. 
-
-<div style="border: .5px solid lightgrey; padding: 20px; margin-top:20px; margin-bottom:20px">
-I believe that our personal values should be reflected in our work, so I don't participate in events where I am the only woman, events with one or fewer people of color on the speaking schedule, or events organized by groups that don't explicitly support equal opportunity and require respectful conduct from attendees. 
-
-There is an abundance of extremely talented women, people of color, and LGBT+ people in the data science industry, and if you are struggling to find them for your event or job opening, please let me know and I may be able to help connect you.
-
-</div>
-
-That said, if you're looking for a speaker, contact me at stephanie@stephaniekirmer.com or visit [my SpeakerHub profile](https://speakerhub.com/speaker/stephanie-kirmer).
-
-
-I'm available to speak on the following topics:  
-<font size = 2>
-
-* Machine Learning with Parallelization/Cluster Computing
-  * Applications of GPU clusters for deep learning
-  * Using Dask to parallelize machine learning
-  
-* Pipelining and Job Scheduling for Machine Learning
-  * Machine learning production workflows using AWS Redshift and Airflow  
-  
-* Data Warehousing/Storage
-  * Redshift
-  * PostgreSQL
-  * Elasticsearch
-  
-* Industry Specific Machine Learning
-  * IIOT
-  * Hospitality/Travel
-  * Education
-  
-* Data Visualization
-  * R: ggplot, shiny, plotly, gganimate
-  * Python: plotnine, bokeh, plotly
-  * GIS or Network Graphs
-  
-* Developing and Distributing Packages/Libraries
-  * R
-  * Python
-  * Collaboration across teams with R or Python libraries  
-  
-* Sociological insights on data science, machine learning, and/or AI  
-
-Or other topics - please contact me if something adjacent would fit your audience! 
-</font>
-<BR>
-<BR>
-
-</font>
+I love public speaking, and would be glad to join you at your event. To see more information about my areas of expertise and requirements for participation, please visit [my bookings page](booking.html).
 
 ## Upcoming Appearances 
 
@@ -250,7 +201,7 @@ http://partiallyderivative.com/podcast/2017/05/09/data-science-near-you
 
 </font>
 <br><BR>
-<font size = 2> Looking for a speaker? Contact me at stephanie@stephaniekirmer.com. 
+<font size = 2> [Looking for a speaker?](booking.html) Contact me at stephanie@stephaniekirmer.com. 
 
 
 <BR> [Kaggle](http://www.kaggle.com/skirmer) | [Twitter](https://twitter.com/data_stephanie) | [Github](http://github.com/skirmer) | [Linkedin](http://linkedin.com/in/skirmer)

@@ -98,6 +98,4 @@ knitr::asis_output(htmltools::htmlPreserve('
 stephanie@stephaniekirmer.com 
 <BR> [Kaggle](http://www.kaggle.com/skirmer) | [Twitter](https://twitter.com/data_stephanie) | [Github](http://github.com/skirmer) | [Linkedin](http://linkedin.com/in/skirmer)
 
-See what I'm reading on Pocket: http://getpocket.com/@data_stephanie   
-<BR>
 This site is built by me, in RMarkdown and a bit of Javascript.
