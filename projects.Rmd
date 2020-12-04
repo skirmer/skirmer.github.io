@@ -50,6 +50,22 @@ body {
 
 <BR>
 
+
+#### [Opinion: Your Data Scientist Does Not Need a STEM Ph.D.](https://towardsdatascience.com/your-data-scientist-does-not-need-a-stem-ph-d-7f2206f43871)
+You should not require or ask for a generic STEM Ph.D. for data scientist candidates. In this blog post, I give a detailed argument on this and discuss the critiques of the practice.
+
+*Keywords: data science, social science*  
+
+***
+
+
+#### [Tutorial: Combining Dask and PyTorch for Better, Faster Transfer Learning](https://medium.com/analytics-vidhya/combining-dask-and-pytorch-for-better-faster-transfer-learning-6ff64963e685)
+I use the Stanford Dogs dataset again, this time to demonstrate accelerating transfer learning to improve Resnet50. The inner workings of how PyTorch supports multi-machine, multi-GPU training can be confusing but I have deciphered it for you here.
+
+*Keywords: machine learning, python, deep learning*  
+
+***
+
 #### [Tutorial: Computer Vision at Scale with Dask and PyTorch](https://towardsdatascience.com/computer-vision-at-scale-with-dask-and-pytorch-a18e17fc5bad)
 I use the Stanford Dogs dataset to demonstrate accelerating an image classification problem with GPU Clusters. If you have been thinking about GPUs but don't know where to start, or what they might be good for, I recommend this as a place to start!
 
