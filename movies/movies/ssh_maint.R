@@ -11,23 +11,24 @@ ssh_sesh <- ssh::ssh_connect(host = paste0(dw$login,'@192.168.130.8'),
 ssh_exec_wait(ssh_sesh, command = "ls", std_out = stdout(),
               std_err = stderr())
 
+### Cleanup after a watch
 ssh_exec_wait(ssh_sesh, command = "cd remote_responses && ls", std_out = stdout(),
               std_err = stderr())
-
-# ssh_exec_wait(ssh_sesh, command = "mv rankorder old-rankorder  ", std_out = stdout(),
-# std_err = stderr())
 
 ssh_exec_wait(ssh_sesh, command = "rm -r remote_responses", std_out = stdout(),
               std_err = stderr())
 
+ssh_exec_wait(ssh_sesh, command = "mkdir remote_responses", std_out = stdout(),
+              std_err = stderr())
+
+#####
 ssh_exec_wait(ssh_sesh, command = "cd responses && rm -r responses", std_out = stdout(),
               std_err = stderr())
 
 ssh_exec_wait(ssh_sesh, command = "rm -r rankorder", std_out = stdout(),
               std_err = stderr())
 
-ssh_exec_wait(ssh_sesh, command = "mkdir remote_responses", std_out = stdout(),
-               std_err = stderr())
+
 
 
 scp_upload(ssh_sesh, c("local_responses/summarized_results_9_7.csv"), to = "remote_responses/")

@@ -19,15 +19,15 @@ fields <- c("name", "title", "newtitle", "date")
 history <- read.csv("history.csv")
 colnames(history) <- c("Movie", "Date Watched")
 movielist <- c("Airplane!", "Back to the Future", "Close Encounters of the Third Kind",
-               "Clueless", "Escape from New York", "Fargo", "Margin Call", "My Cousin Vinny", 
-               "Pineapple Express", "The Social Network", "War Games")
+               "Clueless", "Escape from New York", "Fargo", "My Cousin Vinny", 
+               "Pineapple Express", "The Social Network", "War Games", "The Royal Tenenbaums")
 df = pullResponses(ssh_sesh)
 
 ui <- fluidPage(
     theme = shinytheme('lumen'),
     # Application title
     titlePanel("/home/common Data Science Movie Series"),
-    h3("Next Movie: December 5, 2020"),
+    h3("Next Movie: TBD January 2021"),
     h4("Check #movie-night to get more info."),
     
 
