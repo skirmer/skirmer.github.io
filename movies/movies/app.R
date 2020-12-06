@@ -18,14 +18,16 @@ source("movie_select_class.R")
 fields <- c("name", "title", "newtitle", "date")
 history <- read.csv("history.csv")
 colnames(history) <- c("Movie", "Date Watched")
-movielist <- c("Terminator", "Clueless", "Escape from New York", "Candyman", "Close Encounters of the Third Kind", "Kontroll","Margin Call", "My Cousin Vinny", "War Games", "Pineapple Express", "Black Mirror", "The Social Network")
+movielist <- c("Airplane!", "Back to the Future", "Close Encounters of the Third Kind",
+               "Clueless", "Escape from New York", "Fargo", "Margin Call", "My Cousin Vinny", 
+               "Pineapple Express", "The Social Network", "War Games")
 df = pullResponses(ssh_sesh)
 
 ui <- fluidPage(
     theme = shinytheme('lumen'),
     # Application title
     titlePanel("/home/common Data Science Movie Series"),
-    h3("Next Movie: November 7, 2020"),
+    h3("Next Movie: December 5, 2020"),
     h4("Check #movie-night to get more info."),
     
 
@@ -173,9 +175,8 @@ server <- function(input, output, session) {
       HTML(paste("<h2>Tutorial</h2>",
                 "Each round, the least popular movie is dropped. 
                 The following round, the ballots whose votes were dropped will contribute their next-highest choice." ,
-                "To win outright, a movie must accumulate 50% + 1 of the vote. 
-                 In Round 4, if no other movie has previously won, the majority will win.",
-                "If there is an equal tie in Round 4, the entire pool of votes for the two tied is the tie-breaker.",
+                "To win outright, a movie must accumulate at least 50% of the total votes.",
+                "If there is an equal tie in Round 4 between 2 or more films, the entire pool of votes for the ones tied is the tie-breaker.",
                 "<h2>Round 1</h2>", str1,
                  paste("Dropped in R1:", str1b),
                  "<h2>Round 2</h2>", str2,

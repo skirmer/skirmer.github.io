@@ -5,9 +5,9 @@ account: skirmer
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2584768
-bundleId: 3776172
+bundleId: 3858935
 url: https://skirmer.shinyapps.io/dsmovienight/
-when: 1603496404.83123
+when: 1605325021.49688
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: ssh_maint.R|.cache/motd.legal-displayed|old_responses|rankorder-old
+ignoredFiles: ssh_maint.R|.cache/motd.legal-displayed|old_responses|old-rankorder

@@ -1,10 +1,12 @@
 
 library(ssh)
 
-local_responsepath = './responses/'
-#local_savepath = '.'
-local_savepath = './'#rankorder/'
-remote_responsepath = './responses/'
+#local onlysetwd("~/Documents/skirmer.github.io/movies/movies/")
+
+local_responsepath = './remote_responses/'
+local_savepath = './'
+remote_responsepath = './remote_responses/'
+remote_savepath = './'
 
 pullResponses = function(ssh_session, path=local_responsepath){
   scp_download(ssh_session, remote_responsepath, to = local_savepath)
@@ -72,7 +74,7 @@ saveData <- function(new_responses, ssh_sesh) {
     fileName <- paste0(paste(as.integer(Sys.time()), digest::digest(data, algo = "md5"), sep = "_"), ".csv")
     # Write the file to the local system
     write.csv(x = responses, file = file.path(local_responsepath, fileName), row.names = FALSE)
-    scp_upload(ssh_sesh,local_responsepath, to = remote_responsepath)
+    scp_upload(ssh_sesh,local_responsepath, to = remote_savepath)
  
   }
   #ssh_disconnect(ssh_sesh)
