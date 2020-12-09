@@ -57,19 +57,30 @@ I love public speaking, and would be glad to join you at your event. To see more
 </font>
 <B>Up next:</b>  
 
+#### Event: RE*WORK's Deep Learning Virtual Summit, January 2021   
 
-#### Event: R Ladies Dallas, December 2020   
-
-Topic: Branching Out into Isolation Forests: Tree Based Anomaly Detection    
+Topic: Scaling Up Pytorch with GPU Cluster Computing  
 Location: Virtual  
-Date: December 7, 2020  
-Links: https://www.meetup.com/rladies-dallas/events/274004809/
+Date: January 28-29, 2021  
+Links: https://www.re-work.co/events/deep-learning-virtual-summit-2021
+
 <BR>
 <BR>
 
 ### Past Appearances 
 
 If you have any questions about any of the talks below, contact me on twitter! 
+
+<BR>
+
+#### Event: R Ladies Dallas, December 2020   
+
+Topic: Branching Out into Isolation Forests: Tree Based Anomaly Detection    
+Location: Virtual  
+Date: December 7, 2020  
+Links: https://www.meetup.com/rladies-dallas/events/274004809/  
+https://github.com/skirmer/isolation_forests   
+Video to come
 
 <BR>
 
