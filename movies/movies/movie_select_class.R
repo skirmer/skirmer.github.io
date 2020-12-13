@@ -1,132 +1,24 @@
 library(R6)
 library(dplyr)
 
-
-
 MovieSelection <- R6Class("MovieSelection",
                   public = list(
                     ssh_session = NULL,
-                    df = NULL,
                     path = NULL,
-                    initialize = function(ssh_session, path, df) {
+                    df = NULL,
+                    cleandf = NULL,
+                    denominator = NULL,
+                    initialize = function(ssh_session, path) {
                       self$path = path
                       self$ssh_session = ssh_session
-                      self$df = self$pullResponses
+                      
+                      startdata = self$pull_responses()
+                      self$df = startdata
+                      self$cleandf = self$get_original_data()$data
+                      self$denominator = self$get_original_data()$total_firsts
                       
                     },
-                    get_results = function(){
-                      
-                      self$df = self$pullResponses()
-                      
-                      first_round_outcome = self$calculate_firstround()
-                      message1 = (paste("Round 1:", first_round_outcome$result))
-                      
-                      headcount = paste("Total Ballots Cast:", first_round_outcome$denominator)
-                      immediate_winner = first_round_outcome$immediate_winner
-                      
-                      if(nrow(immediate_winner) == 0){
-                        second_round_outcome = self$calculate_secondround(first_round_outcome)
-                        immediate_winner = second_round_outcome$outright_winner
-                        message2 = (paste("Round 2:", second_round_outcome$result))
-                      } else {
-                        message2 = "Round 2 not required."
-                      }
-                    
-                      if(nrow(immediate_winner) == 0){
-                        third_round_outcome = self$calculate_thirdround(first_round_outcome, second_round_outcome)
-                        immediate_winner = third_round_outcome$outright_winner
-                        message3 = (paste("Round 3:", third_round_outcome$result))
-                      } else {
-                        message3 = "Round 3 not required."
-                      }
-                      
-                      if(nrow(immediate_winner) == 0){
-                        fourth_round_outcome = self$calculate_fourthround(first_round_outcome, second_round_outcome, third_round_outcome)
-                        immediate_winner = fourth_round_outcome$result
-                        message4 = (paste("Round 4:", fourth_round_outcome$result))
-                      } else {
-                        message4 = "Round 4 not required."
-                      }
-                      
-                      if(paste(immediate_winner, sep = "", collapse = "") == "No outright winner - tie break required."){
-                        tie_round_outcome=self$tie_break_finale(fourth_round_outcome)
-                        message5 = tie_round_outcome$outright_winner
-                        immediate_winner = fourth_round_outcome$outright_winner
-                      } else {
-                        message5 = "Tiebreak not required."
-                      }
-                      return(list("headcount" = headcount,
-                                  "Round1" = message1, 
-                                  "Round2" = message2, 
-                                  "Round3" = message3, 
-                                  "Round4" = message4, 
-                                  "Tiebreak" = message5))
-                      
-                    },
-                    
-                    get_detailed_results = function(){
-                      
-                      self$df = self$pullResponses()
-                      
-                      first_round_outcome = self$calculate_firstround()
-                      headcount = paste("Total Ballots Cast:", first_round_outcome$denominator)
-                      message1 = first_round_outcome$first_round_votes
-                      r1_losers = first_round_outcome$first_round_loser
-                      immediate_winner = first_round_outcome$immediate_winner
-                      
-                      
-                      if(nrow(immediate_winner) == 0){
-                        second_round_outcome = self$calculate_secondround(first_round_outcome)
-                        immediate_winner = second_round_outcome$outright_winner
-                        message2 = second_round_outcome$second_round_votes
-                        r2_losers = second_round_outcome$second_round_loser
-                        
-                      } else {
-                        message2 = "Round 2 not required."
-                        r2_losers = ""
-                      }
-                      
-                      if(nrow(immediate_winner) == 0){
-                        third_round_outcome = self$calculate_thirdround(first_round_outcome, second_round_outcome)
-                        immediate_winner = third_round_outcome$outright_winner
-                        message3 = third_round_outcome$third_round_votes
-                        r3_losers = third_round_outcome$third_round_loser
-                        
-                      } else {
-                        message3 = "Round 3 not required."
-                        r3_losers = ""
-                      }
-                      
-                      if(nrow(immediate_winner) == 0){
-                        fourth_round_outcome = self$calculate_fourthround(first_round_outcome, second_round_outcome, third_round_outcome)
-                        immediate_winner = fourth_round_outcome$result
-                        message4 = fourth_round_outcome$fourth_round_votes
-                        r4_losers = fourth_round_outcome$fourth_round_loser
-                      } else {
-                        message4 = "Round 4 not required."
-                        r4_losers = ""
-                      }
-                      
-                      if(paste(immediate_winner, sep = "", collapse = "") == "No outright winner - tie break required."){
-                        tie_round_outcome=self$tie_break_finale(fourth_round_outcome)
-                        message5 = tie_round_outcome$outright_winner
-                      } else {
-                        message5 = "Tiebreak not required."
-                      }
-                      return(list("headcount" = headcount,
-                                  "baseline" = first_round_outcome$raw_start,
-                                  "Round1" = message1, 
-                                  "Round1_lose" = r1_losers,
-                                  "Round2" = message2, 
-                                  "Round2_lose" = r2_losers,
-                                  "Round3" = message3, 
-                                  "Round3_lose" = r3_losers,
-                                  "Round4" = message4, 
-                                  "Round4_lose" = r4_losers,
-                                  "Tiebreak" = message5))
-                      
-                    },
-                    pullResponses = function(){
+                    pull_responses = function(){
                       scp_download(self$ssh_session, remote_responsepath, to = local_savepath)
                       
                       files <- list.files(self$path, pattern="*.csv", full.names = TRUE, recursive = FALSE)
@@ -135,248 +27,99 @@ MovieSelection <- R6Class("MovieSelection",
                       for(i in 1:length(files)){
                         df[[i]] = read.csv(files[[i]], stringsAsFactors = F)
                       }
-                      
                       return(df)
                     },
                     get_original_data = function(){
-                      df = self$df
-                      
-                      data <- data.table::rbindlist(df) %>%
+                      data <- data.table::rbindlist(self$df) %>%
                         as.data.frame() %>%
                         mutate(rank1 = stringr::str_trim(rank1),
                                rank2 = stringr::str_trim(rank2),
                                rank3 = stringr::str_trim(rank3),
-                               rank4 = stringr::str_trim(rank4))
+                               rank4 = stringr::str_trim(rank4)) %>%
+                        unique()
                       
-                      return(data)
+                      total_firsts = nrow(data)
+                      
+                      return(list('data'=data, 'total_firsts'=total_firsts))
                     },
-                    tabulate_firstround = function(data, col, cstr){
-                      vround <- data %>%
-                        select(c("name", cstr, "date")) %>%
-                        unique() %>%
-                        filter(!!col != "") %>%
-                        group_by("Movie" = !!col) %>%
-                        summarize(Votes = n(), .groups = "drop")
+                    tabulate_nround = function(col, cstr, losers){
                       
-                      total_firsts <- sum(vround$Votes)
-                      immediate_win <- vround[vround$Votes >= ceiling(total_firsts/2), "Movie"]
-                      if(nrow(immediate_win) == 1){
-                        immediate_win <- vround[vround$Votes >= ceiling(total_firsts/2), "Movie"]
-                      } else {
-                        immediate_win = data.frame()
-                      }
-                      
-                      return(list("denominator" = total_firsts, 
-                                  "outright_winner" = immediate_win, 
-                                  "vote_tally" = vround))
-                    },
-                    tabulate_nround = function(data, col, cstr, prevcol, total_firsts, losers){
-                      vround <- data %>%
-                        filter(!!prevcol %in% losers$Movie) %>%
-                        select(c("name",cstr, "date")) %>%
-                        unique() %>%
-                        group_by("Movie" = !!col) %>%
-                        summarize(Votes = n(), .groups = "drop") 
-                      
-                      immediate_win <- vround[vround$Votes >= ceiling(total_firsts/2), "Movie"]
-                      return(list("outright_winner" = immediate_win, 
-                                  "vote_tally" = vround))
-                    },
-                    tabulate_finalround = function(data, col, cstr, prevcol, total_firsts, losers){
-                      vround <- data %>%
-                        filter(!!prevcol %in% losers$Movie) %>%
-                        select(c("name", cstr, "date")) %>%
-                        unique() %>%
-                        group_by("Movie" = !!col) %>%
-                        summarize(Votes = n(), .groups = "drop")
-                      
-                      #immediate_win <- vround#vround[vround$Votes >= maxvote, "Movie"]
-                      
-                      return(list("vote_tally" = vround))
-                    },
-                    calculate_firstround = function(){
-                      data <- self$get_original_data()
-                      tabbed_firstround = self$tabulate_firstround(data, quo(rank1), "rank1")
-                      
-                      first_round <- tabbed_firstround$vote_tally
-                      print(tabbed_firstround$outright_winner)
-                      
-                      if(length(tabbed_firstround$outright_winner) == 1){
-                        result = tabbed_firstround$outright_winner
-                        first_loser <- ""
-                        first_round_end <- ""
-                      } else {
-                        result = "No outright winner: must continue to next round."
-                        first_loser <- first_round[first_round$Votes == min(first_round$Votes), "Movie"]
-                        first_round_end <- filter(first_round, !(Movie %in% first_loser$Movie))
-                        if(nrow(first_round_end) == 0){
-                          result = "Complete first round tie, need more votes to get a result."
-                        } 
-                      }
-                      return(list("result" = result,
-                                  "first_round_loser" = first_loser,
-                                  "first_round_votes" = first_round, 
-                                  "first_round_result" = first_round_end,
-                                  "denominator" = tabbed_firstround$denominator, 
-                                  "immediate_winner" = tabbed_firstround$outright_winner))
-                    },
-                    calculate_secondround = function(first_round_outcome){
-                      
-                      data = self$get_original_data()
-                      tabbed_secondround <- self$tabulate_nround(data, quo(rank2), "rank2",
-                                                            quo(rank1),
-                                                            first_round_outcome$denominator,
-                                                            first_round_outcome$first_round_loser)
-                      
-                      second_round <- tabbed_secondround$vote_tally %>%
-                        rbind(first_round_outcome$first_round_result) %>%
-                        group_by(Movie) %>%
-                        summarize(Votes = sum(Votes), .groups = "drop") %>%
-                        arrange(Votes)
-                      
-                      winner <- tabbed_secondround$outright_winner
-                      
-                      if(nrow(first_round_outcome$immediate_winner) > 0){
-                        result = first_round_outcome$immediate_winner
-                        second_loser = NA
-                        final = NA
-                      } else if(nrow(winner) == 1){
-                        result = winner
-                        second_loser = NA
-                        final = NA
-                      } else {
-                        result = "No outright winner: must continue to next round."
-                        second_loser <- second_round[second_round$Votes == min(second_round$Votes), "Movie"]
-                        final <- filter(second_round, !(Movie %in% second_loser$Movie))
-                        if(nrow(final) == 0){
-                          final <- second_round
-                          result = c(paste("Tie:", paste(final$Movie, sep = " and ", collapse = " and "),"- must continue to next round."))
-                        } 
-                      }
-                      return(list("result" = result,
-                                  "outright_winner" = tabbed_secondround$outright_winner,
-                                  "second_round_loser" = second_loser,
-                                  "second_round_result" = final,
-                                  "second_round_votes" = second_round))
-                    },
-                    calculate_thirdround = function(first_round_outcome, second_round_outcome){
-                      data = self$get_original_data()
-                      tabbed_thirdround <- self$tabulate_nround(data, quo(rank3), "rank3",
-                                                           quo(rank2),
-                                                           first_round_outcome$denominator,
-                                                           second_round_outcome$second_round_loser)
-                      
-                      third_round <- tabbed_thirdround$vote_tally %>%
-                        rbind(second_round_outcome$second_round_result) %>%
-                        group_by(Movie) %>%
-                        summarize(Votes = sum(Votes), .groups = "drop") %>%
-                        arrange(Votes)
-                      
-                      winner <- tabbed_thirdround$outright_winner
-                      
-                      if(nrow(first_round_outcome$immediate_winner) > 0){
-                        result = first_round_outcome$immediate_winner
-                        third_loser = NA
-                        final = NA
-                      } else if(nrow(second_round_outcome$outright_winner)  > 0){
-                        result = second_round_outcome$outright_winner
-                        third_loser = NA
-                        final = NA
-                      } else if(nrow(winner) == 1){
-                        result = winner
-                        third_loser = NA
-                        final = NA
-                      } else {
-                        result = "No outright winner: must continue to next round."
-                        third_loser <- third_round[third_round$Votes == min(third_round$Votes), "Movie"]
-                        final <- filter(third_round, !(Movie %in% third_loser$Movie))
-                        if(nrow(final) == 0){
-                          final <- third_round
-                          result = c(paste("Tie:", paste(final$Movie, sep = " and ", collapse = " and "),"- must continue to next round."))                        }
-                      }
-                      return(list("result" = result,
-                                  "outright_winner" = tabbed_thirdround$outright_winner,
-                                  "third_round_loser" = third_loser,
-                                  "third_round_result" = final,
-                                  "third_round_votes" = third_round))
-                    },
-                    calculate_fourthround = function(first_round_outcome,
-                                                      second_round_outcome, third_round_outcome){
-                      data = self$get_original_data()
-                      tabbed_fourthround <- self$tabulate_finalround(data, quo(rank4), "rank4", quo(rank3),
-                                                            first_round_outcome$denominator, 
-                                                            third_round_outcome$third_round_loser)
-                      
-                      
-                      fourth_round <- tabbed_fourthround$vote_tally %>%
-                        rbind(third_round_outcome$third_round_result) %>%
-                        group_by(Movie) %>%
-                        summarize(Votes = sum(Votes), .groups = "drop") %>%
-                        arrange(Votes)
-                      
-                      fourth_loser <- fourth_round[fourth_round$Votes == min(fourth_round$Votes), "Movie"]
-                      final_candidates <- filter(fourth_round, !(Movie %in% fourth_loser$Movie))
-                      
-                      outright_winner = fourth_round %>%
-                        top_n(1, Votes)
-                      
-                      winner <- outright_winner#tabbed_fourthround$outright_winner
-                      
-                      if(nrow(first_round_outcome$immediate_winner) > 0){
-                        result = first_round_outcome$immediate_winner
-                        fourth_loser = NA
-                        final = NA
-                      } else if(nrow(second_round_outcome$outright_winner)  > 0){
-                        result = second_round_outcome$outright_winner
-                        fourth_loser = NA
-                        final = NA
-                      } else if(nrow(third_round_outcome$outright_winner)  > 0){
-                        result = third_round_outcome$outright_winner
-                        fourth_loser = NA
-                        final = NA
-                      } else if(nrow(winner) == 1){
-                        result = winner$Movie
-                        fourth_loser = NA
-                        final = NA
-                      } else {
-                        result = "No outright winner - tie break required."
-                        fourth_loser <- fourth_round[fourth_round$Votes == min(fourth_round$Votes), "Movie"]
-                        final <- filter(fourth_round, !(Movie %in% fourth_loser$Movie))
-                        if(nrow(final) == 0){
-                          final <- fourth_round
-                          result = "No outright winner - tie break required."                        
-                        }}
-
-                      return(list("result" = result,
-                                  "outright_winner" = tabbed_fourthround$outright_winner,
-                                  "fourth_round_loser" = fourth_loser,
-                                  "fourth_round_result" = final,
-                                  "fourth_round_votes" = fourth_round))
-                      },
-                    tie_break_finale = function(fourth_round_outcome){
-                      data = self$get_original_data()
-                      
-                      if(fourth_round_outcome$result == "No outright winner - tie break required."){
-                        vround <- data %>%
-                          tidyr::pivot_longer(cols = c(rank1, rank2, rank3, rank4), names_to = c("ranking")) %>%
-                          filter(value %in% fourth_round_outcome$fourth_round_votes$Movie) %>%
-                          filter(!(value %in% fourth_round_outcome$fourth_round_loser)) %>%
-                          select(c("name","value", "ranking", "date")) %>%
+                      if(cstr == 'rank1'){
+                        vround <- self$cleandf %>%
+                          select(c("name",cstr, "date")) %>%
                           unique() %>%
-                          group_by("Movie" = value) %>%
-                          summarize(Votes = n(), .groups = "drop")
+                          filter(!!col != "") %>%
+                          group_by("Movie" = !!col) %>%
+                          summarize(Votes = n(), .groups = "drop") 
                         
-                        tiebreak_round <- vround[vround$Votes == max(vround$Votes), "Movie"]
-                        if(nrow(tiebreak_round) == 1){
-                          #return(paste("Tie Break Winner:", tiebreak_round$Movie))
-                          return(list("tie_round_votes" = vround,
-                                      "outright_winner" = tiebreak_round$Movie))
-                        } else if (nrow(tiebreak_round) > 1){
-                          return(list("tie_round_votes" = vround,
-                                      "outright_winner" = paste("Unbreakable tie:", paste(vround$Movie, sep = " and ", collapse = " and "))
-                          ))
+                      } else if(cstr %in% c("rank2", "rank3", "rank4")){
+                        vround <- self$cleandf %>%
+                          select(c("name",cstr, "date")) %>%
+                          unique() %>%
+                          filter(!!col != "") %>%
+                          group_by("Movie" = !!col) %>%
+                          summarize(Votes = n(), .groups = "drop") 
+                        
+                        if(!is.na(losers)){
+                          vround <- vround %>%
+                            filter(!("Movie" %in% losers$Movie))
                         }
                       }
+                      
+                      losers = vround[vround$Votes == min(vround$Votes, na.rm=T),]
+                      return(list("votes" = vround, 'losers' = losers))
+                    },
+                    calculate_rounds=function(){
+                      
+                      firstrd = self$tabulate_nround(
+                        col=quo(rank1), 
+                        cstr="rank1", 
+                        losers=NA
+                      )
+                      
+                      secondrd = self$tabulate_nround(
+                        col=quo(rank2), 
+                        cstr="rank2", 
+                        losers=firstrd$losers
+                      )
+                      
+                      thirdrd = self$tabulate_nround(
+                        col=quo(rank3), 
+                        cstr="rank3",
+                        losers=rbind(firstrd$losers, secondrd$losers)
+                      )
+                      
+                      fourthrd = self$tabulate_nround(
+                        col=quo(rank4), 
+                        cstr="rank4",
+                        losers=rbind(firstrd$losers, secondrd$losers, thirdrd$losers)
+                      )
+                      return(list("firstrd"=firstrd, "secondrd"=secondrd,
+                                  "thirdrd"=thirdrd, "fourthrd"=fourthrd))
+                    },
+                    tie_catcher = function(){
+                      allresults= self$calculate_rounds()
+                      tieresults = list()
+                      
+                      for(i in allresults){
+                        
+                        if((nrow(i$votes) - nrow(i$losers)) == 0){
+                          result = "Total Tie"
+                        }
+                        
+                        else if((nrow(i$votes) - nrow(i$losers)) == 1){
+                          result = "Winner"
+                        }
+                        
+                        else if((nrow(i$votes) - nrow(i$losers)) == 2){
+                          result = "Two Way Tie"
+                        }
+                        
+                        else {result = "Multi Way Tie"}
+                        
+                        tieresults = append(tieresults, result)
+                      }
+                      return(tieresults)
                     }
                   )
 )
