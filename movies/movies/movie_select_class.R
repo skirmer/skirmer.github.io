@@ -133,18 +133,25 @@ MovieSelection <- R6Class("MovieSelection",
                       allresults= self$calculate_rounds()
                       tieresults = list()
                       
-                      for(i in allresults){
+                      for(i in 1:length(allresults)){
                         
-                        if((nrow(i$votes) - nrow(i$losers)) == 0){
+                        item = allresults[[i]]
+                        if((nrow(item$votes) - nrow(item$losers)) == 0){
                           result = "Total Tie"
                         }
                         
-                        else if((nrow(i$votes) - nrow(i$losers)) == 1){
+                        else if((nrow(item$votes) - nrow(item$losers)) == 1){
                           result = "Winner"
                         }
                         
-                        else if((nrow(i$votes) - nrow(i$losers)) == 2){
+                        else if((nrow(item$votes) - nrow(item$losers)) == 2){
                           result = "Two Way Tie"
+                          
+                          max_hit = item$votes[item$votes$Votes == max(item$votes$Votes, na.rm=T),]
+                          
+                          if(i == 4 & nrow(max_hit == 1)){
+                            result = "Win by Majority in Fourth Round"
+                          }
                         }
                         
                         else {result = "Multi Way Tie"}
@@ -158,23 +165,38 @@ MovieSelection <- R6Class("MovieSelection",
                       ties = self$tie_catcher()
                       
                       for(i in 1:length(allrounds)){
-                        if(ties[i] == 'Winner'){
-                          votes = allrounds[[i]][1]
-                          winner = votes$votes[votes$votes$Votes == max(votes$votes$Votes, na.rm=T),]
-                          output = paste("Winner in Round", i, "is", winner$Movie)
-                        }
+                          if(ties[i] %in% c('Winner', "Win by Majority in Fourth Round")){
+                              votes = allrounds[[i]][1]
+                              winner = votes$votes[votes$votes$Votes == max(votes$votes$Votes, na.rm=T),]
+                              winner = winner[winner$Votes >= floor((self$denominator)/2),]
+                              
+                              if(!exists('output')){
+                                output = paste("Winner in Round", i, "is", winner$Movie)
+                              }
+                          }
                       }
                       
                       if(!exists('output')){
-                        for(i in 1:length(allrounds)){
-                          if(ties[i] == "Two Way Tie"){
-                            votes = allrounds[[i]][1]
+                          if(ties[4] %in% c("Two Way Tie", "Multi Way Tie")){
+                            votes = allrounds[[4]][1]
                             status = votes$votes[votes$votes$Votes == max(votes$votes$Votes, na.rm=T),]
-                            output = paste("Tie in Round", i, "between", c(status$Movie), sep = " and ", collapse = " and ")
                             
+                            options = status$Movie
+                            tallies = list()
+                            for(i in options){
+                              t1 = sum(nrow(self$cleandf[self$cleandf$rank1 == i,]),
+                                  nrow(self$cleandf[self$cleandf$rank2 == i,]),
+                                  nrow(self$cleandf[self$cleandf$rank3 == i,]),
+                                  nrow(self$cleandf[self$cleandf$rank4 == i,]))
+                              
+                              tallies = append(tallies, t1)
+                            }
+                            winner = options[which.max(tallies)]
+                            output = paste0("Tie in Round ", 4, " between ", 
+                                           paste(options, sep=" and ", collapse=" and "),
+                                           ". Tie break results in win for ", winner)
                           }
                         }
-                      }
                       
                       if(!exists('output')){
                         output = "No conclusive solution yet."

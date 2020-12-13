@@ -48,11 +48,9 @@ ui <- fluidPage(
 
         mainPanel(
           tabsetPanel(
-              #tabPanel("Current vote totals", htmlOutput("text")),
               tabPanel("Detailed Round Results", htmlOutput("text2")),
               tabPanel("Our watch history", dataTableOutput("history")), 
               tabPanel("New suggestions received", dataTableOutput("new_ideas"))
-              #tabPanel("testing",textOutput("testtable"))
             ),
           img(src='popcorn.gif', align = "center", width='350'),
           img(src='votecat.gif', align = "center", width='350'),
@@ -143,22 +141,7 @@ server <- function(input, output, session) {
     
     # Show the previous responses
     # (update with current response when Submit is clicked)
-    
-    # output$text <- renderUI({
-    #   input$submit
-    #   mv = MovieSelection$new(ssh_session = ssh_sesh, path = local_responsepath)
-    #   
-    #   #str0 <- paste(mv$get_original_data()$total_firsts)
-    #   str1 <- paste(mv$calculate_rounds()$firstrd$votes$Movie)
-    #   str2 <- paste(mv$calculate_rounds()$secondrd$votes$Movie)
-    #   str3 <- paste(mv$calculate_rounds()$thirdrd$votes$Movie)
-    #   str4 <- paste(mv$calculate_rounds()$fourthrd$votes$Movie)
-    #   str5 <- paste(mv$result_completion())
-    #   
-    #   HTML(paste(str1, str2, str3, str4, str5, sep = '<br/>'))
-    #   
-    # })
-    
+   
     output$text2 <- renderUI({
       input$submit
       mv = MovieSelection$new(ssh_session = ssh_sesh, path = local_responsepath)
@@ -185,7 +168,7 @@ server <- function(input, output, session) {
                  paste("Dropped in R3:", str3b),
                  "<h2>Round 4</h2>", str4, 
                  paste("Dropped in R4:", str4b),
-                 "<h2>Tie Breaker</h2>", str5, sep = '<br/>'))
+                 str5, sep = '<br/>'))
       
     })
     
