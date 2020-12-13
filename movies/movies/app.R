@@ -48,11 +48,9 @@ ui <- fluidPage(
 
         mainPanel(
           tabsetPanel(
-              tabPanel("Current vote totals", htmlOutput("text")),
               tabPanel("Detailed Round Results", htmlOutput("text2")),
               tabPanel("Our watch history", dataTableOutput("history")), 
               tabPanel("New suggestions received", dataTableOutput("new_ideas"))
-              #tabPanel("testing",textOutput("testtable"))
             ),
           img(src='popcorn.gif', align = "center", width='350'),
           img(src='votecat.gif', align = "center", width='350'),
@@ -143,34 +141,19 @@ server <- function(input, output, session) {
     
     # Show the previous responses
     # (update with current response when Submit is clicked)
-    
-    output$text <- renderUI({
-      input$submit
-      mv = MovieSelection$new(ssh_session = ssh_sesh, path = local_responsepath, df=df)
-      
-      str0 <- paste(mv$get_results()$headcount)
-      str1 <- paste(mv$get_results()$Round1)
-      str2 <- paste(mv$get_results()$Round2)
-      str3 <- paste(mv$get_results()$Round3)
-      str4 <- paste(mv$get_results()$Round4)
-      str5 <- paste(mv$get_results()$Tiebreak)
-      
-      HTML(paste(str0, str1, str2, str3, str4, str5, sep = '<br/>'))
-      
-    })
-    
+   
     output$text2 <- renderUI({
       input$submit
-      mv = MovieSelection$new(ssh_session = ssh_sesh, path = local_responsepath, df=df)
-      str1 <- kable(mv$get_detailed_results()$Round1, "html")
-      str1b <- paste(mv$get_detailed_results()$Round1_lose, sep = " and ", collapse = " and ")
-      str2 <- kable(mv$get_detailed_results()$Round2, "html")
-      str2b <- paste(mv$get_detailed_results()$Round2_lose, sep = " and ", collapse = " and ")
-      str3 <- kable(mv$get_detailed_results()$Round3, "html")
-      str3b <- paste(mv$get_detailed_results()$Round3_lose, sep = " and ", collapse = " and ")
-      str4 <- kable(mv$get_detailed_results()$Round4, "html")
-      str4b <- paste(mv$get_detailed_results()$Round4_lose, sep = " and ", collapse = " and ")
-      str5 <- kable(mv$get_detailed_results()$Tiebreak, "html")
+      mv = MovieSelection$new(ssh_session = ssh_sesh, path = local_responsepath)
+      str1 <- kable(mv$calculate_rounds()$firstrd$votes, "html")
+      str1b <- paste(mv$calculate_rounds()$firstrd$losers$Movie, sep = " and ", collapse = " and ")
+      str2 <- kable(mv$calculate_rounds()$secondrd$votes, "html")
+      str2b <- paste(mv$calculate_rounds()$secondrd$losers$Movie, sep = " and ", collapse = " and ")
+      str3 <- kable(mv$calculate_rounds()$thirdrd$votes, "html")
+      str3b <- paste(mv$calculate_rounds()$thirdrd$losers$Movie, sep = " and ", collapse = " and ")
+      str4 <- kable(mv$calculate_rounds()$fourthrd$votes, "html")
+      str4b <- paste(mv$calculate_rounds()$fourthrd$losers$Movie, sep = " and ", collapse = " and ")
+      str5 <- kable(mv$result_completion(), "html")
       
       HTML(paste("<h2>Tutorial</h2>",
                 "Each round, the least popular movie is dropped. 
@@ -185,7 +168,7 @@ server <- function(input, output, session) {
                  paste("Dropped in R3:", str3b),
                  "<h2>Round 4</h2>", str4, 
                  paste("Dropped in R4:", str4b),
-                 "<h2>Tie Breaker</h2>", str5, sep = '<br/>'))
+                 str5, sep = '<br/>'))
       
     })
     
