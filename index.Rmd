@@ -2,57 +2,63 @@
 pagetitle: "Stephanie Kirmer"
 output: 
   html_document:
+    css: "style.css"
     includes:
         in_header: analytics.html
-        before_body: _navbar.html
     theme: flatly
 ---
 
 
 ```{css, echo=FALSE}
-body {
-  color: black;
-  margin-left: 50px;
-  margin-right: 50px;
+
+# Fonts embedded in analytics.html
+
+@media only screen and (max-width: 700px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
 }
 
-.header{
-
+.navbar{
+     visibility: hidden;
 }
 
-.navbar-brand {
-    padding: 0 !important;
-}
-# .navbar-brand img {
-#     border-right: 2px solid white;
-#     height:51px;
-# }
-.navbar-text {
-    color: white !important;
-    font-weight: bold !important;
-    margin-left:15px;
-}
-
-.nav, .navbar-nav, .navbar-right{
-  padding-top:8px;
-  padding-bottom:8px;
-}
 
 ```
 
-
-<BR>
-<BR>
-<BR>
 <div class = "header">
-# Hi! 
+<img src="img/widerfront.png">
+<div class="mainmenu">
+<a href="events.html">events calendar</a> <BR>
+<a href="booking.html">booking</a> <BR>
+<a href="projects.html">portfolio</a> <BR>
+<a href="http://github.com/skirmer">github</a> <BR>
+<a href="http://linkedin.com/in/skirmer">linkedin</a> <BR>
+</div>
 
-<font size = 4>
+</div>
 
-I'm a data scientist in industry, with a background in social science research. I am deeply interested in programming, sociology, the data science industry (and making it better), and education.  
-</font>
 
-<div style="border: .5px solid lightgrey; padding: 20px; margin-top:20px; margin-bottom:20px">
+
+<BR>
+<div class="col-twitter">
+
+```{r eval = TRUE,echo=FALSE, fig.height=8, fig.width=5}
+
+knitr::asis_output(htmltools::htmlPreserve('
+
+<a class="twitter-timeline" href="https://twitter.com/data_stephanie?ref_src=twsrc%5Etfw" data-height=500 data-width=400  data-chrome="nofooter">Tweets by data_stephanie</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+'))
+
+```
+
+</div>
+
+<div class="col-text">
+
+<BR><BR><BR><BR>
 I believe that our personal values should be reflected in our work, so I don't participate in events where I am the only woman, events with one or fewer people of color on the speaking schedule, or events organized by groups that don't explicitly support equal opportunity and require respectful conduct from attendees. I also expect an explicit commitment to diversity and inclusion from companies where I work or consider working. 
 
 There is an abundance of extremely talented women, people of color, and LGBT+ people in the data science industry, and if you are struggling to find them for your event or job opening, please let me know and I may be able to help connect you.
@@ -61,34 +67,7 @@ There is an abundance of extremely talented women, people of color, and LGBT+ pe
 
 
 <BR>
-
-<font size = 3>
-
-Contact me on twitter if you...
-
- * need advice about getting into data science, especially if you identify as a woman or gender nonbinary  
- * need a speaker to come talk at your conference about something I know  
- * just want to talk about cool data stuff!
-
-To see more about what kinds of data science I do, check out my [public speeches](events.html), [my projects](projects.html), 
-or [my Github profile](http://github.com/skirmer).
-
-</font>
-</div>
-<BR>
-
-
-
-<BR>
-```{r eval = TRUE,echo=FALSE, fig.height=13, fig.width=5}
-
-knitr::asis_output(htmltools::htmlPreserve('
-
-<a class="twitter-timeline" href="https://twitter.com/data_stephanie?ref_src=twsrc%5Etfw" data-height=1100 data-width=400  data-chrome="nofooter">Tweets by data_stephanie</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-'))
-
-```
+<div class="col-footer">
 
 <font size = 2>
 
@@ -99,3 +78,5 @@ stephanie@stephaniekirmer.com
 <BR> [Kaggle](http://www.kaggle.com/skirmer) | [Twitter](https://twitter.com/data_stephanie) | [Github](http://github.com/skirmer) | [Linkedin](http://linkedin.com/in/skirmer)
 
 This site is built by me, in RMarkdown and a bit of Javascript.
+
+</div>

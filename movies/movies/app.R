@@ -8,6 +8,9 @@ library(ssh)
 library(RCurl)
 library(knitr)
 
+library(shinyjs)
+
+
 dw <- config::get("conn")
 ssh_sesh <- ssh::ssh_connect(host = paste0(dw$login,'@dukkhalatte.ddns.net:49500'),
                              passwd=dw$pwd)
@@ -20,14 +23,16 @@ history <- read.csv("history.csv")
 colnames(history) <- c("Movie", "Date Watched")
 movielist <- c("Airplane!", "Back to the Future", "Close Encounters of the Third Kind",
                "Clueless", "Escape from New York", "Fargo", "My Cousin Vinny", 
-               "Pineapple Express", "The Social Network", "War Games", "The Royal Tenenbaums")
+               "Pineapple Express", "The Social Network", "The Royal Tenenbaums",
+               "Total Recall", "The DaVinci Code")
 df = pullResponses(ssh_sesh)
 
 ui <- fluidPage(
     theme = shinytheme('lumen'),
+    shinyjs::useShinyjs(),
     # Application title
     titlePanel("/home/common Data Science Movie Series"),
-    h3("Next Movie: TBD January 2021"),
+    h3("Next Movie: February 2021, date TBD - 7 pm Central Time"),
     h4("Check #movie-night to get more info."),
     
 
@@ -137,6 +142,18 @@ server <- function(input, output, session) {
     # When the Submit button is clicked, save the form data
     observeEvent(input$submit, {
       saveData(formData(), ssh_sesh=ssh_sesh)
+    })
+    
+    observeEvent(input$submit, {
+      shinyjs::reset("name")
+      shinyjs::reset("rank1_select")
+      shinyjs::reset("rank2_select")
+      shinyjs::reset("rank3_select")
+      shinyjs::reset("rank4_select")
+      shinyjs::reset("newtitle")
+      shinyjs::reset("service")
+      shinyjs::reset("notes")
+
     })
     
     # Show the previous responses

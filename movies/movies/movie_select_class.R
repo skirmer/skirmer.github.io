@@ -56,6 +56,7 @@ MovieSelection <- R6Class("MovieSelection",
                         vround <- data %>%
                           unique() %>%
                           group_by(Movie) %>%
+                          filter(Movie != "NA") %>%
                           summarize(Votes = n(), .groups = "drop") 
                         
                         # if(nrow(losers)>0){
