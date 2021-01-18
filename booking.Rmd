@@ -2,6 +2,7 @@
 pagetitle: "Book Me For Your Event"
 output: 
   html_document:
+    css: ["style.css", "nav.css"]
     includes:
         in_header: analytics.html
         before_body: _navbar.html
@@ -10,94 +11,107 @@ output:
 
 
 ```{css, echo=FALSE}
-body {
-  color: black;
-  margin-left: 50px;
-  margin-right: 50px;
+.container{width:100%;}
+
+.col-1, .col-2, .col-3{width: 30%;
+  display: inline-block;
+  vertical-align: top;}
+
+
+@media only screen and (max-width: 700px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
 }
 
-.header{
-
-}
-
-.navbar-brand {
-    padding: 0 !important;
-}
-# .navbar-brand img {
-#     border-right: 2px solid white;
-#     height:51px;
-# }
-.navbar-text {
-    color: white !important;
-    font-weight: bold !important;
-    margin-left:15px;
-}
-
-.nav, .navbar-nav, .navbar-right{
-  padding-top:8px;
-  padding-bottom:8px;
-}
 
 ```
 
 
-<div style="border: .5px solid lightgrey; padding: 20px; margin-top:20px; margin-bottom:20px">
-I believe that our personal values should be reflected in our work, so I don't participate in events where I am the only woman, events with one or fewer people of color on the speaking schedule, or events organized by groups that don't explicitly support equal opportunity and require respectful conduct from attendees. 
+<BR><BR><BR>
+If you're looking for a speaker, please contact me at stephanie@stephaniekirmer.com or visit [my SpeakerHub profile](https://speakerhub.com/speaker/stephanie-kirmer).
 
-There is an abundance of extremely talented women, people of color, and LGBT+ people in the data science industry, and if you are struggling to find them for your event or job opening, please let me know and I may be able to help connect you.
-
-</div>
-
-That said, if you're looking for a speaker, please contact me at stephanie@stephaniekirmer.com or visit [my SpeakerHub profile](https://speakerhub.com/speaker/stephanie-kirmer).
-
-***
+<BR>
 
 ### Speaking Topics  
-<font size = 2>
 
-* Machine Learning with Parallelization/Cluster Computing
+<div class= "container">
+<div class="col-1">
+
+#### Machine Learning with Parallelization/Cluster Computing
   * Applications of GPU clusters for deep learning
   * Using Dask to parallelize machine learning
   
-* Pipelining and Job Scheduling for Machine Learning
-  * Machine learning production workflows using AWS Redshift and Airflow  
-  
-* Data Warehousing/Storage
+</div>
+
+<div class="col-2">
+#### Data Warehousing/Storage
   * Redshift
   * PostgreSQL
   * Elasticsearch
   
-* Industry Specific Machine Learning
+</div>
+
+<div class="col-3">
+#### Industry Specific Machine Learning
   * IIOT
   * Hospitality/Travel
   * Education
   
-* Data Visualization
+</div>
+</div>
+
+<div class= "container">
+
+<div class="col-1">
+#### Data Visualization
   * R: ggplot, shiny, plotly, gganimate
-  * Python: plotnine, bokeh, plotly
+  * Python: plotnine, bokeh, plotly, altair
   * GIS or Network Graphs
   
-* Developing and Distributing Packages/Libraries
+</div>
+
+<div class="col-2">
+
+#### Developing and Distributing Packages/Libraries
   * R
   * Python
   * Collaboration across teams with R or Python libraries  
   
-* Sociological insights on data science, machine learning, and/or AI  
+</div>
 
-</font>
+<div class="col-3">
+#### Pipelining and Job Scheduling for Machine Learning
+  * Machine learning production workflows using AWS Redshift and Airflow  
+  
+#### Sociological insights on data science, machine learning, and/or AI  
+
+</div>
+</div>
+
 
 Or other topics - please contact me if something adjacent would fit your audience! 
 
-***
+<BR>
 
 ### Requirements
 
-Aside from my equity and diversity requirements noted above, I'd ask that you give the following information when requesting my presence at an event.
+Aside from my equity and diversity requirements noted below, I'd ask that you give the following information when requesting my presence at an event.
 
 * **Speaker compensation policies, if any.** for community or nonprofit organizations, I am usually happy to speak without compensation. For other organizations, remote presentations may also be free, but for travel I may need reimbursement or a fee.  
 * **Event theme and content area.** It helps me to choose the right topic and angle on the topic to present, and to decide whether I am a good fit for your event.  
 * **The size and general makeup of the audience you expect.** I tailor each talk to the audience and event, and so I would like to know what sort of data science expertise and demographics you hope to have. This can be an estimate.  
 * **Date/time of event if already scheduled.** If you have a flexible calendar, then we can just discuss this and come to a mutual agreement.  
+
+<BR>
+
+### Diversity and Equity
+
+I believe that our personal values should be reflected in our work, so I don't participate in events where I am the only woman, events with one or fewer people of color on the speaking schedule, or events organized by groups that don't explicitly support equal opportunity and require respectful conduct from attendees. 
+
+There is an abundance of extremely talented women, people of color, and LGBT+ people in the data science industry, and if you are struggling to find them for your event or job opening, please let me know and I may be able to help connect you.
+
 
 ***
 

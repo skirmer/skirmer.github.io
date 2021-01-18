@@ -2,6 +2,7 @@
 pagetitle: "Projects"
 output: 
   html_document:
+    css: ["style.css", "nav.css"]
     includes:
         in_header: analytics.html
         before_body: _navbar.html
@@ -9,39 +10,7 @@ output:
 ---
 
 
-```{css, echo=FALSE}
-body {
-  color: black;
-  margin-left: 50px;
-  margin-right: 50px;
-}
 
-.header{
-
-}
-
-.navbar-brand {
-    padding: 0 !important;
-}
-# .navbar-brand img {
-#     border-right: 2px solid white;
-#     height:51px;
-# }
-.navbar-text {
-    color: white !important;
-    font-weight: bold !important;
-    margin-left:15px;
-}
-
-.nav, .navbar-nav, .navbar-right{
-  padding-top:8px;
-  padding-bottom:8px;
-}
-
-```
-
-
-<BR>
 <BR>
 <BR>
 
