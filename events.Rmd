@@ -27,6 +27,12 @@ output:
   [class*="col-"] {
     width: 100%;
   }
+    
+  .navbar-text {
+    display: inline-block;
+    width: 70%;
+    font-family: 'Montserrat', sans-serif;
+  }
 }
 
 # style = "background-image: url('img/chipy2020.png');">

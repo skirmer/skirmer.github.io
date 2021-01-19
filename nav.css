@@ -5,15 +5,16 @@
 }
 
 .navbar-text {
-    max-width: 1200px;
-        margin: auto;
-  margin-left:15px;
+  min-width: 40%;
+  height:100px;
+  margin: auto;
+  margin-left:5px;
   font-family: 'Montserrat', sans-serif;
 }
 
 .nav, .navbar-nav, .navbar-right{
 
-        margin: auto;
+  margin: auto;
   padding-top:5px;
   padding-bottom:8px;
   #position:absolute;

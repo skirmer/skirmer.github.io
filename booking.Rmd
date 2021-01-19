@@ -13,7 +13,8 @@ output:
 ```{css, echo=FALSE}
 .container{width:100%;}
 
-.col-1, .col-2, .col-3{width: 33%;
+.col-1, .col-2, .col-3{
+  width: 33%;
   display: inline-block;
   vertical-align: top;}
 
@@ -22,6 +23,12 @@ output:
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
+  }
+  
+  .navbar-text {
+    display: inline-block;
+    width: 70%;
+    font-family: 'Montserrat', sans-serif;
   }
 }
 
