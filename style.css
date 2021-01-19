@@ -1,0 +1,83 @@
+body {
+  color: black;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body a:link, .mainmenu a:visited {
+  color:navy;
+}
+
+.mainmenu a:link, .mainmenu a:visited {
+  color:white;
+}
+
+h1, h2, h3, h4{
+   font-family: 'Libre Baskerville', serif;
+}
+
+h1, h2, h3{
+  font-style: italic;
+  border-bottom: 1px dashed lightgrey;
+  padding-top: 30px;
+}
+
+.header{
+  position:relative;
+  float:left;
+  margin-top:3px;  
+  margin-left: 10px;
+  margin-right: 10px;
+  width:100%;
+}
+
+.mainmenu{
+  color: white;
+  position:absolute;
+  bottom: 8px;
+  left: 16px;
+  z-index:9999999;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.col-twitter{
+  padding: 20px; 
+  margin-top:20px; 
+  margin-bottom:20px; 
+  float:right;
+  width: 35%; 
+  height:500px;
+}
+
+.col-text{
+  #border: .5px solid lightgrey; 
+  padding: 20px; 
+  margin-top:20px; 
+  margin-bottom:20px; 
+  float: left;
+  width: 55%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.col-footer{
+  padding: 20px; 
+  margin-top:20px;
+  margin-bottom:20px; 
+  position: relative;
+  width: 90%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.mainmenu a:link, .mainmenu a:visited {
+  color:white;
+}
+
+@media only screen and (max-width: 700px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+}

@@ -1,0 +1,45 @@
+
+.navbar-brand {
+    padding: 0 !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-text {
+  margin-left:15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav, .navbar-nav, .navbar-right{
+  padding-top:5px;
+  padding-bottom:8px;
+  #position:absolute;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+  background-image: url("img/newmenu.png");
+  height: 75px;
+}
+
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+  [class="navbar"] {
+    background-image: url("img/minimenu.png");
+    background-repeat: no-repeat;
+  }
+    [class*="navbar-right"] {
+    background-color: #323333;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+    /* For mobile phones: */
+  [class="navbar"] {
+    background-color: #323333;
+  }
+  [class*="navbar-right"] {
+    background-color: #323333;
+  }
+
+}
