@@ -10,6 +10,29 @@ output:
 ---
 
 
+```{css, echo=FALSE}
+.container{width:100%;
+  }
+
+.col-1, .col-2{
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right:20px;
+  margin-left:20px;
+}
+
+
+@media only screen and (max-width: 700px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+# style = "background-image: url('img/chipy2020.png');">
+
+```
 
 <BR>
 <BR>
@@ -109,8 +132,9 @@ http://blog.kaggle.com/2017/03/29/predicting-house-prices-playground-competition
 
 ***
 
-stephanie@stephaniekirmer.com 
-<BR> [Kaggle](http://www.kaggle.com/skirmer) | [Twitter](https://twitter.com/data_stephanie) | [Github](http://github.com/skirmer) | [Linkedin](http://linkedin.com/in/skirmer)
+stephanie@stephaniekirmer.com   
+
+<BR> <a href="http://www.kaggle.com/skirmer" onclick="captureOutboundLink('http://www.kaggle.com/skirmer'); return false;">kaggle</a>  | <a href="https://twitter.com/data_stephanie" onclick="captureOutboundLink('https://twitter.com/data_stephanie'); return false;">twitter</a>  | <a href="http://github.com/skirmer"  onclick="captureOutboundLink('http://github.com/skirmer'); return false;">github</a> | <a href="http://linkedin.com/in/skirmer" onclick="captureOutboundLink('http://linkedin.com/in/skirmer'); return false;">linkedin</a> 
 
 </font>
 
