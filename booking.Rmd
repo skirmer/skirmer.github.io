@@ -13,7 +13,7 @@ output:
 ```{css, echo=FALSE}
 .container{width:100%;}
 
-.col-1, .col-2, .col-3{width: 30%;
+.col-1, .col-2, .col-3{width: 33%;
   display: inline-block;
   vertical-align: top;}
 
