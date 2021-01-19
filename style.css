@@ -1,8 +1,9 @@
 body {
   color: black; 
-  max-width: 900px;
-  margin-left: 50px;
-  margin-right: 50px;
+    max-width: 1200px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
   font-family: 'Montserrat', sans-serif;
 }
 
