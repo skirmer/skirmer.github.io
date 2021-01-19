@@ -2,30 +2,12 @@
 pagetitle: "Stephanie Kirmer"
 output: 
   html_document:
-    css: "style.css"
+    css: "index.css"
     includes:
         in_header: analytics.html
     theme: flatly
 ---
 
-
-```{css, echo=FALSE}
-
-# Fonts embedded in analytics.html
-
-@media only screen and (max-width: 700px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-}
-
-.navbar{
-     visibility: hidden;
-}
-
-
-```
 
 <div class = "header">
 <img src="img/widerfront.png">

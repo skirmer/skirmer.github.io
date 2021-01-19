@@ -1,0 +1,84 @@
+
+
+.nav, .navbar-nav, .navbar-right, .navbar, .navbar-brand{
+    display: none;
+    visibility: hidden;
+    height:0;  
+    padding-top:0;
+    padding-bottom:0;
+}
+
+body{
+    max-width: 900px;
+    margin: auto;
+    margin-top:-60px;
+    padding-top:0px;
+    padding-bottom:0px;
+}
+
+.header{
+  position:relative;
+  float:left;
+  margin-top:0px; 
+  padding-top:0px; 
+  width:100%;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:0px;
+  padding-top:0px;
+  width: 100%;
+}
+
+.mainmenu{
+  color: white;
+  position:absolute;
+  bottom: 8px;
+  left: 16px;
+  z-index:9999999;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.mainmenu a:link, .mainmenu a:visited {
+  color:white;
+}
+
+.col-twitter{
+  padding: 20px; 
+  margin-top:20px; 
+  margin-bottom:20px; 
+  float:right;
+  width: 35%; 
+  height:500px;
+}
+
+.col-text{
+  #border: .5px solid lightgrey; 
+  padding: 20px; 
+  margin-top:20px; 
+  margin-bottom:20px; 
+  float: left;
+  width: 55%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.col-footer{
+  padding: 20px; 
+  margin-top:20px;
+  margin-bottom:20px; 
+  position: relative;
+  width: 90%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+}
