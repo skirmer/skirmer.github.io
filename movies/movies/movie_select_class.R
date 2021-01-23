@@ -8,6 +8,7 @@ MovieSelection <- R6Class("MovieSelection",
                     df = NULL,
                     cleandf = NULL,
                     denominator = NULL,
+                    last_round = NULL,
                     initialize = function(ssh_session, path) {
                       self$path = path
                       self$ssh_session = ssh_session
@@ -173,6 +174,7 @@ MovieSelection <- R6Class("MovieSelection",
                               
                               if(!exists('output')){
                                 output = paste("Winner in Round", i, "is", winner$Movie)
+                                self$last_round = i
                               }
                           }
                       }
@@ -203,8 +205,36 @@ MovieSelection <- R6Class("MovieSelection",
                         output = "No conclusive solution yet."
                       }
                       
-                      return(output)
+                      return(list(output, self$last_round))
                       
+                    },
+                    clean_results = function(){
+                      allrounds = self$calculate_rounds()
+                      conclusion = self$result_completion()
+                      
+                      if(conclusion[[2]] == 1){
+                        allrounds$secondrd$votes = "Round 2 not required"
+                        allrounds$thirdrd$votes = "Round 3 not required"
+                        allrounds$fourthrd$votes = "Round 4 not required"
+                        
+                        allrounds$secondrd$losers$Movie = " "
+                        allrounds$thirdrd$losers$Movie = " "
+                        allrounds$fourthrd$losers$Movie = " "
+                        
+                      } else if (conclusion[[2]] == 2){
+                        allrounds$thirdrd$votes = "Round 3 not required"
+                        allrounds$fourthrd$votes = "Round 4 not required"
+                        
+                        allrounds$thirdrd$losers$Movie = " "
+                        allrounds$fourthrd$losers$Movie = " "
+                        
+                      } else if (conclusion[[2]] == 3){
+                        allrounds$fourthrd$votes = "Round 4 not required"
+                        
+                        allrounds$fourthrd$losers$Movie = " "
+                      }
+                      
+                      return(allrounds)
                     }
                     
                   )

@@ -162,15 +162,15 @@ server <- function(input, output, session) {
     output$text2 <- renderUI({
       input$submit
       mv = MovieSelection$new(ssh_session = ssh_sesh, path = local_responsepath)
-      str1 <- kable(mv$calculate_rounds()$firstrd$votes, "html")
-      str1b <- paste(mv$calculate_rounds()$firstrd$losers$Movie, sep = " and ", collapse = " and ")
-      str2 <- kable(mv$calculate_rounds()$secondrd$votes, "html")
-      str2b <- paste(mv$calculate_rounds()$secondrd$losers$Movie, sep = " and ", collapse = " and ")
-      str3 <- kable(mv$calculate_rounds()$thirdrd$votes, "html")
-      str3b <- paste(mv$calculate_rounds()$thirdrd$losers$Movie, sep = " and ", collapse = " and ")
-      str4 <- kable(mv$calculate_rounds()$fourthrd$votes, "html")
-      str4b <- paste(mv$calculate_rounds()$fourthrd$losers$Movie, sep = " and ", collapse = " and ")
-      str5 <- kable(mv$result_completion(), "html")
+      str1 <- kable(mv$clean_results()$firstrd$votes, "html")
+      str1b <- paste(unique(mv$clean_results()$firstrd$losers$Movie), sep = " and ", collapse = " and ")
+      str2 <- kable(mv$clean_results()$secondrd$votes, "html")
+      str2b <- paste(unique(mv$clean_results()$secondrd$losers$Movie), sep = " and ", collapse = " and ")
+      str3 <- kable(mv$clean_results()$thirdrd$votes, "html")
+      str3b <- paste(unique(mv$clean_results()$thirdrd$losers$Movie), sep = " and ", collapse = " and ")
+      str4 <- kable(mv$clean_results()$fourthrd$votes, "html")
+      str4b <- paste(unique(mv$clean_results()$fourthrd$losers$Movie), sep = " and ", collapse = " and ")
+      str5 <- kable(mv$result_completion()[1], "html")
       
       HTML(paste("<h2>Tutorial</h2>",
                 "Each round, the least popular movie is dropped. 
