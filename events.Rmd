@@ -50,15 +50,6 @@ I love public speaking, and would be glad to join you at your event. To see more
 <BR><BR>
 
 ## Upcoming Appearances 
-
-#### Event: RE*WORK's Deep Learning Virtual Summit, January 2021   
-
-Topic: Scaling Up PyTorch with GPU Cluster Computing  
-Location: Virtual  
-Date: January 28-29, 2021  
-Links: https://www.re-work.co/events/deep-learning-virtual-summit-2021/schedule   
-https://github.com/skirmer/gpu_pytorch  
-
 <BR>
 <BR>
 
@@ -66,8 +57,28 @@ https://github.com/skirmer/gpu_pytorch
 
 Topic: Going Beyond Matplotlib and Seaborn: A survey of Python data visualization tools     
 Location: Virtual  
-Date: February 4, 5, and 7, 2021    
+Date: February 7, 2021    
 Links: https://www.outlierconf.com/    
+https://github.com/skirmer/new-py-dataviz   
+
+<BR>
+
+#### Event: R Ladies Chicago - Workshop   
+
+Topic: Functions for R Programming Beginners     
+Location: Virtual  
+Date: February 26, 2021   
+Links: https://rladieschicago.org/   
+More specifics pending, there will be a github repo soon!
+
+<BR>
+
+#### Event: ODSC East 2021   
+
+Topic: Going Beyond Matplotlib and Seaborn: A survey of Python data visualization tools     
+Location: Virtual  
+Date: March 29 - April 1 2021    
+Links: https://odsc.com/boston/   
 https://github.com/skirmer/new-py-dataviz   
 
 <BR>
@@ -83,6 +94,17 @@ If you have any questions about any of the talks below, contact me on twitter!
 <div class= "container">
 <div class="col-1">
 
+#### Event: RE*WORK's Deep Learning Virtual Summit, January 2021   
+
+Topic: Scaling Up PyTorch with GPU Cluster Computing  
+Location: Virtual  
+Date: January 28-29, 2021  
+Links: https://www.re-work.co/events/deep-learning-virtual-summit-2021/schedule   
+https://github.com/skirmer/gpu_pytorch  
+
+</div>
+<div class= "col-2"> 
+
 #### Event: R Ladies Dallas, December 2020   
 
 Topic: Branching Out into Isolation Forests: Tree Based Anomaly Detection    
@@ -93,7 +115,9 @@ https://github.com/skirmer/isolation_forests
 Video to come
 
 </div>
-<div class= "col-2"> 
+</div>
+<div class= "container">
+<div class= "col-1"> 
 #### Event: ChiPy Data SIG October 2020   
 
 Topic: Branching Out into Isolation Forests: Tree Based Anomaly Detection    
@@ -104,9 +128,7 @@ Links: https://www.chipy.org/
 https://www.meetup.com/_ChiPy_/events/272525624/   
 
 </div>
-</div>
-<div class= "container">
-<div class="col-1">
+<div class="col-2">
 
 <BR>
 
@@ -119,7 +141,9 @@ Links: https://odsc.com/speakers/making-happy-modelers-build-and-maintain-your-d
 
 
 </div>
-<div class= "col-2">
+</div>
+<div class= "container">
+<div class= "col-1">
 
 
 #### Event: RE*WORK's Virtual Applied AI Summit - Spring 2020   
@@ -130,9 +154,7 @@ Date: May 21, 2020
 Links: https://www.re-work.co/events/applied-ai-virtual-summit   
 
 </div>
-</div>
-<div class= "container">
-<div class="col-1">
+<div class="col-2">
 
 <BR>
 
@@ -145,7 +167,9 @@ https://widschicago.org/
 
 
 </div>
-<div class= "col-2">
+</div>
+<div class= "container">
+<div class= "col-1">
 
 
 #### Event: DC R Conference  
@@ -159,9 +183,7 @@ https://dc.rstats.ai/2019/dcr/
 <BR>
 
 </div>
-</div>
-<div class= "container">
-<div class="col-1">
+<div class="col-2">
 
 #### Event: <a href="https://odsc.com/california/">ODSC West</a>  
 Topic: Elasticsearch End User Workflows in R and Python - Interactive Workshop   
@@ -171,7 +193,9 @@ Video: Coming Soon
 Links: https://github.com/skirmer/elastic_analytics  
 
 </div>
-<div class= "col-2">
+</div>
+<div class= "container">
+<div class= "col-1">
 
 
 #### Event: R-Ladies Chicago and Chicago Data Visualization Community Joint Meetup  
@@ -184,9 +208,7 @@ Links: https://github.com/skirmer/animating_dataviz
 <BR>
 
 </div>
-</div>
-<div class= "container">
-<div class="col-1">
+<div class="col-2">
 
 #### Event: REV 2  
 Topic: Elasticsearch End User Workflows in R and Python   
@@ -197,7 +219,9 @@ Links: https://github.com/skirmer/elastic_analytics
 [Listen to my conversation with Eric Kavanagh on Inside Analytics podcast](https://insideanalysis.com/insights-from-domino-data-labs-2019-rev2-conference/)  
 
 </div>
-<div class= "col-2">
+</div>
+<div class= "container">
+<div class= "col-1">
 
 
 #### Event: satRday Chicago  
@@ -210,9 +234,7 @@ Links: https://github.com/skirmer/satRdays_chicago_2019
 <BR>
 
 </div>
-</div>
-<div class= "container">
-<div class="col-1">
+<div class="col-2">
 
 #### Event: R Package Building Workshop  
 Topic: 1 day seminar for women and nonbinary folks  
@@ -221,7 +243,9 @@ Date: February 23, 2019
 Links: https://github.com/skirmer/r_packages  
 
 </div>
-<div class= "col-2">
+</div>
+<div class= "container">
+<div class= "col-1">
 
 
 #### Event: EARL Roadshow Seattle 2018  
@@ -233,9 +257,7 @@ Links: https://github.com/skirmer/team_collab
 <BR>
 
 </div>
-</div>
-<div class= "container">
-<div class="col-1">
+<div class="col-2">
 
 #### Event: ODSC East 2018  
 Topic: R Packages for Team Collaboration  
@@ -244,7 +266,9 @@ Date: May 3, 2018
 Links: https://github.com/skirmer/team_collab  
 
 </div>
-<div class= "col-2">
+</div>
+<div class= "container">
+<div class= "col-1">
 
 
 #### Event: Metis Speaker Series  
@@ -256,14 +280,13 @@ Links: https://github.com/skirmer/team_collab
 <BR>
 
 </div>
-</div>
-<div class= "container">
-<div class="col-1">
+<div class="col-2">
 
 #### Partially Derivative Podcast   
 May 9, 2017   
 http://partiallyderivative.com/podcast/2017/05/09/data-science-near-you  
 </div>
+
 </div>
 
 </font>

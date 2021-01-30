@@ -47,6 +47,11 @@ output:
 
 <BR>
 
+#### [Article: Eager Data Scientist's Guide to Lazy Evaluation with Dask](https://towardsdatascience.com/guide-to-lazy-evaluation-with-dask-543b48a0aa74)
+Lazy evaluation is the core of parallelization, but it doesn’t have to be confusing or complicated — in this guide, learn the basic concepts you need to get started! I use dask to demonstrate but this is useful for anyone trying to get the hang of parallel computation.
+*Keywords: python, parallelization, dask*  
+
+***
 
 #### [Opinion: Your Data Scientist Does Not Need a STEM Ph.D.](https://towardsdatascience.com/your-data-scientist-does-not-need-a-stem-ph-d-7f2206f43871)
 You should not require or ask for a generic STEM Ph.D. for data scientist candidates. In this blog post, I give a detailed argument on this and discuss the critiques of the practice.
