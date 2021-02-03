@@ -15,7 +15,7 @@ output:
 <a href="events.html" style = 'text-shadow:  1px 1px #000000'>events calendar</a> <BR>
 <a href="booking.html" style = 'text-shadow:  1px 1px #000000'>booking</a> <BR>
 <a href="projects.html" style = 'text-shadow:  1px 1px #000000'>portfolio</a> <BR>
-<a href="http://github.com/skirmer"  onclick="captureOutboundLink('http://github.com/skirmer'); return false;" style = 'text-shadow:  1px 1px #000000'>github</a>  |  <a href="http://linkedin.com/in/skirmer" onclick="captureOutboundLink('http://linkedin.com/in/skirmer'); return false;" style = 'text-shadow: 1px 1px #000000'>linkedin</a> <BR>
+<a href="http://github.com/skirmer" style = 'text-shadow: 1px 1px #000000'>github</a>  |  <a href="http://linkedin.com/in/skirmer" style = 'text-shadow: 1px 1px #000000'>linkedin</a> <BR>
 </div>
 
 </div>
