@@ -22,16 +22,10 @@ output:
   margin-left:20px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
-  }
-    
-  .navbar-text {
-    display: inline-block;
-    width: 70%;
-    font-family: 'Montserrat', sans-serif;
   }
 }
 
