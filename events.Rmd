@@ -28,8 +28,6 @@ output:
   }
 }
 
-# style = "background-image: url('img/chipy2020.png');">
-
 ```
 
 <BR>
