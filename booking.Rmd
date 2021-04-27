@@ -29,7 +29,7 @@ output:
 
 
 <BR><BR><BR>
-If you're looking for a speaker, please contact me at stephanie@stephaniekirmer.com or visit <a href="https://speakerhub.com/speaker/stephanie-kirmer" onclick="captureOutboundLink('https://speakerhub.com/speaker/stephanie-kirmer'); return false;">my SpeakerHub profile</a>
+If you're looking for a speaker, please contact me at stephanie@stephaniekirmer.com or visit <a href="https://speakerhub.com/speaker/stephanie-kirmer" onclick="gtag('event', 'click', {'event_category' : 'external', 'event_action' : 'outclick', 'event_label' : 'speakerhub'});">my SpeakerHub profile</a>.
 
 <BR>
 
@@ -86,7 +86,7 @@ Or other topics - please contact me if something adjacent would fit your audienc
 Aside from my equity and diversity requirements noted below, I'd ask that you give the following information when requesting my presence at an event.
 
 * **Speaker compensation policies, if any.** for community or nonprofit organizations, I am usually happy to speak without compensation. For other organizations, I am happy to negotiate a speaking fee that is within the reach of your budget. 
-* **Location.** I'm not currently doing any travel due to public health circumstances, but I'm pleased to do remote talks. I am hoping to resume travel for talks in the later part of 2021, if all goes well.  
+* **Location.** I am available to travel for talks starting in August 2021, but am always free to do remote talks as well.
 * **Event theme and content area.** It helps me to choose the right topic and angle on the topic to present, and to decide whether I am a good fit for your event.  
 * **The size and general makeup of the audience you expect.** I tailor each talk to the audience and event, and so I would like to know what sort of data science expertise and demographics you hope to have. This can be an estimate.  
 * **Date/time of event if already scheduled.** If you have a flexible calendar, then we can just discuss this and come to a mutual agreement.  
@@ -103,8 +103,14 @@ There is an abundance of extremely talented women, people of color, and LGBT+ pe
 ***
 
 <font size = 2>
-stephanie@stephaniekirmer.com   
 
-<BR> <a href="http://www.kaggle.com/skirmer" onclick="captureOutboundLink('http://www.kaggle.com/skirmer'); return false;">kaggle</a>  | <a href="https://twitter.com/data_stephanie" onclick="captureOutboundLink('https://twitter.com/data_stephanie'); return false;">twitter</a>  | <a href="http://github.com/skirmer"  onclick="captureOutboundLink('http://github.com/skirmer'); return false;">github</a> | <a href="http://linkedin.com/in/skirmer" onclick="captureOutboundLink('http://linkedin.com/in/skirmer'); return false;">linkedin</a> 
+<BR>
+stephanie@stephaniekirmer.com 
+<BR> 
+<a href="http://www.kaggle.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'kaggle'});">kaggle</a>  | 
+<a href="https://twitter.com/data_stephanie" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'twitter'});">twitter</a>  | 
+<a href="http://github.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'github'});">github</a> | 
+<a href="http://linkedin.com/in/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'linkedin'});">linkedin</a> | 
+<a href="https://youtube.com/playlist?list=PLxqXzy1mNUwclPONsSpw4Qa-pakNzpLva" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'youtube'});">youtube</a> 
 
 </font>

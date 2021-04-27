@@ -36,7 +36,7 @@ output:
 <br>
 <font size = 3> 
 
-I love public speaking, and would be glad to join you at your event. To see more information about my areas of expertise and requirements for participation, please visit [my bookings page](booking.html).
+I love public speaking, and would be glad to join you at your event. To see more information about my areas of expertise and requirements for participation, please visit <a href="booking.html" onclick="gtag('event', 'click', {'event_category' : 'internal', 'event_action' : 'internalclick', 'event_label' : 'booking'});" >my bookings page</a>.
 
 <BR><BR>
 
@@ -88,7 +88,7 @@ Links: <a href="https://odsc.com/boston/" onclick="gtag('event', 'click', {'even
   Links:    
   <a href="https://rladieschicago.org/" onclick="gtag('event', 'click', {'event_category' : 'conftalk', 'event_action' : 'outclick', 'event_label' : 'rladies'}); ">https://rladieschicago.org/</a>   
   <a href="https://github.com/skirmer/functions_r" onclick="gtag('event', 'click', {'event_category' : 'conftalk', 'event_action' : 'outclick', 'event_label' : 'rfun_feb2021_gh'}); ">https://github.com/skirmer/functions_r</a>   
-  Video: Coming soon
+  Video: https://youtu.be/TCIMT6l53tQ 
 
 <br><BR>
 </div>
@@ -298,6 +298,12 @@ Links: <a href="https://odsc.com/boston/" onclick="gtag('event', 'click', {'even
 <font size = 2> [Looking for a speaker?](booking.html) Contact me at stephanie@stephaniekirmer.com. 
 
 
-<BR> <a href="http://www.kaggle.com/skirmer" onclick="captureOutboundLink('http://www.kaggle.com/skirmer'); return false;">kaggle</a>  | <a href="https://twitter.com/data_stephanie" onclick="captureOutboundLink('https://twitter.com/data_stephanie'); return false;">twitter</a>  | <a href="http://github.com/skirmer"  onclick="captureOutboundLink('http://github.com/skirmer'); return false;">github</a> | <a href="http://linkedin.com/in/skirmer" onclick="captureOutboundLink('http://linkedin.com/in/skirmer'); return false;">linkedin</a> 
+<BR>
+
+<a href="http://www.kaggle.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'kaggle'});">kaggle</a>  | 
+<a href="https://twitter.com/data_stephanie" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'twitter'});">twitter</a>  | 
+<a href="http://github.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'github'});">github</a> | 
+<a href="http://linkedin.com/in/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'linkedin'});">linkedin</a> | 
+<a href="https://youtube.com/playlist?list=PLxqXzy1mNUwclPONsSpw4Qa-pakNzpLva" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'youtube'});">youtube</a> 
 
 </font>

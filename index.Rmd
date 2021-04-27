@@ -12,10 +12,10 @@ output:
 <div class = "header">
 <img src="img/widerfront.png">
 <div class="mainmenu">
-<a href="events.html"  style = 'text-shadow:  1px 1px #000000'>events calendar</a> <BR>
-<a href="booking.html" style = 'text-shadow:  1px 1px #000000'>booking</a> <BR>
-<a href="projects.html" style = 'text-shadow:  1px 1px #000000'>portfolio</a> <BR>
-<a href="http://github.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'github'});"style = 'text-shadow: 1px 1px #000000'><i class="fab fa-github fa-1x"></i></a>
+<a href="events.html" onclick="gtag('event', 'click', {'event_category' : 'internal', 'event_action' : 'internalclick', 'event_label' : 'eventcalendar'});" style = 'text-shadow:  1px 1px #000000'>events calendar</a> <BR>
+<a href="booking.html" onclick="gtag('event', 'click', {'event_category' : 'internal', 'event_action' : 'internalclick', 'event_label' : 'booking'});" style = 'text-shadow:  1px 1px #000000'>booking</a> <BR>
+<a href="projects.html" onclick="gtag('event', 'click', {'event_category' : 'internal', 'event_action' : 'internalclick', 'event_label' : 'portfolio'});" style = 'text-shadow:  1px 1px #000000'>portfolio</a> <BR>
+<a href="http://github.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'github'});" style = 'text-shadow: 1px 1px #000000'><i class="fab fa-github fa-1x"></i></a>
 |  <a href="http://linkedin.com/in/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'linkedin'});" style = 'text-shadow: 1px 1px #000000'><i class="fab fa-linkedin fa-1x"></i></a> 
 |  <a href="https://medium.com/@s.kirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'medium'});" style = 'text-shadow: 1px 1px #000000'><i class="fab fa-medium fa-1x"></i></a><BR>
 </div>
@@ -47,21 +47,6 @@ I believe that our personal values should be reflected in our work, so I don't p
 There is an abundance of extremely talented women, people of color, and LGBT+ people in the data science industry, and if you are struggling to find them for your event or job opening, please let me know and I may be able to help connect you.
 </div>
 
-<BR>
-<div class="col-ytb">
-
-```{r eval = TRUE,echo=FALSE, fig.height=5, fig.width=5}
-
-knitr::asis_output(htmltools::htmlPreserve('
-
-<iframe width="500" height="315" src="https://www.youtube.com/embed/videoseries?list=PLxqXzy1mNUwclPONsSpw4Qa-pakNzpLva" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-'))
-
-```
-
-</div>
-
 
 <BR>
 <div class="col-footer">
@@ -70,9 +55,16 @@ knitr::asis_output(htmltools::htmlPreserve('
 
 <BR>
 <BR>
+
+
 <BR>
 stephanie@stephaniekirmer.com 
-<BR> <a href="http://www.kaggle.com/skirmer" onclick="captureOutboundLink('http://www.kaggle.com/skirmer'); return false;">kaggle</a>  | <a href="https://twitter.com/data_stephanie" onclick="captureOutboundLink('https://twitter.com/data_stephanie'); return false;">twitter</a>  | <a href="http://github.com/skirmer"  onclick="captureOutboundLink('http://github.com/skirmer'); return false;">github</a> | <a href="http://linkedin.com/in/skirmer" onclick="captureOutboundLink('http://linkedin.com/in/skirmer'); return false;">linkedin</a> 
+<BR> 
+<a href="http://www.kaggle.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'kaggle'});">kaggle</a>  | 
+<a href="https://twitter.com/data_stephanie" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'twitter'});">twitter</a>  | 
+<a href="http://github.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'github'});">github</a> | 
+<a href="http://linkedin.com/in/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'linkedin'});">linkedin</a> | 
+<a href="https://youtube.com/playlist?list=PLxqXzy1mNUwclPONsSpw4Qa-pakNzpLva" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'youtube'});">youtube</a> 
 
 This site is built by me, in RMarkdown and a bit of Javascript.
 
