@@ -94,6 +94,9 @@ img {
         display: none;
     }
   .col-twitter {
-    height:300px;
+        height:300px;
+  }
+  .col-text {
+        margin-top:300px; 
   }
 }
