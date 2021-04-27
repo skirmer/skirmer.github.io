@@ -41,12 +41,26 @@ knitr::asis_output(htmltools::htmlPreserve('
 
 <div class="col-text">
 
-<BR><BR><BR><BR>
+<BR><BR>
 I believe that our personal values should be reflected in our work, so I don't participate in events where I am the only woman, events with one or fewer people of color on the speaking schedule, or events organized by groups that don't explicitly support equal opportunity and require respectful conduct from attendees. I also expect an explicit commitment to diversity and inclusion from companies where I work or consider working. 
 
 There is an abundance of extremely talented women, people of color, and LGBT+ people in the data science industry, and if you are struggling to find them for your event or job opening, please let me know and I may be able to help connect you.
 </div>
 
+<BR>
+<div class="col-ytb">
+
+```{r eval = TRUE,echo=FALSE, fig.height=5, fig.width=5}
+
+knitr::asis_output(htmltools::htmlPreserve('
+
+<iframe width="500" height="315" src="https://www.youtube.com/embed/videoseries?list=PLxqXzy1mNUwclPONsSpw4Qa-pakNzpLva" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+'))
+
+```
+
+</div>
 
 
 <BR>

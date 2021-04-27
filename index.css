@@ -52,7 +52,7 @@ img {
   margin-bottom:20px; 
   float:right;
   width: 35%; 
-  height:500px;
+  height:700px;
 }
 
 .col-text{
@@ -65,12 +65,21 @@ img {
   font-family: 'Montserrat', sans-serif;
 }
 
+.col-ytb{
+  padding: 20px; 
+  margin-top:20px; 
+  margin-bottom:20px; 
+  float:left;
+  width: 50%; 
+  height:400px;
+}
+
 .col-footer{
   padding: 20px; 
   margin-top:20px;
   margin-bottom:20px; 
   position: relative;
-  width: 90%;
+  width: 60%;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -81,4 +90,10 @@ img {
     width: 100%;
   }
   
+  .col-ytb {
+        display: none;
+    }
+  .col-twitter {
+    height:300px;
+  }
 }
