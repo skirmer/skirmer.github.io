@@ -44,13 +44,13 @@ I love public speaking, and would be glad to join you at your event. To see more
 
 <BR>
 
-#### Event: ODSC East 2021   
+#### Event: Center for Deep Learning Spring 2021 Seminar, Northwestern University   
 
-Topic: Going Beyond Matplotlib and Seaborn: A survey of Python data visualization tools     
+Topic: Accelerating Deep Learning with Dask and GPUs     
 Location: Virtual  
-Date: March 29 - April 1 2021    
-Links: <a href="https://odsc.com/boston/" onclick="gtag('event', 'click', {'event_category' : 'conftalk', 'event_action' : 'outclick', 'event_label' : 'odsc'}); ">https://odsc.com/boston/</a>   
-<a href="https://github.com/skirmer/new-py-dataviz" onclick="gtag('event', 'click', {'event_category' : 'conftalk', 'event_action' : 'outclick', 'event_label' : 'odsc_gh'}); ">https://github.com/skirmer/new-py-dataviz</a>
+Date: April 27, 2021    
+Links: <a href="https://www.mccormick.northwestern.edu/research/deep-learning/" onclick="gtag('event', 'click', {'event_category' : 'conftalk', 'event_action' : 'outclick', 'event_label' : 'cdl-nu'}); ">https://www.mccormick.northwestern.edu/research/deep-learning//</a>   
+<a href="https://github.com/skirmer/gpu_pytorch/tree/main/center-deep-learning" onclick="gtag('event', 'click', {'event_category' : 'conftalk', 'event_action' : 'outclick', 'event_label' : 'cdl_gh'}); ">https://github.com/skirmer/gpu_pytorch/tree/main/center-deep-learning</a>
 
 <BR>
 <BR>
@@ -66,6 +66,20 @@ If you have any questions about any of the talks below, contact me on twitter!
 
 <div class="col-1">
 
+#### Event: ODSC East 2021   
+
+Topic: Going Beyond Matplotlib and Seaborn: A survey of Python data visualization tools     
+Location: Virtual  
+Date: March 29 - April 1 2021    
+Links: <a href="https://odsc.com/boston/" onclick="gtag('event', 'click', {'event_category' : 'conftalk', 'event_action' : 'outclick', 'event_label' : 'odsc'}); ">https://odsc.com/boston/</a>   
+<a href="https://github.com/skirmer/new-py-dataviz" onclick="gtag('event', 'click', {'event_category' : 'conftalk', 'event_action' : 'outclick', 'event_label' : 'odsc_gh'}); ">https://github.com/skirmer/new-py-dataviz</a>
+
+<BR>
+
+</div>
+
+<div class="col-2">
+
 #### Event: R Ladies Chicago - Workshop   
 
   Topic: Functions for R Programming Beginners     
@@ -76,11 +90,12 @@ If you have any questions about any of the talks below, contact me on twitter!
   <a href="https://github.com/skirmer/functions_r" onclick="gtag('event', 'click', {'event_category' : 'conftalk', 'event_action' : 'outclick', 'event_label' : 'rfun_feb2021_gh'}); ">https://github.com/skirmer/functions_r</a>   
   Video: Coming soon
 
-<BR>
-
+<br><BR>
 </div>
+</div>
+<div class= "container">
+<div class= "col-1"> 
 
-<div class="col-2">
 
 #### Event: Outlier Data Visualization Conference 2021   
 
@@ -90,12 +105,9 @@ If you have any questions about any of the talks below, contact me on twitter!
   Links: https://www.outlierconf.com/    
   https://github.com/skirmer/new-py-dataviz   
 
-<br><BR>
 </div>
-</div>
-<div class= "container">
-<div class= "col-1"> 
 
+<div class= "col-2"> 
 
 #### Event: RE*WORK's Deep Learning Virtual Summit, January 2021   
 
@@ -105,9 +117,11 @@ If you have any questions about any of the talks below, contact me on twitter!
   Links: https://www.re-work.co/events/deep-learning-virtual-summit-2021/schedule   
   https://github.com/skirmer/gpu_pytorch  
 
+<br><BR>
 </div>
-
-<div class= "col-2"> 
+</div>
+<div class= "container">
+<div class="col-1">
 
 #### Event: R Ladies Dallas, December 2020   
 
@@ -118,11 +132,8 @@ If you have any questions about any of the talks below, contact me on twitter!
   https://github.com/skirmer/isolation_forests   
   Video to come
 
-<br><BR>
 </div>
-</div>
-<div class= "container">
-<div class="col-1">
+<div class= "col-2">
 
 #### Event: ChiPy Data SIG October 2020   
 
@@ -133,8 +144,11 @@ If you have any questions about any of the talks below, contact me on twitter!
   Links: https://www.chipy.org/    
   https://www.meetup.com/_ChiPy_/events/272525624/   
 
+<br><BR>
 </div>
-<div class= "col-2">
+</div>
+<div class= "container">
+<div class="col-1">
 
 #### Event: ODSC Europe Virtual Conference 2020   
 
@@ -143,11 +157,8 @@ If you have any questions about any of the talks below, contact me on twitter!
   Date: September 17-19, 2020    
   Links: https://odsc.com/speakers/making-happy-modelers-build-and-maintain-your-data-warehouse-with-aws-redshift-and-airflow/
 
-<br><BR>
 </div>
-</div>
-<div class= "container">
-<div class="col-1">
+<div class= "col-2">
 
 #### Event: RE*WORK's Virtual Applied AI Summit - Spring 2020   
 
@@ -156,8 +167,11 @@ If you have any questions about any of the talks below, contact me on twitter!
   Date: May 21, 2020    
   Links: https://www.re-work.co/events/applied-ai-virtual-summit   
 
+<br><BR>
 </div>
-<div class= "col-2">
+</div>
+<div class= "container">
+<div class="col-1">
 
 #### Event: Women in Data Science Chicago 2020  
   Topic: Better Data Science Team Collaboration with R    
@@ -166,11 +180,8 @@ If you have any questions about any of the talks below, contact me on twitter!
   Links: https://github.com/skirmer/team_collab 
   https://widschicago.org/  
 
-<br><BR>
 </div>
-</div>
-<div class= "container">
-<div class="col-1">
+<div class= "col-2">
 
 #### Event: DC R Conference  
   Topic: Animation for Effective Data Visualization with R    
@@ -180,8 +191,11 @@ If you have any questions about any of the talks below, contact me on twitter!
   Links: https://github.com/skirmer/animating_dataviz  
   https://dc.rstats.ai/2019/dcr/  
 
+<br><BR>
 </div>
-<div class= "col-2">
+</div>
+<div class= "container">
+<div class="col-1">
 
 #### Event: <a href="https://odsc.com/california/">ODSC West</a>  
   Topic: Elasticsearch End User Workflows in R and Python - Interactive Workshop   
@@ -189,11 +203,8 @@ If you have any questions about any of the talks below, contact me on twitter!
   Date: November 1, 2019   
   Links: https://github.com/skirmer/elastic_analytics  
 
-<br><BR>
 </div>
-</div>
-<div class= "container">
-<div class="col-1">
+<div class= "col-2">
 
 #### Event: R-Ladies Chicago and Chicago Data Visualization Community Joint Meetup  
   Topic: Animation for Effective Data Visualization with R   
@@ -202,8 +213,11 @@ If you have any questions about any of the talks below, contact me on twitter!
   [Video](https://youtu.be/KWECmB0LUqU)    
   Links: https://github.com/skirmer/animating_dataviz    
 
+<br><BR>
 </div>
-<div class= "col-2">
+</div>
+<div class= "container">
+<div class="col-1">
 
 #### Event: REV 2  
   Topic: Elasticsearch End User Workflows in R and Python   
@@ -213,11 +227,8 @@ If you have any questions about any of the talks below, contact me on twitter!
   Links: https://github.com/skirmer/elastic_analytics    
   [Listen to my conversation with Eric Kavanagh on Inside Analytics podcast](https://insideanalysis.com/insights-from-domino-data-labs-2019-rev2-conference/)  
 
-<br><BR>
 </div>
-</div>
-<div class= "container">
-<div class="col-1">
+<div class= "col-2">
 
 #### Event: satRday Chicago  
   Topic: Keynote: What Data Science Can Learn From Sociology  
@@ -226,8 +237,11 @@ If you have any questions about any of the talks below, contact me on twitter!
   [Video](https://www.youtube.com/watch?v=quFhQvizBE8&feature=youtu.be&t=1095)    
   Links: https://github.com/skirmer/satRdays_chicago_2019  
 
+<br><BR>
 </div>
-<div class= "col-2">
+</div>
+<div class= "container">
+<div class="col-1">
 
 #### Event: R Package Building Workshop  
   Topic: 1 day seminar for women and nonbinary folks  
@@ -235,11 +249,8 @@ If you have any questions about any of the talks below, contact me on twitter!
   Date: February 23, 2019  
   Links: https://github.com/skirmer/r_packages  
 
-<br><BR>
 </div>
-</div>
-<div class= "container">
-<div class="col-1">
+<div class= "col-2">
 
 #### Event: EARL Roadshow Seattle 2018  
   Topic: R Packages for Team Collaboration  
@@ -247,8 +258,11 @@ If you have any questions about any of the talks below, contact me on twitter!
   Date: November 7, 2018    
   Links: https://github.com/skirmer/team_collab 
 
+<br><BR>
 </div>
-<div class= "col-2">
+</div>
+<div class= "container">
+<div class="col-1">
 
 #### Event: ODSC East 2018  
   Topic: R Packages for Team Collaboration  
@@ -256,11 +270,8 @@ If you have any questions about any of the talks below, contact me on twitter!
   Date: May 3, 2018    
   Links: https://github.com/skirmer/team_collab  
 
-<br><BR>
 </div>
-</div>
-<div class= "container">
-<div class="col-1">
+<div class= "col-2">
 
 #### Event: Metis Speaker Series  
   Topic: R Packages for Team Collaboration  
@@ -268,8 +279,11 @@ If you have any questions about any of the talks below, contact me on twitter!
   Date: April 2018    
   Links: https://github.com/skirmer/team_collab  
 
+<br><BR>
 </div>
-<div class= "col-2">
+</div>
+<div class= "container">
+<div class="col-1">
 
 #### Partially Derivative Podcast   
   May 9, 2017   
