@@ -41,6 +41,41 @@ output:
 
 <BR>
 
+#### [Tutorial: Deploying ML Models - Flask or Voila, API or Web App!](https://medium.com/geekculture/deploy-your-machine-learning-model-with-flask-or-voila-c74a07921604)
+Data science model deployment can sound intimidating if you have never had a chance to try it in a safe space. In this blog post, I give the end-to-end explanation of how you go from zero to a deployment that you can share with others.
+
+*Keywords: python, HTML, machine learning, deployment, API*  
+
+***
+
+#### [Article: List Comprehensions in Python](https://python.plainenglish.io/list-comprehensions-in-python-c085fe9aa6f1)
+List comprehensions are incredibly powerful, but also can be unintuitive and confusing. I wrote a guide to understanding and using them, designed for those who use for-loops in their regular programming.
+
+*Keywords: python, programming, beginners*  
+
+***
+
+#### [Tutorial: Parallel GAN Training on GPU: Generate Your Own Images](https://medium.com/codex/parallel-gan-training-on-gpu-generate-your-own-images-9aa807042ef1)
+Generative Adversarial Networks (GANs) are an increasingly popular and very powerful form of computer vision deep learning, and they require a whole lot of compute to be done effectively and speedily. This is just the sort of use case where parallelization with Dask clusters can make a difference in your workflow, so I wrote a tutorial on how to do it!
+
+*Keywords: python, machine learning, deep learning, dask*  
+
+***
+
+#### [Article: Beyond Matplotlib and Seaborn: Python Data Visualization Tools That Work](https://medium.com/codex/beyond-matplotlib-and-seaborn-python-data-visualization-tools-that-work-3ef7f8d1500e)
+I wrote a blogpost to accompany several talks and a github repo all about using different Python visualization tools. Get the code at https://github.com/skirmer/new-py-dataviz.
+
+*Keywords: python, data visualization*  
+
+***
+
+#### [Article: Dask and pandas: There’s No Such Thing as Too Much Data](https://towardsdatascience.com/dask-and-pandas-theres-no-such-thing-as-too-much-data-284763348459)
+Do you love pandas, but hate when you reach the limits of your memory or compute resources? Dask gives you the chance to use the pandas API with distributed data and computing. In this article, you’ll learn how it really works, how to use it yourself, and when/if to switch.
+
+*Keywords: python, pandas, dask*  
+
+***
+
 #### [Article: Eager Data Scientist's Guide to Lazy Evaluation with Dask](https://towardsdatascience.com/guide-to-lazy-evaluation-with-dask-543b48a0aa74)
 Lazy evaluation is the core of parallelization, but it doesn’t have to be confusing or complicated — in this guide, learn the basic concepts you need to get started! I use dask to demonstrate but this is useful for anyone trying to get the hang of parallel computation.
 *Keywords: python, parallelization, dask*  
