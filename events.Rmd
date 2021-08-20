@@ -44,7 +44,27 @@ I love public speaking, and would be glad to join you at your event. To see more
 
 <BR>
 
-TBD - check back soon for new bookings!
+
+#### Event: Snowflake Build Summit   
+
+Topic: Machine Learning on Unstructured Data with Snowflake and Saturn Cloud     
+Location: Virtual  
+Date: October 4-5 2021    
+Links: <a href="https://www.snowflake.com/build/" onclick="gtag('event', 'click', {'event_category' : 'conftalk', 'event_action' : 'outclick', 'event_label' : 'snowflake'}); ">https://www.snowflake.com/build/</a> 
+
+<BR>
+
+
+#### Event: VisInPractice @ IEEE VIS 2021
+
+Topic: Virtual Panel on Visualization Tool Ecosystems  
+Location: Virtual  
+Date: October 25, 2021    
+Links: <a href="http://ieeevis.org/year/2021/info/visinpractice" onclick="gtag('event', 'click', {'event_category' : 'conftalk', 'event_action' : 'outclick', 'event_label' : 'visinpractice'}); ">http://ieeevis.org/year/2021/info/visinpractice</a>   
+<a href="http://ieeevis.org/year/2021/welcome" onclick="gtag('event', 'click', {'event_category' : 'conftalk', 'event_action' : 'outclick', 'event_label' : 'ieee'}); ">http://ieeevis.org/year/2021/welcome</a>
+
+<BR>
+
 
 <BR>
 <BR>
