@@ -1,0 +1,84 @@
+---
+pagetitle: "Stephanie Kirmer"
+output: 
+  html_document:
+    css: "../css/index.css"
+    includes:
+        in_header: ../addons/analytics.html
+    theme: flatly
+---
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/v4-shims.css">
+
+
+<div class = "header">
+<img src="../img/benjamin-rascoe-IVTis_xBsUQ-unsplash.jpg"> 
+
+<div class="mainmenu">
+<a href="events.html" onclick="gtag('event', 'click', {'event_category' : 'internal', 'event_action' : 'internalclick', 'event_label' : 'eventcalendar'});" >events calendar</a> <BR>
+<a href="booking.html" onclick="gtag('event', 'click', {'event_category' : 'internal', 'event_action' : 'internalclick', 'event_label' : 'booking'});" >booking</a> <BR>
+<a href="projects.html" onclick="gtag('event', 'click', {'event_category' : 'internal', 'event_action' : 'internalclick', 'event_label' : 'portfolio'});" >portfolio</a> <BR>
+<a href="http://github.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'github'});" ><i class="fab fa-github fa-1x"></i></a>
+|  <a href="http://linkedin.com/in/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'linkedin'});" ><i class="fab fa-linkedin fa-1x"></i></a> 
+|  <a href="https://medium.com/@s.kirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'medium'});" ><i class="fab fa-medium fa-1x"></i></a><BR>
+</div>
+
+<div class = "titlename">
+<div class = "namefont">
+Stephanie<BR> Kirmer
+</div> 
+data scientist and speaker
+</div>
+
+</div>
+
+
+
+<BR>
+<div class="col-twitter">
+
+```{r eval = TRUE,echo=FALSE, fig.height=8, fig.width=5}
+
+knitr::asis_output(htmltools::htmlPreserve('
+
+<a class="twitter-timeline" href="https://twitter.com/data_stephanie?ref_src=twsrc%5Etfw" data-height=500 data-width=400  data-chrome="nofooter">Tweets by data_stephanie</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+'))
+
+```
+
+</div>
+
+<div class="col-text">
+
+<BR><BR>
+I believe that our personal values should be reflected in our work, so I don't participate in events where I am the only woman, events with one or fewer people of color on the speaking schedule, or events organized by groups that don't explicitly support equal opportunity and require respectful conduct from attendees. I also expect an explicit commitment to diversity and inclusion from companies where I work or consider working. 
+
+There is an abundance of extremely talented women, people of color, and LGBT+ people in the data science industry, and if you are struggling to find them for your event or job opening, please let me know and I may be able to help connect you.
+
+</div>
+
+
+<BR>
+<div class="col-footer">
+
+<font size = 2>
+
+<BR>
+<BR>
+
+Photo by <a href="https://unsplash.com/@dapperprofessional">Benjamin Rascoe</a>.
+
+<BR>
+stephanie@stephaniekirmer.com 
+<BR> 
+<a href="http://www.kaggle.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'kaggle'});">kaggle</a>  | 
+<a href="https://twitter.com/data_stephanie" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'twitter'});">twitter</a>  | 
+<a href="http://github.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'github'});">github</a> | 
+<a href="http://linkedin.com/in/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'linkedin'});">linkedin</a> | 
+<a href="https://youtube.com/playlist?list=PLxqXzy1mNUwclPONsSpw4Qa-pakNzpLva" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'youtube'});">youtube</a> 
+
+
+</div>

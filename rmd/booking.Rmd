@@ -1,0 +1,119 @@
+---
+pagetitle: "Book Me For Your Event"
+output: 
+  html_document:
+    css: ["../css/style.css"]
+    includes:
+        in_header: ../addons/analytics.html
+        before_body: ../addons/_navbar_custom.html
+    theme: flatly
+---
+
+
+```{css, echo=FALSE}
+.container{width:100%;}
+
+.col-1, .col-2, .col-3{
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;}
+
+
+@media only screen and (max-width: 900px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+```
+
+
+<BR><BR><BR>
+If you're looking for a speaker, please contact me at stephanie@stephaniekirmer.com or visit <a href="https://speakerhub.com/speaker/stephanie-kirmer" onclick="gtag('event', 'click', {'event_category' : 'external', 'event_action' : 'outclick', 'event_label' : 'speakerhub'});">my SpeakerHub profile</a>.
+
+<BR>
+
+### Speaking Topics  
+
+#### Content Fall/Winter 2021: 
+
+* Unstructured Data Storage with Snowflake
+* Cloud Based Machine Learning - putting your workflow in the cloud from end to end
+* Deploying ML Models into Flask or Voila (hands-on)
+* Intro to List Comprehensions in Python (lightning talk)  
+
+<BR>
+
+#### Other Topics Available
+<div class= "container">
+<div class="col-1">
+
+##### Data Science/Machine Learning
+  * Applications of GPU (single or cluster) for deep learning (PyTorch or Tensorflow/Keras)
+  * Using Dask to parallelize machine learning
+  * Industry specific applications, such as IIOT, Education, and Hospitality
+  * Data science team collaboration with technologies
+
+</div>
+
+<div class="col-2">
+##### Data Engineering/Programming
+  * Specific data storage technologies: Redshift, PostgreSQL, Elasticsearch
+  * Machine learning production workflows using AWS Redshift and Airflow  
+  * Developing/distributing packages in R or Python
+  * Parallelization for Python: Intro to Dask (30-45 min, can be hands-on)  
+* R Functions Workshop (2 hours with hands-on)
+
+</div>
+
+<div class="col-3">
+##### Data Visualization
+  * R: ggplot, shiny, plotly, gganimate
+  * Python: plotnine, bokeh, plotly, altair
+  * GIS or Network Graphs
+
+
+##### Sociological insights on data science, machine learning, and/or AI  
+* Democratization of GPU access for machine learning (30-45 min)  
+
+</div>
+
+</div>
+
+Or other topics - please contact me if something adjacent would fit your audience! 
+
+<BR>
+
+### Requirements
+
+Aside from my equity and diversity requirements noted below, I'd ask that you give the following information when requesting my presence at an event.
+
+* **Speaker compensation policies, if any.** for community or nonprofit organizations, I am usually happy to speak without compensation. For other organizations, I am happy to negotiate a speaking fee that is within the reach of your budget. 
+* **Location.** I am available to travel for talks starting in August 2021, but am always free to do remote talks as well.
+* **Event theme and content area.** It helps me to choose the right topic and angle on the topic to present, and to decide whether I am a good fit for your event.  
+* **The size and general makeup of the audience you expect.** I tailor each talk to the audience and event, and so I would like to know what sort of data science expertise and demographics you hope to have. This can be an estimate.  
+* **Date/time of event if already scheduled.** If you have a flexible calendar, then we can just discuss this and come to a mutual agreement.  
+
+<BR>
+
+### Diversity and Equity
+
+I believe that our personal values should be reflected in our work, so I don't participate in events where I am the only woman, events with one or fewer people of color on the speaking schedule, or events organized by groups that don't explicitly support equal opportunity and require respectful conduct from attendees. 
+
+There is an abundance of extremely talented women, people of color, and LGBT+ people in the data science industry, and if you are struggling to find them for your event or job opening, please let me know and I may be able to help connect you.
+
+
+***
+
+<font size = 2>
+
+<BR>
+stephanie@stephaniekirmer.com 
+<BR> 
+<a href="http://www.kaggle.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'kaggle'});">kaggle</a>  | 
+<a href="https://twitter.com/data_stephanie" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'twitter'});">twitter</a>  | 
+<a href="http://github.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'github'});">github</a> | 
+<a href="http://linkedin.com/in/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'linkedin'});">linkedin</a> | 
+<a href="https://youtube.com/playlist?list=PLxqXzy1mNUwclPONsSpw4Qa-pakNzpLva" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'youtube'});">youtube</a> 
+
+</font>

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+@import url('https://fonts.googleapis.com/css?family=Unna');
+
+@import url('https://fonts.googleapis.com/css?family=Vollkorn');
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+
+
+:root {
+    --main-font-color: #000000;
+    --main-bg-color: #FFFFFF;
+    --main-link-color: #351c72;
+    --darkest-accent-color: #323232;
+    --dark-accent-color: #554e5a;
+    --text-shadow-color: #000000;
+    --bright-accent-color: #543577;
+    --title-font-fam: 'Josefin Sans', serif;
+    --body-font-fam: 'Roboto', sans-serif;
+    --subtitle-font-fam: 'Josefin Sans', serif;
+    --menu-bgimage: url("../img/menu-wide.jpg");
+  }
+
+  body a:link, body a:visited {
+    color:var(--main-link-color);
+  }
+  
+  body a:hover{
+    color: var(--bright-accent-color)
+  }
+  
+
+/* :root {
+    --main-font-color: #000000;
+    --main-bg-color: #FFFFFF;
+    --main-link-color: #1f0f4d;
+    --darkest-accent-color: #323232;
+    --dark-accent-color: #554e5a;
+    --text-shadow-color: #000000;
+    --bright-accent-color: #543577;
+    --title-font-fam: 'Times New Roman', serif;
+    --body-font-fam: 'Montserrat', sans-serif;
+    --subtitle-font-fam: 'Libre Baskerville', serif;
+    --menu-bgimage: url("../img/menu-wide.jpg");
+  } */

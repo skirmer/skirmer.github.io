@@ -1,0 +1,111 @@
+---
+title: "More Projects"
+output: 
+  html_document:
+    css: ["../css/style.css"]
+    includes:
+        in_header: ../addons/analytics.html
+        before_body: ../addons/_navbar_custom.html
+    theme: flatly
+---
+
+
+
+```{css, echo=FALSE}
+
+@media only screen and (max-width: 900px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+```
+
+<BR><BR>
+
+<BR>
+
+#### [Data for Democracy 2017 Hackathon](https://skirmer.shinyapps.io/chilobby/)
+
+I led a team working on the Chicago Lobbying project, which produced some great output, including this visualization of lobbying and aldermen in Chicago. The project is continuing and building out new functionality. I personally cleaned some of the data underlying, but my biggest contribution was organizing, planning, and leadership. Additional results:
+https://data.world/lilianhj/chicago-lobbyists
+
+Update: Check out a case study by the fine folks at data.world discussing the work that went in to this project: https://medium.com/@sharonbrener/dbf30aeee70b
+
+<BR>
+
+***
+
+<BR>
+
+#### [Exploring Austin, Texas Crime](https://www.kaggle.com/skirmer/exploratory-analysis-of-austin-crime-with-maps)
+
+Among the public datasets available on Kaggle is this one, describing the crimes that have occurred in Austin, TX over a couple of years. This project cleans the data, does some exploratory analysis, and maps various kinds of crime by district
+
+*Key Skills: data cleaning, GIS*
+
+<BR>
+
+***
+
+#### [Interruptions at the First Presidential Debate](https://www.kaggle.com/skirmer/d/mrisdal/2016-us-presidential-debates/interruptions-at-the-first-presidential-debate)
+
+My first natural language processing/text mining! This was a lot of fun, because I watched the debate and then was able to examine how well my actual perceptions matched what the data told me.
+
+*Key Skills: NLP, data cleaning*
+
+<BR>
+
+***
+
+<BR>
+
+#### [Manufacturers and the Drugs They Make](https://skirmer.shinyapps.io/firstapp/)
+
+This project is part of my work for Data for Democracy, a great loose association of data scientists working on projects for public benefit in their free time. This was my first Shiny app, and it's always getting a few tweaks and improvements when I have time.
+
+*Key Skills: web coding, data visualization, Shiny*
+
+<BR>
+
+***
+
+<BR>
+
+#### [Medical No-Shows in a Brazilian Hospital](https://www.kaggle.com/skirmer/d/joniarroba/noshowappointments/wip-exploring-data-cleaning-in-medical-no-shows)
+
+What features of patients help providers predict who is at risk of not showing up to appointments? This one provides insights that could be used by the actual hospital that is the source of the data that can be used to improve their patient care.
+
+*Key Skills: data cleaning, modeling, data visualization, machine learning*
+
+<BR>
+
+***
+
+<BR>
+
+#### [Dental Care in the ACA Marketplace](https://www.kaggle.com/skirmer/d/hhs/health-insurance-marketplace/dental-care-in-the-aca-marketplace)
+
+I think this is a good kernel, but it never got traction because the data was not glamorous and the results were not very cheerful. In short, the dental coverage from the ACA is seriously inadequate for population needs, unfortunately.
+
+*Key Skills: data cleaning, GIS*
+
+<BR>
+
+***
+
+<BR>
+
+#### [Tidy Text Mining in Facebook Posts](https://www.kaggle.com/skirmer/d/mchirico/cheltenham-s-facebook-group/tidy-text-mining-in-facebook-posts)
+
+In this project, I used a provided dataset of facebook posts from a community group and analyzed a few details about the content- specifically, how sentiment and gender related to "likes" on the posts.
+
+*Key Skills: NLP, data cleaning, data visualization*
+
+<BR>
+
+stephanie@stephaniekirmer.com   
+
+<BR> <a href="http://www.kaggle.com/skirmer" onclick="captureOutboundLink('http://www.kaggle.com/skirmer'); return false;">kaggle</a>  | <a href="https://twitter.com/data_stephanie" onclick="captureOutboundLink('https://twitter.com/data_stephanie'); return false;">twitter</a>  | <a href="http://github.com/skirmer"  onclick="captureOutboundLink('http://github.com/skirmer'); return false;">github</a> | <a href="http://linkedin.com/in/skirmer" onclick="captureOutboundLink('http://linkedin.com/in/skirmer'); return false;">linkedin</a> 
+
