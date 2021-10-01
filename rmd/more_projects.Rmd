@@ -1,5 +1,5 @@
 ---
-title: "More Projects"
+pagetitle: "More Projects"
 output: 
   html_document:
     css: ["../css/style.css"]
@@ -21,8 +21,51 @@ output:
 }
 
 ```
+## More Projects
 
 <BR><BR>
+
+<BR>
+
+#### [Evaluation of R Forwards Package Workshop](https://skirmer.github.io/ChiEval)  
+I recently co-taught a daylong course for a group of 30 women/gender nonbinary students about how to write R packages- we had a really good time! I analyzed our pre- and post- surveys in a notebook, to check how effective the day was for students.
+
+*Keywords: r, data visualization*  
+
+<BR>
+
+***
+
+<BR>
+
+#### [Kiva Loan Data Analysis](https://skirmer.shinyapps.io/Kiva_Loans/)  
+
+* GIS analysis of loans by country with attention to economic conditions in countries 
+* Drilldown on some of the thematic areas of the loans
+* Data munging of the regional data provided 
+* Exploring modeling potential- if repayment time can be predicted, or 
+anomaly detection if labeling outcomes is not possible  
+
+*Keywords: r, data visualization*  
+
+<BR>
+
+***
+
+<BR>
+
+#### [Tutorial: Fun with Real Estate Data](https://www.kaggle.com/skirmer/house-prices-advanced-regression-techniques/fun-with-real-estate-data)
+
+This project is a kaggle kernel, in which I walked the reader through the process of cleaning and modeling the data from a real estate prices dataset, using linear modeling, random forests, and gradient boosting (xgboost). My most popular kernel to date! This one also produced respectable competition results, and was chosen for special recognition by the Kaggle admins. (I won a mug!)
+
+Update: Read the interview I did regarding this project (and the other fabulous winners)! 
+http://blog.kaggle.com/2017/03/29/predicting-house-prices-playground-competition-winning-kernels
+
+*Keywords: machine learning, data cleaning*  
+
+<BR>
+
+***
 
 <BR>
 

@@ -22,11 +22,16 @@ h4{
 }
 
 h1, h2{
-  border-bottom: 1px dashed var(--dark-accent-color);
+  border-bottom: 2px solid var(--light-accent-color);
   padding-top: 30px;
   font-size: 200%;
+  font-weight: 600;  
 }
 
+h3{
+  border-bottom: 1px solid var(--light-accent-color);
+  font-weight: 600;
+}
 
 .main-container{
   margin-left: 5px;

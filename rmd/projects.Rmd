@@ -39,6 +39,22 @@ output:
 
 <BR>
 
+#### [Series: Cloud Based Machine Learning Workflows](https://medium.com/@s.kirmer/machine-learning-development-in-the-cloud-part-1-e60920725af0)
+<ul>
+<li>[Part 1: Intro](https://medium.com/@s.kirmer/machine-learning-development-in-the-cloud-part-1-e60920725af0)</li>
+<li>[Part 2: The IDE](https://medium.com/@s.kirmer/machine-learning-development-in-the-cloud-part-2-the-ide-dc912182e919)</li>
+<li>[Part 3: Code](https://medium.com/codex/machine-learning-development-in-the-cloud-part-3-code-a568726c9dff)</li>
+<li>[Part 4: Data](https://medium.com/codex/machine-learning-development-in-the-cloud-part-4-data-2437cadb5e38)</li>
+<li>[Part 5: Images/Environments](https://medium.com/codex/machine-learning-development-in-the-cloud-part-5-environments-images-87e2b957debe)</li>
+<li>[Part 6: Jobs & Automation](https://medium.com/codex/machine-learning-development-in-the-cloud-part-6-jobs-and-automation-2874dbd126b5)</li>
+</ul>
+
+In this series, I took a close look at these 5 areas of the data science or machine learning development workflow, telling you what the cloud approach looks like versus the local approach, explaining the pros and cons of each, and describing a few tools you might want to try.
+
+*Keywords: python, machine learning, cloud computing*  
+
+***
+
 #### [Tutorial: Deploying ML Models - Flask or Voila, API or Web App!](https://medium.com/geekculture/deploy-your-machine-learning-model-with-flask-or-voila-c74a07921604)
 Data science model deployment can sound intimidating if you have never had a chance to try it in a safe space. In this blog post, I give the end-to-end explanation of how you go from zero to a deployment that you can share with others.
 
@@ -128,38 +144,6 @@ I appeared in a video series for Uptake about how modeling industrial failures w
 I wrote a silly R package called radlibs that allows you to make your own madlibs. Then I wrote a version in Python. Then I added them to CRAN and pypi. Data science doesn't always have to be serious. Use `install.packages("radlibs")` or `pip install radlibs` to get these packages. Issues and feedback welcome!
 
 *Keywords: python, r, packages*  
-
-***
-
-#### [Evaluation of R Forwards Package Workshop](https://skirmer.github.io/ChiEval)  
-I recently co-taught a daylong course for a group of 30 women/gender nonbinary students about how to write R packages- we had a really good time! I analyzed our pre- and post- surveys in a notebook, to check how effective the day was for students.
-
-*Keywords: r, data visualization*  
-
-***
-
-#### [Kiva Loan Data Analysis](https://skirmer.shinyapps.io/Kiva_Loans/)  
-
-* GIS analysis of loans by country with attention to economic conditions in countries 
-* Drilldown on some of the thematic areas of the loans
-* Data munging of the regional data provided 
-* Exploring modeling potential- if repayment time can be predicted, or 
-anomaly detection if labeling outcomes is not possible  
-
-*Keywords: r, data visualization*  
-
-***
-
-
-#### [Tutorial: Fun with Real Estate Data](https://www.kaggle.com/skirmer/house-prices-advanced-regression-techniques/fun-with-real-estate-data)
-
-This project is a kaggle kernel, in which I walked the reader through the process of cleaning and modeling the data from a real estate prices dataset, using linear modeling, random forests, and gradient boosting (xgboost). My most popular kernel to date! This one also produced respectable competition results, and was chosen for special recognition by the Kaggle admins. (I won a mug!)
-
-Update: Read the interview I did regarding this project (and the other fabulous winners)! 
-http://blog.kaggle.com/2017/03/29/predicting-house-prices-playground-competition-winning-kernels
-
-*Keywords: machine learning, data cleaning*  
-
 
 ***
 

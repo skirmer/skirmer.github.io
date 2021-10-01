@@ -37,7 +37,6 @@ If you're looking for a speaker, please contact me at stephanie@stephaniekirmer.
 
 #### Content Fall/Winter 2021: 
 
-* Unstructured Data Storage with Snowflake
 * Cloud Based Machine Learning - putting your workflow in the cloud from end to end
 * Deploying ML Models into Flask or Voila (hands-on)
 * Intro to List Comprehensions in Python (lightning talk)  
@@ -52,7 +51,7 @@ If you're looking for a speaker, please contact me at stephanie@stephaniekirmer.
   * Applications of GPU (single or cluster) for deep learning (PyTorch or Tensorflow/Keras)
   * Using Dask to parallelize machine learning
   * Industry specific applications, such as IIOT, Education, and Hospitality
-  * Data science team collaboration with technologies
+  * Data science team collaboration strategies
 
 </div>
 
