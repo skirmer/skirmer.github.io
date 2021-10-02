@@ -15,6 +15,8 @@ output:
 
 .col-1, .col-2, .col-3{
   width: 33%;
+  padding-right: 10px;
+  padding-left: 10px;
   display: inline-block;
   vertical-align: top;}
 
@@ -28,8 +30,12 @@ output:
 ```
 
 
-<BR><BR><BR>
-If you're looking for a speaker, please contact me at stephanie@stephaniekirmer.com or visit <a href="https://speakerhub.com/speaker/stephanie-kirmer" onclick="gtag('event', 'click', {'event_category' : 'external', 'event_action' : 'outclick', 'event_label' : 'speakerhub'});">my SpeakerHub profile</a>.
+
+<br>
+<font size = 3> 
+
+If you're looking for a speaker, please contact me at stephanie@stephaniekirmer.com or visit <a href="https://speakerhub.com/speaker/stephanie-kirmer" onclick="gtag('event', 'click', {'event_category' : 'external', 'event_action' : 'outclick', 'event_label' : 'speakerhub'});">my SpeakerHub profile</a>. Please review <a href="#requirements">my requirements</a> before getting in touch!
+</font>
 
 <BR>
 
@@ -43,11 +49,11 @@ If you're looking for a speaker, please contact me at stephanie@stephaniekirmer.
 
 <BR>
 
-#### Other Topics Available
+### Other Topics Available
 <div class= "container">
 <div class="col-1">
 
-##### Data Science/Machine Learning
+#### Data Science/Machine Learning
   * Applications of GPU (single or cluster) for deep learning (PyTorch or Tensorflow/Keras)
   * Using Dask to parallelize machine learning
   * Industry specific applications, such as IIOT, Education, and Hospitality
@@ -56,7 +62,7 @@ If you're looking for a speaker, please contact me at stephanie@stephaniekirmer.
 </div>
 
 <div class="col-2">
-##### Data Engineering/Programming
+#### Data Engineering/Programming
   * Specific data storage technologies: Redshift, PostgreSQL, Elasticsearch
   * Machine learning production workflows using AWS Redshift and Airflow  
   * Developing/distributing packages in R or Python
@@ -66,29 +72,27 @@ If you're looking for a speaker, please contact me at stephanie@stephaniekirmer.
 </div>
 
 <div class="col-3">
-##### Data Visualization
+#### Data Visualization
   * R: ggplot, shiny, plotly, gganimate
   * Python: plotnine, bokeh, plotly, altair
   * GIS or Network Graphs
 
 
-##### Sociological insights on data science, machine learning, and/or AI  
+#### Sociological insights on data science, machine learning, and/or AI  
 * Democratization of GPU access for machine learning (30-45 min)  
 
 </div>
 
 </div>
 
-Or other topics - please contact me if something adjacent would fit your audience! 
-
 <BR>
 
-### Requirements
+<h3 id="requirements">Requirements</h3>
 
 Aside from my equity and diversity requirements noted below, I'd ask that you give the following information when requesting my presence at an event.
 
 * **Speaker compensation policies, if any.** for community or nonprofit organizations, I am usually happy to speak without compensation. For other organizations, I am happy to negotiate a speaking fee that is within the reach of your budget. 
-* **Location.** I am available to travel for talks starting in August 2021, but am always free to do remote talks as well.
+* **Location.** I am available to travel for talks as appropriate, but am always free to do remote talks as well.
 * **Event theme and content area.** It helps me to choose the right topic and angle on the topic to present, and to decide whether I am a good fit for your event.  
 * **The size and general makeup of the audience you expect.** I tailor each talk to the audience and event, and so I would like to know what sort of data science expertise and demographics you hope to have. This can be an estimate.  
 * **Date/time of event if already scheduled.** If you have a flexible calendar, then we can just discuss this and come to a mutual agreement.  

@@ -35,15 +35,12 @@ output:
 
 ```
 
-<BR>
-<BR>
-</font>
 <br>
 <font size = 3> 
 
 I love public speaking, and would be glad to join you at your event. To see more information about my areas of expertise and requirements for participation, please visit <a href="booking.html" onclick="gtag('event', 'click', {'event_category' : 'internal', 'event_action' : 'internalclick', 'event_label' : 'booking'});" >my bookings page</a>.
 
-<BR><BR>
+<BR>
 
 ## Upcoming Appearances 
 
@@ -70,9 +67,6 @@ Links: <a href="http://ieeevis.org/year/2021/info/visinpractice" onclick="gtag('
 
 <BR>
 
-
-<BR>
-<BR>
 
 
 ### Past Appearances 

@@ -69,7 +69,7 @@ There is an abundance of extremely talented women, people of color, and LGBT+ pe
 <BR>
 <BR>
 
-Photo by <a href="https://unsplash.com/@dapperprofessional">Benjamin Rascoe</a>.
+Photo by <a href="https://unsplash.com/@dapperprofessional" onclick="gtag('event', 'click', {'event_category' : 'citation', 'event_action' : 'outclick', 'event_label' : 'benrascoe_unsplash'});" >Benjamin Rascoe</a>.
 
 <BR>
 stephanie@stephaniekirmer.com 

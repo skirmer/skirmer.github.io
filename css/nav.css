@@ -9,7 +9,6 @@
 
 .textleft{
   font-family: var(--title-font-fam);
-  /*font-style:italic;*/
   font-size: 45px;
   line-height: 90%;
   color: var(--main-bg-color);
@@ -126,7 +125,8 @@
 
 @media (max-width: 550px) {
     .textleft{
-        font-size: 35px;
+        font-size: 30px;
+        padding-top: 30px;
       }
     
 }
