@@ -39,6 +39,16 @@ output:
 
 <BR>
 
+#### <a href="https://www.beautifulbastardspodcast.com/the-rise-of-ai-stephanie-kirmer-on-the-future-of-big-tech/" onclick="gtag('event', 'click', {'event_category' : 'citation', 'event_action' : 'outclick', 'event_label' : 'beautifulbastardspodcast'});">Podcast: Appearance on "Beautiful Bastards Podcast"</a> 
+The hosts of this show gave me an hour to talk about all kinds of issues in DS/ML, including ethics, data privacy, risk/rewards, D&I, and more. I mentioned a couple of things in the episode that are linked below.
+
+* The Chicago SSL: [Tribune](https://www.chicagotribune.com/news/criminal-justice/ct-chicago-police-strategic-subject-list-ended-20200125-spn4kjmrxrh4tmktdjckhtox4i-story.html) and [Chicago Magazine](https://www.chicagomag.com/city-life/August-2017/Chicago-Police-Strategic-Subject-List/)
+* [Machine learning for kids book](https://www.amazon.com/dp/1732508003/ref=cm_sw_r_awdo_navT_a_ZGE410W6CNQF5W4ZNKXK)
+
+*Keywords: ethics, machine learning*  
+
+***
+
 #### [Series: Cloud Based Machine Learning Workflows](https://medium.com/@s.kirmer/machine-learning-development-in-the-cloud-part-1-e60920725af0)
 <ul>
 <li>[Part 1: Intro](https://medium.com/@s.kirmer/machine-learning-development-in-the-cloud-part-1-e60920725af0)</li>
