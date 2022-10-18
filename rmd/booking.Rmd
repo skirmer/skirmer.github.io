@@ -41,10 +41,8 @@ If you're looking for a speaker, please contact me at stephanie@stephaniekirmer.
 
 ### Speaking Topics  
 
-#### Content Fall/Winter 2021: 
-
-* Cloud Based Machine Learning - putting your workflow in the cloud from end to end
-* Deploying ML Models into Flask or Voila (hands-on)
+#### Content Fall/Winter 2022: 
+* Generating Geofences with Clustering Algorithms
 * Intro to List Comprehensions in Python (lightning talk)  
 
 <BR>
@@ -58,7 +56,9 @@ If you're looking for a speaker, please contact me at stephanie@stephaniekirmer.
   * Using Dask to parallelize machine learning
   * Industry specific applications, such as IIOT, Education, and Hospitality
   * Data science team collaboration strategies
-
+  * Cloud Based Machine Learning - putting your workflow in the cloud from end to end
+  * Deploying ML Models into Flask or Voila (hands-on)
+  
 </div>
 
 <div class="col-2">
@@ -67,7 +67,7 @@ If you're looking for a speaker, please contact me at stephanie@stephaniekirmer.
   * Machine learning production workflows using AWS Redshift and Airflow  
   * Developing/distributing packages in R or Python
   * Parallelization for Python: Intro to Dask (30-45 min, can be hands-on)  
-* R Functions Workshop (2 hours with hands-on)
+  * R Functions Workshop (2 hours with hands-on)
 
 </div>
 
@@ -79,7 +79,7 @@ If you're looking for a speaker, please contact me at stephanie@stephaniekirmer.
 
 
 #### Sociological insights on data science, machine learning, and/or AI  
-* Democratization of GPU access for machine learning (30-45 min)  
+  * Democratization of GPU access for machine learning (30-45 min)  
 
 </div>
 
