@@ -46,13 +46,7 @@ I love public speaking, and would be glad to join you at your event. To see more
 
 <BR>
 
-#### Event: MLOps Community Meetup - Chicago   
-
-Topic: Generating "Smart" Geofences with Clustering Techniques     
-Location: Chicago Loop, TBD  
-Date: November 10, 2022    
-Links: <a href="https://mlops.community" onclick="gtag('event', 'click', {'event_category' : 'conftalk', 'event_action' : 'outclick', 'event_label' : 'mlops'}); ">https://mlops.community</a> 
-<BR>
+Available for future talks- get in touch!
 
 <BR>
 
@@ -65,9 +59,17 @@ If you have any questions about any of the talks below, contact me on twitter!
 <BR>
 
 <div class= "container">
-
-
 <div class="col-1">
+#### Event: MLOps Community Meetup - Chicago   
+
+Topic: Generating "Smart" Geofences with Clustering Techniques     
+Location: Chicago Loop, Toast offices  
+Date: November 10, 2022    
+Links: <a href="https://mlops.community" onclick="gtag('event', 'click', {'event_category' : 'conftalk', 'event_action' : 'outclick', 'event_label' : 'mlops'}); ">https://mlops.community</a> 
+<BR>
+<BR>
+</div>
+<div class="col-2">
 
 #### Event: VisInPractice @ IEEE VIS 2021
 
@@ -78,8 +80,6 @@ Links: <a href="http://ieeevis.org/year/2021/info/visinpractice" onclick="gtag('
 <a href="http://ieeevis.org/year/2021/welcome" onclick="gtag('event', 'click', {'event_category' : 'conftalk', 'event_action' : 'outclick', 'event_label' : 'ieee'}); ">http://ieeevis.org/year/2021/welcome</a>
 
 <BR>
-</div>
-<div class="col-2">
 </div>
 
 <div class="col-1">
