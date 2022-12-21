@@ -37,19 +37,6 @@ data scientist and speaker
 
 
 <BR>
-<div class="col-twitter">
-
-```{r eval = TRUE,echo=FALSE, fig.height=8, fig.width=5}
-
-knitr::asis_output(htmltools::htmlPreserve('
-
-<a class="twitter-timeline" href="https://twitter.com/data_stephanie?ref_src=twsrc%5Etfw" data-height=500 data-width=400  data-chrome="nofooter">Tweets by data_stephanie</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-'))
-
-```
-
-</div>
 
 <div class="col-text">
 
@@ -75,7 +62,6 @@ Photo by <a href="https://unsplash.com/@dapperprofessional" onclick="gtag('event
 stephanie@stephaniekirmer.com 
 <BR> 
 <a href="http://www.kaggle.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'kaggle'});">kaggle</a>  | 
-<a href="https://twitter.com/data_stephanie" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'twitter'});">twitter</a>  | 
 <a href="http://github.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'github'});">github</a> | 
 <a href="http://linkedin.com/in/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'linkedin'});">linkedin</a> | 
 <a href="https://youtube.com/playlist?list=PLxqXzy1mNUwclPONsSpw4Qa-pakNzpLva" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'youtube'});">youtube</a> 
