@@ -62,10 +62,10 @@ If you have any questions about any of the talks below, contact me on twitter!
 <div class="col-1">
 #### Event: Gartner Supply Chain Symposium/Xpo 2023   
 
-Topic: Maximize Productivity with Shipment Data & ML-Driven Smart Geofences
+Topic: Maximize Productivity with Shipment Data & ML-Driven Smart Geofences   
 Location: Orlando, FL  
-Date: May 9, 2023
-Co-presented with Nick Clark
+Date: May 9, 2023  
+Co-presented with Nick Clark   
 Links: <a href="https://explore.project44.com/et0/en-gartner-symposium-2023" onclick="gtag('event', 'click', {'event_category' : 'conftalk', 'event_action' : 'outclick', 'event_label' : 'gartner'}); ">https://explore.project44.com/et0/en-gartner-symposium-2023</a> 
 <BR>
 <BR>
