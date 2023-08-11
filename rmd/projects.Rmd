@@ -36,8 +36,39 @@ output:
 
 
 ## Projects and Content
-
 <BR>
+
+#### <a href="https://towardsdatascience.com/machine-learning-engineers-what-do-they-actually-do-e666081c3181"  onclick="gtag('event', 'click', {'event_category' : 'citation', 'event_action' : 'outclick', 'event_label' : 'mle_whatdotheydo'});">Article: Towards Data Science: "Machine Learning Engineers: What do they actually do?"</a> 
+My thoughts on the evolution of job titles and career paths in the DS/ML field, including some discussion of the possible DEI implications.
+
+*Keywords: dei, machine learning*
+
+***
+
+#### <a href="https://medium.com/project44-techblog/setting-healthy-boundaries-generating-geofences-at-scale-with-machine-learning-part-1-c2067ef49777"  onclick="gtag('event', 'click', {'event_category' : 'citation', 'event_action' : 'outclick', 'event_label' : 'smartgeo_pt1'});">Series: project44 Tech Blog: "Setting Healthy Boundaries: Generating Geofences at Scale with Machine Learning"</a> 
+
+My step by step description of how I designed and implemented the Smart Geofences feature at project44.
+
+<ul>
+<li><a href="https://medium.com/project44-techblog/setting-healthy-boundaries-generating-geofences-at-scale-with-machine-learning-part-1-c2067ef49777"  onclick="gtag('event', 'click', {'event_category' : 'citation', 'event_action' : 'outclick', 'event_label' : 'smartgeo_pt1'});">Part 1</a>
+</li>
+<li><a href="https://medium.com/project44-techblog/setting-healthy-boundaries-generating-geofences-at-scale-with-machine-learning-part-2-eaa81b2d26d8"  onclick="gtag('event', 'click', {'event_category' : 'citation', 'event_action' : 'outclick', 'event_label' : 'smartgeo_pt2'});">Part 2</a>
+</li>
+</ul>
+
+*Keywords: gis, geofences, machine learning, devops, airflow, python*
+
+***
+
+#### <a href="https://towardsdatascience.com/starting-a-new-machine-learning-model-beeb81a361b8"  onclick="gtag('event', 'click', {'event_category' : 'citation', 'event_action' : 'outclick', 'event_label' : 'mle_whatdotheydo'});">Article: Towards Data Science: "Starting a New Machine Learning Model"</a> 
+In this article I described my process for starting a new ML project, and gave tips from my experience for newer data scientists.
+
+*Keywords: machine learning, tutorial, advice*
+
+***
+
+
+
 
 #### <a href="https://www.beautifulbastardspodcast.com/the-rise-of-ai-stephanie-kirmer-on-the-future-of-big-tech/" onclick="gtag('event', 'click', {'event_category' : 'citation', 'event_action' : 'outclick', 'event_label' : 'beautifulbastardspodcast'});">Podcast: Appearance on "Beautiful Bastards Podcast"</a> 
 The hosts of this show gave me an hour to talk about all kinds of issues in DS/ML, including ethics, data privacy, risk/rewards, D&I, and more. I mentioned a couple of things in the episode that are linked below.
@@ -145,17 +176,6 @@ In concert with my presentation at ODSC Europe 2020 I wrote a blog post to discu
 
 ***
 
-#### [Model Behavior Video](https://www.youtube.com/watch?v=avRLRc4wI3Q)
-I appeared in a video series for Uptake about how modeling industrial failures work - this was really fun, and I hope people will give it a look! I talk about a specific failure of diesel locomotive hardware, and how I solved it while I was working at Uptake. 
-
-***
-
-#### [Radlibs! in R](https://github.com/skirmer/radlibs) or [in Python](https://github.com/skirmer/radlibs-py)
-I wrote a silly R package called radlibs that allows you to make your own madlibs. Then I wrote a version in Python. Then I added them to CRAN and pypi. Data science doesn't always have to be serious. Use `install.packages("radlibs")` or `pip install radlibs` to get these packages. Issues and feedback welcome!
-
-*Keywords: python, r, packages*  
-
-***
 
 <font size = 2>
 

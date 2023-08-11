@@ -27,6 +27,19 @@ output:
 
 <BR>
 
+
+#### [Model Behavior Video](https://www.youtube.com/watch?v=avRLRc4wI3Q)
+I appeared in a video series for Uptake about how modeling industrial failures work - this was really fun, and I hope people will give it a look! I talk about a specific failure of diesel locomotive hardware, and how I solved it while I was working at Uptake. 
+
+***
+
+#### [Radlibs! in R](https://github.com/skirmer/radlibs) or [in Python](https://github.com/skirmer/radlibs-py)
+I wrote a silly R package called radlibs that allows you to make your own madlibs. Then I wrote a version in Python. Then I added them to CRAN and pypi. Data science doesn't always have to be serious. Use `install.packages("radlibs")` or `pip install radlibs` to get these packages. Issues and feedback welcome!
+
+*Keywords: python, r, packages*  
+
+***
+
 #### [Evaluation of R Forwards Package Workshop](https://skirmer.github.io/ChiEval)  
 I recently co-taught a daylong course for a group of 30 women/gender nonbinary students about how to write R packages- we had a really good time! I analyzed our pre- and post- surveys in a notebook, to check how effective the day was for students.
 
@@ -36,21 +49,21 @@ I recently co-taught a daylong course for a group of 30 women/gender nonbinary s
 
 ***
 
-<BR>
+<!-- <BR> -->
 
-#### [Kiva Loan Data Analysis](https://skirmer.shinyapps.io/Kiva_Loans/)  
+<!-- #### [Kiva Loan Data Analysis](https://skirmer.shinyapps.io/Kiva_Loans/)   -->
 
-* GIS analysis of loans by country with attention to economic conditions in countries 
-* Drilldown on some of the thematic areas of the loans
-* Data munging of the regional data provided 
-* Exploring modeling potential- if repayment time can be predicted, or 
-anomaly detection if labeling outcomes is not possible  
+<!-- * GIS analysis of loans by country with attention to economic conditions in countries  -->
+<!-- * Drilldown on some of the thematic areas of the loans -->
+<!-- * Data munging of the regional data provided  -->
+<!-- * Exploring modeling potential- if repayment time can be predicted, or  -->
+<!-- anomaly detection if labeling outcomes is not possible   -->
 
-*Keywords: r, data visualization*  
+<!-- *Keywords: r, data visualization*   -->
 
-<BR>
+<!-- <BR> -->
 
-***
+<!-- *** -->
 
 <BR>
 
@@ -69,12 +82,14 @@ http://blog.kaggle.com/2017/03/29/predicting-house-prices-playground-competition
 
 <BR>
 
-#### [Data for Democracy 2017 Hackathon](https://skirmer.shinyapps.io/chilobby/)
+#### [Data for Democracy 2017 Hackathon](https://medium.com/@sharonbrener/dbf30aeee70b)
 
 I led a team working on the Chicago Lobbying project, which produced some great output, including this visualization of lobbying and aldermen in Chicago. The project is continuing and building out new functionality. I personally cleaned some of the data underlying, but my biggest contribution was organizing, planning, and leadership. Additional results:
 https://data.world/lilianhj/chicago-lobbyists
 
 Update: Check out a case study by the fine folks at data.world discussing the work that went in to this project: https://medium.com/@sharonbrener/dbf30aeee70b
+
+Update: I have turned off this application for the time being, but if you are interested in it contact me!
 
 <BR>
 
@@ -102,17 +117,17 @@ My first natural language processing/text mining! This was a lot of fun, because
 
 ***
 
-<BR>
+<!-- <BR> -->
 
-#### [Manufacturers and the Drugs They Make](https://skirmer.shinyapps.io/firstapp/)
+<!-- #### [Manufacturers and the Drugs They Make](https://skirmer.shinyapps.io/firstapp/) -->
 
-This project is part of my work for Data for Democracy, a great loose association of data scientists working on projects for public benefit in their free time. This was my first Shiny app, and it's always getting a few tweaks and improvements when I have time.
+<!-- This project is part of my work for Data for Democracy, a great loose association of data scientists working on projects for public benefit in their free time. This was my first Shiny app, and it's always getting a few tweaks and improvements when I have time. -->
 
-*Key Skills: web coding, data visualization, Shiny*
+<!-- *Key Skills: web coding, data visualization, Shiny* -->
 
-<BR>
+<!-- <BR> -->
 
-***
+<!-- *** -->
 
 <BR>
 
