@@ -38,6 +38,23 @@ output:
 ## Projects and Content
 <BR>
 
+#### <a href="https://medium.com/towards-data-science/machine-learnings-public-perception-problem-48daf587e7a8"  onclick="gtag('event', 'click', {'event_category' : 'citation', 'event_action' : 'outclick', 'event_label' : 'ds_archetypes'});">Article: Towards Data Science: "Machine Learning's Public Perception Problem"</a> 
+In this piece, I take a close look at why the public doesn't have an accurate understanding of machine learning/AI, and explain what the negative results will be if data science doesn't work to fix this problem.
+
+*Keywords: public policy, education, machine learning*
+
+***
+
+
+#### <a href="https://medium.com/towards-data-science/archetypes-of-the-data-scientist-role-1b078966fb2"  onclick="gtag('event', 'click', {'event_category' : 'citation', 'event_action' : 'outclick', 'event_label' : 'ds_archetypes'});">Article: Towards Data Science: "Archetypes of the Data Science Role"</a> 
+A discussion of the different forms a data science job can take, including practical explanation of what the responsibilities look like. I also discuss the overloading of individual roles and how that can cause burnout.
+
+*Keywords: data science, careers*
+
+***
+
+
+
 #### <a href="https://towardsdatascience.com/machine-learning-engineers-what-do-they-actually-do-e666081c3181"  onclick="gtag('event', 'click', {'event_category' : 'citation', 'event_action' : 'outclick', 'event_label' : 'mle_whatdotheydo'});">Article: Towards Data Science: "Machine Learning Engineers: What do they actually do?"</a> 
 My thoughts on the evolution of job titles and career paths in the DS/ML field, including some discussion of the possible DEI implications.
 
