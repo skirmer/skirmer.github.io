@@ -41,17 +41,11 @@ If you're looking for a speaker, please contact me at stephanie@stephaniekirmer.
 
 ### Speaking Topics  
 
-#### Content Spring/Summer 2023: 
-* Generating Geofences with Clustering Algorithms
-* Intro to List Comprehensions in Python (lightning talk)  
-
-<BR>
-
-### Other Topics Available
 <div class= "container">
 <div class="col-1">
 
 #### Data Science/Machine Learning
+  * Generating Geofences with Clustering Algorithms
   * Applications of GPU (single or cluster) for deep learning (PyTorch or Tensorflow/Keras)
   * Using Dask to parallelize machine learning
   * Industry specific applications, such as IIOT, Education, and Hospitality
@@ -63,23 +57,21 @@ If you're looking for a speaker, please contact me at stephanie@stephaniekirmer.
 
 <div class="col-2">
 #### Data Engineering/Programming
+  * Intro to List Comprehensions in Python (lightning talk)  
   * Specific data storage technologies: Redshift, PostgreSQL, Elasticsearch
   * Machine learning production workflows using AWS Redshift and Airflow  
-  * Developing/distributing packages in R or Python
+  * Developing/distributing packages in  Python
   * Parallelization for Python: Intro to Dask (30-45 min, can be hands-on)  
   * R Functions Workshop (2 hours with hands-on)
 
 </div>
 
 <div class="col-3">
-#### Data Visualization
-  * R: ggplot, shiny, plotly, gganimate
-  * Python: plotnine, bokeh, plotly, altair
-  * GIS or Network Graphs
-
 
 #### Sociological insights on data science, machine learning, and/or AI  
   * Democratization of GPU access for machine learning (30-45 min)  
+  * Public perceptions of ML/AI
+  * The meaning of "mistake" in ML
 
 </div>
 
@@ -108,14 +100,17 @@ There is an abundance of extremely talented women, people of color, and LGBT+ pe
 
 ***
 
+<div class="col-footer">
+
 <font size = 2>
 
 <BR>
 stephanie@stephaniekirmer.com 
 <BR> 
-<a href="http://www.kaggle.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'kaggle'});">kaggle</a>  | 
-<a href="http://github.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'github'});">github</a> | 
-<a href="http://linkedin.com/in/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'linkedin'});">linkedin</a> | 
-<a href="https://youtube.com/playlist?list=PLxqXzy1mNUwclPONsSpw4Qa-pakNzpLva" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'youtube'});">youtube</a> 
+
+<a href="http://github.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'github'});" ><i class="fab fa-github fa-1x"></i></a>
+|  <a href="http://linkedin.com/in/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'linkedin'});" ><i class="fab fa-linkedin fa-1x"></i></a> 
+|  <a href="https://medium.com/@s.kirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'medium'});" ><i class="fab fa-medium fa-1x"></i></a><BR>
 
 </font>
+</div>

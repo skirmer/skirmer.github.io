@@ -46,7 +46,7 @@ I love public speaking, and would be glad to join you at your event. To see more
 
 <BR>
 
-Available for future talks- get in touch!
+<a href="booking.html" onclick="gtag('event', 'click', {'event_category' : 'internal', 'event_action' : 'internalclick', 'event_label' : 'booking'});" >Available for future talks- get in touch!</a>
 
 <BR>
 
@@ -368,14 +368,21 @@ Links: <a href="https://odsc.com/boston/" onclick="gtag('event', 'click', {'even
 
 </font>
 <br><BR>
-<font size = 2> [Looking for a speaker?](booking.html) Contact me at stephanie@stephaniekirmer.com. 
 
+
+
+<div class="col-footer">
+
+<font size = 2>
 
 <BR>
+stephanie@stephaniekirmer.com 
+<BR> 
 
-<a href="http://www.kaggle.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'kaggle'});">kaggle</a>  | 
-<a href="http://github.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'github'});">github</a> | 
-<a href="http://linkedin.com/in/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'linkedin'});">linkedin</a> | 
-<a href="https://youtube.com/playlist?list=PLxqXzy1mNUwclPONsSpw4Qa-pakNzpLva" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'youtube'});">youtube</a> 
+<a href="http://github.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'github'});" ><i class="fab fa-github fa-1x"></i></a>
+|  <a href="http://linkedin.com/in/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'linkedin'});" ><i class="fab fa-linkedin fa-1x"></i></a> 
+|  <a href="https://medium.com/@s.kirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'medium'});" ><i class="fab fa-medium fa-1x"></i></a><BR>
 
 </font>
+</div>
+

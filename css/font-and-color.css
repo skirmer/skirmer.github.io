@@ -12,21 +12,22 @@
 
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
+@import url('https://fonts.googleapis.com/css?family=Dosis');
 
 
 :root {
     --main-font-color: #000000;
     --main-bg-color: #FFFFFF;
-    --main-link-color: #351c72;
+    --main-link-color: #10718E;
     --darkest-accent-color: #323232;
     --dark-accent-color: #554e5a;
     --text-shadow-color: #000000;
-    --bright-accent-color: #543577;
+    --bright-accent-color: #10718E;
     --light-accent-color: #8e899e;
-    --title-font-fam: 'Josefin Sans', serif;
+    --title-font-fam: 'Dosis', sans-serif;
     --body-font-fam: 'Roboto', sans-serif;
-    --subtitle-font-fam: 'Josefin Sans', serif;
-    --menu-bgimage: url("../img/menu-wide.jpg");
+    --subtitle-font-fam: 'PT Sans Narrow', serif;
+    --menu-bgimage: url("../img/header_pedro2.jpg");
   }
 
   body a:link, body a:visited {

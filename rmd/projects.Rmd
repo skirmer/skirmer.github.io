@@ -38,7 +38,14 @@ output:
 ## Projects and Content
 <BR>
 
-#### <a href="https://medium.com/towards-data-science/machine-learnings-public-perception-problem-48daf587e7a8"  onclick="gtag('event', 'click', {'event_category' : 'citation', 'event_action' : 'outclick', 'event_label' : 'ds_archetypes'});">Article: Towards Data Science: "Machine Learning's Public Perception Problem"</a> 
+#### <a href="https://medium.com/towards-data-science/what-does-it-mean-when-machine-learning-makes-a-mistake-37b213200697"  onclick="gtag('event', 'click', {'event_category' : 'citation', 'event_action' : 'outclick', 'event_label' : 'ml-mistakes'});">Article: Towards Data Science: "What Does It Mean When Machine Learning Makes a Mistake?"</a> 
+What do we mean when we say that a model makes a mistake? In this article I discuss this question with attention to generative AI in particular.
+
+*Keywords: ai, machine learning*
+
+***
+
+#### <a href="https://medium.com/towards-data-science/machine-learnings-public-perception-problem-48daf587e7a8"  onclick="gtag('event', 'click', {'event_category' : 'citation', 'event_action' : 'outclick', 'event_label' : 'public-per-ml'});">Article: Towards Data Science: "Machine Learning's Public Perception Problem"</a> 
 In this piece, I take a close look at why the public doesn't have an accurate understanding of machine learning/AI, and explain what the negative results will be if data science doesn't work to fix this problem.
 
 *Keywords: public policy, education, machine learning*
@@ -191,22 +198,21 @@ In concert with my presentation at ODSC Europe 2020 I wrote a blog post to discu
 *Keywords: job scheduling, airflow, data warehousing*  
 
 
+
 ***
 
-
-<font size = 2>
-
+<div class="col-footer">
 [See more projects](more_projects.html)
 
-***
+<font size = 2>
 
 <BR>
 stephanie@stephaniekirmer.com 
 <BR> 
-<a href="http://www.kaggle.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'kaggle'});">kaggle</a>  | 
-<a href="http://github.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'github'});">github</a> | 
-<a href="http://linkedin.com/in/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'linkedin'});">linkedin</a> | 
-<a href="https://youtube.com/playlist?list=PLxqXzy1mNUwclPONsSpw4Qa-pakNzpLva" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'youtube'});">youtube</a> 
+
+<a href="http://github.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'github'});" ><i class="fab fa-github fa-1x"></i></a>
+|  <a href="http://linkedin.com/in/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'linkedin'});" ><i class="fab fa-linkedin fa-1x"></i></a> 
+|  <a href="https://medium.com/@s.kirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'medium'});" ><i class="fab fa-medium fa-1x"></i></a><BR>
 
 </font>
-
+</div>

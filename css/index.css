@@ -68,6 +68,10 @@ img {
 
 }
 
+.titlename a:link, .titlename a:visited {
+  color:var(--main-bg-color);
+}
+
 .namefont{
   font-family: var(--title-font-fam);
   /*font-style:italic;*/

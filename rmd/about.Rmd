@@ -1,0 +1,149 @@
+---
+pagetitle: "About"
+output: 
+  html_document:
+    css: ["../css/style.css"]
+    includes:
+        in_header: ../addons/analytics.html
+        before_body: ../addons/_navbar_custom.html
+    theme: flatly
+---
+
+
+```{css, echo=FALSE}
+
+.container{
+  margin-left: 5px;
+  margin-right: 5px;
+  max-width: 1200px;
+}
+
+.col-1, .col-2{
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right:20px;
+  margin-left:20px;
+}
+
+@media only screen and (max-width: 900px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+```
+
+<BR><BR><BR>
+<div class= "container">
+
+My professional career has been driven by continuous learning. My approach to any technical problem is "I can probably learn how to do that" followed by rolling up my sleeves to get things done. I learned to be a data scientist through hard work outside the traditional classroom, including a significant amount of on-the-job learning with the help of many incredibly talented colleagues. I highly value helping others following similar autodidactic paths, and I spend time advising and encouraging other data scientists or aspiring data scientists from nontraditional backgrounds and/or underrepresented groups. 
+
+***
+
+## Experience
+
+Staff Data Scientist, project44 <BR>
+2021–Present 
+
+<ul>
+<li>Solve complex problems and build product features using data science and machine learning strategies</li>
+<li>Invented and deployed new technique to create geofences (see patents section)</li>
+<li>Developed new method for estimating the next stop to be visited by a vehicle</li>
+<li>Developed new model for matching submitted shipments with transporting vehicles</li>
+</ul>
+
+Senior Data Scientist, Saturn Cloud <BR>
+2020–2021
+
+<ul>
+<li>Led complete rebuild and rewrite of product documentation and written tutorials</li>
+<li>Produced educational written and video content teaching Dask, Python, model deployment, computer vision, and
+machine learning skills for customers and the public</li>
+<li>Provided hands on support for customers to parallelize and optimize their machine learning code performance</li>
+</ul>
+
+
+Data Science Technical Lead; Senior Data Scientist, Journera <BR>
+2019–2020
+
+<ul>
+<li>Oversaw increase in team's volume of epic completion and reduced ticket time to completion</li>
+<li>Introduced team to OKR goals system and led implementation</li>
+<li>Built and productionalized company’s first 2 machine learning models, including customer value scoring model for
+projecting travel purchase behavior</li>
+<li>Constructed company’s first relational database in Redshift with daily updating pipeline in Airflow</li>
+</ul>
+
+Senior Data Scientist; Data Scientist, Uptake <BR>
+2017–2019
+<ul>
+<li>Inventor of technique for managing gaps in telemetry data on monitored vehicles (see patent section)</li>
+<li>Recipient of Uptake Data Science Department MVP Award (top performer recognition), Q2 2018</li>
+</ul>
+
+Research Analyst; Data Analyst, University of Chicago Urban Labs <BR>
+2014–2017 
+<ul>
+<li>Conducted statistical analyses evaluating interventions to benefit youth outcomes and crime reduction.</li>
+<li>Collaborated with Chicago Public Schools to help facilitate research and program evaluation opportunities.</li>
+</ul>
+
+I also taught sociology and health sciences at DePaul University as a part-time adjunct from 2013-2018.
+
+## Technologies and Languages
+
+* Languages: Python, R, SQL
+* Technologies: PyTorch, CatBoost, XGBoost, scikit-learn, AWS, GCS, Dask, Snowflake, Postgres, Docker, Jenkins, Git, Github Actions, Apache Airflow, Argo, geopandas, Folium, Flask
+* Other Skills: Object oriented programming, unit testing, package construction, machine learning/predictive modeling, deep learning/computer vision, parallelization, GPU utilization, NLP, geospatial analysis
+
+
+## Education
+
+M.A., Social and Cultural Foundations of Education (with distinction), DePaul University <BR>
+M.A., Sociology, Portland State University <br>
+B.A., Sociology and European Studies (with honors), University of Kansas <br>
+
+
+
+## Patents
+
+Patent Inventor: Computer System and Method for Handling Non-Communicative Assets
+<ul>
+<li>Patent issuer and number: US 10,552,246 B1</li>
+<li>Issued Feb 4, 2020</li>
+</ul>
+
+
+Patent Inventor: (approval pending) Technologies for Identifying Geographic Boundaries of Shipping Locations
+<ul>
+<li>Patent issuer and number: US 17/948,032</li>
+<li>Filed September 19, 2022</li>
+</ul>
+
+
+### Hobbies
+Knitting <BR>
+Travel <BR>
+Birding <BR>
+Urban Gardening <BR>
+
+</div>
+
+<BR>
+
+<div class="col-footer">
+
+<font size = 2>
+
+<BR>
+stephanie@stephaniekirmer.com 
+<BR> 
+
+<a href="http://github.com/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'github'});" ><i class="fab fa-github fa-1x"></i></a>
+|  <a href="http://linkedin.com/in/skirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'linkedin'});" ><i class="fab fa-linkedin fa-1x"></i></a> 
+|  <a href="https://medium.com/@s.kirmer" onclick="gtag('event', 'click', {'event_category' : 'social', 'event_action' : 'outclick', 'event_label' : 'medium'});" ><i class="fab fa-medium fa-1x"></i></a><BR>
+
+</font>
+</div>
