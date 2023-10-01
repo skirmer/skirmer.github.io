@@ -34,17 +34,15 @@ Stephanie<BR> Kirmer
 
 
 
-<BR>
-
 <div class="col-text">
 
 Data science affects the lives of people today much more than we realize. From simple regressions to diffusion to transformers, our world is shaped by machine learning. That's one of the things that makes this field so incredibly exciting to be part of at this moment in history. 
 
-<BR><BR>
+<BR>
 
 This is also why it is more important than ever to have sociological mindsets as we pursue increasingly advanced data science and machine learning exploration. Machine learning has been affecting all our lives in lots of ways for years, but it’s become much more obvious since the launch of generative AI, and the pace of change has accelerated. Because of this, data science needs to be attentive to the perceptions, realities, and needs of people — that’s the only way we can build data science products that will be useful and beneficial. 
 
-<BR><BR>
+<BR>
 
 As a sociologist-turned-data scientist, I consider it my responsibility to advocate for ethical, thoughtful applications of machine learning and data science that will bear out the incredible potential of the field. In that spirit, I work as a professional practitioner of data science and a speaker/author on topics in the field. Click through above to see/watch my content and learn more.
 

@@ -36,6 +36,11 @@ output:
 
 
 ## Projects and Content
+
+<BR><i>
+<a href='https://medium.com/subscribe/@s.kirmer'>Subscribe to me on Medium</a> for two free posts a month about the intersection of machine learning and society.
+</i>
+<BR>
 <BR>
 
 #### <a href="https://medium.com/towards-data-science/what-does-it-mean-when-machine-learning-makes-a-mistake-37b213200697"  onclick="gtag('event', 'click', {'event_category' : 'citation', 'event_action' : 'outclick', 'event_label' : 'ml-mistakes'});">Article: Towards Data Science: "What Does It Mean When Machine Learning Makes a Mistake?"</a> 

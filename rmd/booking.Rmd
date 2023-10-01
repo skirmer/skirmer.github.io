@@ -42,38 +42,42 @@ If you're looking for a speaker, please contact me at stephanie@stephaniekirmer.
 ### Speaking Topics  
 
 <div class= "container">
+
+
 <div class="col-1">
 
-#### Data Science/Machine Learning
-  * Generating Geofences with Clustering Algorithms
-  * Applications of GPU (single or cluster) for deep learning (PyTorch or Tensorflow/Keras)
-  * Using Dask to parallelize machine learning
-  * Industry specific applications, such as IIOT, Education, and Hospitality
-  * Data science team collaboration strategies
-  * Cloud Based Machine Learning - putting your workflow in the cloud from end to end
-  * Deploying ML Models into Flask or Voila (hands-on)
-  
+Sociological insights on data science, machine learning, and/or AI  
+  <!-- * Democratization of GPU access for machine learning (30-45 min)   -->
+  <!-- * Public perceptions of ML/AI -->
+  <!-- * The meaning of "mistake" in ML -->
+
 </div>
 
 <div class="col-2">
-#### Data Engineering/Programming
-  * Intro to List Comprehensions in Python (lightning talk)  
-  * Specific data storage technologies: Redshift, PostgreSQL, Elasticsearch
-  * Machine learning production workflows using AWS Redshift and Airflow  
-  * Developing/distributing packages in  Python
-  * Parallelization for Python: Intro to Dask (30-45 min, can be hands-on)  
-  * R Functions Workshop (2 hours with hands-on)
 
+Data Science/Machine Learning Practice
+
+  <!-- * Generating Geofences with Clustering Algorithms -->
+  <!-- * Applications of GPU (single or cluster) for deep learning (PyTorch or Tensorflow/Keras) -->
+  <!-- * Using Dask to parallelize machine learning -->
+  <!-- * Industry specific applications, such as IIOT, Education, and Hospitality -->
+  <!-- * Data science team collaboration strategies -->
+  <!-- * Cloud Based Machine Learning - putting your workflow in the cloud from end to end -->
+  <!-- * Deploying ML Models into Flask or Voila (hands-on) -->
+  
 </div>
 
 <div class="col-3">
-
-#### Sociological insights on data science, machine learning, and/or AI  
-  * Democratization of GPU access for machine learning (30-45 min)  
-  * Public perceptions of ML/AI
-  * The meaning of "mistake" in ML
+Data Engineering/Programming (Python)
+  <!-- * Intro to List Comprehensions in Python (lightning talk)   -->
+  <!-- * Specific data storage technologies: Redshift, PostgreSQL, Elasticsearch -->
+  <!-- * Machine learning production workflows using AWS Redshift and Airflow   -->
+  <!-- * Developing/distributing packages in  Python -->
+  <!-- * Parallelization for Python: Intro to Dask (30-45 min, can be hands-on)   -->
+  <!-- * R Functions Workshop (2 hours with hands-on) -->
 
 </div>
+
 
 </div>
 

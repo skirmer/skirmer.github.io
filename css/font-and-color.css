@@ -27,7 +27,7 @@
     --light-accent-color: #8e899e;
     --title-font-fam: 'Dosis', sans-serif;
     --body-font-fam: 'Roboto', sans-serif;
-    --subtitle-font-fam: 'PT Sans Narrow', serif;
+    --subtitle-font-fam: 'PT Sans Narrow', sans-serif;
     --menu-bgimage: url("../img/header_pedro2.jpg");
   }
 
