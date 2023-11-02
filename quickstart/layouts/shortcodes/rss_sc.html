@@ -1,0 +1,15 @@
+{{ if .Get "url" }}
+  {{ $url := .Get "url" }}
+  {{ $limit := .Get "limit" }}
+  {{ with resources.GetRemote $url | transform.Unmarshal }}
+    {{ range first $limit .channel.item }}
+      <div style="word-wrap: break-word; text-decoration: none;">
+        <p>
+          <h2><a href="{{ .link }}" style = "text-decoration: none; color: black">{{ .title }}</a></h2>
+          {{ .encoded | safeHTML | truncate 300 }}
+        </p>
+      </div>
+      <br />
+    {{ end }}
+  {{ end }}
+{{ end }}

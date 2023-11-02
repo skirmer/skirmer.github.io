@@ -1,0 +1,16 @@
+{{ if .Get "url" }}
+  {{ $url := .Get "url" }}
+  {{ $limit := .Get "limit" }}
+  {{ with resources.GetRemote $url | transform.Unmarshal }}
+    {{ range first $limit .channel.item }}
+    <h1 class="f3 near-black">
+        <h2><a href="{{ .link }}" style = "text-decoration: none; color: black">{{ .title }}</a></h2>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+        {{ .encoded | safeHTML | truncate 400 }}
+    </div>  
+    </div>
+    <br />
+    {{ end }}
+  {{ end }}
+{{ end }}

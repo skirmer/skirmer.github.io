@@ -1,0 +1,16 @@
+baseURL = "http://www.stephaniekirmer.com/"
+languageCode = "en-us"
+title = "Stephanie Kirmer"
+theme = 'ananke'
+
+[[params.ananke_socials]]
+name = "github"
+url = "http://github.com/skirmer"
+
+[[params.ananke_socials]]
+name = "linkedin"
+url = "http://linkedin.com/in/skirmer"
+
+[[params.ananke_socials]]
+name = "medium"
+url = "https://medium.com/@s.kirmer"
