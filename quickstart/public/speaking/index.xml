@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Speaking on Stephanie Kirmer</title>
+    <link>http://www.stephaniekirmer.com/speaking/</link>
+    <description>Recent content in Speaking on Stephanie Kirmer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate>
+    <atom:link href="http://www.stephaniekirmer.com/speaking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gartner Supply Chain Symposium/Xpo 2023</title>
+      <link>http://www.stephaniekirmer.com/speaking/gartner_2023/</link>
+      <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/gartner_2023/</guid>
+      <description>Topic: Maximize Productivity with Shipment Data &amp;amp; ML-Driven Smart Geofences
+Location: Orlando, FL
+Date: May 9, 2023
+Co-presented with Nick Clark Links: https://explore.project44.com/et0/en-gartner-symposium-2023</description>
+    </item>
+    <item>
+      <title>MLOps Community Meetup - Chicago</title>
+      <link>http://www.stephaniekirmer.com/speaking/mlops_2022/</link>
+      <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/mlops_2022/</guid>
+      <description>Topic: Generating &amp;ldquo;Smart&amp;rdquo; Geofences with Clustering Techniques Location: Chicago Loop, Toast offices
+Date: November 10, 2022 Links: https://mlops.community</description>
+    </item>
+    <item>
+      <title>VisInPractice @ IEEE VIS 2021</title>
+      <link>http://www.stephaniekirmer.com/speaking/vis_in_practice_2021/</link>
+      <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/vis_in_practice_2021/</guid>
+      <description>Topic: Virtual Panel on Visualization Tool Ecosystems
+Location: Virtual
+Date: October 25, 2021 Links:
+http://ieeevis.org/year/2021/info/visinpractice, http://ieeevis.org/year/2021/welcome </description>
+    </item>
+    <item>
+      <title>Beautiful Bastards Podcast</title>
+      <link>http://www.stephaniekirmer.com/speaking/bb_podcast/</link>
+      <pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/bb_podcast/</guid>
+      <description>Topic: Data Science/Machine Learning misc Location: Virtual
+Date: October 4, 2021 Links:
+https://www.beautifulbastardspodcast.com/the-rise-of-ai-stephanie-kirmer-on-the-future-of-big-tech/ The Chicago SSL: Tribune and Chicago Magazine Machine learning for kids book </description>
+    </item>
+    <item>
+      <title>Center for Deep Learning Spring 2021 Seminar, Northwestern University</title>
+      <link>http://www.stephaniekirmer.com/speaking/cdl_nu/</link>
+      <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/cdl_nu/</guid>
+      <description>Event: Center for Deep Learning Spring 2021 Seminar, Northwestern University Topic: Accelerating Deep Learning with Dask and GPUs Location: Virtual
+Date: April 27, 2021 Links:
+https://www.mccormick.northwestern.edu/research/deep-learning/ https://github.com/skirmer/gpu_pytorch/tree/main/center-deep-learning </description>
+    </item>
+    <item>
+      <title>ODSC East 2021</title>
+      <link>http://www.stephaniekirmer.com/speaking/viz_odsc/</link>
+      <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/viz_odsc/</guid>
+      <description>Topic: Going Beyond Matplotlib and Seaborn: A survey of Python data visualization tools Location: Virtual
+Date: March 29 - April 1 2021 Links:
+https://odsc.com/boston/ https://github.com/skirmer/new-py-dataviz </description>
+    </item>
+    <item>
+      <title>R Ladies Chicago - Workshop</title>
+      <link>http://www.stephaniekirmer.com/speaking/rladies/</link>
+      <pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/rladies/</guid>
+      <description>Topic: Functions for R Programming Beginners Location: Virtual
+Date: February 26, 2021
+Links:
+https://rladieschicago.org/ https://github.com/skirmer/functions_r Video: https://youtu.be/TCIMT6l53tQ </description>
+    </item>
+    <item>
+      <title>Outlier Data Visualization Conference 2021</title>
+      <link>http://www.stephaniekirmer.com/speaking/outlier_viz/</link>
+      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/outlier_viz/</guid>
+      <description>Topic: Going Beyond Matplotlib and Seaborn: A survey of Python data visualization tools Location: Virtual
+Date: February 7, 2021 Links:
+https://www.outlierconf.com/ https://github.com/skirmer/new-py-dataviz </description>
+    </item>
+    <item>
+      <title>RE*WORK&#39;s Deep Learning Virtual Summit, January 2021</title>
+      <link>http://www.stephaniekirmer.com/speaking/rework_gpu/</link>
+      <pubDate>Thu, 28 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/rework_gpu/</guid>
+      <description>Topic: Scaling Up PyTorch with GPU Cluster Computing
+Location: Virtual
+Date: January 28-29, 2021
+Links:
+https://www.re-work.co/events/deep-learning-virtual-summit-2021/schedule https://github.com/skirmer/gpu_pytorch </description>
+    </item>
+    <item>
+      <title>ChiPy Data SIG October 2020</title>
+      <link>http://www.stephaniekirmer.com/speaking/chipy/</link>
+      <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/chipy/</guid>
+      <description>Topic: Branching Out into Isolation Forests: Tree Based Anomaly Detection Location: Virtual
+Date: October 21, 2020
+Links:
+Video https://www.chipy.org/ https://www.meetup.com/_ChiPy_/events/272525624/ </description>
+    </item>
+    <item>
+      <title>ODSC Europe Virtual Conference 2020</title>
+      <link>http://www.stephaniekirmer.com/speaking/odsc_eu/</link>
+      <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/odsc_eu/</guid>
+      <description>Topic: Making Happy Modelers: Build and Maintain Your Data Warehouse with AWS Redshift and Airflow Location: Virtual
+Date: September 17-19, 2020 Links: https://odsc.com/speakers/making-happy-modelers-build-and-maintain-your-data-warehouse-with-aws-redshift-and-airflow/</description>
+    </item>
+    <item>
+      <title>RE*WORK&#39;s Virtual Applied AI Summit - Spring 2020</title>
+      <link>http://www.stephaniekirmer.com/speaking/rework_panel/</link>
+      <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/rework_panel/</guid>
+      <description>Topic: Moderator, Panel: Strategies for Effectively Building, Deploying, and Monitoring AI Location: Virtual/London, UK
+Date: May 21, 2020 Links: https://www.re-work.co/events/applied-ai-virtual-summit</description>
+    </item>
+    <item>
+      <title>Women in Data Science Chicago 2020</title>
+      <link>http://www.stephaniekirmer.com/speaking/wids_2020/</link>
+      <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/wids_2020/</guid>
+      <description>Topic: Better Data Science Team Collaboration with R Location: Chicago, IL
+Date: March 6, 2020 Links:
+https://github.com/skirmer/team_collab https://widschicago.org/ </description>
+    </item>
+    <item>
+      <title>DC R Conference</title>
+      <link>http://www.stephaniekirmer.com/speaking/dc_r/</link>
+      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/dc_r/</guid>
+      <description>Topic: Animation for Effective Data Visualization with R Location: Washington, DC Date: November 8, 2019
+Links:
+Video https://github.com/skirmer/animating_dataviz https://dc.rstats.ai/2019/dcr/ </description>
+    </item>
+    <item>
+      <title>ODSC West 2019</title>
+      <link>http://www.stephaniekirmer.com/speaking/odsc_west_es/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/odsc_west_es/</guid>
+      <description>Topic: Elasticsearch End User Workflows in R and Python - Interactive Workshop
+Location: San Francisco, CA
+Date: November 1, 2019
+Links:
+https://github.com/skirmer/elastic_analytics https://odsc.com/california </description>
+    </item>
+    <item>
+      <title>R-Ladies Chicago and Chicago Data Visualization Community Joint Meetup</title>
+      <link>http://www.stephaniekirmer.com/speaking/r_ladies_anim/</link>
+      <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/r_ladies_anim/</guid>
+      <description>Event: R-Ladies Chicago and Chicago Data Visualization Community Joint Meetup Topic: Animation for Effective Data Visualization with R
+Location: Chicago, IL
+Date: July 24, 2019
+Links:
+Video https://github.com/skirmer/animating_dataviz </description>
+    </item>
+    <item>
+      <title>REV 2</title>
+      <link>http://www.stephaniekirmer.com/speaking/rev2/</link>
+      <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/rev2/</guid>
+      <description>Topic: Elasticsearch End User Workflows in R and Python
+Location: New York, NY
+Date: May 23, 2019
+Links:
+Video https://github.com/skirmer/elastic_analytics Listen to my conversation with Eric Kavanagh on Inside Analytics podcast </description>
+    </item>
+    <item>
+      <title>satRday Chicago Keynote</title>
+      <link>http://www.stephaniekirmer.com/speaking/satrday/</link>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/satrday/</guid>
+      <description>Topic: Keynote: What Data Science Can Learn From Sociology
+Location: Chicago, IL
+Date: April 27, 2019
+Links:
+Video https://github.com/skirmer/satRdays_chicago_2019 </description>
+    </item>
+    <item>
+      <title>R Package Building Workshop</title>
+      <link>http://www.stephaniekirmer.com/speaking/r_package/</link>
+      <pubDate>Sat, 23 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/r_package/</guid>
+      <description>Topic: 1 day seminar for women and nonbinary folks
+Location: Chicago, IL
+Date: February 23, 2019
+Links: https://github.com/skirmer/r_packages</description>
+    </item>
+    <item>
+      <title>EARL Roadshow Seattle 2018</title>
+      <link>http://www.stephaniekirmer.com/speaking/earl_seattle/</link>
+      <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/earl_seattle/</guid>
+      <description>Topic: R Packages for Team Collaboration
+Location: Seattle, WA
+Date: November 7, 2018 Links: https://github.com/skirmer/team_collab</description>
+    </item>
+    <item>
+      <title>ODSC East 2018</title>
+      <link>http://www.stephaniekirmer.com/speaking/odsc_east_2018/</link>
+      <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/odsc_east_2018/</guid>
+      <description>Topic: R Packages for Team Collaboration
+Location: Boston, MA
+Date: May 3, 2018 Links: https://github.com/skirmer/team_collab</description>
+    </item>
+    <item>
+      <title>Metis Speaker Series</title>
+      <link>http://www.stephaniekirmer.com/speaking/metis/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/metis/</guid>
+      <description>Topic: R Packages for Team Collaboration
+Location: Chicago, IL
+Date: April 2018 Links: https://github.com/skirmer/team_collab</description>
+    </item>
+    <item>
+      <title>Partially Derivative Podcast</title>
+      <link>http://www.stephaniekirmer.com/speaking/part_deriv_pod/</link>
+      <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/part_deriv_pod/</guid>
+      <description>May 9, 2017
+http://partiallyderivative.com/podcast/2017/05/09/data-science-near-you</description>
+    </item>
+    <item>
+      <title>R Ladies Dallas, December 2020</title>
+      <link>http://www.stephaniekirmer.com/speaking/rladies_dallas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/rladies_dallas/</guid>
+      <description>Topic: Branching Out into Isolation Forests: Tree Based Anomaly Detection Location: Virtual
+Date: December 7, 2020
+Links: https://www.meetup.com/rladies-dallas/events/274004809/
+https://github.com/skirmer/isolation_forests
+Video to come</description>
+    </item>
+  </channel>
+</rss>

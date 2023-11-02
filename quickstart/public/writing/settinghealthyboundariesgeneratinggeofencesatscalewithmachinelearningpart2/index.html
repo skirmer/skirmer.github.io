@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Setting Healthy Boundaries: Generating Geofences at Scale with Machine Learning (Part 2) | Stephanie Kirmer</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="If you haven’t read it yet, please start with Part 1 to understand the foundations of this project and why we did it!
+Implementation
+In part 1, we talked about applying a data science mindset to the problem of location accuracy. But how do we actually carry out this process? We used python and a combination of several tools (see table below) to make this idea a reality. The first thing we needed was a clustering technique.">
+    <meta name="generator" content="Hugo 0.120.3">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Setting Healthy Boundaries: Generating Geofences at Scale with Machine Learning (Part 2)" />
+<meta property="og:description" content="If you haven’t read it yet, please start with Part 1 to understand the foundations of this project and why we did it!
+Implementation
+In part 1, we talked about applying a data science mindset to the problem of location accuracy. But how do we actually carry out this process? We used python and a combination of several tools (see table below) to make this idea a reality. The first thing we needed was a clustering technique." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.stephaniekirmer.com/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart2/" /><meta property="article:section" content="writing" />
+
+
+
+<meta itemprop="name" content="Setting Healthy Boundaries: Generating Geofences at Scale with Machine Learning (Part 2)">
+<meta itemprop="description" content="If you haven’t read it yet, please start with Part 1 to understand the foundations of this project and why we did it!
+Implementation
+In part 1, we talked about applying a data science mindset to the problem of location accuracy. But how do we actually carry out this process? We used python and a combination of several tools (see table below) to make this idea a reality. The first thing we needed was a clustering technique.">
+
+<meta itemprop="wordCount" content="2333">
+<meta itemprop="keywords" content="data-science,machine-learning,logistics," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Setting Healthy Boundaries: Generating Geofences at Scale with Machine Learning (Part 2)"/>
+<meta name="twitter:description" content="If you haven’t read it yet, please start with Part 1 to understand the foundations of this project and why we did it!
+Implementation
+In part 1, we talked about applying a data science mindset to the problem of location accuracy. But how do we actually carry out this process? We used python and a combination of several tools (see table below) to make this idea a reality. The first thing we needed was a clustering technique."/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  
+  <header class="cover bg-top" style="background-image: url('https://cdn-images-1.medium.com/max/1024/0*FFBW8EVdXsgcQs_t');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Stephanie Kirmer
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/speaking/" title="Speaking page">
+              Speaking
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/writing/" title="Writing page">
+              Writing
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+    
+    <a href="http://github.com/skirmer" target="_blank" rel="noopener" class="github ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" aria-label="follow on GitHub——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+    
+    <a href="http://linkedin.com/in/skirmer" target="_blank" rel="noopener" class="linkedin ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" aria-label="follow on LinkedIn——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+    
+    <a href="https://medium.com/@s.kirmer" target="_blank" rel="noopener" class="medium ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="Medium link" aria-label="follow on Medium——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 170 170;" version="1.1" viewBox="0 0 170 170"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M46.5340803,65.2157554 C46.6968378,63.6076572 46.0836,62.018231 44.8828198,60.93592 L32.6512605,46.2010582 L32.6512605,44 L70.6302521,44 L99.9859944,108.380952 L125.794585,44 L162,44 L162,46.2010582 L151.542017,56.2281011 C150.640424,56.9153477 150.193188,58.0448862 150.380019,59.1628454 L150.380019,132.837155 C150.193188,133.955114 150.640424,135.084652 151.542017,135.771899 L161.755369,145.798942 L161.755369,148 L110.38282,148 L110.38282,145.798942 L120.963119,135.527337 C122.002801,134.487948 122.002801,134.182246 122.002801,132.592593 L122.002801,73.0417402 L92.585901,147.755438 L88.6106443,147.755438 L54.3622782,73.0417402 L54.3622782,123.115814 C54.0767278,125.221069 54.7759199,127.3406 56.2581699,128.863022 L70.0186741,145.55438 L70.0186741,147.755438 L31,147.755438 L31,145.55438 L44.7605042,128.863022 C46.2319621,127.338076 46.8903838,125.204485 46.5340803,123.115814 L46.5340803,65.2157554 Z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">Setting Healthy Boundaries: Generating Geofences at Scale with Machine Learning (Part 2)</div>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        WRITING
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+      
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.stephaniekirmer.com/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart2/&amp;title=Setting%20Healthy%20Boundaries:%20Generating%20Geofences%20at%20Scale%20with%20Machine%20Learning%20%28Part%202%29" class="ananke-social-link linkedin no-underline" aria-label="share on LinkedIn">
+        
+        <span class="icon"> <svg style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span>
+        
+      </a>
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Setting Healthy Boundaries: Generating Geofences at Scale with Machine Learning (Part 2)</h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>If you haven’t read it yet,
+<a href="https://medium.com/p/c2067ef49777">please start with Part 1</a>
+to understand the foundations of this project and why we did it!</p>
+<h3 id="heading"></h3>
+<p><strong>Implementation</strong></p>
+<p>In part 1, we talked about applying a data science mindset to the problem of location accuracy. But how do we actually carry out this process? We used python and a combination of several tools (see table below) to make this idea a reality. The first thing we needed was a clustering technique.</p>
+<p><a href="https://medium.com/media/7eb27d80d027815f033deffe82ab6bfb/href">https://medium.com/media/7eb27d80d027815f033deffe82ab6bfb/href</a></p>
+<p>DBSCAN, or “Density-based spatial clustering of applications with noise”, is a way of clustering points in two-dimensional space, so it’s useful for cases like ours where the points are actual places on a map. The short explanation is that we look at the points available, find regions with highest volume/most dense points, and group these together. If points are not associated with these groups, we mark them as outliers.</p>
+<blockquote>
+<p>DBSCAN, or “Density-based spatial clustering of applications with noise”, is a way of clustering points in two-dimensional space.</p>
+</blockquote>
+<p>To go into more detail, this animation helps explain the procedure. (Please forgive my artistic ability.)</p>
+<p>Animated gif that walks through the steps of applying DBSCAN to points</p>
+<p>First, the algorithm will examine each point in turn, and count the other points in its immediate neighborhood, a space defined by the parameter ε (epsilon). We have a set lower bound of how many neighbors inside the space a point must have, and if it meets this criterion, it will be considered a “core” point.</p>
+<p>After each point is assessed, core points that are adjacent to each other are grouped into what are called connected components, and these comprise the essential bases of clusters. Some points will be adjacent to core points, and form their neighbors, but will not be core points themselves because they have too few neighbors (in practice this indicates that they fall on the outer edge of the cluster). These will be defined as non-core points falling into the relevant cluster.</p>
+<p>At this point, our clusters are complete, and we can mark all remaining points that are neither core or non-core cluster members as outliers.</p>
+<p>For our use case, we use telemetry pings from the historical movements of a customer’s trucks as the raw material for DBSCAN to work on. If a shipment involves a given location, as one of the scheduled stops, we’ll take the telemetry points that shipment contains and include them in our training set. This may contain points that are nowhere near the stop, or which we think are associated with some other stop on the trip, and that’s ok! We’re casting a wide net to start with, and we will rapidly narrow it down using the algorithm.</p>
+<p>This strategy has many customizable parameters, and allows us to tune the algorithm quite finely to meet the needs of different customers and business types. In addition to the DBSCAN parameters, we must decide the following:</p>
+<ul>
+<li><em>How far around the location in question will we cast our net to find relevant points?</em>
+This is also affected by having multiple stops from the same customer very near each other — we’ll shrink how far away we look for telemetry if there’s another facility nearby, to avoid conflating the two.</li>
+<li><em>How many points do we need to find around the location in order for it to be an adequate candidate for geofencing?</em>
+If there is too little traffic history nearby, the algorithm is more likely to produce incorrect results, and we’d rather have no smart geofence than a bad one.</li>
+</ul>
+<p>Once we have chosen our points and run DBSCAN, more decisions must be made, including:</p>
+<ul>
+<li><em>How far away from our starting point can clusters be and still be included?</em>
+Sometimes we’ll find clusters that are very spread out, and some quite distant from the true location. In our implementation, we take the closest cluster to the starting point (which need not actually be that close, given that sometimes addresses are wrong), and require all other clusters to be relatively near that. This gives us the necessary flexibility to manage when we get slightly wrong addresses or coordinates from the customer.</li>
+</ul>
+<p><strong>After all that work is done, we have a set of clustered telemetry points that we feel confident are representative of traffic relevant to the location we care about.</strong>
+The last task is to draw the location geofence, which we do by applying a convex hull using GeoPandas to all the points in all the qualifying clusters. Then, if it’s desired (and it usually is), we apply some small amount of buffer space around all sides of the geofence, to accommodate any minor inaccuracies. This usually is less than 200 meters.</p>
+<h3 id="heading-1"></h3>
+<p><strong>Evaluation</strong></p>
+<p>Once we’ve created location geofences with this technique, we need to test and validate our results before sending them out into the world. We can look at them on a map (we used Folium and GeoPandas to visualize geofences at large volumes with great results). We have a problem, though — we likely don’t have enough known accurate location geofences to compare with. Sometimes we do have a few hand drawn bespoke ones, and we can definitely overlay these with our new “smart” geofences to see how well they match, but that’s hard to scale.</p>
+<p>In our case, I tried to go back to first principles somewhat — what are these geofences for? Mainly they are to accurately capture when a truck visits a location, without creating false positives. So, first I took historical truck trip data and re-ran it in simulation using new location geofence boundaries. This was effective, but resource intensive. It provided enough robust results to let us proceed with confidence, however.</p>
+<p>In the next step, I conducted pilot studies with some key customers, and compared the shipment behaviors before and after. Two metrics came to be most useful, as they measure different aspects of what we look for in balanced trip evaluation.</p>
+<p><strong>The first is stop recall, or the percent of stops scheduled that we recorded a visit to.</strong>
+This means that we’re looking at shipments and seeing how often we’re missing a stop, which might be too often if our location geofences are the wrong shape or are too small. If the truck comes nearby but doesn’t cross inside a geofence at the time of an update, a stop arrival could occur but not be captured. If this value doesn’t go down, we can say we are producing large enough location geofences. In practice, we have actually seen this metric go up for many customers, because smart geofences are not just smaller, but sometimes positioned more accurately than the alternatives.</p>
+<p>A too-small location. If we are trying to identify visits to Welles Park, then this will leave out a lot of them! The entire west side of the park is lost here.</p>
+<p><strong>The second metric is out of order shipments, or shipments where we have recorded visits to stops not following the numerical order the schedule lists.</strong>
+Here we’re trying to measure when a driver “clips” a too large location geofence in passing — creating a record of an arrival where none actually occurred (a false positive). The result of this may be that we interpret that the shipment’s stops are being visited in a different order than they really are. This is a bigger problem than you might think, and we want to reduce cases where that happens.</p>
+<p>While sometimes drivers make stops in a different order than scheduled, for most of our customers that’s not very common. Therefore, if a shipment is recorded as happening out of order, at least some of the time that’s because we triggered an arrival by entering a location geofence accidentally — this means that we can use the total volume of out of order shipments as a rough proxy for the volume of geofences that are too large. Smaller, targeted geofences reduce the occurrence of this, and make our overall tracking of shipments much more accurate. If we see a drop in out of order shipments, then we can say we are producing small enough location geofences.</p>
+<p>This is a much too large geofence, for the same park! We’d get visits to Horner Park in this geofence, which is not at all what we would want.</p>
+<p>These two metrics let us pursue a “goldilocks” sort of fit- location geofences that are neither too small nor too large. Something like this!</p>
+<p>A simulation of what a smart geofence might produce.</p>
+<p>Our original (made-up) points for reference- we’ll get all the Welles Park stops and none of the Horner Park ones.</p>
+<h3 id="heading-2"></h3>
+<p><strong>Deployment</strong></p>
+<p>So, we developed our technique and validated it against real-world conditions — we still had to determine how best to roll this out to customers. If we had only a few customers with a few locations served, this might be easy, but we actually have thousands of customers and millions of locations to handle.</p>
+<p>When we set out to deploy the feature, this led to some valid concerns around cost and practicality. One thing we recognized is that a lot of locations are relatively infrequently scheduled or visited. There’s a long tail for many of our customers of locations they ship to or from only once or twice in many years. Based on this, we made a choice to look first at locations that have been visited more than a few times in the past year, which helped to reduce our overall volume of locations needing to be processed at the start.</p>
+<blockquote>
+<p>If we had only a few customers with a few locations served, this might be easy, but we actually have thousands of customers and millions of locations to handle.</p>
+</blockquote>
+<p>In addition, we worked with our Data Engineering team to optimize the Snowflake querying that we do in this process, to make it as fast as possible and reduce the warehouse uptime required to create the smart geofences. Part of this included implementing a limited amount of parallelization with Dask. We were originally parallelizing at 16 threads, but this was sending many queries to Snowflake in rapid succession and backing up the queue. In order to avoid overloading Snowflake, we limited it to four threads — still getting much of the parallelization speed advantage without getting our I/O bogged down. This way we cut significant costs related to Snowflake usage from the project.</p>
+<p>We also needed to determine how we’d run the task for different customers, and make this rerunnable from time to time when new historical data is collected and new location geofences need to be made. Our data scientists use Airflow for DAG scheduling already, so this was an easy choice.</p>
+<p>To pass customer specific parameters to the job, we use a config class that has defaults we can customize at initialization or afterward. We initialize the config and run the Airflow job, and the smart geofences are automatically generated and stored directly in Snowflake. When we’re producing geofences for lots and lots of customers at once, we pass a list of customers to the Airflow job, which creates a task for each and runs them serially (not parallel, because that would overload Snowflake as we discussed above). Slack hooks keep us informed about the progress of these tasks.</p>
+<p>Airflow uses Dask just the way our local machine uses it, so we are still able to gain parallelization performance improvements. We could have implemented parallelism inside the DAG in Airflow, but we didn’t want to necessarily tie the job permanently to Airflow, in case we want to use some other scheduler tool down the line. Dask’s versatility just means that we’re committed to python for the job, but nothing more specific than that.</p>
+<h3 id="heading-3"></h3>
+<p><strong>Conclusion</strong></p>
+<p>This technique has turned out to be incredibly useful for us and for our customers. We started out mainly wanting to reduce “false positive” arrivals, but ended up with many other benefits. For example, when a customer’s address data for a location is off a bit, say they have written down 123 Main Street but the facility is at 127 Main Street, this algorithm is regularly able to correct this and places the location geofence at the correct position.</p>
+<p>We also now produce more precisely accurate arrival times, which matters a great deal when carriers can incur penalties for being late or early for appointments. Furthermore, we’ve saved customers hours and hours of manual work drawing location geofences, and will continue to save new customers time doing this drudgery.</p>
+<p>I think this project is a clear example of how data science can make meaningful improvements in how we do things in industry. Instead of doing just theoretical work, I enjoy crafting practical data driven solutions to real people’s problems and challenges. I’m fortunate to be at a company that prioritizes this very thing — solving customers’ problems to make logistics and supply chains more efficient and more transparent. This cascades down to benefit everyone, because it means all the goods transported around the world each day (even to your doorstep!) can be tracked accurately and transparently.</p>
+<p>Thanks for reading through to the end of this series — I hope our efforts have inspired you to apply the data scientist mindset to challenges in your own work!</p>
+<p>Stephanie Kirmer is a Staff Data Scientist at project44, the leading visibility and analytics platform provider for shipping and logistics. She has a decade of applied data science and data engineering experience in a number of industries, including hospitality/travel, IOT, software, and academia. In her current role, she is the technical lead for data science for the Over the Road sector, which includes trucking both in the US and globally. Before becoming a data scientist, she worked in academia and taught sociology and health policy at DePaul University. To learn more, visit
+<a href="http://www.stephaniekirmer.com/">www.stephaniekirmer.com</a>
+.</p>
+<hr>
+<p><a href="https://medium.com/project44-techblog/setting-healthy-boundaries-generating-geofences-at-scale-with-machine-learning-part-2-eaa81b2d26d8">Setting Healthy Boundaries: Generating Geofences at Scale with Machine Learning (Part 2)</a>
+was originally published in
+<a href="https://medium.com/project44-techblog">project44 TechBlog</a>
+on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="/tags/data-science/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">data-science</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/machine-learning/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">machine-learning</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/logistics/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">logistics</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart1/">Setting Healthy Boundaries: Generating Geofences at Scale with Machine Learning (Part 1)</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writing/isgenerativeaitakingovertheworld/">Is Generative AI Taking Over the World?</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writing/machinelearningengineers-whatdotheyactuallydo/">Machine Learning Engineers — what do they actually do?</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writing/thinkingsociologicallyaboutmachinelearning/">Thinking Sociologically About Machine Learning</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writing/archetypesofthedatascientistrole/">Archetypes of the Data Scientist Role</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writing/creatingnewdatascientistsintheageofremotework/">Creating New Data Scientists in the Age of Remote Work</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writing/howhumanlaborenablesmachinelearning/">How Human Labor Enables Machine Learning</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writing/machinelearningspublicperceptionproblem/">Machine Learning’s Public Perception Problem</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writing/whatdoesitmeanwhenmachinelearningmakesamistake/">What Does It Mean When Machine Learning Makes a Mistake?</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://www.stephaniekirmer.com/" >
+    &copy;  Stephanie Kirmer 2023 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+    
+    <a href="http://github.com/skirmer" target="_blank" rel="noopener" class="github ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" aria-label="follow on GitHub——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+    
+    <a href="http://linkedin.com/in/skirmer" target="_blank" rel="noopener" class="linkedin ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" aria-label="follow on LinkedIn——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+    
+    <a href="https://medium.com/@s.kirmer" target="_blank" rel="noopener" class="medium ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="Medium link" aria-label="follow on Medium——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 170 170;" version="1.1" viewBox="0 0 170 170"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M46.5340803,65.2157554 C46.6968378,63.6076572 46.0836,62.018231 44.8828198,60.93592 L32.6512605,46.2010582 L32.6512605,44 L70.6302521,44 L99.9859944,108.380952 L125.794585,44 L162,44 L162,46.2010582 L151.542017,56.2281011 C150.640424,56.9153477 150.193188,58.0448862 150.380019,59.1628454 L150.380019,132.837155 C150.193188,133.955114 150.640424,135.084652 151.542017,135.771899 L161.755369,145.798942 L161.755369,148 L110.38282,148 L110.38282,145.798942 L120.963119,135.527337 C122.002801,134.487948 122.002801,134.182246 122.002801,132.592593 L122.002801,73.0417402 L92.585901,147.755438 L88.6106443,147.755438 L54.3622782,73.0417402 L54.3622782,123.115814 C54.0767278,125.221069 54.7759199,127.3406 56.2581699,128.863022 L70.0186741,145.55438 L70.0186741,147.755438 L31,147.755438 L31,145.55438 L44.7605042,128.863022 C46.2319621,127.338076 46.8903838,125.204485 46.5340803,123.115814 L46.5340803,65.2157554 Z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

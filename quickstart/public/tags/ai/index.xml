@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ai on Stephanie Kirmer</title>
+    <link>http://www.stephaniekirmer.com/tags/ai/</link>
+    <description>Recent content in ai on Stephanie Kirmer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.stephaniekirmer.com/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Beautiful Bastards Podcast</title>
+      <link>http://www.stephaniekirmer.com/speaking/bb_podcast/</link>
+      <pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/bb_podcast/</guid>
+      <description>Topic: Data Science/Machine Learning misc Location: Virtual
+Date: October 4, 2021 Links:
+https://www.beautifulbastardspodcast.com/the-rise-of-ai-stephanie-kirmer-on-the-future-of-big-tech/ The Chicago SSL: Tribune and Chicago Magazine Machine learning for kids book </description>
+    </item>
+    <item>
+      <title>RE*WORK&#39;s Virtual Applied AI Summit - Spring 2020</title>
+      <link>http://www.stephaniekirmer.com/speaking/rework_panel/</link>
+      <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/rework_panel/</guid>
+      <description>Topic: Moderator, Panel: Strategies for Effectively Building, Deploying, and Monitoring AI Location: Virtual/London, UK
+Date: May 21, 2020 Links: https://www.re-work.co/events/applied-ai-virtual-summit</description>
+    </item>
+    <item>
+      <title>Is Generative AI Taking Over the World?</title>
+      <link>http://www.stephaniekirmer.com/writing/isgenerativeaitakingovertheworld/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/writing/isgenerativeaitakingovertheworld/</guid>
+      <description>Businesses are jumping on a bandwagon of creating something, anything that they can launch as a “Generative AI” feature or product. What’s driving this, and why is it a problem?
+The AI Hype Cycle: In a Race to Somewhere?
+I was recently catching up on back issues of Money Stuff, Matt Levine’s indispensable newsletter/blog at Bloomberg, and there was an interesting piece about how AI stock picking algorithms don’t actually favor AI stocks (and also they don’t perform all that well on the picks they do make).</description>
+    </item>
+    <item>
+      <title>Thinking Sociologically About Machine Learning</title>
+      <link>http://www.stephaniekirmer.com/writing/thinkingsociologicallyaboutmachinelearning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/writing/thinkingsociologicallyaboutmachinelearning/</guid>
+      <description>I sometimes mention in my written work and speeches that I have a sociology background, and used to be an adjunct professor of sociology at DePaul University before embarking on my data science career. I loved sociology, and still do — it shaped so much about how I understand the world and my own place in it.
+However, when I made a career change and turned to data science, I spent a lot of time explaining how that background, training, and experience were assets to my practice of data science, because it wasn’t obvious to people.</description>
+    </item>
+    <item>
+      <title>What Does It Mean When Machine Learning Makes a Mistake?</title>
+      <link>http://www.stephaniekirmer.com/writing/whatdoesitmeanwhenmachinelearningmakesamistake/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/writing/whatdoesitmeanwhenmachinelearningmakesamistake/</guid>
+      <description>Do our definitions of “mistake” make sense when it comes to ML/AI? If not, why not?
+A comment on my recent post about the public perception of machine learning got me thinking about the meaning of error in machine learning. The reader asked if I thought machine learning models would always “make mistakes”. As I described in that post, people have a strong tendency to anthropomorphize machine learning models. When we interact with an LLM chatbot, we apply techniques to those engagements that we have learned by communicating with other people—persuasion, phrasing, argument, etc.</description>
+    </item>
+  </channel>
+</rss>

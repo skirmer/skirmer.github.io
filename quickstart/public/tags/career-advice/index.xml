@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>career-advice on Stephanie Kirmer</title>
+    <link>http://www.stephaniekirmer.com/tags/career-advice/</link>
+    <description>Recent content in career-advice on Stephanie Kirmer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://www.stephaniekirmer.com/tags/career-advice/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Archetypes of the Data Scientist Role</title>
+      <link>http://www.stephaniekirmer.com/writing/archetypesofthedatascientistrole/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/writing/archetypesofthedatascientistrole/</guid>
+      <description>Data science roles can be very different, and job postings are not always clear. What hat do you want to wear?
+After the positive responses to my recent post in Towards Data Science about Machine Learning Engineers , I thought I would write a bit about what I think are the real categories of roles for data science practitioners in the job market. While I was previously talking about the candidates, e.</description>
+    </item>
+  </channel>
+</rss>

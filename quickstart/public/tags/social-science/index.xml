@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>social-science on Stephanie Kirmer</title>
+    <link>http://www.stephaniekirmer.com/tags/social-science/</link>
+    <description>Recent content in social-science on Stephanie Kirmer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://www.stephaniekirmer.com/tags/social-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Machine Learning’s Public Perception Problem</title>
+      <link>http://www.stephaniekirmer.com/writing/machinelearningspublicperceptionproblem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/writing/machinelearningspublicperceptionproblem/</guid>
+      <description>Why machine learning literacy for the public needs to be a priority for data science, and what we can do about it.
+I was listening to a podcast recently with an assortment of intelligent, thoughtful laypeople (whose names I will not share, to be polite) talking about how AI can be used in healthcare. I had misgivings already, because they were using the term “AI”, which I find frequently means everything and nothing at the same time.</description>
+    </item>
+    <item>
+      <title>Thinking Sociologically About Machine Learning</title>
+      <link>http://www.stephaniekirmer.com/writing/thinkingsociologicallyaboutmachinelearning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/writing/thinkingsociologicallyaboutmachinelearning/</guid>
+      <description>I sometimes mention in my written work and speeches that I have a sociology background, and used to be an adjunct professor of sociology at DePaul University before embarking on my data science career. I loved sociology, and still do — it shaped so much about how I understand the world and my own place in it.
+However, when I made a career change and turned to data science, I spent a lot of time explaining how that background, training, and experience were assets to my practice of data science, because it wasn’t obvious to people.</description>
+    </item>
+  </channel>
+</rss>

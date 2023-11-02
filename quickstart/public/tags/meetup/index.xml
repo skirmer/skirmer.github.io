@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>meetup on Stephanie Kirmer</title>
+    <link>http://www.stephaniekirmer.com/tags/meetup/</link>
+    <description>Recent content in meetup on Stephanie Kirmer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.stephaniekirmer.com/tags/meetup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MLOps Community Meetup - Chicago</title>
+      <link>http://www.stephaniekirmer.com/speaking/mlops_2022/</link>
+      <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/mlops_2022/</guid>
+      <description>Topic: Generating &amp;ldquo;Smart&amp;rdquo; Geofences with Clustering Techniques Location: Chicago Loop, Toast offices
+Date: November 10, 2022 Links: https://mlops.community</description>
+    </item>
+    <item>
+      <title>ChiPy Data SIG October 2020</title>
+      <link>http://www.stephaniekirmer.com/speaking/chipy/</link>
+      <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/chipy/</guid>
+      <description>Topic: Branching Out into Isolation Forests: Tree Based Anomaly Detection Location: Virtual
+Date: October 21, 2020
+Links:
+Video https://www.chipy.org/ https://www.meetup.com/_ChiPy_/events/272525624/ </description>
+    </item>
+    <item>
+      <title>R-Ladies Chicago and Chicago Data Visualization Community Joint Meetup</title>
+      <link>http://www.stephaniekirmer.com/speaking/r_ladies_anim/</link>
+      <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/r_ladies_anim/</guid>
+      <description>Event: R-Ladies Chicago and Chicago Data Visualization Community Joint Meetup Topic: Animation for Effective Data Visualization with R
+Location: Chicago, IL
+Date: July 24, 2019
+Links:
+Video https://github.com/skirmer/animating_dataviz </description>
+    </item>
+    <item>
+      <title>Metis Speaker Series</title>
+      <link>http://www.stephaniekirmer.com/speaking/metis/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/metis/</guid>
+      <description>Topic: R Packages for Team Collaboration
+Location: Chicago, IL
+Date: April 2018 Links: https://github.com/skirmer/team_collab</description>
+    </item>
+    <item>
+      <title>R Ladies Dallas, December 2020</title>
+      <link>http://www.stephaniekirmer.com/speaking/rladies_dallas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/rladies_dallas/</guid>
+      <description>Topic: Branching Out into Isolation Forests: Tree Based Anomaly Detection Location: Virtual
+Date: December 7, 2020
+Links: https://www.meetup.com/rladies-dallas/events/274004809/
+https://github.com/skirmer/isolation_forests
+Video to come</description>
+    </item>
+  </channel>
+</rss>

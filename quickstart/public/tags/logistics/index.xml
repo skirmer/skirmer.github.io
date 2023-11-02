@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>logistics on Stephanie Kirmer</title>
+    <link>http://www.stephaniekirmer.com/tags/logistics/</link>
+    <description>Recent content in logistics on Stephanie Kirmer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://www.stephaniekirmer.com/tags/logistics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting Healthy Boundaries: Generating Geofences at Scale with Machine Learning (Part 1)</title>
+      <link>http://www.stephaniekirmer.com/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart1/</guid>
+      <description>Want to learn more about this project and how we implemented it? Join me at MLOps Community Chicago on Nov 10, 2022 where I’ll be presenting this work with a special focus on the deployment and taking it through to production.
+At project44, we offer customers a whole assortment of data driven products that help them better understand their shipments and the movement of goods around the world. We build complex, intelligent tools that make logistics easier and more transparent.</description>
+    </item>
+    <item>
+      <title>Setting Healthy Boundaries: Generating Geofences at Scale with Machine Learning (Part 2)</title>
+      <link>http://www.stephaniekirmer.com/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart2/</guid>
+      <description>If you haven’t read it yet, please start with Part 1 to understand the foundations of this project and why we did it!
+Implementation
+In part 1, we talked about applying a data science mindset to the problem of location accuracy. But how do we actually carry out this process? We used python and a combination of several tools (see table below) to make this idea a reality. The first thing we needed was a clustering technique.</description>
+    </item>
+  </channel>
+</rss>

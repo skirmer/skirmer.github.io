@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>industry on Stephanie Kirmer</title>
+    <link>http://www.stephaniekirmer.com/tags/industry/</link>
+    <description>Recent content in industry on Stephanie Kirmer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 May 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.stephaniekirmer.com/tags/industry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gartner Supply Chain Symposium/Xpo 2023</title>
+      <link>http://www.stephaniekirmer.com/speaking/gartner_2023/</link>
+      <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.stephaniekirmer.com/speaking/gartner_2023/</guid>
+      <description>Topic: Maximize Productivity with Shipment Data &amp;amp; ML-Driven Smart Geofences
+Location: Orlando, FL
+Date: May 9, 2023
+Co-presented with Nick Clark Links: https://explore.project44.com/et0/en-gartner-symposium-2023</description>
+    </item>
+  </channel>
+</rss>
