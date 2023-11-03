@@ -2,248 +2,248 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Stephanie Kirmer</title>
-    <link>/tags/</link>
+    <link>https://skirmer.github.io/quickstart/tags/</link>
     <description>Recent content in Tags on Stephanie Kirmer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 09 May 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://skirmer.github.io/quickstart/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>geofences</title>
-      <link>/tags/geofences/</link>
+      <link>https://skirmer.github.io/quickstart/tags/geofences/</link>
       <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
-      <guid>/tags/geofences/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/geofences/</guid>
       <description></description>
     </item>
     <item>
       <title>industry</title>
-      <link>/tags/industry/</link>
+      <link>https://skirmer.github.io/quickstart/tags/industry/</link>
       <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
-      <guid>/tags/industry/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/industry/</guid>
       <description></description>
     </item>
     <item>
       <title>meetup</title>
-      <link>/tags/meetup/</link>
+      <link>https://skirmer.github.io/quickstart/tags/meetup/</link>
       <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>/tags/meetup/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/meetup/</guid>
       <description></description>
     </item>
     <item>
       <title>conference</title>
-      <link>/tags/conference/</link>
+      <link>https://skirmer.github.io/quickstart/tags/conference/</link>
       <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>/tags/conference/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/conference/</guid>
       <description></description>
     </item>
     <item>
       <title>visualization</title>
-      <link>/tags/visualization/</link>
+      <link>https://skirmer.github.io/quickstart/tags/visualization/</link>
       <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>/tags/visualization/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/visualization/</guid>
       <description></description>
     </item>
     <item>
       <title>ai</title>
-      <link>/tags/ai/</link>
+      <link>https://skirmer.github.io/quickstart/tags/ai/</link>
       <pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>/tags/ai/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>podcast</title>
-      <link>/tags/podcast/</link>
+      <link>https://skirmer.github.io/quickstart/tags/podcast/</link>
       <pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>/tags/podcast/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/podcast/</guid>
       <description></description>
     </item>
     <item>
       <title>sociology</title>
-      <link>/tags/sociology/</link>
+      <link>https://skirmer.github.io/quickstart/tags/sociology/</link>
       <pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>/tags/sociology/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/sociology/</guid>
       <description></description>
     </item>
     <item>
       <title>GPU</title>
-      <link>/tags/gpu/</link>
+      <link>https://skirmer.github.io/quickstart/tags/gpu/</link>
       <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>/tags/gpu/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/gpu/</guid>
       <description></description>
     </item>
     <item>
       <title>seminar</title>
-      <link>/tags/seminar/</link>
+      <link>https://skirmer.github.io/quickstart/tags/seminar/</link>
       <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>/tags/seminar/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/seminar/</guid>
       <description></description>
     </item>
     <item>
       <title>python</title>
-      <link>/tags/python/</link>
+      <link>https://skirmer.github.io/quickstart/tags/python/</link>
       <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>/tags/python/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>R</title>
-      <link>/tags/r/</link>
+      <link>https://skirmer.github.io/quickstart/tags/r/</link>
       <pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>/tags/r/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/r/</guid>
       <description></description>
     </item>
     <item>
       <title>mlops</title>
-      <link>/tags/mlops/</link>
+      <link>https://skirmer.github.io/quickstart/tags/mlops/</link>
       <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>/tags/mlops/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/mlops/</guid>
       <description></description>
     </item>
     <item>
       <title>elasticsearch</title>
-      <link>/tags/elasticsearch/</link>
+      <link>https://skirmer.github.io/quickstart/tags/elasticsearch/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/elasticsearch/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/elasticsearch/</guid>
       <description></description>
     </item>
     <item>
       <title>artificial-intelligence</title>
-      <link>/tags/artificial-intelligence/</link>
+      <link>https://skirmer.github.io/quickstart/tags/artificial-intelligence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/artificial-intelligence/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/artificial-intelligence/</guid>
       <description></description>
     </item>
     <item>
       <title>business</title>
-      <link>/tags/business/</link>
+      <link>https://skirmer.github.io/quickstart/tags/business/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/business/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/business/</guid>
       <description></description>
     </item>
     <item>
       <title>career-advice</title>
-      <link>/tags/career-advice/</link>
+      <link>https://skirmer.github.io/quickstart/tags/career-advice/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/career-advice/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/career-advice/</guid>
       <description></description>
     </item>
     <item>
       <title>careers</title>
-      <link>/tags/careers/</link>
+      <link>https://skirmer.github.io/quickstart/tags/careers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/careers/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/careers/</guid>
       <description></description>
     </item>
     <item>
       <title>culture</title>
-      <link>/tags/culture/</link>
+      <link>https://skirmer.github.io/quickstart/tags/culture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/culture/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/culture/</guid>
       <description></description>
     </item>
     <item>
       <title>data-analysis</title>
-      <link>/tags/data-analysis/</link>
+      <link>https://skirmer.github.io/quickstart/tags/data-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/data-analysis/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/data-analysis/</guid>
       <description></description>
     </item>
     <item>
       <title>data-science</title>
-      <link>/tags/data-science/</link>
+      <link>https://skirmer.github.io/quickstart/tags/data-science/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/data-science/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/data-science/</guid>
       <description></description>
     </item>
     <item>
       <title>deep-learning</title>
-      <link>/tags/deep-learning/</link>
+      <link>https://skirmer.github.io/quickstart/tags/deep-learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/deep-learning/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/deep-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>diversity</title>
-      <link>/tags/diversity/</link>
+      <link>https://skirmer.github.io/quickstart/tags/diversity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/diversity/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/diversity/</guid>
       <description></description>
     </item>
     <item>
       <title>editors-pick</title>
-      <link>/tags/editors-pick/</link>
+      <link>https://skirmer.github.io/quickstart/tags/editors-pick/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/editors-pick/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/editors-pick/</guid>
       <description></description>
     </item>
     <item>
       <title>geospatial</title>
-      <link>/tags/geospatial/</link>
+      <link>https://skirmer.github.io/quickstart/tags/geospatial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/geospatial/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/geospatial/</guid>
       <description></description>
     </item>
     <item>
       <title>human-ai-collaboration</title>
-      <link>/tags/human-ai-collaboration/</link>
+      <link>https://skirmer.github.io/quickstart/tags/human-ai-collaboration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/human-ai-collaboration/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/human-ai-collaboration/</guid>
       <description></description>
     </item>
     <item>
       <title>large-language-models</title>
-      <link>/tags/large-language-models/</link>
+      <link>https://skirmer.github.io/quickstart/tags/large-language-models/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/large-language-models/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/large-language-models/</guid>
       <description></description>
     </item>
     <item>
       <title>logistics</title>
-      <link>/tags/logistics/</link>
+      <link>https://skirmer.github.io/quickstart/tags/logistics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/logistics/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/logistics/</guid>
       <description></description>
     </item>
     <item>
       <title>machine-learning</title>
-      <link>/tags/machine-learning/</link>
+      <link>https://skirmer.github.io/quickstart/tags/machine-learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/machine-learning/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/machine-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>machine-learning-engineer</title>
-      <link>/tags/machine-learning-engineer/</link>
+      <link>https://skirmer.github.io/quickstart/tags/machine-learning-engineer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/machine-learning-engineer/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/machine-learning-engineer/</guid>
       <description></description>
     </item>
     <item>
       <title>office-hours</title>
-      <link>/tags/office-hours/</link>
+      <link>https://skirmer.github.io/quickstart/tags/office-hours/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/office-hours/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/office-hours/</guid>
       <description></description>
     </item>
     <item>
       <title>remote-working</title>
-      <link>/tags/remote-working/</link>
+      <link>https://skirmer.github.io/quickstart/tags/remote-working/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/remote-working/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/remote-working/</guid>
       <description></description>
     </item>
     <item>
       <title>social-science</title>
-      <link>/tags/social-science/</link>
+      <link>https://skirmer.github.io/quickstart/tags/social-science/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/social-science/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/social-science/</guid>
       <description></description>
     </item>
     <item>
       <title>supply-chain</title>
-      <link>/tags/supply-chain/</link>
+      <link>https://skirmer.github.io/quickstart/tags/supply-chain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/supply-chain/</guid>
+      <guid>https://skirmer.github.io/quickstart/tags/supply-chain/</guid>
       <description></description>
     </item>
   </channel>

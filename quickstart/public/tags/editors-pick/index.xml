@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>editors-pick on Stephanie Kirmer</title>
-    <link>/tags/editors-pick/</link>
+    <link>https://skirmer.github.io/quickstart/tags/editors-pick/</link>
     <description>Recent content in editors-pick on Stephanie Kirmer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/editors-pick/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://skirmer.github.io/quickstart/tags/editors-pick/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Archetypes of the Data Scientist Role</title>
-      <link>/writing/archetypesofthedatascientistrole/</link>
+      <link>https://skirmer.github.io/quickstart/writing/archetypesofthedatascientistrole/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/archetypesofthedatascientistrole/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/archetypesofthedatascientistrole/</guid>
       <description>Data science roles can be very different, and job postings are not always clear. What hat do you want to wear?
 After the positive responses to my recent post in Towards Data Science about Machine Learning Engineers , I thought I would write a bit about what I think are the real categories of roles for data science practitioners in the job market. While I was previously talking about the candidates, e.</description>
     </item>
     <item>
       <title>How Human Labor Enables Machine Learning</title>
-      <link>/writing/howhumanlaborenablesmachinelearning/</link>
+      <link>https://skirmer.github.io/quickstart/writing/howhumanlaborenablesmachinelearning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/howhumanlaborenablesmachinelearning/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/howhumanlaborenablesmachinelearning/</guid>
       <description>Much of the division between technology and human activity is artificial — how do people make our work possible?
 We don’t talk enough about how much manual, human work we rely upon to make the exciting advances in ML possible. The truth is, the division between technology and human activity is artificial. All the inputs that make models are the result of human effort, and all the outputs in one way or another exist to have an impact on people.</description>
     </item>
     <item>
       <title>Is Generative AI Taking Over the World?</title>
-      <link>/writing/isgenerativeaitakingovertheworld/</link>
+      <link>https://skirmer.github.io/quickstart/writing/isgenerativeaitakingovertheworld/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/isgenerativeaitakingovertheworld/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/isgenerativeaitakingovertheworld/</guid>
       <description>Businesses are jumping on a bandwagon of creating something, anything that they can launch as a “Generative AI” feature or product. What’s driving this, and why is it a problem?
 The AI Hype Cycle: In a Race to Somewhere?
 I was recently catching up on back issues of Money Stuff, Matt Levine’s indispensable newsletter/blog at Bloomberg, and there was an interesting piece about how AI stock picking algorithms don’t actually favor AI stocks (and also they don’t perform all that well on the picks they do make).</description>
     </item>
     <item>
       <title>What Does It Mean When Machine Learning Makes a Mistake?</title>
-      <link>/writing/whatdoesitmeanwhenmachinelearningmakesamistake/</link>
+      <link>https://skirmer.github.io/quickstart/writing/whatdoesitmeanwhenmachinelearningmakesamistake/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/whatdoesitmeanwhenmachinelearningmakesamistake/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/whatdoesitmeanwhenmachinelearningmakesamistake/</guid>
       <description>Do our definitions of “mistake” make sense when it comes to ML/AI? If not, why not?
 A comment on my recent post about the public perception of machine learning got me thinking about the meaning of error in machine learning. The reader asked if I thought machine learning models would always “make mistakes”. As I described in that post, people have a strong tendency to anthropomorphize machine learning models. When we interact with an LLM chatbot, we apply techniques to those engagements that we have learned by communicating with other people—persuasion, phrasing, argument, etc.</description>
     </item>

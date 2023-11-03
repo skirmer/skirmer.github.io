@@ -1,4 +1,4 @@
-baseURL = "https://skirmer.github.io/"
+baseURL = "https://skirmer.github.io/quickstart/"
 languageCode = "en-us"
 title = "Stephanie Kirmer"
 theme = 'ananke'

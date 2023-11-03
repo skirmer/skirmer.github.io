@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on Stephanie Kirmer</title>
-    <link>/tags/r/</link>
+    <link>https://skirmer.github.io/quickstart/tags/r/</link>
     <description>Recent content in R on Stephanie Kirmer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Feb 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://skirmer.github.io/quickstart/tags/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>R Ladies Chicago - Workshop</title>
-      <link>/speaking/rladies/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/rladies/</link>
       <pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>/speaking/rladies/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/rladies/</guid>
       <description>Topic: Functions for R Programming Beginners Location: Virtual
 Date: February 26, 2021
 Links:
@@ -20,27 +20,27 @@ https://rladieschicago.org/ https://github.com/skirmer/functions_r Video: https:
     </item>
     <item>
       <title>Women in Data Science Chicago 2020</title>
-      <link>/speaking/wids_2020/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/wids_2020/</link>
       <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>/speaking/wids_2020/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/wids_2020/</guid>
       <description>Topic: Better Data Science Team Collaboration with R Location: Chicago, IL
 Date: March 6, 2020 Links:
 https://github.com/skirmer/team_collab https://widschicago.org/ </description>
     </item>
     <item>
       <title>DC R Conference</title>
-      <link>/speaking/dc_r/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/dc_r/</link>
       <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/speaking/dc_r/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/dc_r/</guid>
       <description>Topic: Animation for Effective Data Visualization with R Location: Washington, DC Date: November 8, 2019
 Links:
 Video https://github.com/skirmer/animating_dataviz https://dc.rstats.ai/2019/dcr/ </description>
     </item>
     <item>
       <title>R-Ladies Chicago and Chicago Data Visualization Community Joint Meetup</title>
-      <link>/speaking/r_ladies_anim/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/r_ladies_anim/</link>
       <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>/speaking/r_ladies_anim/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/r_ladies_anim/</guid>
       <description>Event: R-Ladies Chicago and Chicago Data Visualization Community Joint Meetup Topic: Animation for Effective Data Visualization with R
 Location: Chicago, IL
 Date: July 24, 2019
@@ -49,9 +49,9 @@ Video https://github.com/skirmer/animating_dataviz </description>
     </item>
     <item>
       <title>R Package Building Workshop</title>
-      <link>/speaking/r_package/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/r_package/</link>
       <pubDate>Sat, 23 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/speaking/r_package/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/r_package/</guid>
       <description>Topic: 1 day seminar for women and nonbinary folks
 Location: Chicago, IL
 Date: February 23, 2019
@@ -59,36 +59,36 @@ Links: https://github.com/skirmer/r_packages</description>
     </item>
     <item>
       <title>EARL Roadshow Seattle 2018</title>
-      <link>/speaking/earl_seattle/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/earl_seattle/</link>
       <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
-      <guid>/speaking/earl_seattle/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/earl_seattle/</guid>
       <description>Topic: R Packages for Team Collaboration
 Location: Seattle, WA
 Date: November 7, 2018 Links: https://github.com/skirmer/team_collab</description>
     </item>
     <item>
       <title>ODSC East 2018</title>
-      <link>/speaking/odsc_east_2018/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/odsc_east_2018/</link>
       <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
-      <guid>/speaking/odsc_east_2018/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/odsc_east_2018/</guid>
       <description>Topic: R Packages for Team Collaboration
 Location: Boston, MA
 Date: May 3, 2018 Links: https://github.com/skirmer/team_collab</description>
     </item>
     <item>
       <title>Metis Speaker Series</title>
-      <link>/speaking/metis/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/metis/</link>
       <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>/speaking/metis/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/metis/</guid>
       <description>Topic: R Packages for Team Collaboration
 Location: Chicago, IL
 Date: April 2018 Links: https://github.com/skirmer/team_collab</description>
     </item>
     <item>
       <title>R Ladies Dallas, December 2020</title>
-      <link>/speaking/rladies_dallas/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/rladies_dallas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/speaking/rladies_dallas/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/rladies_dallas/</guid>
       <description>Topic: Branching Out into Isolation Forests: Tree Based Anomaly Detection Location: Virtual
 Date: December 7, 2020
 Links: https://www.meetup.com/rladies-dallas/events/274004809/

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>conference on Stephanie Kirmer</title>
-    <link>/tags/conference/</link>
+    <link>https://skirmer.github.io/quickstart/tags/conference/</link>
     <description>Recent content in conference on Stephanie Kirmer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 25 Oct 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/conference/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://skirmer.github.io/quickstart/tags/conference/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VisInPractice @ IEEE VIS 2021</title>
-      <link>/speaking/vis_in_practice_2021/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/vis_in_practice_2021/</link>
       <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>/speaking/vis_in_practice_2021/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/vis_in_practice_2021/</guid>
       <description>Topic: Virtual Panel on Visualization Tool Ecosystems
 Location: Virtual
 Date: October 25, 2021 Links:
@@ -20,27 +20,27 @@ http://ieeevis.org/year/2021/info/visinpractice, http://ieeevis.org/year/2021/we
     </item>
     <item>
       <title>ODSC East 2021</title>
-      <link>/speaking/viz_odsc/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/viz_odsc/</link>
       <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>/speaking/viz_odsc/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/viz_odsc/</guid>
       <description>Topic: Going Beyond Matplotlib and Seaborn: A survey of Python data visualization tools Location: Virtual
 Date: March 29 - April 1 2021 Links:
 https://odsc.com/boston/ https://github.com/skirmer/new-py-dataviz </description>
     </item>
     <item>
       <title>Outlier Data Visualization Conference 2021</title>
-      <link>/speaking/outlier_viz/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/outlier_viz/</link>
       <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>/speaking/outlier_viz/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/outlier_viz/</guid>
       <description>Topic: Going Beyond Matplotlib and Seaborn: A survey of Python data visualization tools Location: Virtual
 Date: February 7, 2021 Links:
 https://www.outlierconf.com/ https://github.com/skirmer/new-py-dataviz </description>
     </item>
     <item>
       <title>RE*WORK&#39;s Deep Learning Virtual Summit, January 2021</title>
-      <link>/speaking/rework_gpu/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/rework_gpu/</link>
       <pubDate>Thu, 28 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>/speaking/rework_gpu/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/rework_gpu/</guid>
       <description>Topic: Scaling Up PyTorch with GPU Cluster Computing
 Location: Virtual
 Date: January 28-29, 2021
@@ -49,43 +49,43 @@ https://www.re-work.co/events/deep-learning-virtual-summit-2021/schedule https:/
     </item>
     <item>
       <title>ODSC Europe Virtual Conference 2020</title>
-      <link>/speaking/odsc_eu/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/odsc_eu/</link>
       <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>/speaking/odsc_eu/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/odsc_eu/</guid>
       <description>Topic: Making Happy Modelers: Build and Maintain Your Data Warehouse with AWS Redshift and Airflow Location: Virtual
 Date: September 17-19, 2020 Links: https://odsc.com/speakers/making-happy-modelers-build-and-maintain-your-data-warehouse-with-aws-redshift-and-airflow/</description>
     </item>
     <item>
       <title>RE*WORK&#39;s Virtual Applied AI Summit - Spring 2020</title>
-      <link>/speaking/rework_panel/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/rework_panel/</link>
       <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
-      <guid>/speaking/rework_panel/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/rework_panel/</guid>
       <description>Topic: Moderator, Panel: Strategies for Effectively Building, Deploying, and Monitoring AI Location: Virtual/London, UK
 Date: May 21, 2020 Links: https://www.re-work.co/events/applied-ai-virtual-summit</description>
     </item>
     <item>
       <title>Women in Data Science Chicago 2020</title>
-      <link>/speaking/wids_2020/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/wids_2020/</link>
       <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>/speaking/wids_2020/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/wids_2020/</guid>
       <description>Topic: Better Data Science Team Collaboration with R Location: Chicago, IL
 Date: March 6, 2020 Links:
 https://github.com/skirmer/team_collab https://widschicago.org/ </description>
     </item>
     <item>
       <title>DC R Conference</title>
-      <link>/speaking/dc_r/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/dc_r/</link>
       <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/speaking/dc_r/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/dc_r/</guid>
       <description>Topic: Animation for Effective Data Visualization with R Location: Washington, DC Date: November 8, 2019
 Links:
 Video https://github.com/skirmer/animating_dataviz https://dc.rstats.ai/2019/dcr/ </description>
     </item>
     <item>
       <title>ODSC West 2019</title>
-      <link>/speaking/odsc_west_es/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/odsc_west_es/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/speaking/odsc_west_es/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/odsc_west_es/</guid>
       <description>Topic: Elasticsearch End User Workflows in R and Python - Interactive Workshop
 Location: San Francisco, CA
 Date: November 1, 2019
@@ -94,9 +94,9 @@ https://github.com/skirmer/elastic_analytics https://odsc.com/california </descr
     </item>
     <item>
       <title>REV 2</title>
-      <link>/speaking/rev2/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/rev2/</link>
       <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
-      <guid>/speaking/rev2/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/rev2/</guid>
       <description>Topic: Elasticsearch End User Workflows in R and Python
 Location: New York, NY
 Date: May 23, 2019
@@ -105,9 +105,9 @@ Video https://github.com/skirmer/elastic_analytics Listen to my conversation wit
     </item>
     <item>
       <title>satRday Chicago Keynote</title>
-      <link>/speaking/satrday/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/satrday/</link>
       <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/speaking/satrday/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/satrday/</guid>
       <description>Topic: Keynote: What Data Science Can Learn From Sociology
 Location: Chicago, IL
 Date: April 27, 2019
@@ -116,18 +116,18 @@ Video https://github.com/skirmer/satRdays_chicago_2019 </description>
     </item>
     <item>
       <title>EARL Roadshow Seattle 2018</title>
-      <link>/speaking/earl_seattle/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/earl_seattle/</link>
       <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
-      <guid>/speaking/earl_seattle/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/earl_seattle/</guid>
       <description>Topic: R Packages for Team Collaboration
 Location: Seattle, WA
 Date: November 7, 2018 Links: https://github.com/skirmer/team_collab</description>
     </item>
     <item>
       <title>ODSC East 2018</title>
-      <link>/speaking/odsc_east_2018/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/odsc_east_2018/</link>
       <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
-      <guid>/speaking/odsc_east_2018/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/odsc_east_2018/</guid>
       <description>Topic: R Packages for Team Collaboration
 Location: Boston, MA
 Date: May 3, 2018 Links: https://github.com/skirmer/team_collab</description>

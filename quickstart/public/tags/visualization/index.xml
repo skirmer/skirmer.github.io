@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>visualization on Stephanie Kirmer</title>
-    <link>/tags/visualization/</link>
+    <link>https://skirmer.github.io/quickstart/tags/visualization/</link>
     <description>Recent content in visualization on Stephanie Kirmer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 25 Oct 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://skirmer.github.io/quickstart/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VisInPractice @ IEEE VIS 2021</title>
-      <link>/speaking/vis_in_practice_2021/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/vis_in_practice_2021/</link>
       <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>/speaking/vis_in_practice_2021/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/vis_in_practice_2021/</guid>
       <description>Topic: Virtual Panel on Visualization Tool Ecosystems
 Location: Virtual
 Date: October 25, 2021 Links:
@@ -20,27 +20,27 @@ http://ieeevis.org/year/2021/info/visinpractice, http://ieeevis.org/year/2021/we
     </item>
     <item>
       <title>ODSC East 2021</title>
-      <link>/speaking/viz_odsc/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/viz_odsc/</link>
       <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>/speaking/viz_odsc/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/viz_odsc/</guid>
       <description>Topic: Going Beyond Matplotlib and Seaborn: A survey of Python data visualization tools Location: Virtual
 Date: March 29 - April 1 2021 Links:
 https://odsc.com/boston/ https://github.com/skirmer/new-py-dataviz </description>
     </item>
     <item>
       <title>Outlier Data Visualization Conference 2021</title>
-      <link>/speaking/outlier_viz/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/outlier_viz/</link>
       <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>/speaking/outlier_viz/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/outlier_viz/</guid>
       <description>Topic: Going Beyond Matplotlib and Seaborn: A survey of Python data visualization tools Location: Virtual
 Date: February 7, 2021 Links:
 https://www.outlierconf.com/ https://github.com/skirmer/new-py-dataviz </description>
     </item>
     <item>
       <title>R-Ladies Chicago and Chicago Data Visualization Community Joint Meetup</title>
-      <link>/speaking/r_ladies_anim/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/r_ladies_anim/</link>
       <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>/speaking/r_ladies_anim/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/r_ladies_anim/</guid>
       <description>Event: R-Ladies Chicago and Chicago Data Visualization Community Joint Meetup Topic: Animation for Effective Data Visualization with R
 Location: Chicago, IL
 Date: July 24, 2019

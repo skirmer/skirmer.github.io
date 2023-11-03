@@ -2,91 +2,91 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Writing on Stephanie Kirmer</title>
-    <link>/writing/</link>
+    <link>https://skirmer.github.io/quickstart/writing/</link>
     <description>Recent content in Writing on Stephanie Kirmer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 03 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/writing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://skirmer.github.io/quickstart/writing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Archetypes of the Data Scientist Role</title>
-      <link>/writing/archetypesofthedatascientistrole/</link>
+      <link>https://skirmer.github.io/quickstart/writing/archetypesofthedatascientistrole/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/archetypesofthedatascientistrole/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/archetypesofthedatascientistrole/</guid>
       <description>Data science roles can be very different, and job postings are not always clear. What hat do you want to wear?
 After the positive responses to my recent post in Towards Data Science about Machine Learning Engineers , I thought I would write a bit about what I think are the real categories of roles for data science practitioners in the job market. While I was previously talking about the candidates, e.</description>
     </item>
     <item>
       <title>Creating New Data Scientists in the Age of Remote Work</title>
-      <link>/writing/creatingnewdatascientistsintheageofremotework/</link>
+      <link>https://skirmer.github.io/quickstart/writing/creatingnewdatascientistsintheageofremotework/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/creatingnewdatascientistsintheageofremotework/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/creatingnewdatascientistsintheageofremotework/</guid>
       <description>Learning how to be a professional data scientist is different now, but it’s not impossible
 Today’s column is partly about data science, but it’s also about the sociology of work. As a senior practitioner in the field, I started my data science career long before Covid-19 and the radical shift in the way we work today developed. I started my professional career years before even that. As a result, my years of learning how to be a professional anything, let alone a professional data scientist, were spent in close quarters with much more experienced people, and in many ways that made it possible for me to get where I am.</description>
     </item>
     <item>
       <title>How Human Labor Enables Machine Learning</title>
-      <link>/writing/howhumanlaborenablesmachinelearning/</link>
+      <link>https://skirmer.github.io/quickstart/writing/howhumanlaborenablesmachinelearning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/howhumanlaborenablesmachinelearning/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/howhumanlaborenablesmachinelearning/</guid>
       <description>Much of the division between technology and human activity is artificial — how do people make our work possible?
 We don’t talk enough about how much manual, human work we rely upon to make the exciting advances in ML possible. The truth is, the division between technology and human activity is artificial. All the inputs that make models are the result of human effort, and all the outputs in one way or another exist to have an impact on people.</description>
     </item>
     <item>
       <title>Is Generative AI Taking Over the World?</title>
-      <link>/writing/isgenerativeaitakingovertheworld/</link>
+      <link>https://skirmer.github.io/quickstart/writing/isgenerativeaitakingovertheworld/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/isgenerativeaitakingovertheworld/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/isgenerativeaitakingovertheworld/</guid>
       <description>Businesses are jumping on a bandwagon of creating something, anything that they can launch as a “Generative AI” feature or product. What’s driving this, and why is it a problem?
 The AI Hype Cycle: In a Race to Somewhere?
 I was recently catching up on back issues of Money Stuff, Matt Levine’s indispensable newsletter/blog at Bloomberg, and there was an interesting piece about how AI stock picking algorithms don’t actually favor AI stocks (and also they don’t perform all that well on the picks they do make).</description>
     </item>
     <item>
       <title>Machine Learning Engineers — what do they actually do?</title>
-      <link>/writing/machinelearningengineers-whatdotheyactuallydo/</link>
+      <link>https://skirmer.github.io/quickstart/writing/machinelearningengineers-whatdotheyactuallydo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/machinelearningengineers-whatdotheyactuallydo/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/machinelearningengineers-whatdotheyactuallydo/</guid>
       <description>Machine Learning Engineers — What Do They Actually Do? Does “Machine Learning Engineer” mean something new to our field? If so, what?
 The title is a trick question, of course. Much like Data Scientist before it, the title Machine Learning Engineer is developing into a trend in the job market for people in our profession, but there is no consensus about the meaning of the title or the functions and skills it should encompass.</description>
     </item>
     <item>
       <title>Machine Learning’s Public Perception Problem</title>
-      <link>/writing/machinelearningspublicperceptionproblem/</link>
+      <link>https://skirmer.github.io/quickstart/writing/machinelearningspublicperceptionproblem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/machinelearningspublicperceptionproblem/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/machinelearningspublicperceptionproblem/</guid>
       <description>Why machine learning literacy for the public needs to be a priority for data science, and what we can do about it.
 I was listening to a podcast recently with an assortment of intelligent, thoughtful laypeople (whose names I will not share, to be polite) talking about how AI can be used in healthcare. I had misgivings already, because they were using the term “AI”, which I find frequently means everything and nothing at the same time.</description>
     </item>
     <item>
       <title>Setting Healthy Boundaries: Generating Geofences at Scale with Machine Learning (Part 1)</title>
-      <link>/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart1/</link>
+      <link>https://skirmer.github.io/quickstart/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart1/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart1/</guid>
       <description>Want to learn more about this project and how we implemented it? Join me at MLOps Community Chicago on Nov 10, 2022 where I’ll be presenting this work with a special focus on the deployment and taking it through to production.
 At project44, we offer customers a whole assortment of data driven products that help them better understand their shipments and the movement of goods around the world. We build complex, intelligent tools that make logistics easier and more transparent.</description>
     </item>
     <item>
       <title>Setting Healthy Boundaries: Generating Geofences at Scale with Machine Learning (Part 2)</title>
-      <link>/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart2/</link>
+      <link>https://skirmer.github.io/quickstart/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart2/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart2/</guid>
       <description>If you haven’t read it yet, please start with Part 1 to understand the foundations of this project and why we did it!
 Implementation
 In part 1, we talked about applying a data science mindset to the problem of location accuracy. But how do we actually carry out this process? We used python and a combination of several tools (see table below) to make this idea a reality. The first thing we needed was a clustering technique.</description>
     </item>
     <item>
       <title>Thinking Sociologically About Machine Learning</title>
-      <link>/writing/thinkingsociologicallyaboutmachinelearning/</link>
+      <link>https://skirmer.github.io/quickstart/writing/thinkingsociologicallyaboutmachinelearning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/thinkingsociologicallyaboutmachinelearning/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/thinkingsociologicallyaboutmachinelearning/</guid>
       <description>I sometimes mention in my written work and speeches that I have a sociology background, and used to be an adjunct professor of sociology at DePaul University before embarking on my data science career. I loved sociology, and still do — it shaped so much about how I understand the world and my own place in it.
 However, when I made a career change and turned to data science, I spent a lot of time explaining how that background, training, and experience were assets to my practice of data science, because it wasn’t obvious to people.</description>
     </item>
     <item>
       <title>What Does It Mean When Machine Learning Makes a Mistake?</title>
-      <link>/writing/whatdoesitmeanwhenmachinelearningmakesamistake/</link>
+      <link>https://skirmer.github.io/quickstart/writing/whatdoesitmeanwhenmachinelearningmakesamistake/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/whatdoesitmeanwhenmachinelearningmakesamistake/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/whatdoesitmeanwhenmachinelearningmakesamistake/</guid>
       <description>Do our definitions of “mistake” make sense when it comes to ML/AI? If not, why not?
 A comment on my recent post about the public perception of machine learning got me thinking about the meaning of error in machine learning. The reader asked if I thought machine learning models would always “make mistakes”. As I described in that post, people have a strong tendency to anthropomorphize machine learning models. When we interact with an LLM chatbot, we apply techniques to those engagements that we have learned by communicating with other people—persuasion, phrasing, argument, etc.</description>
     </item>

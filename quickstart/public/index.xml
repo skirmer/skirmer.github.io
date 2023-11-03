@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stephanie Kirmer</title>
-    <link>/</link>
+    <link>https://skirmer.github.io/quickstart/</link>
     <description>Recent content on Stephanie Kirmer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 03 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://skirmer.github.io/quickstart/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gartner Supply Chain Symposium/Xpo 2023</title>
-      <link>/speaking/gartner_2023/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/gartner_2023/</link>
       <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
-      <guid>/speaking/gartner_2023/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/gartner_2023/</guid>
       <description>Topic: Maximize Productivity with Shipment Data &amp;amp; ML-Driven Smart Geofences
 Location: Orlando, FL
 Date: May 9, 2023
@@ -20,17 +20,17 @@ Co-presented with Nick Clark Links: https://explore.project44.com/et0/en-gartner
     </item>
     <item>
       <title>MLOps Community Meetup - Chicago</title>
-      <link>/speaking/mlops_2022/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/mlops_2022/</link>
       <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>/speaking/mlops_2022/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/mlops_2022/</guid>
       <description>Topic: Generating &amp;ldquo;Smart&amp;rdquo; Geofences with Clustering Techniques Location: Chicago Loop, Toast offices
 Date: November 10, 2022 Links: https://mlops.community</description>
     </item>
     <item>
       <title>VisInPractice @ IEEE VIS 2021</title>
-      <link>/speaking/vis_in_practice_2021/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/vis_in_practice_2021/</link>
       <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>/speaking/vis_in_practice_2021/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/vis_in_practice_2021/</guid>
       <description>Topic: Virtual Panel on Visualization Tool Ecosystems
 Location: Virtual
 Date: October 25, 2021 Links:
@@ -38,36 +38,36 @@ http://ieeevis.org/year/2021/info/visinpractice, http://ieeevis.org/year/2021/we
     </item>
     <item>
       <title>Beautiful Bastards Podcast</title>
-      <link>/speaking/bb_podcast/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/bb_podcast/</link>
       <pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>/speaking/bb_podcast/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/bb_podcast/</guid>
       <description>Topic: Data Science/Machine Learning misc Location: Virtual
 Date: October 4, 2021 Links:
 https://www.beautifulbastardspodcast.com/the-rise-of-ai-stephanie-kirmer-on-the-future-of-big-tech/ The Chicago SSL: Tribune and Chicago Magazine Machine learning for kids book </description>
     </item>
     <item>
       <title>Center for Deep Learning Spring 2021 Seminar, Northwestern University</title>
-      <link>/speaking/cdl_nu/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/cdl_nu/</link>
       <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>/speaking/cdl_nu/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/cdl_nu/</guid>
       <description>Event: Center for Deep Learning Spring 2021 Seminar, Northwestern University Topic: Accelerating Deep Learning with Dask and GPUs Location: Virtual
 Date: April 27, 2021 Links:
 https://www.mccormick.northwestern.edu/research/deep-learning/ https://github.com/skirmer/gpu_pytorch/tree/main/center-deep-learning </description>
     </item>
     <item>
       <title>ODSC East 2021</title>
-      <link>/speaking/viz_odsc/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/viz_odsc/</link>
       <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>/speaking/viz_odsc/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/viz_odsc/</guid>
       <description>Topic: Going Beyond Matplotlib and Seaborn: A survey of Python data visualization tools Location: Virtual
 Date: March 29 - April 1 2021 Links:
 https://odsc.com/boston/ https://github.com/skirmer/new-py-dataviz </description>
     </item>
     <item>
       <title>R Ladies Chicago - Workshop</title>
-      <link>/speaking/rladies/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/rladies/</link>
       <pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>/speaking/rladies/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/rladies/</guid>
       <description>Topic: Functions for R Programming Beginners Location: Virtual
 Date: February 26, 2021
 Links:
@@ -75,18 +75,18 @@ https://rladieschicago.org/ https://github.com/skirmer/functions_r Video: https:
     </item>
     <item>
       <title>Outlier Data Visualization Conference 2021</title>
-      <link>/speaking/outlier_viz/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/outlier_viz/</link>
       <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>/speaking/outlier_viz/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/outlier_viz/</guid>
       <description>Topic: Going Beyond Matplotlib and Seaborn: A survey of Python data visualization tools Location: Virtual
 Date: February 7, 2021 Links:
 https://www.outlierconf.com/ https://github.com/skirmer/new-py-dataviz </description>
     </item>
     <item>
       <title>RE*WORK&#39;s Deep Learning Virtual Summit, January 2021</title>
-      <link>/speaking/rework_gpu/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/rework_gpu/</link>
       <pubDate>Thu, 28 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>/speaking/rework_gpu/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/rework_gpu/</guid>
       <description>Topic: Scaling Up PyTorch with GPU Cluster Computing
 Location: Virtual
 Date: January 28-29, 2021
@@ -95,9 +95,9 @@ https://www.re-work.co/events/deep-learning-virtual-summit-2021/schedule https:/
     </item>
     <item>
       <title>ChiPy Data SIG October 2020</title>
-      <link>/speaking/chipy/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/chipy/</link>
       <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>/speaking/chipy/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/chipy/</guid>
       <description>Topic: Branching Out into Isolation Forests: Tree Based Anomaly Detection Location: Virtual
 Date: October 21, 2020
 Links:
@@ -105,43 +105,43 @@ Video https://www.chipy.org/ https://www.meetup.com/_ChiPy_/events/272525624/ </
     </item>
     <item>
       <title>ODSC Europe Virtual Conference 2020</title>
-      <link>/speaking/odsc_eu/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/odsc_eu/</link>
       <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>/speaking/odsc_eu/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/odsc_eu/</guid>
       <description>Topic: Making Happy Modelers: Build and Maintain Your Data Warehouse with AWS Redshift and Airflow Location: Virtual
 Date: September 17-19, 2020 Links: https://odsc.com/speakers/making-happy-modelers-build-and-maintain-your-data-warehouse-with-aws-redshift-and-airflow/</description>
     </item>
     <item>
       <title>RE*WORK&#39;s Virtual Applied AI Summit - Spring 2020</title>
-      <link>/speaking/rework_panel/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/rework_panel/</link>
       <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
-      <guid>/speaking/rework_panel/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/rework_panel/</guid>
       <description>Topic: Moderator, Panel: Strategies for Effectively Building, Deploying, and Monitoring AI Location: Virtual/London, UK
 Date: May 21, 2020 Links: https://www.re-work.co/events/applied-ai-virtual-summit</description>
     </item>
     <item>
       <title>Women in Data Science Chicago 2020</title>
-      <link>/speaking/wids_2020/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/wids_2020/</link>
       <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>/speaking/wids_2020/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/wids_2020/</guid>
       <description>Topic: Better Data Science Team Collaboration with R Location: Chicago, IL
 Date: March 6, 2020 Links:
 https://github.com/skirmer/team_collab https://widschicago.org/ </description>
     </item>
     <item>
       <title>DC R Conference</title>
-      <link>/speaking/dc_r/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/dc_r/</link>
       <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/speaking/dc_r/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/dc_r/</guid>
       <description>Topic: Animation for Effective Data Visualization with R Location: Washington, DC Date: November 8, 2019
 Links:
 Video https://github.com/skirmer/animating_dataviz https://dc.rstats.ai/2019/dcr/ </description>
     </item>
     <item>
       <title>ODSC West 2019</title>
-      <link>/speaking/odsc_west_es/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/odsc_west_es/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/speaking/odsc_west_es/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/odsc_west_es/</guid>
       <description>Topic: Elasticsearch End User Workflows in R and Python - Interactive Workshop
 Location: San Francisco, CA
 Date: November 1, 2019
@@ -150,9 +150,9 @@ https://github.com/skirmer/elastic_analytics https://odsc.com/california </descr
     </item>
     <item>
       <title>R-Ladies Chicago and Chicago Data Visualization Community Joint Meetup</title>
-      <link>/speaking/r_ladies_anim/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/r_ladies_anim/</link>
       <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>/speaking/r_ladies_anim/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/r_ladies_anim/</guid>
       <description>Event: R-Ladies Chicago and Chicago Data Visualization Community Joint Meetup Topic: Animation for Effective Data Visualization with R
 Location: Chicago, IL
 Date: July 24, 2019
@@ -161,9 +161,9 @@ Video https://github.com/skirmer/animating_dataviz </description>
     </item>
     <item>
       <title>REV 2</title>
-      <link>/speaking/rev2/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/rev2/</link>
       <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
-      <guid>/speaking/rev2/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/rev2/</guid>
       <description>Topic: Elasticsearch End User Workflows in R and Python
 Location: New York, NY
 Date: May 23, 2019
@@ -172,9 +172,9 @@ Video https://github.com/skirmer/elastic_analytics Listen to my conversation wit
     </item>
     <item>
       <title>satRday Chicago Keynote</title>
-      <link>/speaking/satrday/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/satrday/</link>
       <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/speaking/satrday/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/satrday/</guid>
       <description>Topic: Keynote: What Data Science Can Learn From Sociology
 Location: Chicago, IL
 Date: April 27, 2019
@@ -183,9 +183,9 @@ Video https://github.com/skirmer/satRdays_chicago_2019 </description>
     </item>
     <item>
       <title>R Package Building Workshop</title>
-      <link>/speaking/r_package/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/r_package/</link>
       <pubDate>Sat, 23 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/speaking/r_package/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/r_package/</guid>
       <description>Topic: 1 day seminar for women and nonbinary folks
 Location: Chicago, IL
 Date: February 23, 2019
@@ -193,59 +193,59 @@ Links: https://github.com/skirmer/r_packages</description>
     </item>
     <item>
       <title>EARL Roadshow Seattle 2018</title>
-      <link>/speaking/earl_seattle/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/earl_seattle/</link>
       <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
-      <guid>/speaking/earl_seattle/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/earl_seattle/</guid>
       <description>Topic: R Packages for Team Collaboration
 Location: Seattle, WA
 Date: November 7, 2018 Links: https://github.com/skirmer/team_collab</description>
     </item>
     <item>
       <title>ODSC East 2018</title>
-      <link>/speaking/odsc_east_2018/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/odsc_east_2018/</link>
       <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
-      <guid>/speaking/odsc_east_2018/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/odsc_east_2018/</guid>
       <description>Topic: R Packages for Team Collaboration
 Location: Boston, MA
 Date: May 3, 2018 Links: https://github.com/skirmer/team_collab</description>
     </item>
     <item>
       <title>Metis Speaker Series</title>
-      <link>/speaking/metis/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/metis/</link>
       <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>/speaking/metis/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/metis/</guid>
       <description>Topic: R Packages for Team Collaboration
 Location: Chicago, IL
 Date: April 2018 Links: https://github.com/skirmer/team_collab</description>
     </item>
     <item>
       <title>Partially Derivative Podcast</title>
-      <link>/speaking/part_deriv_pod/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/part_deriv_pod/</link>
       <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
-      <guid>/speaking/part_deriv_pod/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/part_deriv_pod/</guid>
       <description>May 9, 2017
 http://partiallyderivative.com/podcast/2017/05/09/data-science-near-you</description>
     </item>
     <item>
       <title></title>
-      <link>/about/</link>
+      <link>https://skirmer.github.io/quickstart/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/about/</guid>
+      <guid>https://skirmer.github.io/quickstart/about/</guid>
       <description>My professional career has been driven by continuous learning. My approach to any technical problem is &amp;ldquo;I can probably learn how to do that&amp;rdquo; followed by rolling up my sleeves to get things done. I learned to be a data scientist through hard work outside the traditional classroom, including a significant amount of on-the-job learning with the help of many incredibly talented colleagues. I highly value helping others following similar autodidactic paths, and I spend time advising and encouraging other data scientists or aspiring data scientists from nontraditional backgrounds and/or underrepresented groups.</description>
     </item>
     <item>
       <title>Archetypes of the Data Scientist Role</title>
-      <link>/writing/archetypesofthedatascientistrole/</link>
+      <link>https://skirmer.github.io/quickstart/writing/archetypesofthedatascientistrole/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/archetypesofthedatascientistrole/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/archetypesofthedatascientistrole/</guid>
       <description>Data science roles can be very different, and job postings are not always clear. What hat do you want to wear?
 After the positive responses to my recent post in Towards Data Science about Machine Learning Engineers , I thought I would write a bit about what I think are the real categories of roles for data science practitioners in the job market. While I was previously talking about the candidates, e.</description>
     </item>
     <item>
       <title>Booking</title>
-      <link>/booking/</link>
+      <link>https://skirmer.github.io/quickstart/booking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/booking/</guid>
+      <guid>https://skirmer.github.io/quickstart/booking/</guid>
       <description>If you&amp;rsquo;re looking for a speaker, please contact me at stephanie@stephaniekirmer.com or visit my SpeakerHub profile.
 Speaking Topics Sociological insights on data science, machine learning, and/or AI
 Data Science/Machine Learning Practice
@@ -255,50 +255,50 @@ Speaker compensation policies, if any. for community or nonprofit organizations,
     </item>
     <item>
       <title>Creating New Data Scientists in the Age of Remote Work</title>
-      <link>/writing/creatingnewdatascientistsintheageofremotework/</link>
+      <link>https://skirmer.github.io/quickstart/writing/creatingnewdatascientistsintheageofremotework/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/creatingnewdatascientistsintheageofremotework/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/creatingnewdatascientistsintheageofremotework/</guid>
       <description>Learning how to be a professional data scientist is different now, but it’s not impossible
 Today’s column is partly about data science, but it’s also about the sociology of work. As a senior practitioner in the field, I started my data science career long before Covid-19 and the radical shift in the way we work today developed. I started my professional career years before even that. As a result, my years of learning how to be a professional anything, let alone a professional data scientist, were spent in close quarters with much more experienced people, and in many ways that made it possible for me to get where I am.</description>
     </item>
     <item>
       <title>How Human Labor Enables Machine Learning</title>
-      <link>/writing/howhumanlaborenablesmachinelearning/</link>
+      <link>https://skirmer.github.io/quickstart/writing/howhumanlaborenablesmachinelearning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/howhumanlaborenablesmachinelearning/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/howhumanlaborenablesmachinelearning/</guid>
       <description>Much of the division between technology and human activity is artificial — how do people make our work possible?
 We don’t talk enough about how much manual, human work we rely upon to make the exciting advances in ML possible. The truth is, the division between technology and human activity is artificial. All the inputs that make models are the result of human effort, and all the outputs in one way or another exist to have an impact on people.</description>
     </item>
     <item>
       <title>Is Generative AI Taking Over the World?</title>
-      <link>/writing/isgenerativeaitakingovertheworld/</link>
+      <link>https://skirmer.github.io/quickstart/writing/isgenerativeaitakingovertheworld/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/isgenerativeaitakingovertheworld/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/isgenerativeaitakingovertheworld/</guid>
       <description>Businesses are jumping on a bandwagon of creating something, anything that they can launch as a “Generative AI” feature or product. What’s driving this, and why is it a problem?
 The AI Hype Cycle: In a Race to Somewhere?
 I was recently catching up on back issues of Money Stuff, Matt Levine’s indispensable newsletter/blog at Bloomberg, and there was an interesting piece about how AI stock picking algorithms don’t actually favor AI stocks (and also they don’t perform all that well on the picks they do make).</description>
     </item>
     <item>
       <title>Machine Learning Engineers — what do they actually do?</title>
-      <link>/writing/machinelearningengineers-whatdotheyactuallydo/</link>
+      <link>https://skirmer.github.io/quickstart/writing/machinelearningengineers-whatdotheyactuallydo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/machinelearningengineers-whatdotheyactuallydo/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/machinelearningengineers-whatdotheyactuallydo/</guid>
       <description>Machine Learning Engineers — What Do They Actually Do? Does “Machine Learning Engineer” mean something new to our field? If so, what?
 The title is a trick question, of course. Much like Data Scientist before it, the title Machine Learning Engineer is developing into a trend in the job market for people in our profession, but there is no consensus about the meaning of the title or the functions and skills it should encompass.</description>
     </item>
     <item>
       <title>Machine Learning’s Public Perception Problem</title>
-      <link>/writing/machinelearningspublicperceptionproblem/</link>
+      <link>https://skirmer.github.io/quickstart/writing/machinelearningspublicperceptionproblem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/machinelearningspublicperceptionproblem/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/machinelearningspublicperceptionproblem/</guid>
       <description>Why machine learning literacy for the public needs to be a priority for data science, and what we can do about it.
 I was listening to a podcast recently with an assortment of intelligent, thoughtful laypeople (whose names I will not share, to be polite) talking about how AI can be used in healthcare. I had misgivings already, because they were using the term “AI”, which I find frequently means everything and nothing at the same time.</description>
     </item>
     <item>
       <title>R Ladies Dallas, December 2020</title>
-      <link>/speaking/rladies_dallas/</link>
+      <link>https://skirmer.github.io/quickstart/speaking/rladies_dallas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/speaking/rladies_dallas/</guid>
+      <guid>https://skirmer.github.io/quickstart/speaking/rladies_dallas/</guid>
       <description>Topic: Branching Out into Isolation Forests: Tree Based Anomaly Detection Location: Virtual
 Date: December 7, 2020
 Links: https://www.meetup.com/rladies-dallas/events/274004809/
@@ -307,34 +307,34 @@ Video to come</description>
     </item>
     <item>
       <title>Setting Healthy Boundaries: Generating Geofences at Scale with Machine Learning (Part 1)</title>
-      <link>/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart1/</link>
+      <link>https://skirmer.github.io/quickstart/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart1/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart1/</guid>
       <description>Want to learn more about this project and how we implemented it? Join me at MLOps Community Chicago on Nov 10, 2022 where I’ll be presenting this work with a special focus on the deployment and taking it through to production.
 At project44, we offer customers a whole assortment of data driven products that help them better understand their shipments and the movement of goods around the world. We build complex, intelligent tools that make logistics easier and more transparent.</description>
     </item>
     <item>
       <title>Setting Healthy Boundaries: Generating Geofences at Scale with Machine Learning (Part 2)</title>
-      <link>/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart2/</link>
+      <link>https://skirmer.github.io/quickstart/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart2/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart2/</guid>
       <description>If you haven’t read it yet, please start with Part 1 to understand the foundations of this project and why we did it!
 Implementation
 In part 1, we talked about applying a data science mindset to the problem of location accuracy. But how do we actually carry out this process? We used python and a combination of several tools (see table below) to make this idea a reality. The first thing we needed was a clustering technique.</description>
     </item>
     <item>
       <title>Thinking Sociologically About Machine Learning</title>
-      <link>/writing/thinkingsociologicallyaboutmachinelearning/</link>
+      <link>https://skirmer.github.io/quickstart/writing/thinkingsociologicallyaboutmachinelearning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/thinkingsociologicallyaboutmachinelearning/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/thinkingsociologicallyaboutmachinelearning/</guid>
       <description>I sometimes mention in my written work and speeches that I have a sociology background, and used to be an adjunct professor of sociology at DePaul University before embarking on my data science career. I loved sociology, and still do — it shaped so much about how I understand the world and my own place in it.
 However, when I made a career change and turned to data science, I spent a lot of time explaining how that background, training, and experience were assets to my practice of data science, because it wasn’t obvious to people.</description>
     </item>
     <item>
       <title>What Does It Mean When Machine Learning Makes a Mistake?</title>
-      <link>/writing/whatdoesitmeanwhenmachinelearningmakesamistake/</link>
+      <link>https://skirmer.github.io/quickstart/writing/whatdoesitmeanwhenmachinelearningmakesamistake/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/writing/whatdoesitmeanwhenmachinelearningmakesamistake/</guid>
+      <guid>https://skirmer.github.io/quickstart/writing/whatdoesitmeanwhenmachinelearningmakesamistake/</guid>
       <description>Do our definitions of “mistake” make sense when it comes to ML/AI? If not, why not?
 A comment on my recent post about the public perception of machine learning got me thinking about the meaning of error in machine learning. The reader asked if I thought machine learning models would always “make mistakes”. As I described in that post, people have a strong tendency to anthropomorphize machine learning models. When we interact with an LLM chatbot, we apply techniques to those engagements that we have learned by communicating with other people—persuasion, phrasing, argument, etc.</description>
     </item>
