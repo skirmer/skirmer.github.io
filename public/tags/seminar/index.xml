@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>seminar on Stephanie Kirmer</title>
-    <link>https://skirmer.github.io/quickstart/tags/seminar/</link>
+    <link>https://skirmer.github.io/tags/seminar/</link>
     <description>Recent content in seminar on Stephanie Kirmer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 27 Apr 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://skirmer.github.io/quickstart/tags/seminar/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://skirmer.github.io/tags/seminar/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Center for Deep Learning Spring 2021 Seminar, Northwestern University</title>
-      <link>https://skirmer.github.io/quickstart/speaking/cdl_nu/</link>
+      <link>https://skirmer.github.io/speaking/cdl_nu/</link>
       <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://skirmer.github.io/quickstart/speaking/cdl_nu/</guid>
+      <guid>https://skirmer.github.io/speaking/cdl_nu/</guid>
       <description>Event: Center for Deep Learning Spring 2021 Seminar, Northwestern University Topic: Accelerating Deep Learning with Dask and GPUs Location: Virtual
 Date: April 27, 2021 Links:
 https://www.mccormick.northwestern.edu/research/deep-learning/ https://github.com/skirmer/gpu_pytorch/tree/main/center-deep-learning </description>
     </item>
     <item>
       <title>R Ladies Chicago - Workshop</title>
-      <link>https://skirmer.github.io/quickstart/speaking/rladies/</link>
+      <link>https://skirmer.github.io/speaking/rladies/</link>
       <pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://skirmer.github.io/quickstart/speaking/rladies/</guid>
+      <guid>https://skirmer.github.io/speaking/rladies/</guid>
       <description>Topic: Functions for R Programming Beginners Location: Virtual
 Date: February 26, 2021
 Links:
@@ -29,9 +29,9 @@ https://rladieschicago.org/ https://github.com/skirmer/functions_r Video: https:
     </item>
     <item>
       <title>R Package Building Workshop</title>
-      <link>https://skirmer.github.io/quickstart/speaking/r_package/</link>
+      <link>https://skirmer.github.io/speaking/r_package/</link>
       <pubDate>Sat, 23 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://skirmer.github.io/quickstart/speaking/r_package/</guid>
+      <guid>https://skirmer.github.io/speaking/r_package/</guid>
       <description>Topic: 1 day seminar for women and nonbinary folks
 Location: Chicago, IL
 Date: February 23, 2019

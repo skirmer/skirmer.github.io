@@ -3,7 +3,7 @@
 
 
 ---
-date: 
+date: 2023-10-17
 featured_image: "https://cdn-images-1.medium.com/max/1024/0*9AozkkkmRuLWn4PZ"
 tags: ["office-hours","careers","sociology","data-science","remote-working"]
 title: "Creating New Data Scientists in the Age of Remote Work"

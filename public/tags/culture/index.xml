@@ -2,16 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>culture on Stephanie Kirmer</title>
-    <link>https://skirmer.github.io/quickstart/tags/culture/</link>
+    <link>https://skirmer.github.io/tags/culture/</link>
     <description>Recent content in culture on Stephanie Kirmer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://skirmer.github.io/quickstart/tags/culture/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://skirmer.github.io/tags/culture/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Thinking Sociologically About Machine Learning</title>
-      <link>https://skirmer.github.io/quickstart/writing/thinkingsociologicallyaboutmachinelearning/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://skirmer.github.io/quickstart/writing/thinkingsociologicallyaboutmachinelearning/</guid>
+      <link>https://skirmer.github.io/writing/thinkingsociologicallyaboutmachinelearning/</link>
+      <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://skirmer.github.io/writing/thinkingsociologicallyaboutmachinelearning/</guid>
       <description>I sometimes mention in my written work and speeches that I have a sociology background, and used to be an adjunct professor of sociology at DePaul University before embarking on my data science career. I loved sociology, and still do — it shaped so much about how I understand the world and my own place in it.
 However, when I made a career change and turned to data science, I spent a lot of time explaining how that background, training, and experience were assets to my practice of data science, because it wasn’t obvious to people.</description>
     </item>

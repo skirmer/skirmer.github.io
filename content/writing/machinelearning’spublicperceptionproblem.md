@@ -3,7 +3,7 @@
 
 
 ---
-date: 
+date: 2023-09-02
 featured_image: "https://cdn-images-1.medium.com/max/1024/0*rPW80Ap9V_fpxHqa"
 tags: ["machine-learning","social-science"]
 title: "Machine Learning’s Public Perception Problem"

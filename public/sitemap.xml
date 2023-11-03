@@ -2,195 +2,225 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://skirmer.github.io/quickstart/</loc>
+    <loc>https://skirmer.github.io/tags/artificial-intelligence/</loc>
+    <lastmod>2023-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/tags/editors-pick/</loc>
+    <lastmod>2023-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/writing/howhumanlaborenablesmachinelearning/</loc>
+    <lastmod>2023-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/tags/human-ai-collaboration/</loc>
+    <lastmod>2023-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/tags/large-language-models/</loc>
+    <lastmod>2023-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/tags/machine-learning/</loc>
+    <lastmod>2023-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/</loc>
+    <lastmod>2023-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/tags/</loc>
+    <lastmod>2023-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/tags/careers/</loc>
+    <lastmod>2023-10-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/writing/creatingnewdatascientistsintheageofremotework/</loc>
+    <lastmod>2023-10-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/tags/data-science/</loc>
+    <lastmod>2023-10-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/tags/office-hours/</loc>
+    <lastmod>2023-10-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/tags/remote-working/</loc>
+    <lastmod>2023-10-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/tags/sociology/</loc>
+    <lastmod>2023-10-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/tags/ai/</loc>
     <lastmod>2023-10-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/writing/</loc>
+    <loc>https://skirmer.github.io/tags/business/</loc>
     <lastmod>2023-10-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/gartner_2023/</loc>
+    <loc>https://skirmer.github.io/writing/isgenerativeaitakingovertheworld/</loc>
+    <lastmod>2023-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/writing/</loc>
+    <lastmod>2023-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/tags/deep-learning/</loc>
+    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/writing/whatdoesitmeanwhenmachinelearningmakesamistake/</loc>
+    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/writing/machinelearningspublicperceptionproblem/</loc>
+    <lastmod>2023-09-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/tags/social-science/</loc>
+    <lastmod>2023-09-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/writing/archetypesofthedatascientistrole/</loc>
+    <lastmod>2023-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/tags/career-advice/</loc>
+    <lastmod>2023-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/tags/data-analysis/</loc>
+    <lastmod>2023-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/tags/diversity/</loc>
+    <lastmod>2023-08-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/writing/machinelearningengineers-whatdotheyactuallydo/</loc>
+    <lastmod>2023-08-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/tags/machine-learning-engineer/</loc>
+    <lastmod>2023-08-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/tags/culture/</loc>
+    <lastmod>2023-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/writing/thinkingsociologicallyaboutmachinelearning/</loc>
+    <lastmod>2023-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/speaking/gartner_2023/</loc>
     <lastmod>2023-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/geofences/</loc>
+    <loc>https://skirmer.github.io/tags/geofences/</loc>
     <lastmod>2023-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/industry/</loc>
+    <loc>https://skirmer.github.io/tags/industry/</loc>
     <lastmod>2023-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/</loc>
-    <lastmod>2023-05-09T00:00:00+00:00</lastmod>
+    <loc>https://skirmer.github.io/tags/logistics/</loc>
+    <lastmod>2023-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/meetup/</loc>
+    <loc>https://skirmer.github.io/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart2/</loc>
+    <lastmod>2023-02-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/tags/meetup/</loc>
     <lastmod>2022-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/mlops_2022/</loc>
+    <loc>https://skirmer.github.io/speaking/mlops_2022/</loc>
     <lastmod>2022-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/conference/</loc>
+    <loc>https://skirmer.github.io/tags/geospatial/</loc>
+    <lastmod>2022-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart1/</loc>
+    <lastmod>2022-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/tags/supply-chain/</loc>
+    <lastmod>2022-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://skirmer.github.io/tags/conference/</loc>
     <lastmod>2021-10-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/vis_in_practice_2021/</loc>
+    <loc>https://skirmer.github.io/speaking/vis_in_practice_2021/</loc>
     <lastmod>2021-10-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/visualization/</loc>
+    <loc>https://skirmer.github.io/tags/visualization/</loc>
     <lastmod>2021-10-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/ai/</loc>
+    <loc>https://skirmer.github.io/speaking/bb_podcast/</loc>
     <lastmod>2021-10-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/bb_podcast/</loc>
+    <loc>https://skirmer.github.io/tags/podcast/</loc>
     <lastmod>2021-10-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/podcast/</loc>
-    <lastmod>2021-10-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/sociology/</loc>
-    <lastmod>2021-10-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/cdl_nu/</loc>
+    <loc>https://skirmer.github.io/speaking/cdl_nu/</loc>
     <lastmod>2021-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/gpu/</loc>
+    <loc>https://skirmer.github.io/tags/gpu/</loc>
     <lastmod>2021-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/seminar/</loc>
+    <loc>https://skirmer.github.io/tags/seminar/</loc>
     <lastmod>2021-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/viz_odsc/</loc>
+    <loc>https://skirmer.github.io/speaking/viz_odsc/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/python/</loc>
+    <loc>https://skirmer.github.io/tags/python/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/r/</loc>
+    <loc>https://skirmer.github.io/tags/r/</loc>
     <lastmod>2021-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/rladies/</loc>
+    <loc>https://skirmer.github.io/speaking/rladies/</loc>
     <lastmod>2021-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/outlier_viz/</loc>
+    <loc>https://skirmer.github.io/speaking/outlier_viz/</loc>
     <lastmod>2021-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/rework_gpu/</loc>
+    <loc>https://skirmer.github.io/speaking/rework_gpu/</loc>
     <lastmod>2021-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/chipy/</loc>
+    <loc>https://skirmer.github.io/speaking/chipy/</loc>
     <lastmod>2020-10-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/mlops/</loc>
+    <loc>https://skirmer.github.io/tags/mlops/</loc>
     <lastmod>2020-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/odsc_eu/</loc>
+    <loc>https://skirmer.github.io/speaking/odsc_eu/</loc>
     <lastmod>2020-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/rework_panel/</loc>
+    <loc>https://skirmer.github.io/speaking/rework_panel/</loc>
     <lastmod>2020-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/wids_2020/</loc>
+    <loc>https://skirmer.github.io/speaking/wids_2020/</loc>
     <lastmod>2020-03-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/dc_r/</loc>
+    <loc>https://skirmer.github.io/speaking/dc_r/</loc>
     <lastmod>2019-11-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/elasticsearch/</loc>
+    <loc>https://skirmer.github.io/tags/elasticsearch/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/odsc_west_es/</loc>
+    <loc>https://skirmer.github.io/speaking/odsc_west_es/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/r_ladies_anim/</loc>
+    <loc>https://skirmer.github.io/speaking/r_ladies_anim/</loc>
     <lastmod>2019-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/rev2/</loc>
+    <loc>https://skirmer.github.io/speaking/rev2/</loc>
     <lastmod>2019-05-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/satrday/</loc>
+    <loc>https://skirmer.github.io/speaking/satrday/</loc>
     <lastmod>2019-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/r_package/</loc>
+    <loc>https://skirmer.github.io/speaking/r_package/</loc>
     <lastmod>2019-02-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/earl_seattle/</loc>
+    <loc>https://skirmer.github.io/speaking/earl_seattle/</loc>
     <lastmod>2018-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/odsc_east_2018/</loc>
+    <loc>https://skirmer.github.io/speaking/odsc_east_2018/</loc>
     <lastmod>2018-05-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/metis/</loc>
+    <loc>https://skirmer.github.io/speaking/metis/</loc>
     <lastmod>2018-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/part_deriv_pod/</loc>
+    <loc>https://skirmer.github.io/speaking/part_deriv_pod/</loc>
     <lastmod>2017-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/</loc>
+    <loc>https://skirmer.github.io/speaking/</loc>
     <lastmod>2017-03-02T12:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/about/</loc>
+    <loc>https://skirmer.github.io/about/</loc>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/writing/archetypesofthedatascientistrole/</loc>
+    <loc>https://skirmer.github.io/booking/</loc>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/artificial-intelligence/</loc>
+    <loc>https://skirmer.github.io/categories/</loc>
   </url><url>
-    <loc>https://skirmer.github.io/quickstart/booking/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/business/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/career-advice/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/careers/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/categories/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/writing/creatingnewdatascientistsintheageofremotework/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/culture/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/data-analysis/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/data-science/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/deep-learning/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/diversity/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/editors-pick/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/geospatial/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/writing/howhumanlaborenablesmachinelearning/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/human-ai-collaboration/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/writing/isgenerativeaitakingovertheworld/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/large-language-models/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/logistics/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/writing/machinelearningengineers-whatdotheyactuallydo/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/writing/machinelearningspublicperceptionproblem/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/machine-learning/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/machine-learning-engineer/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/office-hours/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/speaking/rladies_dallas/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/remote-working/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart1/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/writing/settinghealthyboundariesgeneratinggeofencesatscalewithmachinelearningpart2/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/social-science/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/tags/supply-chain/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/writing/thinkingsociologicallyaboutmachinelearning/</loc>
-  </url><url>
-    <loc>https://skirmer.github.io/quickstart/writing/whatdoesitmeanwhenmachinelearningmakesamistake/</loc>
+    <loc>https://skirmer.github.io/speaking/rladies_dallas/</loc>
   </url>
 </urlset>

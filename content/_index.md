@@ -12,5 +12,4 @@ This is also why it is more important than ever to have sociological mindsets as
 
 As a sociologist-turned-data scientist, I consider it my responsibility to advocate for ethical, thoughtful applications of machine learning and data science that will bear out the incredible potential of the field. In that spirit, I work as a professional practitioner of data science and a speaker/author on topics in the field. Click through to see/watch my content and learn more.
 
-<h5>Photo by [Pedro Lastra](https://unsplash.com/@peterlaster?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
-</h5>
+###### Photo by [Pedro Lastra](https://unsplash.com/@peterlaster?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sociology on Stephanie Kirmer</title>
-    <link>https://skirmer.github.io/quickstart/tags/sociology/</link>
+    <link>https://skirmer.github.io/tags/sociology/</link>
     <description>Recent content in sociology on Stephanie Kirmer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Oct 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://skirmer.github.io/quickstart/tags/sociology/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://skirmer.github.io/tags/sociology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating New Data Scientists in the Age of Remote Work</title>
+      <link>https://skirmer.github.io/writing/creatingnewdatascientistsintheageofremotework/</link>
+      <pubDate>Tue, 17 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://skirmer.github.io/writing/creatingnewdatascientistsintheageofremotework/</guid>
+      <description>Learning how to be a professional data scientist is different now, but it’s not impossible
+Today’s column is partly about data science, but it’s also about the sociology of work. As a senior practitioner in the field, I started my data science career long before Covid-19 and the radical shift in the way we work today developed. I started my professional career years before even that. As a result, my years of learning how to be a professional anything, let alone a professional data scientist, were spent in close quarters with much more experienced people, and in many ways that made it possible for me to get where I am.</description>
+    </item>
     <item>
       <title>Beautiful Bastards Podcast</title>
-      <link>https://skirmer.github.io/quickstart/speaking/bb_podcast/</link>
+      <link>https://skirmer.github.io/speaking/bb_podcast/</link>
       <pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://skirmer.github.io/quickstart/speaking/bb_podcast/</guid>
+      <guid>https://skirmer.github.io/speaking/bb_podcast/</guid>
       <description>Topic: Data Science/Machine Learning misc Location: Virtual
 Date: October 4, 2021 Links:
 https://www.beautifulbastardspodcast.com/the-rise-of-ai-stephanie-kirmer-on-the-future-of-big-tech/ The Chicago SSL: Tribune and Chicago Magazine Machine learning for kids book </description>
     </item>
     <item>
       <title>satRday Chicago Keynote</title>
-      <link>https://skirmer.github.io/quickstart/speaking/satrday/</link>
+      <link>https://skirmer.github.io/speaking/satrday/</link>
       <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://skirmer.github.io/quickstart/speaking/satrday/</guid>
+      <guid>https://skirmer.github.io/speaking/satrday/</guid>
       <description>Topic: Keynote: What Data Science Can Learn From Sociology
 Location: Chicago, IL
 Date: April 27, 2019
 Links:
 Video https://github.com/skirmer/satRdays_chicago_2019 </description>
-    </item>
-    <item>
-      <title>Creating New Data Scientists in the Age of Remote Work</title>
-      <link>https://skirmer.github.io/quickstart/writing/creatingnewdatascientistsintheageofremotework/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://skirmer.github.io/quickstart/writing/creatingnewdatascientistsintheageofremotework/</guid>
-      <description>Learning how to be a professional data scientist is different now, but it’s not impossible
-Today’s column is partly about data science, but it’s also about the sociology of work. As a senior practitioner in the field, I started my data science career long before Covid-19 and the radical shift in the way we work today developed. I started my professional career years before even that. As a result, my years of learning how to be a professional anything, let alone a professional data scientist, were spent in close quarters with much more experienced people, and in many ways that made it possible for me to get where I am.</description>
     </item>
   </channel>
 </rss>

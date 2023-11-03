@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>geofences on Stephanie Kirmer</title>
-    <link>https://skirmer.github.io/quickstart/tags/geofences/</link>
+    <link>https://skirmer.github.io/tags/geofences/</link>
     <description>Recent content in geofences on Stephanie Kirmer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 09 May 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://skirmer.github.io/quickstart/tags/geofences/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://skirmer.github.io/tags/geofences/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gartner Supply Chain Symposium/Xpo 2023</title>
-      <link>https://skirmer.github.io/quickstart/speaking/gartner_2023/</link>
+      <link>https://skirmer.github.io/speaking/gartner_2023/</link>
       <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://skirmer.github.io/quickstart/speaking/gartner_2023/</guid>
+      <guid>https://skirmer.github.io/speaking/gartner_2023/</guid>
       <description>Topic: Maximize Productivity with Shipment Data &amp;amp; ML-Driven Smart Geofences
 Location: Orlando, FL
 Date: May 9, 2023
@@ -20,9 +20,9 @@ Co-presented with Nick Clark Links: https://explore.project44.com/et0/en-gartner
     </item>
     <item>
       <title>MLOps Community Meetup - Chicago</title>
-      <link>https://skirmer.github.io/quickstart/speaking/mlops_2022/</link>
+      <link>https://skirmer.github.io/speaking/mlops_2022/</link>
       <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://skirmer.github.io/quickstart/speaking/mlops_2022/</guid>
+      <guid>https://skirmer.github.io/speaking/mlops_2022/</guid>
       <description>Topic: Generating &amp;ldquo;Smart&amp;rdquo; Geofences with Clustering Techniques Location: Chicago Loop, Toast offices
 Date: November 10, 2022 Links: https://mlops.community</description>
     </item>

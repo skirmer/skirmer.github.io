@@ -3,7 +3,7 @@
 
 
 ---
-date: 
+date: 2023-10-03
 featured_image: "https://cdn-images-1.medium.com/max/1024/0*OrON13WTu0NVXsBw"
 tags: ["data-science","business","ai","editors-pick","machine-learning"]
 title: "Is Generative AI Taking Over the World?"

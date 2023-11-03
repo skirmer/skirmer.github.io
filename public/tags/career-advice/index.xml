@@ -2,16 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>career-advice on Stephanie Kirmer</title>
-    <link>https://skirmer.github.io/quickstart/tags/career-advice/</link>
+    <link>https://skirmer.github.io/tags/career-advice/</link>
     <description>Recent content in career-advice on Stephanie Kirmer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://skirmer.github.io/quickstart/tags/career-advice/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://skirmer.github.io/tags/career-advice/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Archetypes of the Data Scientist Role</title>
-      <link>https://skirmer.github.io/quickstart/writing/archetypesofthedatascientistrole/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://skirmer.github.io/quickstart/writing/archetypesofthedatascientistrole/</guid>
+      <link>https://skirmer.github.io/writing/archetypesofthedatascientistrole/</link>
+      <pubDate>Wed, 23 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://skirmer.github.io/writing/archetypesofthedatascientistrole/</guid>
       <description>Data science roles can be very different, and job postings are not always clear. What hat do you want to wear?
 After the positive responses to my recent post in Towards Data Science about Machine Learning Engineers , I thought I would write a bit about what I think are the real categories of roles for data science practitioners in the job market. While I was previously talking about the candidates, e.</description>
     </item>
