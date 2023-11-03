@@ -3,7 +3,7 @@
 
 
 ---
-date: 
+date: 2023-10-31
 featured_image: "https://cdn-images-1.medium.com/max/1024/0*m8kDZa-npmtH6ukB"
 tags: ["human-ai-collaboration","editors-pick","artificial-intelligence","large-language-models","machine-learning"]
 title: "How Human Labor Enables Machine Learning"

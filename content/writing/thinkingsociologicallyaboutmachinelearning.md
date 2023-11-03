@@ -3,7 +3,7 @@
 
 
 ---
-date: 
+date: 2023-7-25
 featured_image: "https://cdn-images-1.medium.com/max/1024/1*FOS46JNTp9OGgDqLaQtOFw.jpeg"
 tags: ["machine-learning","social-science","ai","data-science","culture"]
 title: "Thinking Sociologically About Machine Learning"

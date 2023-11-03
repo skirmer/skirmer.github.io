@@ -3,7 +3,7 @@
 
 
 ---
-date: 
+date: 2022-11-1
 featured_image: "https://cdn-images-1.medium.com/max/1024/0*nAxy3grlI480D1Nr"
 tags: ["logistics","machine-learning","data-science","geospatial","supply-chain"]
 title: "Setting Healthy Boundaries: Generating Geofences at Scale with Machine Learning (Part 1)"

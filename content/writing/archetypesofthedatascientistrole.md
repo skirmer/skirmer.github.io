@@ -3,7 +3,7 @@
 
 
 ---
-date: 
+date: 2023-8-23
 featured_image: "https://cdn-images-1.medium.com/max/1024/0*28sDO1eOfk3IT8nc"
 tags: ["data-science","careers","career-advice","editors-pick","data-analysis"]
 title: "Archetypes of the Data Scientist Role"

@@ -3,7 +3,7 @@
 
 
 ---
-date: 
+date: 2023-9-17
 featured_image: "https://cdn-images-1.medium.com/max/1024/0*IUPcjDKR0ChmLBfa"
 tags: ["deep-learning","ai","large-language-models","editors-pick","machine-learning"]
 title: "What Does It Mean When Machine Learning Makes a Mistake?"
