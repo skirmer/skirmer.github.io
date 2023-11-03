@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/Users/skirmer/repos/skirmer.github.io/quickstart",
+	"sourceRoot": "/Users/skirmer/repos/skirmer.github.io",
 	"sources": [
 		"ananke/css/main.css"
 	],

@@ -3,7 +3,7 @@
 
 
 ---
-date: 2023-8-9
+date: 2023-08-09
 featured_image: "https://cdn-images-1.medium.com/max/1024/1*O--fiyhytorW5GiHa3rgbA@2x.jpeg"
 tags: ["machine-learning","diversity","machine-learning-engineer","office-hours","data-science"]
 title: "Machine Learning Engineers — what do they actually do?"

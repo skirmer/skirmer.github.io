@@ -2,16 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>business on Stephanie Kirmer</title>
-    <link>https://skirmer.github.io/quickstart/tags/business/</link>
+    <link>https://skirmer.github.io/tags/business/</link>
     <description>Recent content in business on Stephanie Kirmer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://skirmer.github.io/quickstart/tags/business/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://skirmer.github.io/tags/business/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Is Generative AI Taking Over the World?</title>
-      <link>https://skirmer.github.io/quickstart/writing/isgenerativeaitakingovertheworld/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://skirmer.github.io/quickstart/writing/isgenerativeaitakingovertheworld/</guid>
+      <link>https://skirmer.github.io/writing/isgenerativeaitakingovertheworld/</link>
+      <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://skirmer.github.io/writing/isgenerativeaitakingovertheworld/</guid>
       <description>Businesses are jumping on a bandwagon of creating something, anything that they can launch as a “Generative AI” feature or product. What’s driving this, and why is it a problem?
 The AI Hype Cycle: In a Race to Somewhere?
 I was recently catching up on back issues of Money Stuff, Matt Levine’s indispensable newsletter/blog at Bloomberg, and there was an interesting piece about how AI stock picking algorithms don’t actually favor AI stocks (and also they don’t perform all that well on the picks they do make).</description>
