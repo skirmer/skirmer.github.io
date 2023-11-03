@@ -1,4 +1,4 @@
-baseURL = "http://www.stephaniekirmer.com/"
+baseURL = "https://skirmer.github.io/"
 languageCode = "en-us"
 title = "Stephanie Kirmer"
 theme = 'ananke'
@@ -14,3 +14,6 @@ url = "http://linkedin.com/in/skirmer"
 [[params.ananke_socials]]
 name = "medium"
 url = "https://medium.com/@s.kirmer"
+
+[params]
+mainSections = "writing"

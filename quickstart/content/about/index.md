@@ -1,5 +1,4 @@
 ---
-title: "About"
 description: "About Me"
 featured_image: '/images/pedro-lastra-Nyvq2juw4_o-unsplash.jpg'
 menu:
