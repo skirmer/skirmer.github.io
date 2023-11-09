@@ -2,6 +2,8 @@ baseURL = "https://skirmer.github.io/"
 languageCode = "en-us"
 title = "Stephanie Kirmer"
 theme = 'ananke'
+googleAnalytics = 'G-43VZVRZNJK'
+
 
 [[params.ananke_socials]]
 name = "github"
@@ -17,3 +19,5 @@ url = "https://medium.com/@s.kirmer"
 
 [params]
 mainSections = "writing"
+
+
