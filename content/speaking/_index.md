@@ -7,4 +7,3 @@ menu:
 ---
 
 [Book me for your event](../booking/)
-

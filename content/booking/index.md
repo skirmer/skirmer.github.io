@@ -4,7 +4,6 @@ description: "Book me for your event"
 featured_image: '/images/pedro-lastra-Nyvq2juw4_o-unsplash.jpg'
 ---
 
-
 If you're looking for a speaker, please contact me at stephanie@stephaniekirmer.com or visit [my SpeakerHub profile](https://speakerhub.com/speaker/stephanie-kirmer). 
 
 
