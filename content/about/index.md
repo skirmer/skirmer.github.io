@@ -12,8 +12,8 @@ My professional career has been driven by continuous learning. My approach to an
 
 ## Experience
 
-Senior Machine Learning Engineer, DataGrail
-2023-present
+Senior Machine Learning Engineer, DataGrail   
+2023-Present   
 * Build and deploy machine learning tools for helping discover PII in various data storage solutions
 
 Staff Data Scientist, project44  
