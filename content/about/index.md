@@ -12,9 +12,12 @@ My professional career has been driven by continuous learning. My approach to an
 
 ## Experience
 
-Staff Data Scientist, project44  
-2021–Present 
+Senior Machine Learning Engineer, DataGrail
+2023-present
+* Build and deploy machine learning tools for helping discover PII in various data storage solutions
 
+Staff Data Scientist, project44  
+2021–2023
 * Solve complex problems and build product features using data science and machine learning strategies
 * Invented and deployed new technique to create geofences (see patents section)
 * Developed new method for estimating the next stop to be visited by a vehicle
