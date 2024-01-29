@@ -309,7 +309,7 @@ docker push accountnumber.dkr.ecr.us-east-1.amazonaws.com/your_lambda_project:la
  There’s one more step before you’re ready to go, and that is setting up the Lambda in the AWS UI. Go log in to your AWS account, and find the “Lambda” product.
 
 
-
+![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*uT8h8_80IyQyRyF_4Hg-Sw.png)
 
 
 
@@ -321,7 +321,7 @@ docker push accountnumber.dkr.ecr.us-east-1.amazonaws.com/your_lambda_project:la
 
 
 
-
+![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*1ZHE1gtfQfyJym1x3jiCgQ.png)
 
 
 
@@ -329,14 +329,14 @@ docker push accountnumber.dkr.ecr.us-east-1.amazonaws.com/your_lambda_project:la
 
 
 
-
+![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*0_-Xjj0ysqTgOROVvv7mJQ.png)
 
 
 
  If you’ve already created a function, go find that one. From there, all you need to do is hit “Deploy New Image”. Regardless of whether it’s a whole new function or just a new image, make sure you select the platform that matches what you did in your Docker build! (Remember that pin?)
 
 
-
+![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*4Y9AA-WMs3mTtjvHvLsC0w.png)
 
 
 
@@ -345,7 +345,7 @@ docker push accountnumber.dkr.ecr.us-east-1.amazonaws.com/your_lambda_project:la
 
 
 
-
+![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*HV6XTkGbmNI-ku7wz6QWAg.png)
 
 
 
