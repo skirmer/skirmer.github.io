@@ -6,14 +6,10 @@
 date: 2024-01-29
 featured_image: "https://cdn-images-1.medium.com/max/1024/0*wXiqXtIm8_yR-41m"
 tags: ["machine-learning","hands-on-tutorials","aws-lambda","programming","devops"]
-title: "Using Poetry and Docker to package your model for AWS Lambda"
+title: "Using Poetry and Docker to Package Your Model for AWS Lambda"
 disable_share: false
 ---
       
-### 
- Using Poetry and Docker to Package Your Model for AWS Lambda
-
-
 #### 
  An accessible tutorial for one way to put a model into production, with special focus on troubleshooting and hiccups you might encounter along the way
 
@@ -309,7 +305,7 @@ docker push accountnumber.dkr.ecr.us-east-1.amazonaws.com/your_lambda_project:la
  There’s one more step before you’re ready to go, and that is setting up the Lambda in the AWS UI. Go log in to your AWS account, and find the “Lambda” product.
 
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*uT8h8_80IyQyRyF_4Hg-Sw.png)
+
 
 
 
@@ -321,7 +317,7 @@ docker push accountnumber.dkr.ecr.us-east-1.amazonaws.com/your_lambda_project:la
 
 
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*1ZHE1gtfQfyJym1x3jiCgQ.png)
+
 
 
 
@@ -329,14 +325,14 @@ docker push accountnumber.dkr.ecr.us-east-1.amazonaws.com/your_lambda_project:la
 
 
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*0_-Xjj0ysqTgOROVvv7mJQ.png)
+
 
 
 
  If you’ve already created a function, go find that one. From there, all you need to do is hit “Deploy New Image”. Regardless of whether it’s a whole new function or just a new image, make sure you select the platform that matches what you did in your Docker build! (Remember that pin?)
 
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*4Y9AA-WMs3mTtjvHvLsC0w.png)
+
 
 
 
@@ -345,7 +341,7 @@ docker push accountnumber.dkr.ecr.us-east-1.amazonaws.com/your_lambda_project:la
 
 
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*HV6XTkGbmNI-ku7wz6QWAg.png)
+
 
 
 
@@ -399,7 +395,7 @@ docker push accountnumber.dkr.ecr.us-east-1.amazonaws.com/your_lambda_project:la
 
 
 
-[Using Poetry and Docker to package your model for AWS Lambda](https://towardsdatascience.com/using-poetry-and-docker-to-package-your-model-for-aws-lambda-cd6d448eb88f) 
+[Using Poetry and Docker to Package Your Model for AWS Lambda](https://towardsdatascience.com/using-poetry-and-docker-to-package-your-model-for-aws-lambda-cd6d448eb88f) 
  was originally published in
  [Towards Data Science](https://towardsdatascience.com) 
  on Medium, where people are continuing the conversation by highlighting and responding to this story.
