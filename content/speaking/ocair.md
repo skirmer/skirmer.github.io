@@ -7,7 +7,7 @@ title: "OCAIR Professional Development Webinar Series"
 ---
 
 Topic: Decoding Data Science Roles: A guide to the different jobs data scientists (really) do     
-Location: Virtual
+Location: Virtual   
 Date: April 12, 2024  
 Links: [https://github.com/skirmer/ds_careers](https://github.com/skirmer/ds_careers), 
 [https://ocair.org/](https://ocair.org/)
