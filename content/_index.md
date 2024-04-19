@@ -4,6 +4,8 @@ description: "data scientist | author | speaker"
 theme_version: '2.8.2'
 cascade:
   featured_image: '/images/pedro-lastra-Nyvq2juw4_o-unsplash.jpg'
+custom_title_enabled: true
+custom_title_value: 
 ---
 
 Data science affects the lives of people today much more than we realize. From simple regressions to diffusion to transformers, our world is shaped by machine learning. That's one of the things that makes this field so incredibly exciting to be part of at this moment in history. 
