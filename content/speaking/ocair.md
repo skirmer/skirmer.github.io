@@ -4,6 +4,7 @@ description: "OCAIR Professional Development Webinar Series"
 featured_image: ""
 tags: ["webinar", "careers"]
 title: "OCAIR Professional Development Webinar Series"
+summary: "I spoke to overseas Chinese students and scholars about career opportunities in data science. Click for full video."
 ---
 
 Topic: Decoding Data Science Roles: A guide to the different jobs data scientists (really) do     

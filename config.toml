@@ -18,6 +18,5 @@ name = "medium"
 url = "https://medium.com/@s.kirmer"
 
 [params]
-mainSections = "writing"
-
-
+mainSections = ["writing", "speaking"]
+recent_posts_number = 3
