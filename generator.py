@@ -23,10 +23,6 @@ def get_image(soup):
     img_caption = soup.figure.figcaption
     return img_link, img_caption
 
-def get_subtitle(soup):
-    subtitle = soup.find_all('h4')[0].text
-    return subtitle
-
 def get_date(soup):
     date = soup.published_parsed
     year = date[0]
@@ -38,7 +34,7 @@ def get_tags(base_item):
     tags = [j['term'] for j in base_item['tags']]
     return tags
 
-def generate_yaml(img_link, tags, base_item, year, month, day):
+def generate_yaml(img_link, tags, base_item, year, month, day, subtitle=None):
     yaml_str = f"""
 ---
 date: {year}-{month}-{day}
@@ -48,12 +44,17 @@ title: "{base_item['title']}"
 disable_share: false
 ---
     """
+    # summary: "{subtitle}"
+
     return yaml_str
 
 def get_body(base_item):
     body = md(base_item, strip=['figure', 'figcaption', 'title', 'img']) 
     return body
-    
+  
+def get_subtitle(soup):
+    subtitle = soup.find_all('h4')[0].text
+    return subtitle  
 
 def get_body2(soup):
     i_tag = soup.figure
@@ -71,10 +72,14 @@ for i in entries:
     tags = get_tags(i)  
     year, month, day = get_date(i)
     print(year, month, day)
-    # try:
-    #     subtitle = get_subtitle(soup)
-    # except:
-    #     continue
+
+    # Debating whether to make subtitles automatically the summary- not currently doing this but TBD
+    # If I do want to do that, just need to add subtitle as argument to generate_yaml
+    try:
+        subtitle = get_subtitle(soup)
+    except:
+        subtitle = ""
+    print(subtitle)
     body = get_body2(soup)
     yaml_str = generate_yaml(img_link, tags, i, year, month, day)
 
