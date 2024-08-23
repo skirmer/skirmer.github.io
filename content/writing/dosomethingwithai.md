@@ -81,6 +81,6 @@ Regardless, it’s best if you can present a solid argument and empathize with w
 I hope this is helpful in giving you a road map for handling the pleas for AI that are a growing part of our work lives. Approaching things reasonably, without being either a doormat or a brick wall, will lead to better results at work and will have positive impacts on your quality of life. Good luck!
 
 
-Photo by [Unseen Studio]("https://unsplash.com/@uns__nstudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash") on Unsplash
+Photo by [Unseen Studio](https://unsplash.com/@uns__nstudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on Unsplash
   
-This article also appears at the ODSC blog, and I will be speaking at [ODSC West 2024 in October]("/public/speaking/odsc_west_2024/"). 
+This article also appears at the ODSC blog, and I will be speaking at [ODSC West 2024 in October](/speaking/odsc_west_2024/). 
