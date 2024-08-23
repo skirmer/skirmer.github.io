@@ -3,7 +3,7 @@
 
 ---
 date: 2024-08-23
-featured_image: '/images/unseen-studio-s9CC2SKySJM-unsplash'
+featured_image: '/images/unseen-studio-s9CC2SKySJM-unsplash.jpg'
 tags: ["business","artificial-intelligence"]
 title: "'Just Do Something With AI': Bridging the Business Communication Gap for ML Practitioners"
 disable_share: false
@@ -81,6 +81,6 @@ Regardless, it’s best if you can present a solid argument and empathize with w
 I hope this is helpful in giving you a road map for handling the pleas for AI that are a growing part of our work lives. Approaching things reasonably, without being either a doormat or a brick wall, will lead to better results at work and will have positive impacts on your quality of life. Good luck!
 
 
-Photo by <a href="https://unsplash.com/@uns__nstudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unseen Studio</a> on <a href="https://unsplash.com/photos/person-writing-on-brown-wooden-table-near-white-ceramic-mug-s9CC2SKySJM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+Photo by [Unseen Studio]("https://unsplash.com/@uns__nstudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash") on Unsplash
   
-This article also appears at the ODSC blog, and I will be speaking at [ODSC West 2024 in October]("/speaking/odsc_west_2024/"). 
+This article also appears at the ODSC blog, and I will be speaking at [ODSC West 2024 in October]("/public/speaking/odsc_west_2024/"). 
