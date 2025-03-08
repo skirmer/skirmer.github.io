@@ -224,9 +224,9 @@ disable_share: false
 
 
 
-[A Critical Look at AI Image Generation](https://towardsdatascience.com/a-critical-look-at-ai-image-generation-45001f410147) 
+[A Critical Look at AI Image Generation](https://medium.com/towards-data-science/a-critical-look-at-ai-image-generation-45001f410147) 
  was originally published in
- [Towards Data Science](https://towardsdatascience.com) 
+ [TDS Archive](https://medium.com/towards-data-science) 
  on Medium, where people are continuing the conversation by highlighting and responding to this story.
 
 
