@@ -1,5 +1,5 @@
 ---
-date: 2025-03-08
+date: 2025-03-07
 description: "Women in Data Science Chicago 2025"
 featured_image: ""
 tags: ["careers"]
