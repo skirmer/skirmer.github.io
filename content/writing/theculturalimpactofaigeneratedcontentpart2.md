@@ -203,9 +203,9 @@ disable_share: false
 
 
 
-[The Cultural Impact of AI Generated Content: Part 2](https://towardsdatascience.com/the-cultural-impact-of-ai-generated-content-part-2-228bf685b8ff) 
+[The Cultural Impact of AI Generated Content: Part 2](https://medium.com/towards-data-science/the-cultural-impact-of-ai-generated-content-part-2-228bf685b8ff) 
  was originally published in
- [Towards Data Science](https://towardsdatascience.com) 
+ [TDS Archive](https://medium.com/towards-data-science) 
  on Medium, where people are continuing the conversation by highlighting and responding to this story.
 
 

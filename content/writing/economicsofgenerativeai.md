@@ -163,9 +163,9 @@ disable_share: false
 
 
 
-[Economics of Generative AI](https://towardsdatascience.com/economics-of-generative-ai-75f550288097) 
+[Economics of Generative AI](https://medium.com/towards-data-science/economics-of-generative-ai-75f550288097) 
  was originally published in
- [Towards Data Science](https://towardsdatascience.com) 
+ [TDS Archive](https://medium.com/towards-data-science) 
  on Medium, where people are continuing the conversation by highlighting and responding to this story.
 
 

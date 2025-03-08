@@ -304,9 +304,9 @@ disable_share: false
 
 
 
-[Consent in Training AI](https://towardsdatascience.com/consent-in-training-ai-75a377f32f65) 
+[Consent in Training AI](https://medium.com/towards-data-science/consent-in-training-ai-75a377f32f65) 
  was originally published in
- [Towards Data Science](https://towardsdatascience.com) 
+ [TDS Archive](https://medium.com/towards-data-science) 
  on Medium, where people are continuing the conversation by highlighting and responding to this story.
 
 

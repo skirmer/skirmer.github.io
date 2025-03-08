@@ -341,9 +341,9 @@ disable_share: false
 
 
 
-[Writing a Good Job Description for Data Science/Machine Learning](https://towardsdatascience.com/writing-a-good-job-description-for-data-science-machine-learning-bd98f29c75cb) 
+[Writing a Good Job Description for Data Science/Machine Learning](https://medium.com/towards-data-science/writing-a-good-job-description-for-data-science-machine-learning-bd98f29c75cb) 
  was originally published in
- [Towards Data Science](https://towardsdatascience.com) 
+ [TDS Archive](https://medium.com/towards-data-science) 
  on Medium, where people are continuing the conversation by highlighting and responding to this story.
 
 

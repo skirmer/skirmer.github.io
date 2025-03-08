@@ -251,9 +251,9 @@ disable_share: false
 
 
 
-[Disability, Accessibility, and AI](https://towardsdatascience.com/disability-accessibility-and-ai-0d5ab06ec140) 
+[Disability, Accessibility, and AI](https://medium.com/towards-data-science/disability-accessibility-and-ai-0d5ab06ec140) 
  was originally published in
- [Towards Data Science](https://towardsdatascience.com) 
+ [TDS Archive](https://medium.com/towards-data-science) 
  on Medium, where people are continuing the conversation by highlighting and responding to this story.
 
 
