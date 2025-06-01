@@ -66,7 +66,7 @@ css asset directory we (unless condition below) add to aforementioned slice */}}
 
   {{/* We then use toCSS to add sourceMap and minify */}}
   {{ $options := dict "enableSourceMap" true "precision" 6 }}
-  {{ $style = $style | css.Sass $options | minify }}
+  {{ $style = $style | resources.ToCSS $options | minify }}
   {{/* We fingerprint in production for cache busting purposes */}}
   {{ if eq (getenv "HUGO_ENV") "production" }}
     {{ $style = $style | fingerprint }}
