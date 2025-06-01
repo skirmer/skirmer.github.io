@@ -2,7 +2,7 @@
 date: 2024-06-20
 description: "ODSC West 2024"
 featured_image: ""
-tags: ["webinar", "careers"]
+tags: ["conference", "communication"]
 title: "ODSC West 2024"
 summary: "See me in October virtually at ODSC West talking about how to communicate effectively with business leadership about AI/ML"
 ---
