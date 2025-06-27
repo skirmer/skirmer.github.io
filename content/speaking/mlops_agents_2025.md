@@ -4,6 +4,7 @@ description: "Agents in Production Conference"
 featured_image: ""
 tags: ["ai"]
 title: "Agents in Production Conference"
+summary: "Join me at this free virtual conference to learn about evaluating LLM performance systematically"
 ---
 
 Topic: Evaluating LLMs with Lessons from Teaching     
