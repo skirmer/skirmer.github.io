@@ -1,9 +1,9 @@
 ---
 date: 2025-06-26
-description: "Agents in Production Conference"
+description: "UPCOMING: Agents in Production Conference"
 featured_image: ""
 tags: ["ai"]
-title: "Agents in Production Conference"
+title: "UPCOMING: Agents in Production Conference"
 summary: "Join me at this free virtual conference to learn about evaluating LLM performance systematically"
 ---
 
