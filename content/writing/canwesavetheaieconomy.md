@@ -33,7 +33,7 @@ So, if AI is not the best solution to your customers’ pressing challenges, wha
 
 However, for most of us, this probably isn’t a viable path. So, where do we go? And, how did we get here? I’ve got some ideas, so let’s look at the major players involved.
 
-![My diagram describing the relationships between players in the AI Economy](/images/ai_economy_cycle.jpg "Diagram by the author using Excalidraw")
+![My diagram describing the relationships between players in the AI Economy](../images/ai_economy_cycle.jpg "Diagram by the author using Excalidraw")
 
 
 ### Inside the startup

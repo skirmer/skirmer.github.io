@@ -6,15 +6,18 @@ menu:
     weight: 1
 ---
 
-My professional career has been driven by continuous learning. My approach to any technical problem is "I can probably learn how to do that" followed by rolling up my sleeves to get things done. I learned to be a data scientist through hard work outside the traditional classroom, including a significant amount of on-the-job learning with the help of many incredibly talented colleagues. I highly value helping others following similar autodidactic paths, and I spend time advising and encouraging other data scientists or aspiring data scientists from nontraditional backgrounds and/or underrepresented groups. 
+My professional career has been driven by continuous learning, and as a result I have developed broad expertise over the years, and continue to learn as our field's complexity grows. When faced with an unfamiliar technical problem, my first thought is "I can probably learn how to do that" followed by rolling up my sleeves to get things done. I learned to be a data scientist through hard work outside the traditional classroom, including a significant amount of on-the-job learning with the help of many incredibly talented colleagues. I highly value helping others following similar autodidactic paths, and I spend time advising and encouraging other data scientists or aspiring data scientists from nontraditional backgrounds and/or underrepresented groups. 
 
 ***
 
 ## Experience
 
-Senior Machine Learning Engineer, DataGrail   
-2023-Present   
-* Build and deploy machine learning tools for helping discover PII in various data storage solutions
+Staff Machine Learning Engineer, DataGrail   
+2025-Present
+Senior Machine Learning Engineer
+2023-2025   
+* Build and deploy AI agents that run autonomous research tasks to uncover risks in data privacy and security in third party solutions
+* Build and deploy machine learning models incorporating classifiers based on roBERTa as well as using catboost, for helping discover PII in various data storage solutions
 
 Staff Data Scientist, project44  
 2021–2023
@@ -60,8 +63,8 @@ I also taught sociology and health sciences at DePaul University as a part-time 
 ## Technologies and Languages
 
 * Languages: Python, R, SQL
-* Technologies: PyTorch, CatBoost, XGBoost, scikit-learn, AWS, GCS, Dask, Snowflake, Postgres, Docker, Jenkins, Git, Github Actions, Apache Airflow, Argo, geopandas, Folium, Flask
-* Other Skills: Object oriented programming, unit testing, package construction, machine learning/predictive modeling, deep learning/computer vision, parallelization, GPU utilization, NLP, geospatial analysis
+* Technologies: LangChain, MLFlow, DeepEval, PyTorch, CatBoost, XGBoost, scikit-learn, AWS, GCS, Dask, Snowflake, Postgres, Docker, Jenkins, Git, Github Actions, Apache Airflow, Argo, geopandas, Folium, Flask
+* Other Skills: Object oriented programming, unit testing, package construction, LLM fine tuning, machine learning/predictive modeling, deep learning/computer vision, parallelization, GPU utilization, NLP, geospatial analysis
 
 
 ## Education
@@ -87,6 +90,7 @@ Patent Inventor: (approval pending) Technologies for Identifying Geographic Boun
 
 ### Hobbies
 Knitting   
+Youth Mentorship   
 Travel   
 Birding   
 Urban Gardening  
