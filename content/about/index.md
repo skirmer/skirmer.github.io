@@ -6,7 +6,9 @@ menu:
     weight: 1
 ---
 
-My professional career has been driven by continuous learning, and as a result I have developed broad expertise over the years, and continue to learn as our field's complexity grows. When faced with an unfamiliar technical problem, my first thought is "I can probably learn how to do that" followed by rolling up my sleeves to get things done. I learned to be a data scientist through hard work outside the traditional classroom, including a significant amount of on-the-job learning with the help of many incredibly talented colleagues. I highly value helping others following similar autodidactic paths, and I spend time advising and encouraging other data scientists or aspiring data scientists from nontraditional backgrounds and/or underrepresented groups. 
+My professional career has been driven by continuous learning, and as a result I have developed broad expertise over the years, and continue to learn as our field's complexity grows. 
+
+When faced with an unfamiliar technical problem, my first thought is "I can probably learn how to do that" followed by rolling up my sleeves to get things done. I learned to be a data scientist through hard work outside the traditional classroom, including a significant amount of on-the-job learning with the help of many incredibly talented colleagues. I highly value helping others following similar autodidactic paths, and I spend time advising and encouraging other data scientists or aspiring data scientists from nontraditional backgrounds and/or underrepresented groups. 
 
 ***
 
