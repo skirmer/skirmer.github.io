@@ -96,7 +96,7 @@ Read more of my work at
 
 Jones, Capers. 2014. The Technical and Social History of Software Engineering.
 
-[Layoffs.fyi - Tech Layoff Tracker and DOGE Layoff Tracker](https://layoffs.fyi/)
+[Layoffs.fyi - Tech and Startup Layoff Tracker](https://layoffs.fyi/)
 
 <https://www.trueup.io/layoffs>
 
