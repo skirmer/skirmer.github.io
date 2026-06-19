@@ -9,4 +9,4 @@ title: "ODSC East 2026"
 Topic: Strategies for Customizing LLM Evaluation at Scale   
 Location: Boston, MA  
 Date: April 29-30, 2026   
-Links: coming soon
+Links: [Full Video on my YouTube](https://youtu.be/lcvuWjBrUbI?si=gCjQz5Zet0g04lH3)
