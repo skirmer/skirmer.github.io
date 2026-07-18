@@ -7,6 +7,7 @@ date: 2026-03-15
 featured_image: "/images/thenewexperienceofcodingwithai/ad6726a66c84.jpg"
 tags: ["artificial-intelligence","coding","ai"]
 title: "The New Experience of Coding with AI"
+summary: "Last July, I wrote an article about how the field of software engineering may be affected by the increasing integration of LLM-based code assistant tools. Unfortunately for me, I was writing that article immediately after the first major, functionally advanced release…"
 disable_share: false
 ---
     
@@ -19,8 +20,7 @@ Photo by
 on
 [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)
 
-[Last July, I wrote an article](https://www.stephaniekirmer.com/writing/softwareengineeringinthellmera/)
-about how the field of software engineering may be affected by the increasing integration of LLM-based code assistant tools. Unfortunately for me, I was writing that article immediately after the first major, functionally advanced release of Claude Code. While Claude Code technically existed in February 2024, it wasn’t until May 2025 that it was expanded to offer the kind of sophistication in code assisting that it and some of the other code assistant tools possess. Because of this, my thoughts in that article really didn’t take into account some of the changes that we’ve seen since then.
+[Last July, I wrote an article](https://www.stephaniekirmer.com/writing/softwareengineeringinthellmera/) about how the field of software engineering may be affected by the increasing integration of LLM-based code assistant tools. Unfortunately for me, I was writing that article immediately after the first major, functionally advanced release of Claude Code. While Claude Code technically existed in February 2024, it wasn’t until May 2025 that it was expanded to offer the kind of sophistication in code assisting that it and some of the other code assistant tools possess. Because of this, my thoughts in that article really didn’t take into account some of the changes that we’ve seen since then.
 
 Now I’m going to take a new look at the state of affairs in the use of LLM-based code tools and see where we’re at. In particular, I want to think about the implications of this technology on how we do our jobs both now and in the future.
 

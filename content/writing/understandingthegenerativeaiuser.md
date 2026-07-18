@@ -7,6 +7,7 @@ date: 2025-12-15
 featured_image: "/images/understandingthegenerativeaiuser/01dc86075ffb.jpg"
 tags: ["user-experience","ai","llm"]
 title: "Understanding the Generative AI User"
+summary: "I’ve been involved in some interesting conversations recently about designing LLM based tools for end users, and one of the important product design questions that this brings up is “what do people know about AI?” This matters because, as any…"
 disable_share: false
 ---
     

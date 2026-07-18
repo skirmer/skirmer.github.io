@@ -7,6 +7,7 @@ date: 2025-11-16
 featured_image: "/images/developinghumansexualityintheageofai/b32d2425f5dd.jpg"
 tags: ["sexuality","ai","social-science"]
 title: "Developing Human Sexuality in the Age of AI"
+summary: "Human sexuality has been mediated by technology pretty much since the dawn of time. Almost as soon as the printing press was invented, erotica was being published. Photography was used for erotic purposes with glee by the Victorians. And, we…"
 disable_share: false
 ---
     
