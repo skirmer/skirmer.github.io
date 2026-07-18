@@ -4,13 +4,18 @@
 
 ---
 date: 2025-11-16
-featured_image: "https://cdn-images-1.medium.com/max/1024/0*iesHzHTn34Y2rkNj"
+featured_image: "/images/developinghumansexualityintheageofai/b32d2425f5dd.jpg"
 tags: ["sexuality","ai","social-science"]
 title: "Developing Human Sexuality in the Age of AI"
 disable_share: false
 ---
-      
+    
 
+![](/images/developinghumansexualityintheageofai/b32d2425f5dd.jpg)
+Photo by
+[Kaitlyn Baker](https://unsplash.com/@kaitlynbaker?utm_source=medium&utm_medium=referral)
+on
+[Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)
 
 Human sexuality has been mediated by technology pretty much since the dawn of time. Almost as soon as the printing press was invented, erotica was being published. Photography was used for erotic purposes with glee by the Victorians. And, we all know how much the internet has influenced modern sexual culture.
 
@@ -168,4 +173,4 @@ Read more of my work at
 
 <https://www.vice.com/en/article/a-look-at-the-unbridled-joy-of-victorian-porn/>
 
-
+![](/images/developinghumansexualityintheageofai/046c8841617e.jpg)

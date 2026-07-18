@@ -4,15 +4,21 @@
 
 ---
 date: 2026-02-15
-featured_image: "https://cdn-images-1.medium.com/max/1024/0*A2kOa7JMW0HZPrtC"
+featured_image: "/images/advanceplanningforaiprojectevaluation/db4328432e8e.jpg"
 tags: ["ai","ai-agent"]
 title: "Advance Planning for AI Project Evaluation"
 disable_share: false
 ---
-      
+    
 
 
 The work to do before the work begins
+
+![](/images/advanceplanningforaiprojectevaluation/db4328432e8e.jpg)
+Photo by
+[Nick Morrison](https://unsplash.com/@nickmorrison?utm_source=medium&utm_medium=referral)
+on
+[Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)
 
 It’s a common situation to find in businesses right now — there is a proposed product or feature that would involve using AI, such as an LLM-based agent, and discussions begin about how to scope the project and build it. Product and Engineering will have great ideas for how this tool might be useful, and how much excitement it can generate for the business. However, if I’m in that room, the first thing I want to know after the project is proposed is “how are we going to evaluate this?” Sometimes this will result in questions about whether AI evaluation is really important or necessary, or whether this can wait until later (or never).
 
@@ -61,4 +67,4 @@ to learn more about the next steps — actually using and customizing LLM ev
 Read more of my work at
 [www.stephaniekirmer.com](http://www.stephaniekirmer.com)
 
-
+![](/images/advanceplanningforaiprojectevaluation/a7b0a3b6eec8.jpg)

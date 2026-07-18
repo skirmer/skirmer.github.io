@@ -1,10 +1,14 @@
 import feedparser
 from mdutils.mdutils import MdUtils
 from bs4 import BeautifulSoup
-from urllib.request import urlretrieve
+import requests
+from urllib.parse import urlparse
 from markdownify import markdownify as md
 import re
 import string
+import os
+import hashlib
+
 ## get content from medium rss
 
 ## Generate page in hugo and save
@@ -12,17 +16,54 @@ import string
 rss_items = feedparser.parse('https://medium.com/feed/@s.kirmer')
 website_title = rss_items.feed.title
 entries = rss_items.entries
+IMAGE_ROOT = "static/images"
+
+def slugify(title):
+    return title.replace(" ", "_").lower().translate(str.maketrans('', '', string.punctuation))
+
+
+def download_image(img_url, slug):
+    """Download an image to static/images/<slug>/<hash>.<ext> and return the
+    local filesystem path plus the URL path Hugo should use to reference it."""
+    folder = os.path.join(IMAGE_ROOT, slug)
+    os.makedirs(folder, exist_ok=True)
+
+    parsed = urlparse(img_url)
+    ext = os.path.splitext(parsed.path)[1]
+    if not ext or len(ext) > 5:
+        ext = ".jpg"  # Medium image URLs often don't have a clean extension
+
+    filename = hashlib.md5(img_url.encode()).hexdigest()[:12] + ext
+    filepath = os.path.join(folder, filename)
+
+    if not os.path.exists(filepath):
+        try:
+            headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                               "AppleWebKit/537.36 (KHTML, like Gecko) "
+                               "Chrome/120.0 Safari/537.36"
+            }
+            resp = requests.get(img_url, headers=headers, timeout=10)
+            resp.raise_for_status()
+            with open(filepath, "wb") as f:
+                f.write(resp.content)
+        except Exception as e:
+            print(f"Failed to download {img_url}: {e}")
+            return None, None
+
+    site_path = f"/images/{slug}/{filename}"
+    return filepath, site_path
 
 def get_soup(base_item):
     soup = BeautifulSoup(base_item['content'][0]['value'], 'html.parser')
     return soup
 
-def get_image(soup):
-    image = soup.figure
+def get_image(soup, slug):
     if soup.figure:
         img_link = soup.figure.img['src']
         img_caption = soup.figure.figcaption
-        return img_link, img_caption
+        _, local_path = download_image(img_link, slug)
+        return (local_path or img_link), img_caption
     else:
         print("No figure tag, skip")
         return "none", "none"
@@ -60,19 +101,29 @@ def get_subtitle(soup):
     subtitle = soup.find_all('h4')[0].text
     return subtitle  
 
-def get_body2(soup):
-    # i_tag = soup.figure
-    # i_tag.decompose()
-    base_item = soup.prettify()
+def download_inline_images(soup, slug):
+    """Find every <img> in the body, download it, and rewrite its src to the
+    local path so markdownify picks up the local reference."""
+    for img in soup.find_all('img'):
+        src = img.get('src')
+        if not src:
+            continue
+        _, local_path = download_image(src, slug)
+        if local_path:
+            img['src'] = local_path
 
-    body = md(base_item, strip=['figure', 'figcaption', 'title', 'img']) 
+def get_body2(soup, slug):
+    download_inline_images(soup, slug)   # mutate soup BEFORE prettify/md
+    base_item = soup.prettify()
+    body = md(base_item, strip=['figure', 'figcaption', 'title'])
     return body
-    
 
 for i in entries:
     print(i['title'])
+    slug = slugify(i['title'])
+
     soup = get_soup(i)
-    img_link, img_caption = get_image(soup)
+    img_link, img_caption = get_image(soup, slug)
     tags = get_tags(i)  
     year, month, day = get_date(i)
     print(year, month, day)
@@ -84,10 +135,10 @@ for i in entries:
     except:
         subtitle = ""
     print(subtitle)
-    body = get_body2(soup)
+    body = get_body2(soup, slug)
     yaml_str = generate_yaml(img_link, tags, i, year, month, day)
 
-    mdFile = MdUtils(file_name=f"""content/writing/{i['title'].replace(" ", "_").lower().translate(str.maketrans('', '', string.punctuation))}""")
+    mdFile = MdUtils(file_name=f"content/writing/{slug}")
     mdFile.write(f"{yaml_str}")
     mdFile.new_line()
     mdFile.write(f"{body}")

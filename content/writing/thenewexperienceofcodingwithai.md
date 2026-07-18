@@ -4,14 +4,20 @@
 
 ---
 date: 2026-03-15
-featured_image: "https://cdn-images-1.medium.com/max/1024/0*i5iY7ugCtjYjKj4K"
+featured_image: "/images/thenewexperienceofcodingwithai/ad6726a66c84.jpg"
 tags: ["artificial-intelligence","coding","ai"]
 title: "The New Experience of Coding with AI"
 disable_share: false
 ---
-      
+    
 
 #### The seduction of AI code assistants
+
+![](/images/thenewexperienceofcodingwithai/ad6726a66c84.jpg)
+Photo by
+[Lan Gao](https://unsplash.com/@langao?utm_source=medium&utm_medium=referral)
+on
+[Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)
 
 [Last July, I wrote an article](https://www.stephaniekirmer.com/writing/softwareengineeringinthellmera/)
 about how the field of software engineering may be affected by the increasing integration of LLM-based code assistant tools. Unfortunately for me, I was writing that article immediately after the first major, functionally advanced release of Claude Code. While Claude Code technically existed in February 2024, it wasn’t until May 2025 that it was expanded to offer the kind of sophistication in code assisting that it and some of the other code assistant tools possess. Because of this, my thoughts in that article really didn’t take into account some of the changes that we’ve seen since then.
@@ -101,6 +107,7 @@ Read more of my work at
 [www.stephaniekirmer.com.](http://www.stephaniekirmer.com.)
 I am also speaking at ODSC East at the end of April 2026, on the topic of evaluation strategies for LLM development.
 
+![](/images/thenewexperienceofcodingwithai/a3fdc28c0df0.jpg)
 
 ---
 

@@ -4,15 +4,21 @@
 
 ---
 date: 2025-10-16
-featured_image: "https://cdn-images-1.medium.com/max/1024/0*nFPtFIFsUTo1VVLZ"
+featured_image: "/images/canwesavetheaieconomy/76d5347a7135.jpg"
 tags: ["ai","business"]
 title: "Can We Save the AI Economy?"
 disable_share: false
 ---
-      
+    
 
 
 And do we want to?
+
+![](/images/canwesavetheaieconomy/76d5347a7135.jpg)
+Photo by
+[Eyestetix Studio](https://unsplash.com/@eyestetix?utm_source=medium&utm_medium=referral)
+on
+[Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)
 
 ### Introduction
 
@@ -33,7 +39,8 @@ So, if AI is not the best solution to your customers’ pressing challenges, wha
 
 However, for most of us, this probably isn’t a viable path. So, where do we go? And, how did we get here? I’ve got some ideas, so let’s look at the major players involved.
 
-![My diagram describing the relationships between players in the AI Economy](/images/ai_economy_cycle.jpg "Diagram by the author using Excalidraw")
+![](/images/canwesavetheaieconomy/75a46ffd1905.png)
+Diagram by the author using Excalidraw
 
 ### Inside the startup
 
@@ -200,4 +207,4 @@ Read more of my work at
 
 <https://towardsdatascience.com/deploying-ai-safely-and-responsibly/>
 
-
+![](/images/canwesavetheaieconomy/f84c61bc4f90.jpg)

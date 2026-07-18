@@ -4,14 +4,14 @@
 
 ---
 date: 2026-07-15
-featured_image: "https://cdn-images-1.medium.com/max/1024/0*1sAz-kCufK5CIrVa"
+featured_image: "/images/usingclassicalmltoempoweraiagents/d0fe3fdc75f5.jpg"
 tags: ["artificial-intelligence","machine-learning"]
 title: "Using Classical ML to Empower AI Agents"
 disable_share: false
 ---
     
 
-
+![](/images/usingclassicalmltoempoweraiagents/d0fe3fdc75f5.jpg)
 Photo by
 [Maik Winnecke](https://unsplash.com/@maik_wi?utm_source=medium&utm_medium=referral)
 on
@@ -106,4 +106,4 @@ Read more of my work at
 
 <https://towardsdatascience.com/ai-agents-explained-what-is-a-react-loop-and-how-does-it-work/>
 
-
+![](/images/usingclassicalmltoempoweraiagents/45a75080e349.jpg)
