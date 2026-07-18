@@ -7,6 +7,7 @@ date: 2026-06-15
 featured_image: "/images/drillingintoaisfinancialsustainability/c7870e74dbe6.jpg"
 tags: ["economics","ai"]
 title: "Drilling Into AI's Financial Sustainability"
+summary: "Budgets for AI tokens can’t be infinite, no matter how much hyperscalers wish they were"
 disable_share: false
 ---
     

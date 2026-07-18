@@ -79,18 +79,17 @@ def get_tags(base_item):
     tags = [j['term'] for j in base_item['tags']]
     return tags
 
-def generate_yaml(img_link, tags, base_item, year, month, day, subtitle=None):
+def generate_yaml(img_link, tags, base_item, year, month, day, summary=""):
     yaml_str = f"""
 ---
 date: {year}-{month}-{day}
 featured_image: "{img_link}"
 tags: ["{'","'.join(tags)}"]
 title: "{base_item['title']}"
+summary: "{summary}"
 disable_share: false
 ---
     """
-    # summary: "{subtitle}"
-
     return yaml_str
 
 def get_body(base_item):
@@ -155,11 +154,27 @@ def replace_video_embeds(soup):
             real_url = resolve_medium_media_link(a['href'])
             a['href'] = real_url
             a.string = real_url
+
+def get_summary(soup, max_words=40):
+    """Grab the first real paragraph of body text, skipping headers like
+    the title/subtitle, for use as an explicit Hugo summary."""
+    for p in soup.find_all('p'):
+        text = p.get_text(strip=True)
+        if text:
+            words = text.split()
+            if len(words) > max_words:
+                text = " ".join(words[:max_words]).rstrip(",.;:") + "…"
+            return text
+    return ""
+
+
+
 for i in entries:
     print(i['title'])
     slug = slugify(i['title'])
 
     soup = get_soup(i)
+    summary = get_summary(soup)
     img_link, img_caption = get_image(soup, slug)
     tags = get_tags(i)  
     year, month, day = get_date(i)
@@ -173,7 +188,7 @@ for i in entries:
         subtitle = ""
     print(subtitle)
     body = get_body2(soup, slug)
-    yaml_str = generate_yaml(img_link, tags, i, year, month, day)
+    yaml_str = generate_yaml(img_link, tags, i, year, month, day, summary=summary)
 
     mdFile = MdUtils(file_name=f"content/writing/{slug}")
     mdFile.write(f"{yaml_str}")

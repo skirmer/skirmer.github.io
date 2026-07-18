@@ -7,6 +7,7 @@ date: 2025-10-16
 featured_image: "/images/canwesavetheaieconomy/76d5347a7135.jpg"
 tags: ["ai","business"]
 title: "Can We Save the AI Economy?"
+summary: "And do we want to?"
 disable_share: false
 ---
     

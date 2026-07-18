@@ -7,6 +7,7 @@ date: 2026-02-15
 featured_image: "/images/advanceplanningforaiprojectevaluation/db4328432e8e.jpg"
 tags: ["ai","ai-agent"]
 title: "Advance Planning for AI Project Evaluation"
+summary: "The work to do before the work begins"
 disable_share: false
 ---
     

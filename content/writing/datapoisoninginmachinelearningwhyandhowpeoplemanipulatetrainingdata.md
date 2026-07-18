@@ -7,6 +7,7 @@ date: 2026-01-15
 featured_image: "/images/datapoisoninginmachinelearningwhyandhowpeoplemanipulatetrainingdata/eb02b022abaa.jpg"
 tags: ["ai","cybersecurity","machine-learning"]
 title: "Data Poisoning in Machine Learning: Why and How People Manipulate Training Data"
+summary: "Do you know where your data has been?"
 disable_share: false
 ---
     

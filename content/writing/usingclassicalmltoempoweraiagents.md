@@ -7,6 +7,7 @@ date: 2026-07-15
 featured_image: "/images/usingclassicalmltoempoweraiagents/d0fe3fdc75f5.jpg"
 tags: ["artificial-intelligence","machine-learning"]
 title: "Using Classical ML to Empower AI Agents"
+summary: "When people ask me what I’m doing these days at work, I feel like they are sometimes surprised when I say “building CatBoost classifiers” or “fitting isolation forests”. But this is in fact what I spend a good chunk of…"
 disable_share: false
 ---
     

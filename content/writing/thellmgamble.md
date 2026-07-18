@@ -7,6 +7,7 @@ date: 2026-04-15
 featured_image: "/images/thellmgamble/706dd29595d5.jpg"
 tags: ["artificial-intelligence","ai","sociology"]
 title: "The LLM Gamble"
+summary: "Why it tickles your brain to use an LLM, and what that means for the AI industry"
 disable_share: false
 ---
     
