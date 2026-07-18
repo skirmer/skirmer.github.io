@@ -19,9 +19,13 @@ def get_soup(base_item):
 
 def get_image(soup):
     image = soup.figure
-    img_link = soup.figure.img['src']
-    img_caption = soup.figure.figcaption
-    return img_link, img_caption
+    if soup.figure:
+        img_link = soup.figure.img['src']
+        img_caption = soup.figure.figcaption
+        return img_link, img_caption
+    else:
+        print("No figure tag, skip")
+        return "none", "none"
 
 def get_date(soup):
     date = soup.published_parsed
@@ -57,8 +61,8 @@ def get_subtitle(soup):
     return subtitle  
 
 def get_body2(soup):
-    i_tag = soup.figure
-    i_tag.decompose()
+    # i_tag = soup.figure
+    # i_tag.decompose()
     base_item = soup.prettify()
 
     body = md(base_item, strip=['figure', 'figcaption', 'title', 'img']) 
