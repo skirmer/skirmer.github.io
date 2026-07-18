@@ -4,14 +4,20 @@
 
 ---
 date: 2025-12-15
-featured_image: "https://cdn-images-1.medium.com/max/1024/0*6f4Yz6FMmrHnFgTe"
+featured_image: "/images/understandingthegenerativeaiuser/01dc86075ffb.jpg"
 tags: ["user-experience","ai","llm"]
 title: "Understanding the Generative AI User"
 disable_share: false
 ---
-      
+    
 
 #### What do regular technology users think (and know) about AI?
+
+![](/images/understandingthegenerativeaiuser/01dc86075ffb.jpg)
+Photo by
+[Vardan Papikyan](https://unsplash.com/@varpap?utm_source=medium&utm_medium=referral)
+on
+[Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)
 
 I’ve been involved in some interesting conversations recently about designing LLM based tools for end users, and one of the important product design questions that this brings up is “what do people know about AI?” This matters because, as any product designer will tell you, you need to understand the user in order to successfully build something for them to use. Imagine if you were building a website and you assumed all the visitors would be fluent in Mandarin, so you wrote the site in that language, but then it turned out your users all spoke Spanish. It’s like that, because while your site might be amazing, you have constructed it with a fatally flawed assumption and made it significantly less likely to succeed as a result.
 
@@ -111,4 +117,4 @@ Read more of my work at
 
 <https://www.stephaniekirmer.com/writing/canwesavetheaieconomy/>
 
-
+![](/images/understandingthegenerativeaiuser/b2a9c06f5029.jpg)

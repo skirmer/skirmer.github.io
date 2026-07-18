@@ -4,7 +4,7 @@
 
 ---
 date: 2026-06-15
-featured_image: "https://cdn-images-1.medium.com/max/1024/0*9T2g2DDKyYAZrXxc"
+featured_image: "/images/drillingintoaisfinancialsustainability/c7870e74dbe6.jpg"
 tags: ["economics","ai"]
 title: "Drilling Into AI's Financial Sustainability"
 disable_share: false
@@ -14,6 +14,12 @@ disable_share: false
 ### Drilling Into AI’s Financial Sustainability
 
 Budgets for AI tokens can’t be infinite, no matter how much hyperscalers wish they were
+
+![](/images/drillingintoaisfinancialsustainability/c7870e74dbe6.jpg)
+Photo by
+[Immo Wegmann](https://unsplash.com/@tinkerman?utm_source=medium&utm_medium=referral)
+on
+[Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)
 
 In
 [my April column](https://medium.com/@s.kirmer/the-llm-gamble-cc434c5a9f54)
@@ -116,4 +122,4 @@ Read more of my work at
 
 <https://gizmodo.com/companies-are-getting-burned-by-burning-tons-of-tokens-2000765232>
 
-
+![](/images/drillingintoaisfinancialsustainability/25688647deb2.jpg)

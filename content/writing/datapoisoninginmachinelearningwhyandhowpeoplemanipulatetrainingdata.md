@@ -4,15 +4,21 @@
 
 ---
 date: 2026-01-15
-featured_image: "https://cdn-images-1.medium.com/max/1024/0*yzyO665BloKPswmr"
+featured_image: "/images/datapoisoninginmachinelearningwhyandhowpeoplemanipulatetrainingdata/eb02b022abaa.jpg"
 tags: ["ai","cybersecurity","machine-learning"]
 title: "Data Poisoning in Machine Learning: Why and How People Manipulate Training Data"
 disable_share: false
 ---
-      
+    
 
 
 Do you know where your data has been?
+
+![](/images/datapoisoninginmachinelearningwhyandhowpeoplemanipulatetrainingdata/eb02b022abaa.jpg)
+Photo by
+[Vedrana Filipović](https://unsplash.com/@vedranafilipovic?utm_source=medium&utm_medium=referral)
+on
+[Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)
 
 Data is a sometimes overlooked but hugely vital part of enabling machine learning and therefore AI to function. Generative AI companies are scouring the world for more data constantly because this raw material is required in great volumes for models to be built. Anyone who’s building or tuning a model must first collect a significant amount of data to even begin.
 
@@ -217,4 +223,4 @@ Read more of my work at
 
 <https://www.copyright.com/blog/is-the-dataset-youre-using-protected-by-copyright-heres-how-to-find-out/>
 
-
+![](/images/datapoisoninginmachinelearningwhyandhowpeoplemanipulatetrainingdata/56f3d8832cb1.jpg)

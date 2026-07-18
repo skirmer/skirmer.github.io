@@ -4,7 +4,7 @@
 
 ---
 date: 2026-04-15
-featured_image: "https://cdn-images-1.medium.com/max/1024/0*Ok0oQwn1U8m66U4c"
+featured_image: "/images/thellmgamble/706dd29595d5.jpg"
 tags: ["artificial-intelligence","ai","sociology"]
 title: "The LLM Gamble"
 disable_share: false
@@ -14,6 +14,7 @@ disable_share: false
 
 Why it tickles your brain to use an LLM, and what that means for the AI industry
 
+![](/images/thellmgamble/706dd29595d5.jpg)
 Photo by
 [Ays Be](https://unsplash.com/@aysha_be?utm_source=medium&utm_medium=referral)
 on
@@ -93,4 +94,4 @@ Read more of my work at
 
 <https://www.reddit.com/r/ClaudeAI/comments/1cib17i/since_i_started_using_claude_instead_of_chat_gpt/>
 
-
+![](/images/thellmgamble/9f390df84562.jpg)
