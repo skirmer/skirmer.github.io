@@ -113,11 +113,48 @@ def download_inline_images(soup, slug):
             img['src'] = local_path
 
 def get_body2(soup, slug):
-    download_inline_images(soup, slug)   # mutate soup BEFORE prettify/md
+    download_inline_images(soup, slug)  
+    replace_video_embeds(soup) 
     base_item = soup.prettify()
     body = md(base_item, strip=['figure', 'figcaption', 'title'])
     return body
 
+def resolve_medium_media_link(media_url):
+    """Medium's RSS wraps video embeds in a proxy URL like
+    https://medium.com/media/<hash>/href, which redirects to the real
+    source (e.g. YouTube). Follow the redirect to get the real URL."""
+    try:
+        resp = requests.head(media_url, allow_redirects=True, timeout=10)
+        return resp.url
+    except Exception as e:
+        print(f"Failed to resolve {media_url}: {e}")
+        return media_url  # fall back to the original link
+    
+def replace_video_embeds(soup):
+    # iframes (embedly or medium's own proxy)
+    for iframe in soup.find_all('iframe'):
+        src = iframe.get('src', '')
+        original_url = None
+        if 'embedly.com' in src:
+            qs = parse_qs(urlparse(src).query)
+            if 'src' in qs:
+                original_url = unquote(qs['src'][0])
+        elif 'youtube.com' in src:
+            original_url = src
+        elif 'medium.com/media' in src:
+            original_url = resolve_medium_media_link(src)
+
+        if original_url:
+            new_tag = soup.new_tag('a', href=original_url)
+            new_tag.string = original_url
+            iframe.replace_with(new_tag)
+
+    # anchor tags pointing at medium.com/media proxy links
+    for a in soup.find_all('a', href=True):
+        if 'medium.com/media' in a['href']:
+            real_url = resolve_medium_media_link(a['href'])
+            a['href'] = real_url
+            a.string = real_url
 for i in entries:
     print(i['title'])
     slug = slugify(i['title'])
