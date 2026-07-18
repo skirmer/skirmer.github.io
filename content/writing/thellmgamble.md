@@ -14,6 +14,11 @@ disable_share: false
 
 Why it tickles your brain to use an LLM, and what that means for the AI industry
 
+Photo by
+[Ays Be](https://unsplash.com/@aysha_be?utm_source=medium&utm_medium=referral)
+on
+[Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)
+
 When you open up the chat window for an LLM, and you have a question in mind, there’s an undeniable sense of possibility. You can’t be quite sure what the response will be, but there’s a decent chance that it is going to impress you with its confidence and specificity to your request, and that it will solve your problem in seconds. When it does, the feeling can be quite delightful!
 
 However, sometimes it fails — whether in general purpose knowledge or in specific cases like coding. As TikTok account
