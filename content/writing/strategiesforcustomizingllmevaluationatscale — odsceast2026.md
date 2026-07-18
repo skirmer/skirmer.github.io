@@ -21,5 +21,3 @@ Please enjoy, and I’ll be back in mid June with my next column as usual!
 
 Get more of my work at
 [www.stephaniekirmer.com.](http://www.stephaniekirmer.com.)
-
-![](/images/strategiesforcustomizingllmevaluationatscale — odsceast2026/b67241064e4c.jpg)
