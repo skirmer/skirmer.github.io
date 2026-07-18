@@ -4,7 +4,7 @@
 
 ---
 date: 2026-05-15
-featured_image: "none"
+featured_image: "/images/strategiesforcustomizingllmevaluationatscale — odsceast2026/titlecard.png"
 tags: ["ai","evaluation"]
 title: "Strategies for Customizing LLM Evaluation at Scale — ODSC East 2026"
 disable_share: false
