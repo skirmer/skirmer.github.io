@@ -85,7 +85,7 @@ Why data centers, and why now? Because people have developed these negative pers
 
 There are several arguments against data centers that have nothing really to do with AI as a technology. Consider the use of electricity, which might not matter to many people, except that the power infrastructure in America means that creating new power capacity has costs that are passed on to consumers. While we’re not being made to pay for the specific kilowatt hours that the data center uses, we’re being made to pay for building the power plants and lines that produce and transmit it. There are also real concerns about water usage, as well as displacement of wildlife and noise pollution. However, we have a lot of infrastructure in our communities that uses resources and has environmental downsides. We do not have large, organized protest movements preventing towns from building new Wal-Mart stores. The general public is not demanding that we stop growing almonds, which consume tremendous amounts of water, or eliminate cattle farming, which has significant local environmental impacts. If people had experiences with Wal-Mart and almonds as negative as those they have with AI, and no upside, that might be different. But for AI, people really aren’t seeing the positive tradeoff that would be required to accept the costs.
 
-### Conclusion
+### What Happens Next?
 
 So, where does this leave us? AI is simply not demonstrating value to people commensurate with the costs they see. In fact, AI companies are accumulating serious negative baggage in the minds of the public, by continuing to fail to manage the harms AI can cause, and not demonstrating compelling benefits to regular people.
 
