@@ -4,7 +4,7 @@
 
 ---
 date: 2026-11-16
-featured_image: "/images/atoolandatargetmanagingsecuritywhenyou’redeployingaipart1/1d49c1925e40.jpg"
+featured_image: "/images/atoolandatargetmanagingsecuritywhenyouredeployingaipart1/1d49c1925e40.jpg"
 tags: ["machine-learning","cybersecurity","ai"]
 title: "A Tool and a Target: Managing Security When You’re Deploying AI, Part 1"
 summary: "AI is turning into the hottest topic in cybersecurity.CISOs everywhere tell pollsters and interviewers how concerned they are about various ways that AI may be making their organizations more vulnerable and less safe. AI can be the target of attacks…"
@@ -12,7 +12,7 @@ disable_share: false
 ---
     
 
-![](/images/atoolandatargetmanagingsecuritywhenyou’redeployingaipart1/1d49c1925e40.jpg)
+![](/images/atoolandatargetmanagingsecuritywhenyouredeployingaipart1/1d49c1925e40.jpg)
 Photo by
 [Ries Bosch](https://unsplash.com/@ries_bosch?utm_source=medium&utm_medium=referral)
 on
@@ -110,4 +110,4 @@ An example of prompt injection manipulating tool selection:
 * [Design Patterns for Securing LLM Agentsagainst Prompt Injections](https://arxiv.org/html/2506.08837v3)
 * [Bypassing LLM Guardrails: An Empirical Analysis of Evasion Attacks against Prompt Injection and Jailbreak Detection Systems](https://aclanthology.org/2025.llmsec-1.8/)
 
-![](/images/atoolandatargetmanagingsecuritywhenyou’redeployingaipart1/a188f8ef3531.jpg)
+![](/images/atoolandatargetmanagingsecuritywhenyouredeployingaipart1/a188f8ef3531.jpg)
